@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1155" height="689" viewBox="35 50 1155 689">
+<rect x="35" y="50" width="1155" height="689" fill="#fff"/>
+<ellipse cx="600.0" cy="330.0" rx="125.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="600.0" y="326.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Анализ показателей</text>
+<text x="600.0" y="342.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">системы</text>
+<line x1="475" y1="370" x2="725" y2="370" stroke="#000"/>
+<text x="480.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор отчёта</text>
+<text x="480.0" y="405.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Просмотр результата</text>
+<ellipse cx="600.0" cy="90.0" rx="110.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="600.0" y="94.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Выгрузка отчёта в CSV</text>
+<ellipse cx="1060.0" cy="229.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="1060.0" y="225.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Выбор периода и</text>
+<text x="1060.0" y="241.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">фильтров</text>
+<ellipse cx="1060.0" cy="450.0" rx="110.0" ry="41.0" fill="#fff" stroke="#000"/>
+<text x="1060.0" y="438.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Расчёт</text>
+<text x="1060.0" y="454.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">агрегированных</text>
+<text x="1060.0" y="470.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">показателей</text>
+<ellipse cx="230.0" cy="689.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="230.0" y="685.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Отчёт об использовании</text>
+<text x="230.0" y="701.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">сервиса</text>
+<ellipse cx="600.0" cy="689.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="600.0" y="685.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Отчёт о конверсии в</text>
+<text x="600.0" y="701.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">премиум</text>
+<ellipse cx="970.0" cy="690.0" rx="120.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="970.0" y="694.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Отчёт о генерациях</text>
+<rect x="55" y="226" width="130" height="48" fill="#fff" stroke="#000"/>
+<text x="120.0" y="244.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«worker»</text>
+<text x="120.0" y="261.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Аналитик</text>
+<rect x="55" y="396" width="130" height="48" fill="#fff" stroke="#000"/>
+<text x="120.0" y="414.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«worker»</text>
+<text x="120.0" y="431.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Владелец</text>
+<path d="M185.0,261.0 L493.0,312.0" fill="none" stroke="#000"/>
+<path d="M481.6,315.8 L493.0,312.0 L483.5,304.7" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M185.0,408.0 L496.0,349.0" fill="none" stroke="#000"/>
+<path d="M486.6,356.5 L496.0,349.0 L484.5,345.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M699.0,308.0 L975.0,248.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M965.8,255.8 L975.0,248.0 L963.4,244.7" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M691.0,354.0 L970.0,426.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M958.3,428.8 L970.0,426.0 L961.1,417.9" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M600.0,110.0 L600.0,295.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M594.4,284.4 L600.0,295.0 L605.6,284.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M259.0,661.0 L514.0,414.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M510.3,425.4 L514.0,414.0 L502.5,417.3" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M600.0,660.0 L600.0,414.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M605.6,424.6 L600.0,414.0 L594.4,424.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M950.0,670.0 L686.0,414.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M697.5,417.3 L686.0,414.0 L689.7,425.4" fill="none" stroke="#000" stroke-width="1"/>
+<text x="830.0" y="252.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="837.0" y="364.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="750.0" y="178.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="750.0" y="194.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Просмотр результата)</text>
+<text x="750.0" y="210.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Выгрузить CSV»]</text>
+<text x="240.0" y="520.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="240.0" y="536.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор отчёта)</text>
+<text x="240.0" y="552.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран отчёт</text>
+<text x="240.0" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«Использование»]</text>
+<text x="700.0" y="570.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="700.0" y="586.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор отчёта)</text>
+<text x="700.0" y="602.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран отчёт</text>
+<text x="700.0" y="618.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«Конверсия»]</text>
+<text x="960.0" y="520.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="960.0" y="536.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор отчёта)</text>
+<text x="960.0" y="552.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран отчёт</text>
+<text x="960.0" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«Генерации»]</text>
+</svg>

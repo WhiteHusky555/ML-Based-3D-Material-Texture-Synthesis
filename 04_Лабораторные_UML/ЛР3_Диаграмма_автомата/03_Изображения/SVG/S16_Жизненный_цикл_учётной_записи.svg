@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="825" height="460" viewBox="5 52 825 460">
+<rect x="5" y="52" width="825" height="460" fill="#fff"/>
+<circle cx="340.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="202" y="132" width="276" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="340.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Адрес не подтверждён</text>
+<line x1="202" y1="158" x2="478" y2="158" stroke="#000"/>
+<text x="210.0" y="175.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Отправка письма подтверждения</text>
+<text x="210.0" y="191.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Ожидание перехода по ссылке</text>
+<rect x="231" y="240" width="218" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="340.0" y="258.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Активна</text>
+<line x1="231" y1="266" x2="449" y2="266" stroke="#000"/>
+<text x="239.0" y="283.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Неудачных попыток := 0</text>
+<text x="239.0" y="299.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Обслуживание запросов</text>
+<rect x="590" y="348" width="220" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="700.0" y="366.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Вход заблокирован</text>
+<line x1="590" y1="374" x2="810" y2="374" stroke="#000"/>
+<text x="598.0" y="391.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Блокировка на 15 минут</text>
+<rect x="248" y="440" width="184" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="340.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Заблокирована</text>
+<line x1="248" y1="466" x2="432" y2="466" stroke="#000"/>
+<text x="256.0" y="483.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Отклонение запросов</text>
+<path d="M340.0,92.0 L340.0,132.0" fill="none" stroke="#000"/>
+<path d="M335.0,123.3 L340.0,132.0 L345.0,123.3" fill="none" stroke="#000"/>
+<path d="M340.0,200.0 L340.0,240.0" fill="none" stroke="#000"/>
+<path d="M335.0,231.3 L340.0,240.0 L345.0,231.3" fill="none" stroke="#000"/>
+<path d="M449.0,274.0 L700.0,274.0 L700.0,348.0" fill="none" stroke="#000"/>
+<path d="M695.0,339.3 L700.0,348.0 L705.0,339.3" fill="none" stroke="#000"/>
+<path d="M590.0,374.0 L430.0,374.0 L430.0,308.0" fill="none" stroke="#000"/>
+<path d="M435.0,316.7 L430.0,308.0 L425.0,316.7" fill="none" stroke="#000"/>
+<path d="M340.0,308.0 L340.0,440.0" fill="none" stroke="#000"/>
+<path d="M335.0,431.3 L340.0,440.0 L345.0,431.3" fill="none" stroke="#000"/>
+<path d="M248.0,466.0 L25.0,466.0 L25.0,274.0 L231.0,274.0" fill="none" stroke="#000"/>
+<path d="M222.3,279.0 L231.0,274.0 L222.3,269.0" fill="none" stroke="#000"/>
+<rect x="345.2" y="205.0" width="215.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="453.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">переход по ссылке подтверждения</text>
+<rect x="456.4" y="254.0" width="173.1" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="543.0" y="266.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 неудачных попыток входа</text>
+<rect x="476.1" y="354.0" width="105.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="529.0" y="366.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">прошло 15 минут</text>
+<rect x="40.8" y="314.0" width="292.3" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="187.0" y="326.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">заблокирована администратором / Версия += 1</text>
+<rect x="134.3" y="446.0" width="105.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="187.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">разблокирована</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="957" height="576" viewBox="45 52 957 576">
+<rect x="45" y="52" width="957" height="576" fill="#fff"/>
+<circle cx="510.0" cy="82.0" r="10.0" fill="#000"/>
+<circle cx="510.0" cy="140.0" r="8.0" fill="#000"/>
+<rect x="378" y="188" width="264" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="510.0" y="206.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Загрузка истории</text>
+<line x1="378" y1="214" x2="642" y2="214" stroke="#000"/>
+<text x="386.0" y="231.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Запрос материалов пользователя</text>
+<polygon points="496,306.0 510.0,295 524,306.0 510.0,317" fill="#fff" stroke="#000"/>
+<rect x="86" y="280" width="248" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="210.0" y="298.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Пустая история</text>
+<line x1="86" y1="306" x2="334" y2="306" stroke="#000"/>
+<text x="94.0" y="323.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Предложение создать материал</text>
+<circle cx="210.0" cy="398.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="210.0" cy="398.0" r="8.0" fill="#000"/>
+<rect x="375" y="372" width="270" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="510.0" y="390.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Список материалов</text>
+<line x1="375" y1="398" x2="645" y2="398" stroke="#000"/>
+<text x="383.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ списка и ожидание действия</text>
+<circle cx="925.0" cy="398.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="925.0" cy="398.0" r="8.0" fill="#000"/>
+<rect x="65" y="464" width="290" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="210.0" y="482.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Создание варианта</text>
+<line x1="65" y1="490" x2="355" y2="490" stroke="#000"/>
+<text x="73.0" y="507.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Копирование параметров в генератор</text>
+<rect x="396" y="464" width="228" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="510.0" y="482.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Открытие материала</text>
+<line x1="396" y1="490" x2="624" y2="490" stroke="#000"/>
+<text x="404.0" y="507.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Открытие в генераторе и 3D</text>
+<rect x="665" y="464" width="240" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="785.0" y="482.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Подтверждение удаления</text>
+<line x1="665" y1="490" x2="905" y2="490" stroke="#000"/>
+<text x="673.0" y="507.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ диалога подтверждения</text>
+<circle cx="210.0" cy="582.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="210.0" cy="582.0" r="8.0" fill="#000"/>
+<circle cx="510.0" cy="582.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="510.0" cy="582.0" r="8.0" fill="#000"/>
+<rect x="678" y="556" width="214" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="785.0" y="574.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Удаление</text>
+<line x1="678" y1="582" x2="892" y2="582" stroke="#000"/>
+<text x="686.0" y="599.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Удаление записи и файлов</text>
+<circle cx="955.0" cy="582.0" r="8.0" fill="#000"/>
+<path d="M510.0,92.0 L510.0,132.0" fill="none" stroke="#000"/>
+<path d="M505.0,123.3 L510.0,132.0 L515.0,123.3" fill="none" stroke="#000"/>
+<path d="M510.0,148.0 L510.0,188.0" fill="none" stroke="#000"/>
+<path d="M505.0,179.3 L510.0,188.0 L515.0,179.3" fill="none" stroke="#000"/>
+<path d="M510.0,240.0 L510.0,295.0" fill="none" stroke="#000"/>
+<path d="M505.0,286.3 L510.0,295.0 L515.0,286.3" fill="none" stroke="#000"/>
+<path d="M496.0,306.0 L334.0,306.0" fill="none" stroke="#000"/>
+<path d="M342.7,301.0 L334.0,306.0 L342.7,311.0" fill="none" stroke="#000"/>
+<path d="M510.0,317.0 L510.0,372.0" fill="none" stroke="#000"/>
+<path d="M505.0,363.3 L510.0,372.0 L515.0,363.3" fill="none" stroke="#000"/>
+<path d="M210.0,332.0 L210.0,385.0" fill="none" stroke="#000"/>
+<path d="M205.0,376.3 L210.0,385.0 L215.0,376.3" fill="none" stroke="#000"/>
+<path d="M510.0,424.0 L510.0,464.0" fill="none" stroke="#000"/>
+<path d="M505.0,455.3 L510.0,464.0 L515.0,455.3" fill="none" stroke="#000"/>
+<path d="M390.0,424.0 L390.0,450.0 L210.0,450.0 L210.0,464.0" fill="none" stroke="#000"/>
+<path d="M205.0,455.3 L210.0,464.0 L215.0,455.3" fill="none" stroke="#000"/>
+<path d="M630.0,424.0 L630.0,450.0 L785.0,450.0 L785.0,464.0" fill="none" stroke="#000"/>
+<path d="M780.0,455.3 L785.0,464.0 L790.0,455.3" fill="none" stroke="#000"/>
+<path d="M645.0,398.0 L912.0,398.0" fill="none" stroke="#000"/>
+<path d="M903.3,403.0 L912.0,398.0 L903.3,393.0" fill="none" stroke="#000"/>
+<path d="M210.0,516.0 L210.0,569.0" fill="none" stroke="#000"/>
+<path d="M205.0,560.3 L210.0,569.0 L215.0,560.3" fill="none" stroke="#000"/>
+<path d="M510.0,516.0 L510.0,569.0" fill="none" stroke="#000"/>
+<path d="M505.0,560.3 L510.0,569.0 L515.0,560.3" fill="none" stroke="#000"/>
+<path d="M785.0,516.0 L785.0,556.0" fill="none" stroke="#000"/>
+<path d="M780.0,547.3 L785.0,556.0 L790.0,547.3" fill="none" stroke="#000"/>
+<path d="M905.0,490.0 L955.0,490.0 L955.0,574.0" fill="none" stroke="#000"/>
+<path d="M950.0,565.3 L955.0,574.0 L960.0,565.3" fill="none" stroke="#000"/>
+<path d="M892.0,582.0 L947.0,582.0" fill="none" stroke="#000"/>
+<path d="M938.3,587.0 L947.0,582.0 L938.3,577.0" fill="none" stroke="#000"/>
+<path d="M963.0,582.0 L982.0,582.0 L982.0,140.0 L518.0,140.0" fill="none" stroke="#000"/>
+<path d="M526.7,135.0 L518.0,140.0 L526.7,145.0" fill="none" stroke="#000"/>
+<rect x="384.6" y="286.0" width="102.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="436.0" y="298.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[история пуста]</text>
+<rect x="515.8" y="323.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="536.0" y="335.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="515.5" y="429.0" width="109.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="570.0" y="441.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбран материал</text>
+<rect x="262.8" y="431.0" width="118.5" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="322.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Изменить»</text>
+<rect x="637.3" y="431.0" width="111.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="693.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Удалить»</text>
+<rect x="652.3" y="379.0" width="111.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="708.0" y="391.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Закрыть»</text>
+<rect x="790.4" y="521.0" width="91.2" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="836.0" y="533.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">подтверждено</text>
+<rect x="912.6" y="471.0" width="62.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="944.0" y="483.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">отменено</text>
+</svg>

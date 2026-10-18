@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876" height="592" viewBox="22 52 876 592">
+<rect x="22" y="52" width="876" height="592" fill="#fff"/>
+<circle cx="280.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="137" y="132" width="286" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Загрузка карт</text>
+<line x1="137" y1="158" x2="423" y2="158" stroke="#000"/>
+<text x="145.0" y="175.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Загрузка карт по временным ссылкам</text>
+<rect x="133" y="224" width="294" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Осмотр материала</text>
+<line x1="133" y1="250" x2="427" y2="250" stroke="#000"/>
+<text x="141.0" y="267.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Объект := «сфера»</text>
+<text x="141.0" y="283.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ материала и ожидание действия</text>
+<circle cx="160.0" cy="358.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="160.0" cy="358.0" r="8.0" fill="#000"/>
+<polygon points="266,358.0 280.0,347 294,358.0 280.0,369" fill="#fff" stroke="#000"/>
+<polygon points="266,450.0 280.0,439 294,450.0 280.0,461" fill="#fff" stroke="#000"/>
+<polygon points="266,542.0 280.0,531 294,542.0 280.0,553" fill="#fff" stroke="#000"/>
+<rect x="577" y="332" width="196" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="675.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Показ карты</text>
+<line x1="577" y1="358" x2="773" y2="358" stroke="#000"/>
+<text x="585.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ выбранной карты</text>
+<rect x="560" y="424" width="230" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="675.0" y="442.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Замена объекта</text>
+<line x1="560" y1="450" x2="790" y2="450" stroke="#000"/>
+<text x="568.0" y="467.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ материала на объекте</text>
+<rect x="549" y="516" width="252" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="675.0" y="534.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Своя модель</text>
+<line x1="549" y1="542" x2="801" y2="542" stroke="#000"/>
+<text x="557.0" y="559.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Наложение материала на модель</text>
+<circle cx="870.0" cy="358.0" r="8.0" fill="#000"/>
+<circle cx="870.0" cy="450.0" r="8.0" fill="#000"/>
+<circle cx="870.0" cy="542.0" r="8.0" fill="#000"/>
+<circle cx="870.0" cy="616.0" r="8.0" fill="#000"/>
+<path d="M280.0,92.0 L280.0,132.0" fill="none" stroke="#000"/>
+<path d="M275.0,123.3 L280.0,132.0 L285.0,123.3" fill="none" stroke="#000"/>
+<path d="M280.0,184.0 L280.0,224.0" fill="none" stroke="#000"/>
+<path d="M275.0,215.3 L280.0,224.0 L285.0,215.3" fill="none" stroke="#000"/>
+<path d="M160.0,292.0 L160.0,302.0 L160.0,345.0" fill="none" stroke="#000"/>
+<path d="M155.0,336.3 L160.0,345.0 L165.0,336.3" fill="none" stroke="#000"/>
+<path d="M280.0,292.0 L280.0,347.0" fill="none" stroke="#000"/>
+<path d="M275.0,338.3 L280.0,347.0 L285.0,338.3" fill="none" stroke="#000"/>
+<path d="M294.0,358.0 L577.0,358.0" fill="none" stroke="#000"/>
+<path d="M568.3,363.0 L577.0,358.0 L568.3,353.0" fill="none" stroke="#000"/>
+<path d="M280.0,369.0 L280.0,439.0" fill="none" stroke="#000"/>
+<path d="M275.0,430.3 L280.0,439.0 L285.0,430.3" fill="none" stroke="#000"/>
+<path d="M294.0,450.0 L560.0,450.0" fill="none" stroke="#000"/>
+<path d="M551.3,455.0 L560.0,450.0 L551.3,445.0" fill="none" stroke="#000"/>
+<path d="M280.0,461.0 L280.0,531.0" fill="none" stroke="#000"/>
+<path d="M275.0,522.3 L280.0,531.0 L285.0,522.3" fill="none" stroke="#000"/>
+<path d="M294.0,542.0 L549.0,542.0" fill="none" stroke="#000"/>
+<path d="M540.3,547.0 L549.0,542.0 L540.3,537.0" fill="none" stroke="#000"/>
+<path d="M280.0,553.0 L280.0,616.0 L862.0,616.0" fill="none" stroke="#000"/>
+<path d="M853.3,621.0 L862.0,616.0 L853.3,611.0" fill="none" stroke="#000"/>
+<path d="M773.0,358.0 L862.0,358.0" fill="none" stroke="#000"/>
+<path d="M853.3,363.0 L862.0,358.0 L853.3,353.0" fill="none" stroke="#000"/>
+<path d="M790.0,450.0 L862.0,450.0" fill="none" stroke="#000"/>
+<path d="M853.3,455.0 L862.0,450.0 L853.3,445.0" fill="none" stroke="#000"/>
+<path d="M801.0,542.0 L862.0,542.0" fill="none" stroke="#000"/>
+<path d="M853.3,547.0 L862.0,542.0 L853.3,537.0" fill="none" stroke="#000"/>
+<path d="M870.0,608.0 L870.0,550.0" fill="none" stroke="#000"/>
+<path d="M875.0,558.7 L870.0,550.0 L865.0,558.7" fill="none" stroke="#000"/>
+<path d="M870.0,534.0 L870.0,458.0" fill="none" stroke="#000"/>
+<path d="M875.0,466.7 L870.0,458.0 L865.0,466.7" fill="none" stroke="#000"/>
+<path d="M870.0,442.0 L870.0,366.0" fill="none" stroke="#000"/>
+<path d="M875.0,374.7 L870.0,366.0 L865.0,374.7" fill="none" stroke="#000"/>
+<path d="M870.0,350.0 L870.0,258.0 L427.0,258.0" fill="none" stroke="#000"/>
+<path d="M435.7,253.0 L427.0,258.0 L435.7,263.0" fill="none" stroke="#000"/>
+<rect x="42.3" y="298.0" width="111.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="98.0" y="310.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Закрыть»</text>
+<rect x="285.1" y="298.0" width="87.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="329.0" y="310.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбран режим</text>
+<rect x="301.9" y="338.0" width="156.1" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="380.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[выбрана вкладка карты]</text>
+<rect x="285.8" y="375.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="306.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="301.9" y="431.0" width="240.3" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="422.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[выбрана форма] / Объект := выбранный</text>
+<rect x="285.8" y="467.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="306.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="301.8" y="523.0" width="236.5" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="420.0" y="535.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[тариф «Премиум»] / Объект := «модель»</text>
+<rect x="285.8" y="559.0" width="222.5" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="397.0" y="571.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else] / Показ «доступно в Премиум»</text>
+</svg>

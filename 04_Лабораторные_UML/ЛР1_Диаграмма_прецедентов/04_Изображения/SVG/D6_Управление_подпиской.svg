@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1167" height="749" viewBox="45 60 1167 749">
+<rect x="45" y="60" width="1167" height="749" fill="#fff"/>
+<ellipse cx="620.0" cy="330.0" rx="120.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="620.0" y="334.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Управление подпиской</text>
+<line x1="500" y1="370" x2="740" y2="370" stroke="#000"/>
+<text x="505.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
+<ellipse cx="620.0" cy="109.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="620.0" y="105.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Просмотр тарифов и</text>
+<text x="620.0" y="121.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">текущей подписки</text>
+<ellipse cx="330.0" cy="559.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="330.0" y="555.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Оформление</text>
+<text x="330.0" y="571.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">премиум-подписки</text>
+<ellipse cx="910.0" cy="560.0" rx="110.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="910.0" y="564.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Отмена подписки</text>
+<ellipse cx="200.0" cy="760.0" rx="100.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="200.0" y="764.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Оплата подписки</text>
+<ellipse cx="620.0" cy="759.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="620.0" y="755.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пересчёт срока хранения</text>
+<text x="620.0" y="771.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материалов</text>
+<circle cx="110.0" cy="294.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="110.0" y1="303.6" x2="110.0" y2="331.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="90.0" y1="311.6" x2="130.0" y2="311.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="331.2" x2="93.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="331.2" x2="127.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="110.0" y="371.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пользователь</text>
+<circle cx="1130.0" cy="294.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="1130.0" y1="303.6" x2="1130.0" y2="331.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1110.0" y1="311.6" x2="1150.0" y2="311.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1130.0" y1="331.2" x2="1113.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1130.0" y1="331.2" x2="1147.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="1130.0" y="371.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Платёжная система</text>
+<path d="M130.0,330.0 L500.0,330.0" fill="none" stroke="#000"/>
+<path d="M740.0,330.0 L1110.0,330.0" fill="none" stroke="#000"/>
+<path d="M1099.4,335.6 L1110.0,330.0 L1099.4,324.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M620.0,295.0 L620.0,139.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M625.6,149.6 L620.0,139.0 L614.4,149.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M365.0,532.0 L537.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M532.2,407.0 L537.0,396.0 L525.2,398.2" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M885.0,541.0 L703.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M714.8,398.2 L703.0,396.0 L707.8,407.0" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M311.0,589.0 L213.0,740.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M214.0,728.0 L213.0,740.0 L223.5,734.2" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M370.0,587.0 L580.0,732.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M568.1,730.6 L580.0,732.0 L574.5,721.3" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M882.0,579.0 L660.0,732.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M665.5,721.3 L660.0,732.0 L671.9,730.6" fill="none" stroke="#000" stroke-width="1"/>
+<text x="590.0" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="320.0" y="420.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="320.0" y="436.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="320.0" y="452.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран «Премиум», подписки</text>
+<text x="320.0" y="468.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">нет]</text>
+<text x="920.0" y="420.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="920.0" y="436.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="920.0" y="452.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Отменить подписку»,</text>
+<text x="920.0" y="468.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">подписка активна]</text>
+<text x="287.0" y="684.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="492.0" y="638.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="788.0" y="683.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+</svg>

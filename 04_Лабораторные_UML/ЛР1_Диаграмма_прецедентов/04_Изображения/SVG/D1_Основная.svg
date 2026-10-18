@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1519" height="875" viewBox="-34 20 1519 875">
+<rect x="-34" y="20" width="1519" height="875" fill="#fff"/>
+<rect x="300" y="40" width="960" height="800" fill="#fff" stroke="#000"/>
+<text x="780.0" y="60.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Система генерации бесшовных PBR-материалов</text>
+<ellipse cx="440.0" cy="109.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="440.0" y="105.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Регистрация и вход в</text>
+<text x="440.0" y="121.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">систему</text>
+<line x1="330" y1="144" x2="550" y2="144" stroke="#000"/>
+<text x="335.0" y="161.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
+<ellipse cx="543.0" cy="225.0" rx="110.0" ry="26.0" fill="#fff" stroke="#000"/>
+<text x="543.0" y="229.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Генерация материала</text>
+<line x1="433" y1="256" x2="653" y2="256" stroke="#000"/>
+<text x="438.0" y="273.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Ввод описания</text>
+<text x="438.0" y="291.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Запуск генерации</text>
+<text x="438.0" y="309.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Ожидание результата</text>
+<ellipse cx="596.0" cy="375.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="596.0" y="371.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Просмотр материала в</text>
+<text x="596.0" y="387.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">3D</text>
+<line x1="486" y1="410" x2="706" y2="410" stroke="#000"/>
+<text x="491.0" y="427.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор режима</text>
+<ellipse cx="593.0" cy="505.0" rx="110.0" ry="26.0" fill="#fff" stroke="#000"/>
+<text x="593.0" y="509.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Экспорт материала</text>
+<line x1="483" y1="536" x2="703" y2="536" stroke="#000"/>
+<text x="488.0" y="553.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Подготовка карт</text>
+<ellipse cx="549.0" cy="625.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="549.0" y="621.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Работа с историей</text>
+<text x="549.0" y="637.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материалов</text>
+<line x1="439" y1="660" x2="659" y2="660" stroke="#000"/>
+<text x="444.0" y="677.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
+<ellipse cx="470.0" cy="745.0" rx="110.0" ry="26.0" fill="#fff" stroke="#000"/>
+<text x="470.0" y="749.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Управление подпиской</text>
+<line x1="360" y1="776" x2="580" y2="776" stroke="#000"/>
+<text x="365.0" y="793.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
+<ellipse cx="1080.0" cy="300.0" rx="135.0" ry="30.0" fill="#fff" stroke="#000"/>
+<text x="1080.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Администрирование системы</text>
+<line x1="945" y1="335" x2="1215" y2="335" stroke="#000"/>
+<text x="950.0" y="352.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор раздела</text>
+<ellipse cx="1080.0" cy="445.0" rx="135.0" ry="30.0" fill="#fff" stroke="#000"/>
+<text x="1080.0" y="449.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Анализ показателей системы</text>
+<line x1="945" y1="480" x2="1215" y2="480" stroke="#000"/>
+<text x="950.0" y="497.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор отчёта</text>
+<text x="950.0" y="515.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Просмотр результата</text>
+<ellipse cx="1080.0" cy="605.0" rx="135.0" ry="30.0" fill="#fff" stroke="#000"/>
+<text x="1080.0" y="601.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Управление тарифами и</text>
+<text x="1080.0" y="617.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">персоналом</text>
+<line x1="945" y1="640" x2="1215" y2="640" stroke="#000"/>
+<text x="950.0" y="657.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор раздела</text>
+<circle cx="200.0" cy="394.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="200.0" y1="403.6" x2="200.0" y2="431.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="180.0" y1="411.6" x2="220.0" y2="411.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="200.0" y1="431.2" x2="183.0" y2="455.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="200.0" y1="431.2" x2="217.0" y2="455.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="200.0" y="471.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пользователь</text>
+<circle cx="60.0" cy="394.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="60.0" y1="403.6" x2="60.0" y2="431.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="40.0" y1="411.6" x2="80.0" y2="411.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="60.0" y1="431.2" x2="43.0" y2="455.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="60.0" y1="431.2" x2="77.0" y2="455.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="60.0" y="471.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Премиум-пользователь</text>
+<circle cx="1400.0" cy="74.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="1400.0" y1="83.6" x2="1400.0" y2="111.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1380.0" y1="91.6" x2="1420.0" y2="91.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1400.0" y1="111.2" x2="1383.0" y2="135.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1400.0" y1="111.2" x2="1417.0" y2="135.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="1400.0" y="151.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Почтовый сервис</text>
+<rect x="1335" y="276" width="130" height="48" fill="#fff" stroke="#000"/>
+<text x="1400.0" y="294.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«worker»</text>
+<text x="1400.0" y="311.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Администратор</text>
+<rect x="1335" y="376" width="130" height="48" fill="#fff" stroke="#000"/>
+<text x="1400.0" y="394.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«worker»</text>
+<text x="1400.0" y="411.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Аналитик</text>
+<rect x="1335" y="471" width="130" height="48" fill="#fff" stroke="#000"/>
+<text x="1400.0" y="489.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«worker»</text>
+<text x="1400.0" y="506.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Владелец</text>
+<circle cx="1400.0" cy="794.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="1400.0" y1="803.6" x2="1400.0" y2="831.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1380.0" y1="811.6" x2="1420.0" y2="811.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1400.0" y1="831.2" x2="1383.0" y2="855.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="1400.0" y1="831.2" x2="1417.0" y2="855.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="1400.0" y="871.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Платёжная система</text>
+<path d="M220.0,403.0 L395.0,170.0" fill="none" stroke="#000"/>
+<path d="M220.0,418.0 L433.0,291.0" fill="none" stroke="#000"/>
+<path d="M220.0,427.0 L498.0,389.0" fill="none" stroke="#000"/>
+<path d="M220.0,441.0 L502.0,599.0" fill="none" stroke="#000"/>
+<path d="M220.0,453.0 L448.0,720.0" fill="none" stroke="#000"/>
+<path d="M220.0,434.0 L507.0,489.0" fill="none" stroke="#000"/>
+<path d="M495.5,492.5 L507.0,489.0 L497.7,481.5" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M80.0,430.0 L180.0,430.0" fill="none" stroke="#000"/>
+<polygon points="180.0,430.0 166.0,438.0 166.0,422.0" fill="#fff" stroke="#000" stroke-width="1"/>
+<path d="M550.0,110.0 L1380.0,110.0" fill="none" stroke="#000"/>
+<path d="M1369.4,115.6 L1380.0,110.0 L1369.4,104.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M573.0,754.0 L1380.0,828.0" fill="none" stroke="#000"/>
+<path d="M1368.9,832.6 L1380.0,828.0 L1370.0,821.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M1335.0,300.0 L1215.0,300.0" fill="none" stroke="#000"/>
+<path d="M1335.0,409.0 L1194.0,429.0" fill="none" stroke="#000"/>
+<path d="M1203.7,421.9 L1194.0,429.0 L1205.3,433.1" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M1335.0,485.0 L1190.0,462.0" fill="none" stroke="#000"/>
+<path d="M1201.3,458.1 L1190.0,462.0 L1199.6,469.2" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M1335.0,517.0 L1153.0,580.0" fill="none" stroke="#000"/>
+<path d="M735.0,217.0 L651.0,220.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M787.0,525.0 L673.0,436.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M735.0,536.0 L674.0,523.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M735.0,578.0 L629.0,605.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M1088.0,210.0 L1082.0,270.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M915.0,395.0 L1000.0,421.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M735.0,669.0 L540.0,725.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M1087.0,690.0 L1085.0,666.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M735,175 H905 L915,185 V251 H735 Z" fill="#fff" stroke="#000"/>
+<path d="M905,175 V185 H915" fill="none" stroke="#000"/>
+<text x="741.0" y="192.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Пополняются база</text>
+<text x="741.0" y="208.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">«Материалы» и хранилище</text>
+<text x="741.0" y="224.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">S3; учитывается квота</text>
+<text x="741.0" y="240.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">тарифа</text>
+<path d="M975,150 H1195 L1205,160 V210 H975 Z" fill="#fff" stroke="#000"/>
+<path d="M1195,150 V160 H1205" fill="none" stroke="#000"/>
+<text x="981.0" y="167.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Ведутся базы «Пользователи и</text>
+<text x="981.0" y="183.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">тарифы» и «Пресеты», обновляются</text>
+<text x="981.0" y="199.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">веса моделей</text>
+<path d="M735,330 H905 L915,340 V406 H735 Z" fill="#fff" stroke="#000"/>
+<path d="M905,330 V340 H915" fill="none" stroke="#000"/>
+<text x="741.0" y="347.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Используются</text>
+<text x="741.0" y="363.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">обезличенные данные баз</text>
+<text x="741.0" y="379.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">«Материалы» и</text>
+<text x="741.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">«Пользователи и тарифы»</text>
+<path d="M735,525 H905 L915,535 V585 H735 Z" fill="#fff" stroke="#000"/>
+<path d="M905,525 V535 H915" fill="none" stroke="#000"/>
+<text x="741.0" y="542.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Используются база</text>
+<text x="741.0" y="558.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">«Материалы» и хранилище</text>
+<text x="741.0" y="574.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">S3</text>
+<path d="M735,605 H905 L915,615 V681 H735 Z" fill="#fff" stroke="#000"/>
+<path d="M905,605 V615 H915" fill="none" stroke="#000"/>
+<text x="741.0" y="622.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Меняет тариф в базе</text>
+<text x="741.0" y="638.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">«Пользователи и тарифы»;</text>
+<text x="741.0" y="654.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">от тарифа зависят</text>
+<text x="741.0" y="670.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">возможности UC2–UC5</text>
+<path d="M975,690 H1195 L1205,700 V750 H975 Z" fill="#fff" stroke="#000"/>
+<path d="M1195,690 V700 H1205" fill="none" stroke="#000"/>
+<text x="981.0" y="707.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Меняются тарифы и роли</text>
+<text x="981.0" y="723.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">сотрудников; ведётся журнал</text>
+<text x="981.0" y="739.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">аудита</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1155" height="665" viewBox="35 174 1155 665">
+<rect x="35" y="174" width="1155" height="665" fill="#fff"/>
+<ellipse cx="600.0" cy="300.0" rx="130.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="600.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Управление тарифами и</text>
+<text x="600.0" y="312.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">персоналом</text>
+<line x1="470" y1="340" x2="730" y2="340" stroke="#000"/>
+<text x="475.0" y="357.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор раздела</text>
+<ellipse cx="1060.0" cy="299.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="1060.0" y="295.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Формирование</text>
+<text x="1060.0" y="311.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">финансового отчёта</text>
+<ellipse cx="230.0" cy="559.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="230.0" y="555.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Изменение цен и лимитов</text>
+<text x="230.0" y="571.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">тарифов</text>
+<ellipse cx="600.0" cy="559.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="600.0" y="555.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Назначение роли</text>
+<text x="600.0" y="571.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">сотруднику</text>
+<ellipse cx="970.0" cy="560.0" rx="120.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="970.0" y="564.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Отзыв роли сотрудника</text>
+<ellipse cx="415.0" cy="789.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="415.0" y="785.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Запись в журнал</text>
+<text x="415.0" y="801.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">аудита</text>
+<ellipse cx="970.0" cy="789.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="970.0" y="785.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Аннулирование сеансов</text>
+<text x="970.0" y="801.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">сотрудника</text>
+<rect x="55" y="276" width="130" height="48" fill="#fff" stroke="#000"/>
+<text x="120.0" y="294.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«worker»</text>
+<text x="120.0" y="311.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Владелец</text>
+<path d="M185.0,300.0 L470.0,300.0" fill="none" stroke="#000"/>
+<path d="M950.0,300.0 L730.0,300.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M740.6,294.4 L730.0,300.0 L740.6,305.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M270.0,532.0 L506.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M500.6,376.7 L506.0,366.0 L494.1,367.5" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M600.0,530.0 L600.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M605.6,376.6 L600.0,366.0 L594.4,376.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M942.0,541.0 L694.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M705.9,367.5 L694.0,366.0 L699.4,376.7" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M253.0,588.0 L392.0,761.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M381.0,756.3 L392.0,761.0 L389.8,749.2" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M577.0,588.0 L438.0,761.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M440.2,749.2 L438.0,761.0 L449.0,756.3" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M925.0,579.0 L475.0,765.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M482.6,755.7 L475.0,765.0 L486.9,766.2" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M970.0,580.0 L970.0,760.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M964.4,749.4 L970.0,760.0 L975.6,749.4" fill="none" stroke="#000" stroke-width="1"/>
+<text x="860.0" y="210.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="860.0" y="226.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="860.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран раздел</text>
+<text x="860.0" y="258.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«Финансы»]</text>
+<text x="250.0" y="418.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="250.0" y="434.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="250.0" y="450.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран раздел «Тарифы»]</text>
+<text x="700.0" y="450.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="700.0" y="466.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="700.0" y="482.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[раздел «Персонал»,</text>
+<text x="700.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">нажата «Назначить роль»]</text>
+<text x="900.0" y="400.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="900.0" y="416.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="900.0" y="432.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[раздел «Персонал»,</text>
+<text x="900.0" y="448.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">нажата «Отозвать роль»]</text>
+<text x="345.0" y="659.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="530.0" y="696.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="711.0" y="703.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="999.0" y="673.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+</svg>

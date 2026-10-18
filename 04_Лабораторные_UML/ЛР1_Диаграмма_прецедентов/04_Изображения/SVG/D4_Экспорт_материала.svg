@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1095" height="509" viewBox="45 140 1095 509">
+<rect x="45" y="140" width="1095" height="509" fill="#fff"/>
+<ellipse cx="560.0" cy="330.0" rx="120.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="560.0" y="334.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Экспорт материала</text>
+<line x1="440" y1="370" x2="680" y2="370" stroke="#000"/>
+<text x="445.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Подготовка карт</text>
+<ellipse cx="1010.0" cy="180.0" rx="110.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="1010.0" y="184.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Выбор целевого движка</text>
+<ellipse cx="1010.0" cy="329.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="1010.0" y="325.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Упаковка карт под</text>
+<text x="1010.0" y="341.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">движок</text>
+<ellipse cx="1010.0" cy="479.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="1010.0" y="475.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Формирование архива</text>
+<text x="1010.0" y="491.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материала</text>
+<ellipse cx="370.0" cy="599.5" rx="130.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="370.0" y="595.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Перевод карты нормалей в</text>
+<text x="370.0" y="611.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">формат DirectX</text>
+<ellipse cx="760.0" cy="599.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="760.0" y="595.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Экспорт в расширенных</text>
+<text x="760.0" y="611.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">форматах</text>
+<circle cx="110.0" cy="294.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="110.0" y1="303.6" x2="110.0" y2="331.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="90.0" y1="311.6" x2="130.0" y2="311.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="331.2" x2="93.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="331.2" x2="127.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="110.0" y="371.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пользователь</text>
+<path d="M130.0,330.0 L440.0,330.0" fill="none" stroke="#000"/>
+<path d="M429.4,335.6 L440.0,330.0 L429.4,324.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M639.0,304.0 L957.0,198.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M948.7,206.7 L957.0,198.0 L945.2,196.0" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M680.0,330.0 L900.0,330.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M889.4,335.6 L900.0,330.0 L889.4,324.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M639.0,356.0 L941.0,457.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M929.2,459.0 L941.0,457.0 L932.7,448.3" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M391.0,570.0 L513.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M511.5,407.9 L513.0,396.0 L502.3,401.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M738.0,570.0 L609.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M619.8,401.2 L609.0,396.0 L610.8,407.9" fill="none" stroke="#000" stroke-width="1"/>
+<text x="788.0" y="226.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="790.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="799.0" y="381.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="300.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="300.0" y="474.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Подготовка карт)</text>
+<text x="300.0" y="490.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран Unreal Engine]</text>
+<text x="790.0" y="450.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="790.0" y="466.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Подготовка карт)</text>
+<text x="790.0" y="482.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[тариф «Премиум», выбраны</text>
+<text x="790.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">16 бит / EXR / glb]</text>
+</svg>

@@ -1,0 +1,881 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body>
+<title>Тема ВКР: генерация текстур</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#E9EDEC; --surface:#FFFFFF; --ink:#172023; --muted:#5A676A; --line:#D5DBDA; --soft:#F2F4F3;
+  --own:#1F7A66; --own-bg:#E2F1EC;
+  --wrap:#A5620F; --wrap-bg:#F7EBDA;
+  --ext:#4F5E78; --ext-bg:#E6EAF1;
+  --opt:#8A8F94;
+  --good:#2E7A3C; --mid:#A0600E; --bad:#B03A33;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1315; --surface:#182023; --ink:#E6ECEB; --muted:#9AA7A9; --line:#2C3639; --soft:#1F282B;
+    --own:#5CC4A8; --own-bg:#16312A;
+    --wrap:#E3A456; --wrap-bg:#35270F;
+    --ext:#97A8C8; --ext-bg:#1F2738;
+    --opt:#7C8488;
+    --good:#7FC98A; --mid:#E3A456; --bad:#EE8A82;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1315; --surface:#182023; --ink:#E6ECEB; --muted:#9AA7A9; --line:#2C3639; --soft:#1F282B;
+  --own:#5CC4A8; --own-bg:#16312A;
+  --wrap:#E3A456; --wrap-bg:#35270F;
+  --ext:#97A8C8; --ext-bg:#1F2738;
+  --opt:#7C8488;
+  --good:#7FC98A; --mid:#E3A456; --bad:#EE8A82;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);padding-inline:16px;padding-block:16px}
+.deck{display:grid;gap:14px;justify-items:center}
+.frame{position:relative;overflow:hidden;border-radius:10px;background:var(--surface);box-shadow:0 0 0 1px var(--line),0 18px 40px -24px rgba(0,0,0,.45)}
+.slide{position:absolute;top:0;left:0;width:1280px;height:720px;transform-origin:0 0;padding:48px 64px 52px;display:flex;flex-direction:column;gap:22px;background:var(--surface);color:var(--ink);overflow:hidden;font-size:17px;line-height:1.5}
+.foot{position:absolute;left:64px;right:64px;bottom:18px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.03em}
+.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center;font-size:14px}
+.toolbar button{font:inherit;font-size:14px;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.toolbar button:hover{border-color:var(--own)}
+.toolbar button:focus-visible{outline:2px solid var(--own);outline-offset:2px}
+.toolbar .count{font-family:var(--mono);min-width:70px;text-align:center;font-variant-numeric:tabular-nums}
+.deck.list .nav{display:none}
+
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.sh{display:grid;gap:8px}
+.sh h2{font-family:var(--display);font-weight:600;font-size:32px;line-height:1.15;letter-spacing:-.01em}
+.lead{font-size:18px;color:var(--muted);max-width:980px}
+.mono{font-family:var(--mono)}
+.tag{display:inline-block;font-family:var(--mono);font-size:12px;padding:2px 8px;border-radius:4px;white-space:nowrap}
+.tag.own{background:var(--own-bg);color:var(--own)}
+.tag.wrap{background:var(--wrap-bg);color:var(--wrap)}
+.tag.ext{background:var(--ext-bg);color:var(--ext)}
+.legend{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;padding:3px 10px;border-radius:999px;border:1px solid}
+.chip i{width:9px;height:9px;border-radius:2px;display:block}
+.c-own{color:var(--own);background:var(--own-bg);border-color:var(--own)} .c-own i{background:var(--own)}
+.c-wrap{color:var(--wrap);background:var(--wrap-bg);border-color:var(--wrap)} .c-wrap i{background:var(--wrap)}
+.c-ext{color:var(--ext);background:var(--ext-bg);border-color:var(--ext)} .c-ext i{background:var(--ext)}
+canvas.pic{display:block;border-radius:6px;background:var(--soft)}
+.px{image-rendering:pixelated}
+.cap{font-size:12px;color:var(--muted)}
+
+/* 1 title */
+.s-title{justify-content:space-between}
+.s-title h1{font-family:var(--body);font-weight:700;font-size:40px;line-height:1.18;letter-spacing:-.015em;max-width:1120px}
+.s-title .meta{display:flex;gap:28px;flex-wrap:wrap;font-size:17px;color:var(--muted)}
+.s-title .meta b{color:var(--ink);font-weight:600}
+.band{display:grid;grid-template-columns:repeat(4,190px);gap:0 40px;align-items:start;position:relative}
+.band figure{margin:0;display:grid;gap:8px;position:relative}
+.band figure:not(:last-child)::after{content:"→";position:absolute;right:-31px;top:78px;font-size:22px;color:var(--muted)}
+.band figcaption{font-size:13px;color:var(--muted)}
+.band figcaption b{display:block;color:var(--ink);font-size:14px}
+
+/* 2 problem */
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:10px;align-content:start;background:var(--surface)}
+.card h3{font-size:19px}
+.card .plus,.card .minus{font-size:15px;display:grid;grid-template-columns:22px 1fr}
+.card .plus::before{content:"+";color:var(--own);font-weight:700}
+.card .minus::before{content:"−";color:var(--wrap);font-weight:700}
+.idea{border-radius:10px;background:var(--own-bg);color:var(--ink);padding:20px 24px;display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center}
+.idea span{font-family:var(--display);font-size:18px;color:var(--own)}
+.idea p{font-size:19px}
+
+/* 3 goal */
+.goal-grid{display:grid;grid-template-columns:1fr 420px;gap:36px;flex:1}
+.goal{font-size:21px;line-height:1.45;border-left:4px solid var(--own);padding-left:18px}
+.tasks{list-style:none;margin:0;padding:0;counter-reset:t;display:grid;gap:8px}
+.tasks li{display:grid;grid-template-columns:34px 1fr;font-size:16px;line-height:1.4}
+.tasks li::before{counter-increment:t;content:counter(t);font-family:var(--mono);font-weight:600;color:var(--own)}
+.side{display:grid;gap:14px;align-content:start}
+.box{border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:grid;gap:6px;font-size:15px}
+.box h4{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-family:var(--mono);font-weight:600}
+
+/* 4 pipeline */
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:0 28px}
+.pipe .inp{grid-row:1;font-size:13px;border:1px dashed var(--muted);border-radius:8px;padding:6px 10px;color:var(--muted);position:relative;margin-bottom:22px}
+.pipe .inp::after{content:"↓";position:absolute;left:50%;bottom:-22px;transform:translateX(-50%);color:var(--muted)}
+.pipe .inp b{color:var(--ink);font-weight:600}
+.stage{grid-row:2;display:grid;gap:8px;align-content:start;position:relative}
+.stage:not(:last-of-type)::after{content:"→";position:absolute;right:-22px;top:78px;font-size:20px;color:var(--muted)}
+.stage canvas{width:176px;height:176px}
+.stage h3{font-size:16px}
+.stage p{font-size:14px;color:var(--muted);line-height:1.4}
+.stage .n{font-family:var(--mono);font-size:12px;color:var(--muted)}
+
+/* 5 nn */
+.nn{display:grid;grid-template-columns:1.6fr 1fr;gap:22px;flex:1}
+.panel{border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:grid;gap:12px;align-content:start}
+.panel h3{font-size:18px}
+.panel .sub{font-family:var(--mono);font-size:13px;color:var(--wrap)}
+.guides{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.guide{border-radius:8px;padding:10px 12px;font-size:14px;line-height:1.35;background:var(--soft);position:relative}
+.guide b{display:block;font-size:14px}
+.frames{display:flex;align-items:center;gap:8px}
+.frames canvas{width:96px;height:96px}
+.frames span{color:var(--muted)}
+.frames-cap{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);width:544px}
+.mods2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mods2 div{font-size:14px;line-height:1.35;border-top:2px solid var(--ink);padding-top:8px}
+.mods2 b{display:block}
+.sr{display:flex;gap:12px;align-items:center}
+.sr canvas{width:110px;height:110px}
+.plain{font-size:14px;color:var(--muted);line-height:1.45}
+.plain b{color:var(--ink)}
+
+/* 6 coursework */
+.cw{display:grid;grid-template-columns:1fr 150px 1fr;gap:18px;align-items:stretch;flex:1}
+.cw .panel ul{margin:0;padding-left:18px;font-size:15px;display:grid;gap:4px}
+.handoff{display:grid;place-content:center;gap:8px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.handoff b{font-size:30px;color:var(--ink);font-weight:400;font-family:var(--body)}
+.handoff code{background:var(--own-bg);color:var(--own);padding:3px 6px;border-radius:4px}
+.pretitle{font-size:15px;color:var(--muted);font-style:italic}
+
+/* 7 arch */
+.arch{display:grid;grid-template-columns:810px 1fr;gap:22px;flex:1;align-items:start}
+.arch svg{width:810px;height:auto;display:block}
+svg text{font-family:var(--body);fill:var(--ink)}
+svg .t-title{font-weight:600;font-size:15px}
+svg .t-sub{font-size:12px;fill:var(--muted)}
+svg .t-edge{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .b-own{fill:var(--own-bg);stroke:var(--own);stroke-width:2}
+svg .b-wrap{fill:var(--wrap-bg);stroke:var(--wrap);stroke-width:2}
+svg .b-ext{fill:var(--ext-bg);stroke:var(--ext);stroke-width:2}
+svg .edge{stroke:var(--muted);stroke-width:1.5;fill:none}
+svg .edge.dash{stroke-dasharray:5 4}
+svg .edge.chainline{stroke:var(--ink);stroke-width:2}
+svg .ah{fill:var(--muted)} svg .ah2{fill:var(--ink)}
+.notes{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.notes li{font-size:14px;line-height:1.4;border-top:1px solid var(--line);padding-top:10px}
+.notes b{display:block;font-size:15px}
+
+/* 8 services */
+.svc-cols{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:18px;flex:1}
+.svc-col{display:grid;gap:10px;align-content:start}
+.svc{border:1px solid var(--line);border-left:4px solid var(--c);border-radius:6px;padding:10px 14px;display:grid;gap:3px}
+.svc.own{--c:var(--own)} .svc.wrap{--c:var(--wrap)} .svc.ext{--c:var(--ext)} .svc.opt{--c:var(--opt);border-left-style:dashed}
+.svc h4{font-size:16px}
+.svc .st{font-family:var(--mono);font-size:12px;color:var(--c)}
+.svc p{font-size:14px;color:var(--muted);line-height:1.35}
+.stack{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px}
+.stack span{font-family:var(--mono);font-size:12px;padding:3px 8px;border:1px solid var(--line);border-radius:4px}
+
+/* 9 ui mock */
+.s-ui{gap:14px}
+.mock{border:1px solid var(--line);border-radius:10px;overflow:hidden;flex:1;display:flex;flex-direction:column;background:var(--surface)}
+.mock-bar{display:flex;align-items:center;gap:12px;padding:8px 14px;border-bottom:1px solid var(--line);font-size:13px}
+.mock-bar .dots{display:flex;gap:5px}.mock-bar .dots i{width:9px;height:9px;border-radius:50%;background:var(--line);display:block}
+.mock-bar .name{font-weight:600}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-left:auto}
+.seg button{font:inherit;font-size:13px;border:0;background:transparent;color:var(--muted);padding:5px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
+.mock button:focus-visible,.mock input:focus-visible,.mock select:focus-visible,.mock textarea:focus-visible{outline:2px solid var(--own);outline-offset:2px}
+.mock-body{display:grid;grid-template-columns:290px 1fr 260px;flex:1;min-height:0}
+.pane{padding:12px 14px;display:flex;flex-direction:column;gap:9px;border-right:1px solid var(--line);min-height:0;overflow-y:auto}
+.pane:last-child{border-right:0}
+.pane h4{font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+.field{display:grid;gap:3px;font-size:13px}
+.field label{display:flex;justify-content:space-between;gap:8px}
+.field label span{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.mock input[type=range]{width:100%;accent-color:var(--own);margin:0}
+.mock select,.mock textarea{font:inherit;font-size:13px;width:100%;padding:5px 8px;border:1px solid var(--line);border-radius:6px;background:var(--soft);color:var(--ink)}
+.mock textarea{font-family:var(--mono);font-size:12px;resize:none;height:54px}
+.mats{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.mats button{font:inherit;font-size:13px;text-align:left;padding:7px 8px;border:1px solid var(--line);border-radius:6px;background:var(--soft);color:var(--ink);cursor:pointer}
+.mats button[aria-pressed="true"]{border-color:var(--own);background:var(--own-bg);color:var(--own);font-weight:600}
+.mods{display:flex;flex-wrap:wrap;gap:6px}
+.mods label{display:inline-flex;align-items:center;gap:5px;font-size:13px;padding:3px 9px;border:1px solid var(--line);border-radius:999px;cursor:pointer}
+.mods input{accent-color:var(--own);margin:0}
+.gen{font:inherit;font-weight:600;font-size:14px;padding:9px;border:0;border-radius:6px;background:var(--own);color:var(--surface);cursor:pointer;margin-top:auto}
+.note{font-size:12px;color:var(--muted)}
+.center{padding:12px 14px;display:flex;flex-direction:column;gap:10px;align-items:center}
+.center h4{align-self:flex-start;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:600}
+#tile{width:330px;height:330px;border-radius:4px;display:block}
+.tile-cap{display:flex;justify-content:space-between;gap:8px;width:330px;font-size:12px;color:var(--muted)}
+.stepper{display:flex;gap:6px;font-size:12px;font-family:var(--mono)}
+.stepper span{padding:3px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.stepper .done{background:var(--own-bg);color:var(--own);border-color:var(--own)}
+.stepper .run{border-color:var(--wrap);color:var(--wrap);background:var(--wrap-bg)}
+#sphere{width:170px;height:170px;align-self:center;display:block}
+.maps{display:flex;flex-wrap:wrap;gap:4px}
+.maps span{font-size:12px;padding:2px 7px;border-radius:4px;border:1px solid var(--line)}
+.maps span:first-child{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.hist{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.hist i{aspect-ratio:1;border-radius:4px;border:1px solid var(--line);display:block;background:repeating-linear-gradient(45deg,var(--ext-bg) 0 5px,var(--soft) 5px 10px)}
+.ghost{font:inherit;font-weight:600;font-size:13px;padding:8px;border:0;border-radius:6px;background:var(--ink);color:var(--surface);cursor:pointer}
+
+/* 10 results */
+.res{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;flex:1}
+.res .panel ul{margin:0;padding-left:18px;font-size:15px;display:grid;gap:6px;line-height:1.4}
+.res .panel p{font-size:15px;line-height:1.45}
+
+/* 11 plan */
+.gantt{display:grid;grid-template-columns:300px repeat(9,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.gantt > div{padding:9px 10px;border-bottom:1px solid var(--line);font-size:14px;min-height:44px;display:flex;align-items:center}
+.gantt .hd{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--soft);justify-content:center;min-height:34px}
+.gantt .hd:first-child{justify-content:flex-start}
+.gantt .lbl{font-weight:500}
+.gantt .bar{padding:0 4px}
+.gantt .bar i{display:block;height:20px;width:100%;border-radius:4px}
+.gantt .bar i.cw{background:var(--own)}
+.gantt .bar i.vkr{background:var(--wrap)}
+.gantt .bar i.def{background:var(--ink)}
+.gantt > div.last{border-bottom:0}
+
+/* 12 questions */
+.qs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.qs li{border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:grid;gap:6px}
+.qs h3{font-size:18px}
+.qs p{font-size:15px;color:var(--muted);line-height:1.4}
+.alt{display:grid;gap:8px;font-size:15px}
+.alt p{border-left:3px solid var(--line);padding-left:12px}
+
+/* tech choice */
+.tech{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.tech th{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);text-align:left;padding:8px 8px;background:var(--soft);font-weight:600;line-height:1.25;vertical-align:bottom}
+.tech th.key{color:var(--ink)}
+.tech td{padding:5px 8px;border-top:1px solid var(--line);vertical-align:middle;line-height:1.25}
+.tech td.name{font-weight:600;font-size:14px}
+.tech td.name small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.tech td.verdict{font-size:12.5px;color:var(--muted)}
+.tech td.verdict b{color:var(--ink)}
+.tech tr.pick td{background:var(--own-bg)}
+.tech tr.pick td.name{box-shadow:inset 4px 0 0 var(--own)}
+.m{display:inline-block;font-size:12px;line-height:1.25;padding:2px 7px;border-radius:4px;border:1px solid currentColor}
+.m.g{color:var(--good)} .m.y{color:var(--mid)} .m.r{color:var(--bad)}
+.why3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.why3 div{font-size:13.5px;line-height:1.4;color:var(--muted);border-top:2px solid var(--ink);padding-top:8px}
+.why3 b{display:block;color:var(--ink);font-size:14px;margin-bottom:2px}
+</style>
+
+<div class="deck" id="deck">
+
+<!-- 1 -->
+<div class="frame"><section class="slide s-title" aria-label="Слайд 1: титул">
+  <div style="display:grid;gap:18px">
+    <span class="eyebrow">Предлагаемая тема выпускной квалификационной работы</span>
+    <h1>Разработка программного обеспечения для генерации бесшовных текстур материалов на основе процедурного шума с использованием генеративных нейронных сетей</h1>
+    <div class="meta"><span>Студент: <b>Непрокин Иван Сергеевич</b></span><span>Группа <b>3413</b></span><span>Направление: <b>программная инженерия</b></span></div>
+  </div>
+  <div style="display:grid;gap:10px">
+    <div class="band">
+      <figure><canvas class="pic" id="t-noise" width="256" height="256" style="width:190px;height:190px"></canvas><figcaption><b>Процедурный шум</b>задаёт форму</figcaption></figure>
+      <figure><canvas class="pic" id="t-alb" width="256" height="256" style="width:190px;height:190px"></canvas><figcaption><b>Нейросеть</b>рисует фактуру</figcaption></figure>
+      <figure><canvas class="pic" id="t-nrm" width="256" height="256" style="width:190px;height:190px"></canvas><figcaption><b>PBR-карты</b>рельеф и свойства</figcaption></figure>
+      <figure><canvas id="t-sph" width="256" height="256" style="width:190px;height:190px;display:block"></canvas><figcaption><b>Готовый материал</b>для Blender, Unity, Unreal</figcaption></figure>
+    </div>
+    <span class="cap">Изображения построены из шума прямо на странице и показывают идею. Это не результат нейросети.</span>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>01 / 13</span></div>
+</section></div>
+
+<!-- 2 -->
+<div class="frame"><section class="slide" aria-label="Слайд 2: проблема">
+  <div class="sh"><span class="eyebrow">Актуальность</span><h2>Материалы для 3D-графики создаются долго</h2></div>
+  <p class="lead">Каждой поверхности в игре или 3D-сцене нужен набор карт: цвет, нормали, высота, шероховатость. Сейчас их получают тремя способами, и у каждого есть ограничение.</p>
+  <div class="cols3">
+    <div class="card"><h3>Процедурные редакторы</h3><p class="cap">Substance 3D Designer и аналоги</p>
+      <div class="plus">Полный контроль формы, бесшовность, все PBR-карты</div>
+      <div class="minus">Нужен опытный технический художник, сложный граф узлов, один материал может занимать часы</div></div>
+    <div class="card"><h3>Библиотеки готовых материалов</h3><p class="cap">ambientCG, Poly Haven</p>
+      <div class="plus">Быстро, бесплатно, качественные сканы</div>
+      <div class="minus">Ограниченный набор, одни и те же материалы у всех проектов, нельзя получить то, чего нет в библиотеке</div></div>
+    <div class="card"><h3>Генеративные нейросети общего назначения</h3><p class="cap">text-to-image модели</p>
+      <div class="plus">Любой материал по текстовому описанию</div>
+      <div class="minus">Нет контроля формы, перспектива и тени на изображении, видимые швы при укладке, нет PBR-карт</div></div>
+  </div>
+  <div class="idea"><span>Идея работы</span><p>Совместить подходы: процедурный шум задаёт управляемую форму, нейросеть рисует реалистичную фактуру, программа доводит результат до бесшовного набора PBR-карт.</p></div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>02 / 13</span></div>
+</section></div>
+
+<!-- 3 -->
+<div class="frame"><section class="slide" aria-label="Слайд 3: цель и задачи">
+  <div class="sh"><span class="eyebrow">Цель и задачи</span><h2>Что должно получиться</h2></div>
+  <div class="goal-grid">
+    <div style="display:grid;gap:20px;align-content:start">
+      <p class="goal">Разработать программное обеспечение, которое по параметрам процедурного шума и текстовому описанию материала генерирует бесшовный набор PBR-карт, готовый для использования в Blender, Unity и Unreal Engine.</p>
+      <ol class="tasks">
+        <li>Проанализировать подходы и программные средства создания материалов</li>
+        <li>Сформулировать требования и спроектировать сервисную архитектуру</li>
+        <li>Реализовать сервис процедурной генерации шума (Перлин, Вороной)</li>
+        <li>Интегрировать предобученные модели: диффузионную с управлением по карте и модель сверхразрешения</li>
+        <li>Обеспечить бесшовность результата на всех этапах обработки</li>
+        <li>Реализовать расчёт PBR-карт: высот, нормалей, шероховатости, затенения</li>
+        <li>Разработать веб-интерфейс с превью и 3D-просмотром материала</li>
+        <li>Провести экспериментальную оценку качества и производительности</li>
+      </ol>
+    </div>
+    <div class="side">
+      <div class="box"><h4>Объект исследования</h4><p>Процесс создания текстур материалов для трёхмерной графики</p></div>
+      <div class="box"><h4>Предмет исследования</h4><p>Методы и программные средства генерации текстур на основе процедурных алгоритмов и генеративных нейронных сетей</p></div>
+      <div class="box"><h4>Результат</h4><p>Работающий прототип с веб-интерфейсом, набор материалов, проверенных в игровом движке, и результаты экспериментов</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>03 / 13</span></div>
+</section></div>
+
+<!-- 4 -->
+<div class="frame"><section class="slide" aria-label="Слайд 4: как получается материал">
+  <div class="sh"><span class="eyebrow">Принцип работы</span><h2>Как получается материал</h2></div>
+  <div class="pipe">
+    <div class="inp" style="grid-column:1"><b>Параметры шума</b><br>тип, масштаб, октавы, seed</div>
+    <div class="inp" style="grid-column:2"><b>Описание материала</b><br>пресет или свой текст</div>
+    <div class="stage"><canvas class="pic" id="p1" width="256" height="256"></canvas><span class="n">1 · карта высот 512²</span><h3>Процедурный шум</h3><p>Форма материала: где трещины, камни, волокна. Бесшовная по построению.</p><span><span class="tag own">свой код</span></span></div>
+    <div class="stage"><canvas class="pic px" id="p2" width="48" height="48"></canvas><span class="n">2 · albedo 512²</span><h3>Генерация текстуры</h3><p>Диффузионная модель рисует материал по форме шума и описанию.</p><span><span class="tag wrap">готовая модель</span></span></div>
+    <div class="stage"><canvas class="pic" id="p3" width="256" height="256"></canvas><span class="n">3 · albedo 2048²</span><h3>Сверхразрешение</h3><p>Увеличение с дорисовкой мелких деталей, края обрабатываются бесшовно.</p><span><span class="tag wrap">готовая модель</span></span></div>
+    <div class="stage"><canvas class="pic" id="p4" width="256" height="256"></canvas><span class="n">4 · normal, height, roughness, AO</span><h3>PBR-карты</h3><p>Рассчитываются из шума и цвета текстуры формулами.</p><span><span class="tag own">свой код</span></span></div>
+    <div class="stage"><canvas id="p5" width="256" height="256" style="width:176px;height:176px;display:block"></canvas><span class="n">5 · ZIP + 3D-превью</span><h3>Экспорт</h3><p>Набор карт с именами под Blender, Unity, Unreal.</p><span><span class="tag own">свой код</span></span></div>
+  </div>
+  <span class="cap">Картинки схематичные и построены на странице из шума. Пиксели на шаге 2 показывают низкое разрешение до апскейла.</span>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>04 / 13</span></div>
+</section></div>
+
+<!-- 5 -->
+<div class="frame"><section class="slide" aria-label="Слайд 5: нейросети">
+  <div class="sh"><span class="eyebrow">Использование нейросетей</span><h2>Где работают нейросети</h2></div>
+  <div class="nn">
+    <div class="panel">
+      <div><h3>Модель 1. Генерация текстуры</h3><span class="sub">Stable Diffusion 1.5 + ControlNet + LoRA · предобученные веса</span></div>
+      <div class="guides">
+        <div class="guide"><b>Текст → кодировщик CLIP</b>что рисовать: «cobblestone pavement, top-down, flat lighting»</div>
+        <div class="guide"><b>Карта шума → ControlNet</b>где что расположено: границы камней, углубления</div>
+      </div>
+      <div class="frames" aria-label="Схема: случайный шум постепенно превращается в текстуру">
+        <canvas class="pic" id="f0" width="96" height="96"></canvas><span>→</span>
+        <canvas class="pic" id="f1" width="96" height="96"></canvas><span>→</span>
+        <canvas class="pic" id="f2" width="96" height="96"></canvas><span>→</span>
+        <canvas class="pic" id="f3" width="96" height="96"></canvas><span>→</span>
+        <canvas class="pic" id="f4" width="96" height="96"></canvas>
+      </div>
+      <div class="frames-cap"><span>случайный шум</span><span>20–30 шагов очистки, схема</span><span>текстура</span></div>
+      <div class="mods2">
+        <div><b>LoRA</b>Дообучается в курсовой на текстурах ambientCG: модель рисует плоские текстуры без перспективы и теней</div>
+        <div><b>Циклический padding</b>Свой патч свёрточных слоёв: модель рисует так, будто края склеены, результат бесшовный</div>
+      </div>
+    </div>
+    <div style="display:grid;gap:18px;align-content:start">
+      <div class="panel">
+        <div><h3>Модель 2. Сверхразрешение</h3><span class="sub">Real-ESRGAN · предобученные веса</span></div>
+        <div class="sr"><canvas class="pic px" id="sr0" width="32" height="32"></canvas><span style="color:var(--muted)">→</span><canvas class="pic" id="sr1" width="128" height="128"></canvas></div>
+        <p class="plain">512² → 2048² с дорисовкой мелких деталей. Своё: циклическое дополнение краёв для бесшовности и обработка по тайлам под объём видеопамяти.</p>
+      </div>
+      <div class="panel">
+        <h3>Без нейросетей</h3>
+        <p class="plain"><b>Свой код:</b> шум, карта высот, нормали, шероховатость, AO, бесшовный апскейл, сервисы и интерфейс.</p>
+        <p class="plain"><b>С нуля модели не обучаются.</b> Рельеф берётся в основном из шума, поэтому геометрия управляемая и предсказуемая.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>05 / 13</span></div>
+</section></div>
+
+<!-- 6 -->
+<div class="frame"><section class="slide" aria-label="Слайд 6: связь с курсовой">
+  <div class="sh"><span class="eyebrow">Связь с курсовыми работами</span><h2>Курсовая исследует модель, ВКР строит систему</h2></div>
+  <div class="cw">
+    <div class="panel">
+      <span class="eyebrow">Курсовая по нейросетям · осень 2026</span>
+      <p class="pretitle">«Адаптация диффузионной модели для генерации бесшовных текстур с управлением процедурным шумом»</p>
+      <h3>Эксперименты</h3>
+      <ul>
+        <li>Какой ControlNet лучше понимает шум: depth, softedge, canny, tile</li>
+        <li>Бесшовность: циклический padding и без него</li>
+        <li>Дообучение LoRA на 300–500 текстурах ambientCG</li>
+        <li>Проверка, что модель не копирует обучающие текстуры</li>
+      </ul>
+      <h3>Метрики</h3>
+      <ul><li>ошибка на шве, CLIP score, KID, следование структуре шума, время и видеопамять</li></ul>
+    </div>
+    <div class="handoff"><b>→</b>передаётся в ВКР<code>lora.safetensors</code><code>config.yaml</code></div>
+    <div class="panel">
+      <span class="eyebrow">ВКР · весна 2027</span>
+      <p class="pretitle">Лучшая конфигурация из курсовой используется как готовый компонент, заново не исследуется</p>
+      <h3>Фокус</h3>
+      <ul>
+        <li>Архитектура и сервисы</li>
+        <li>Асинхронная обработка задач через брокер сообщений</li>
+        <li>Апскейл и расчёт PBR-карт</li>
+        <li>Веб-интерфейс с 3D-превью и экспортом</li>
+      </ul>
+      <h3>Метрики</h3>
+      <ul><li>время этапов, пропускная способность, задержка превью, видеопамять, проверка в движке</li></ul>
+      <p class="cap">Генератор шумов переносится из курсовой по компьютерной графике.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>06 / 13</span></div>
+</section></div>
+
+<!-- 7 -->
+<div class="frame"><section class="slide" aria-label="Слайд 7: архитектура">
+  <div class="sh" style="grid-template-columns:1fr auto;align-items:end"><div style="display:grid;gap:8px"><span class="eyebrow">Архитектура</span><h2>Сервисы и потоки данных</h2></div>
+    <div class="legend"><span class="chip c-own"><i></i>свой код</span><span class="chip c-wrap"><i></i>обёртка над моделью</span><span class="chip c-ext"><i></i>готовый сервис</span></div></div>
+  <div class="arch">
+  <svg viewBox="0 0 980 560" role="img" aria-label="Схема архитектуры: веб-клиент, API, процедурный сервис, PostgreSQL, RabbitMQ, сервисы генерации, апскейла и PBR, MinIO">
+    <defs>
+      <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
+      <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah2"/></marker>
+    </defs>
+    <path class="edge" d="M490,76 L490,128" marker-end="url(#a1)" marker-start="url(#a1)"/>
+    <text class="t-edge" x="500" y="106">REST + WebSocket</text>
+    <path class="edge" d="M380,158 L282,158" marker-end="url(#a1)"/>
+    <text class="t-edge" x="331" y="150" text-anchor="middle">превью</text>
+    <path class="edge" d="M600,158 L698,158" marker-end="url(#a1)"/>
+    <text class="t-edge" x="649" y="150" text-anchor="middle">задачи</text>
+    <path class="edge" d="M490,186 L490,238" marker-end="url(#a1)" marker-start="url(#a1)"/>
+    <text class="t-edge" x="500" y="218">задачи ↓ · события ↑</text>
+    <path class="edge" d="M470,296 L190,358" marker-end="url(#a1)"/>
+    <path class="edge" d="M490,296 L490,358" marker-end="url(#a1)"/>
+    <path class="edge" d="M510,296 L790,358" marker-end="url(#a1)"/>
+    <path class="edge chainline" d="M300,395 L358,395" marker-end="url(#a2)"/>
+    <path class="edge chainline" d="M620,395 L678,395" marker-end="url(#a2)"/>
+    <path class="edge dash" d="M110,358 L110,188" marker-end="url(#a1)"/>
+    <text class="t-edge" x="118" y="290">шум 512²</text>
+    <path class="edge" d="M170,430 L170,478" marker-end="url(#a1)" marker-start="url(#a1)"/>
+    <path class="edge" d="M490,430 L490,478" marker-end="url(#a1)" marker-start="url(#a1)"/>
+    <path class="edge" d="M810,430 L810,478" marker-end="url(#a1)" marker-start="url(#a1)"/>
+
+    <rect class="b-own" x="380" y="20" width="220" height="56" rx="8"/>
+    <text class="t-title" x="490" y="44" text-anchor="middle">Веб-клиент</text>
+    <text class="t-sub" x="490" y="63" text-anchor="middle">React + Three.js</text>
+    <rect class="b-own" x="380" y="130" width="220" height="56" rx="8"/>
+    <text class="t-title" x="490" y="154" text-anchor="middle">API-сервис</text>
+    <text class="t-sub" x="490" y="173" text-anchor="middle">FastAPI</text>
+    <rect class="b-own" x="40" y="130" width="240" height="56" rx="8"/>
+    <text class="t-title" x="160" y="154" text-anchor="middle">Процедурный сервис</text>
+    <text class="t-sub" x="160" y="173" text-anchor="middle">Перлин, Вороной · NumPy</text>
+    <rect class="b-ext" x="700" y="130" width="240" height="56" rx="8"/>
+    <text class="t-title" x="820" y="154" text-anchor="middle">PostgreSQL</text>
+    <text class="t-sub" x="820" y="173" text-anchor="middle">материалы, кэш по хэшу, тайминги</text>
+    <rect class="b-ext" x="380" y="240" width="220" height="56" rx="8"/>
+    <text class="t-title" x="490" y="264" text-anchor="middle">RabbitMQ</text>
+    <text class="t-sub" x="490" y="283" text-anchor="middle">очереди gpu и cpu, события</text>
+    <rect class="b-wrap" x="40" y="360" width="260" height="70" rx="8"/>
+    <text class="t-title" x="170" y="386" text-anchor="middle">Сервис генерации</text>
+    <text class="t-sub" x="170" y="405" text-anchor="middle">SD 1.5 + ControlNet + LoRA</text>
+    <text class="t-sub" x="170" y="421" text-anchor="middle">очередь gpu</text>
+    <rect class="b-wrap" x="360" y="360" width="260" height="70" rx="8"/>
+    <text class="t-title" x="490" y="386" text-anchor="middle">Сервис апскейла</text>
+    <text class="t-sub" x="490" y="405" text-anchor="middle">Real-ESRGAN · 512 → 2048</text>
+    <text class="t-sub" x="490" y="421" text-anchor="middle">очередь gpu</text>
+    <rect class="b-own" x="680" y="360" width="260" height="70" rx="8"/>
+    <text class="t-title" x="810" y="386" text-anchor="middle">PBR-сервис</text>
+    <text class="t-sub" x="810" y="405" text-anchor="middle">height, normal, roughness, AO</text>
+    <text class="t-sub" x="810" y="421" text-anchor="middle">очередь cpu</text>
+    <rect class="b-ext" x="40" y="480" width="900" height="56" rx="8"/>
+    <text class="t-title" x="490" y="504" text-anchor="middle">MinIO (S3-хранилище)</text>
+    <text class="t-sub" x="490" y="523" text-anchor="middle">карты шума · сырые генерации · 2K-текстуры · архивы материалов</text>
+  </svg>
+  <ul class="notes">
+    <li><b>Брокер сообщений RabbitMQ</b>Надёжная доставка задач с подтверждением, отдельные очереди под GPU и CPU, события статусов для API</li>
+    <li><b>Превью без GPU</b>Процедурный сервис отвечает за доли секунды, даже когда видеокарта занята</li>
+    <li><b>Одна GPU-очередь</b>Генерация и апскейл идут по одной: на одной видеокарте две модели параллельно не поместятся</li>
+    <li><b>Заменяемый провайдер</b>Локальные веса или внешний API без изменения архитектуры</li>
+    <li><b>Запуск</b>Весь стек поднимается через Docker Compose</li>
+  </ul>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>07 / 13</span></div>
+</section></div>
+
+<!-- 8 -->
+<div class="frame"><section class="slide" aria-label="Слайд 8: сервисы">
+  <div class="sh"><span class="eyebrow">Состав системы</span><h2>Что пишется самому, что берётся готовым</h2></div>
+  <div class="svc-cols">
+    <div class="svc-col">
+      <span class="chip c-own" style="justify-self:start"><i></i>Свой код</span>
+      <div class="svc own"><h4>Веб-клиент</h4><span class="st">React · Three.js</span><p>Пресеты и ползунки шума, превью плиткой 3×3, статус этапов, 3D-просмотр, экспорт</p></div>
+      <div class="svc own"><h4>API-сервис</h4><span class="st">FastAPI · SQLAlchemy · Celery</span><p>Приём задач, сборка промпта, кэш по хэшу параметров, история, WebSocket</p></div>
+      <div class="svc own"><h4>Процедурный сервис</h4><span class="st">NumPy · Numba · OpenCL (эксперимент)</span><p>Перлин, Вороной, domain warping, бесшовные карты высот</p></div>
+      <div class="svc own"><h4>PBR-сервис</h4><span class="st">NumPy · OpenCV</span><p>Height, normal, roughness, AO, упаковка под Blender, Unity, Unreal</p></div>
+    </div>
+    <div class="svc-col">
+      <span class="chip c-wrap" style="justify-self:start"><i></i>Обёртка над готовой моделью</span>
+      <div class="svc wrap"><h4>Сервис генерации</h4><span class="st">PyTorch · diffusers</span><p><b>Готовое:</b> SD 1.5, ControlNet.<br><b>Своё:</b> LoRA из курсовой, циклический padding, шаблоны промптов, интерфейс провайдера</p></div>
+      <div class="svc wrap"><h4>Сервис апскейла</h4><span class="st">Real-ESRGAN</span><p><b>Готовое:</b> модель и веса.<br><b>Своё:</b> бесшовное увеличение, обработка по тайлам</p></div>
+    </div>
+    <div class="svc-col">
+      <span class="chip c-ext" style="justify-self:start"><i></i>Готовые сервисы</span>
+      <div class="svc ext"><h4>RabbitMQ</h4><span class="st">брокер сообщений</span><p>Очереди задач Celery, события статусов</p></div>
+      <div class="svc ext"><h4>PostgreSQL</h4><span class="st">база данных</span><p>Материалы, параметры, кэш, время этапов</p></div>
+      <div class="svc ext"><h4>MinIO</h4><span class="st">S3-хранилище</span><p>Изображения и архивы материалов</p></div>
+      <div class="svc opt"><h4>Flower, Grafana</h4><span class="st">необязательно</span><p>Мониторинг очередей и загрузки GPU</p></div>
+    </div>
+  </div>
+  <div class="stack"><span style="border:0;padding-left:0;font-family:var(--body);font-size:13px;color:var(--muted)">Стек:</span><span>Python</span><span>FastAPI</span><span>Celery</span><span>RabbitMQ</span><span>PyTorch</span><span>diffusers</span><span>PostgreSQL</span><span>MinIO</span><span>React</span><span>Three.js</span><span>Docker Compose</span></div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>08 / 13</span></div>
+</section></div>
+
+<!-- 8b -->
+<div class="frame"><section class="slide" style="gap:16px" aria-label="Слайд 9: выбор технологии вычислений">
+  <div class="sh" style="grid-template-columns:1fr auto;align-items:end"><div style="display:grid;gap:8px"><span class="eyebrow">Обоснование выбора</span><h2>Чем считать шум и PBR-карты</h2></div>
+    <div class="legend"><span class="m g">подходит</span><span class="m y">с оговорками</span><span class="m r">не подходит</span></div></div>
+  <table class="tech">
+    <thead><tr>
+      <th style="width:178px">Технология</th>
+      <th>Скорость<br>на 512²</th>
+      <th>Скорость<br>на 2048²+</th>
+      <th class="key">Не занимает GPU ★</th>
+      <th class="key">Работа с ndarray ★</th>
+      <th>Развёртывание<br>в Docker</th>
+      <th>Сложность<br>разработки</th>
+      <th style="width:230px">Итог</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="name">Python<small>циклы по пикселям</small></td>
+        <td><span class="m r">секунды</span></td><td><span class="m r">минуты</span></td><td><span class="m g">да</span></td><td><span class="m g">напрямую</span></td><td><span class="m g">просто</span></td><td><span class="m g">просто</span></td>
+        <td class="verdict">Только базовая линия для сравнения</td></tr>
+      <tr><td class="name">NumPy<small>векторизация</small></td>
+        <td><span class="m g">быстро</span></td><td><span class="m y">память на Вороном</span></td><td><span class="m g">да</span></td><td><span class="m g">напрямую</span></td><td><span class="m g">просто</span></td><td><span class="m y">сложен Вороной</span></td>
+        <td class="verdict">Годится для Перлина, неудобен для Вороного</td></tr>
+      <tr class="pick"><td class="name">NumPy + Numba<small>JIT-компиляция циклов</small></td>
+        <td><span class="m g">быстро</span></td><td><span class="m g">все ядра CPU</span></td><td><span class="m g">да</span></td><td><span class="m g">напрямую</span></td><td><span class="m g">pip-пакет</span></td><td><span class="m g">обычные циклы</span></td>
+        <td class="verdict"><b>Основной вариант.</b> JIT прогревается при старте сервиса</td></tr>
+      <tr><td class="name">PyOpenCL на CPU<small>ядра на C</small></td>
+        <td><span class="m g">быстро</span></td><td><span class="m g">SIMD + ядра</span></td><td><span class="m g">да</span></td><td><span class="m y">копия в буфер</span></td><td><span class="m y">рантайм POCL</span></td><td><span class="m r">ядра на C, отладка</span></td>
+        <td class="verdict">Альтернатива, сравнивается в экспериментах</td></tr>
+      <tr><td class="name">PyOpenCL на GPU<small>ядра на C</small></td>
+        <td><span class="m y">мешает передача</span></td><td><span class="m g">максимальная</span></td><td><span class="m r">конкурирует с моделями</span></td><td><span class="m y">копия CPU ↔ GPU</span></td><td><span class="m r">драйвер и ICD</span></td><td><span class="m r">ядра на C, отладка</span></td>
+        <td class="verdict">Для 2048²+ при свободной GPU, эксперимент</td></tr>
+      <tr><td class="name">GLSL-шейдеры<small>OpenGL</small></td>
+        <td><span class="m g">быстро</span></td><td><span class="m g">максимальная</span></td><td><span class="m r">нет</span></td><td><span class="m y">копия из VRAM</span></td><td><span class="m r">контекст без экрана</span></td><td><span class="m r">графический конвейер</span></td>
+        <td class="verdict">Отклонён для сервера</td></tr>
+      <tr><td class="name">PyTorch на GPU<small>тензоры</small></td>
+        <td><span class="m g">быстро</span></td><td><span class="m g">максимальная</span></td><td><span class="m r">делит память с SD</span></td><td><span class="m g">тензоры, без копий</span></td><td><span class="m g">уже в стеке</span></td><td><span class="m y">средняя</span></td>
+        <td class="verdict">Отклонён: отнимает видеопамять у диффузии</td></tr>
+    </tbody>
+  </table>
+  <div class="why3">
+    <div><b>★ Решающие критерии</b>Шум считается параллельно с нейросетями: видеокарта должна оставаться им, а массив сразу идти в OpenCV, PIL и diffusers.</div>
+    <div><b>Скорость не решает на 512²</b>Все варианты, кроме чистого Python, быстрее одного шага диффузии. Разница видна от 2048².</div>
+    <div><b>Оценки качественные</b>Цифры дадут эксперименты: все варианты на 512², 1024², 2048², 4096².</div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>09 / 13</span></div>
+</section></div>
+
+<!-- 9 -->
+<div class="frame"><section class="slide s-ui" aria-label="Слайд 10: интерфейс">
+  <div class="sh" style="grid-template-columns:1fr auto;align-items:end"><div style="display:grid;gap:6px"><span class="eyebrow">Интерфейс · интерактивный макет</span><h2>Два режима работы</h2></div>
+  <p class="note" style="max-width:420px;text-align:right">Превью шума настоящее и меняется от ползунков. Сфера справа условная: генерации в макете нет.</p></div>
+  <div class="mock">
+    <div class="mock-bar">
+      <span class="dots"><i></i><i></i><i></i></span><span class="name">Генератор материалов</span>
+      <div class="seg" role="group" aria-label="Режим"><button id="m-simple" type="button" aria-pressed="true">Простой</button><button id="m-adv" type="button" aria-pressed="false">Расширенный</button></div>
+    </div>
+    <div class="mock-body">
+      <div class="pane">
+        <h4>Материал</h4>
+        <div class="mats" id="mats"></div>
+        <h4>Модификаторы</h4>
+        <div class="mods">
+          <label><input type="checkbox" id="mod-wet">мокрый</label>
+          <label><input type="checkbox" id="mod-moss">мшистый</label>
+          <label><input type="checkbox" id="mod-old">старый</label>
+        </div>
+        <p id="simple-only" class="note"></p>
+        <div id="adv" hidden style="display:flex;flex-direction:column;gap:7px">
+          <div class="field"><label for="n-type">Тип шума</label><select id="n-type"><option value="perlin">Перлин fBm</option><option value="vf1">Вороной F1</option><option value="vf2">Вороной F2−F1 (трещины)</option></select></div>
+          <div class="field"><label for="n-cells">Масштаб <span id="v-cells"></span></label><input type="range" id="n-cells" min="2" max="32" step="1"></div>
+          <div class="field"><label for="n-oct">Октавы <span id="v-oct"></span></label><input type="range" id="n-oct" min="1" max="7" step="1"></div>
+          <div class="field"><label for="n-str">Растяжение по вертикали <span id="v-str"></span></label><input type="range" id="n-str" min="1" max="6" step="1"></div>
+          <div class="field"><label for="n-seed">Seed <span id="v-seed"></span></label><input type="range" id="n-seed" min="1" max="999" step="1"></div>
+          <div class="field"><label for="n-prompt">Промпт (англ.)</label><textarea id="n-prompt"></textarea></div>
+        </div>
+        <button class="gen" type="button">Сгенерировать</button>
+      </div>
+      <div class="center">
+        <h4>Превью шума плиткой 3×3</h4>
+        <canvas id="tile" width="330" height="330" aria-label="Превью шума, уложенного плиткой"></canvas>
+        <div class="tile-cap"><span>Бесшовно: стыков не видно</span><span id="tile-info" class="mono"></span></div>
+        <div class="stepper"><span class="done">шум ✓</span><span class="run">генерация…</span><span>апскейл</span><span>PBR</span></div>
+      </div>
+      <div class="pane">
+        <h4>Результат</h4>
+        <canvas id="sphere" width="220" height="220" aria-label="Условное 3D-превью материала"></canvas>
+        <div class="maps"><span>Albedo</span><span>Normal</span><span>Height</span><span>Roughness</span><span>AO</span></div>
+        <div class="field"><label for="exp">Экспорт для</label><select id="exp"><option>Blender</option><option>Unity</option><option>Unreal Engine</option></select></div>
+        <button class="ghost" type="button">Скачать ZIP · 2048²</button>
+        <h4>История</h4>
+        <div class="hist"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>10 / 13</span></div>
+</section></div>
+
+<!-- 10 -->
+<div class="frame"><section class="slide" aria-label="Слайд 11: эксперименты и результаты">
+  <div class="sh"><span class="eyebrow">Оценка и результаты</span><h2>Что будет измерено и что получится</h2></div>
+  <div class="res">
+    <div class="panel"><h3>Эксперименты ВКР</h3>
+      <ul>
+        <li>Время каждого этапа и полное время получения материала</li>
+        <li>Пропускная способность на одной видеокарте, материалов в час</li>
+        <li>Задержка превью шума при загруженной GPU</li>
+        <li>Эффект кэша при повторных запросах</li>
+        <li>Пиковая видеопамять генерации и апскейла</li>
+        <li>Проверка материалов в Blender и Unity</li>
+        <li>Сравнение NumPy, Numba и OpenCL на 512²–4096²</li>
+      </ul></div>
+    <div class="panel"><h3>Ожидаемые результаты</h3>
+      <ul>
+        <li>Работающий прототип, запускаемый одной командой</li>
+        <li>Библиотека сгенерированных бесшовных материалов с полным набором карт</li>
+        <li>Таблицы и графики производительности</li>
+        <li>Исходный код и документация по развёртыванию</li>
+      </ul></div>
+    <div class="panel"><h3>Особенность решения</h3>
+      <p>Управление формой через процедурный шум и генерация фактуры диффузионной моделью объединены в одном конвейере, с бесшовностью на каждом этапе и выдачей полного набора PBR-карт.</p>
+      <h3>Практическая значимость</h3>
+      <p>Быстрое получение уникальных материалов для небольших команд, учебных проектов и прототипирования уровней. Работает локально, без платных сервисов.</p></div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>11 / 13</span></div>
+</section></div>
+
+<!-- 11 -->
+<div class="frame"><section class="slide" aria-label="Слайд 12: план работ">
+  <div class="sh"><span class="eyebrow">План работ · сроки уточняются по графику кафедры</span><h2>Октябрь 2026 – июнь 2027</h2></div>
+  <div class="gantt" role="table" aria-label="План работ по месяцам">
+    <div class="hd">Этап</div><div class="hd">окт</div><div class="hd">ноя</div><div class="hd">дек</div><div class="hd">янв</div><div class="hd">фев</div><div class="hd">мар</div><div class="hd">апр</div><div class="hd">май</div><div class="hd">июн</div>
+    <div class="lbl">Курсовая: датасет, эксперименты, LoRA</div><div class="bar" style="grid-column:2/5"><i class="cw"></i></div><div style="grid-column:5/11"></div>
+    <div class="lbl">Анализ аналогов, требования, проектирование</div><div style="grid-column:2/4"></div><div class="bar" style="grid-column:4/6"><i class="vkr"></i></div><div style="grid-column:6/11"></div>
+    <div class="lbl">API, брокер, процедурный сервис, генерация</div><div style="grid-column:2/5"></div><div class="bar" style="grid-column:5/7"><i class="vkr"></i></div><div style="grid-column:7/11"></div>
+    <div class="lbl">Апскейл, PBR-сервис, веб-клиент</div><div style="grid-column:2/7"></div><div class="bar" style="grid-column:7/8"><i class="vkr"></i></div><div style="grid-column:8/11"></div>
+    <div class="lbl">Эксперименты и доработка</div><div style="grid-column:2/8"></div><div class="bar" style="grid-column:8/9"><i class="vkr"></i></div><div style="grid-column:9/11"></div>
+    <div class="lbl">Текст ВКР и презентация</div><div style="grid-column:2/8"></div><div class="bar" style="grid-column:8/10"><i class="vkr"></i></div><div style="grid-column:10/11"></div>
+    <div class="lbl last">Предзащита и защита</div><div class="last" style="grid-column:2/10"></div><div class="bar last" style="grid-column:10/11"><i class="def"></i></div>
+  </div>
+  <div class="legend"><span class="chip c-own"><i></i>курсовая по нейросетям</span><span class="chip c-wrap"><i></i>ВКР</span></div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>12 / 13</span></div>
+</section></div>
+
+<!-- 12 -->
+<div class="frame"><section class="slide" aria-label="Слайд 13: вопросы для обсуждения">
+  <div class="sh"><span class="eyebrow">Для обсуждения</span><h2>Вопросы к руководителю</h2></div>
+  <ol class="qs">
+    <li><h3>Формулировка темы</h3><p>Подходит ли предложенный вариант или его стоит сузить либо расширить.</p></li>
+    <li><h3>Опора на курсовую</h3><p>Можно ли использовать дообученную в курсовой модель как готовый компонент ВКР со ссылкой на курсовую.</p></li>
+    <li><h3>Вычислительные ресурсы</h3><p>Есть ли доступ к видеокарте с 8+ ГБ памяти. Если нет, генерация через внешний API или Colab.</p></li>
+    <li><h3>Акцент работы</h3><p>Чему уделить больше внимания в тексте: архитектуре и сервисам или экспериментам с качеством.</p></li>
+  </ol>
+  <div class="alt">
+    <span class="eyebrow">Альтернативные формулировки темы</span>
+    <p>Разработка системы генерации текстур материалов для трёхмерной графики на основе микросервисной архитектуры и генеративных нейронных сетей</p>
+    <p>Разработка программного обеспечения для синтеза текстур трёхмерных материалов с использованием методов машинного обучения</p>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · ВКР 2027</span><span>13 / 13</span></div>
+</section></div>
+
+<div class="toolbar" id="toolbar">
+  <button type="button" class="nav" id="prev" aria-label="Предыдущий слайд">‹ Назад</button>
+  <span class="count nav" id="count">1 / 13</span>
+  <button type="button" class="nav" id="next" aria-label="Следующий слайд">Вперёд ›</button>
+  <button type="button" id="all">Все слайды</button>
+  <button type="button" id="fs">На весь экран</button>
+</div>
+</div>
+
+<script>
+/* ---------- noise & material helpers ---------- */
+const N = (function(){
+  function rng(seed){let s=(seed*9301+49297)%233280||1;return()=>(s=(s*16807)%2147483647)/2147483647;}
+  function valueFBM(T,gx0,gy0,oct,seed){
+    const r=rng(seed),H=new Float32Array(T*T);let amp=1,tot=0;
+    for(let o=0;o<oct;o++){
+      const gx=gx0<<o, gy=gy0<<o; if(gx>T||gy>T) break;
+      const L=new Float32Array(gx*gy); for(let i=0;i<L.length;i++) L[i]=r();
+      for(let y=0;y<T;y++){const fy=y/T*gy,y0=Math.floor(fy),ty=fy-y0,sy=ty*ty*(3-2*ty),y1=(y0+1)%gy;
+        for(let x=0;x<T;x++){const fx=x/T*gx,x0=Math.floor(fx),tx=fx-x0,sx=tx*tx*(3-2*tx),x1=(x0+1)%gx;
+          const a=L[y0*gx+x0],b=L[y0*gx+x1],c=L[y1*gx+x0],d=L[y1*gx+x1];
+          const top=a+(b-a)*sx,bot=c+(d-c)*sx; H[y*T+x]+=amp*(top+(bot-top)*sy);}}
+      tot+=amp; amp*=0.5;
+    }
+    for(let i=0;i<H.length;i++) H[i]/=tot; return H;
+  }
+  function voronoi(T,n,str,seed){
+    const r=rng(seed),pts=[];for(let i=0;i<n;i++) pts.push([r()*T,r()*T]);
+    const f1=new Float32Array(T*T),f2=new Float32Array(T*T),id=new Uint16Array(T*T);
+    for(let y=0;y<T;y++) for(let x=0;x<T;x++){
+      let a=1e9,b=1e9,k=0;
+      for(let i=0;i<n;i++){const p=pts[i];let dx=Math.abs(x-p[0]);dx=Math.min(dx,T-dx);let dy=Math.abs(y-p[1]);dy=Math.min(dy,T-dy);dy/=str;
+        const d=dx*dx+dy*dy; if(d<a){b=a;a=d;k=i}else if(d<b)b=d;}
+      const j=y*T+x; f1[j]=Math.sqrt(a); f2[j]=Math.sqrt(b); id[j]=k;
+    }
+    return {f1,f2,id,cell:T/Math.sqrt(n)};
+  }
+  function normals(H,T,k){
+    const Nn=new Float32Array(T*T*3);
+    for(let y=0;y<T;y++) for(let x=0;x<T;x++){
+      const dx=H[y*T+(x+1)%T]-H[y*T+(x-1+T)%T], dy=H[((y+1)%T)*T+x]-H[((y-1+T)%T)*T+x];
+      let nx=-dx*k,ny=-dy*k,nz=1;const l=Math.hypot(nx,ny,nz);const j=(y*T+x)*3;Nn[j]=nx/l;Nn[j+1]=ny/l;Nn[j+2]=nz/l;
+    }
+    return Nn;
+  }
+  function put(canvas,T,fn){
+    const c=canvas.getContext('2d'),img=c.createImageData(T,T);
+    for(let i=0;i<T*T;i++){const v=fn(i);img.data[i*4]=v[0];img.data[i*4+1]=v[1];img.data[i*4+2]=v[2];img.data[i*4+3]=255;}
+    return img;
+  }
+  function sphere(canvas,T,alb,Nm,gloss){
+    const S=canvas.width,c=canvas.getContext('2d'),img=c.createImageData(S,S);
+    let L=[-0.45,-0.55,0.72];const ll=Math.hypot(...L);L=L.map(v=>v/ll);
+    const Hh=[L[0],L[1],L[2]+1];const hl=Math.hypot(...Hh);const Hv=Hh.map(v=>v/hl);
+    for(let py=0;py<S;py++) for(let px=0;px<S;px++){
+      const x=(px+.5)/S*2-1,y=(py+.5)/S*2-1,r2=x*x+y*y,k=(py*S+px)*4;
+      if(r2>1){img.data[k+3]=0;continue;}
+      const z=Math.sqrt(1-r2);
+      let u=(Math.atan2(x,z)/Math.PI*0.5+0.5)*2%1, v=Math.asin(y)/Math.PI+0.5;
+      const tx=Math.min(T-1,Math.floor(u*T)),ty=Math.min(T-1,Math.floor(v*T)),j=ty*T+tx;
+      let nx=x+0.85*Nm[j*3],ny=y+0.85*Nm[j*3+1],nz=z;const nl=Math.hypot(nx,ny,nz);nx/=nl;ny/=nl;nz/=nl;
+      const dif=Math.max(0,nx*L[0]+ny*L[1]+nz*L[2]);
+      const sp=Math.pow(Math.max(0,nx*Hv[0]+ny*Hv[1]+nz*Hv[2]),28)*gloss;
+      const rim=0.75+0.25*z;
+      for(let ch=0;ch<3;ch++) img.data[k+ch]=Math.min(255,alb[j*3+ch]*(0.16+0.95*dif)*rim+sp*255);
+      const edge=Math.min(1,(1-Math.sqrt(r2))*S*0.5);img.data[k+3]=255*edge;
+    }
+    c.putImageData(img,0,0);
+  }
+  return {rng,valueFBM,voronoi,normals,put,sphere};
+})();
+
+/* ---------- illustration material (cobblestone) ---------- */
+(function(){
+  const T=256, V=N.voronoi(T,36,1,11), fb=N.valueFBM(T,8,8,4,5), r=N.rng(3);
+  const H=new Float32Array(T*T), A=new Uint8ClampedArray(T*T*3);
+  const pal=[[128,118,104],[146,134,116],[112,108,100],[156,142,122],[120,112,96],[136,128,118]];
+  const tint=[];for(let i=0;i<36;i++){tint.push(pal[Math.floor(r()*pal.length)].map(c=>c+(r()-0.5)*18));}
+  for(let j=0;j<T*T;j++){
+    const e=V.f2[j]-V.f1[j], m=Math.min(1,Math.max(0,e/(0.12*V.cell))), mo=m*m*(3-2*m);
+    const dome=Math.max(0,1-Math.pow(V.f1[j]/(0.78*V.cell),2));
+    H[j]=mo*(0.35+0.65*dome)+0.07*fb[j];
+    const t=tint[V.id[j]], g=(r()-0.5)*16+ (fb[j]-0.5)*30;
+    for(let ch=0;ch<3;ch++) A[j*3+ch]=(t[ch]+g)*mo+[72,66,58][ch]*(1-mo);
+  }
+  const Nm=N.normals(H,T,5);
+  let L=[-0.45,-0.55,0.72];const ll=Math.hypot(...L);L=L.map(v=>v/ll);
+  const lit=new Uint8ClampedArray(T*T*3);
+  for(let j=0;j<T*T;j++){const d=Math.max(0,Nm[j*3]*L[0]+Nm[j*3+1]*L[1]+Nm[j*3+2]*L[2]);for(let ch=0;ch<3;ch++) lit[j*3+ch]=A[j*3+ch]*(0.25+0.95*d);}
+  const gray=i=>{const v=25+H[i]*220;return[v,v,v]}, alb=i=>[A[i*3],A[i*3+1],A[i*3+2]];
+  const nrm=i=>[(Nm[i*3]*.5+.5)*255,(-Nm[i*3+1]*.5+.5)*255,(Nm[i*3+2]*.5+.5)*255];
+  const litf=i=>[lit[i*3],lit[i*3+1],lit[i*3+2]];
+  function paint(id,fn){const c=document.getElementById(id);if(!c)return;const img=N.put(c,T,fn);
+    if(c.width===T){c.getContext('2d').putImageData(img,0,0);return;}
+    const off=document.createElement('canvas');off.width=T;off.height=T;off.getContext('2d').putImageData(img,0,0);
+    const cx=c.getContext('2d');cx.imageSmoothingEnabled=true;cx.imageSmoothingQuality='high';cx.drawImage(off,0,0,c.width,c.height);}
+  paint('t-noise',gray);paint('t-alb',alb);paint('t-nrm',nrm);
+  paint('p1',gray);paint('p2',alb);paint('p3',alb);paint('p4',nrm);
+  paint('sr0',alb);paint('sr1',alb);
+  ['t-sph','p5'].forEach(id=>{const c=document.getElementById(id);if(c)N.sphere(c,T,A,Nm,0.18);});
+  // denoising frames
+  const off=document.createElement('canvas');off.width=T;off.height=T;off.getContext('2d').putImageData(N.put(off,T,alb),0,0);
+  const ts=[0,0.3,0.55,0.8,1], rr=N.rng(77);
+  ts.forEach((t,i)=>{const c=document.getElementById('f'+i);if(!c)return;const cx=c.getContext('2d');cx.drawImage(off,0,0,c.width,c.height);
+    const im=cx.getImageData(0,0,c.width,c.height),d=im.data,w=Math.pow(t,1.3);
+    for(let k=0;k<d.length;k+=4){for(let ch=0;ch<3;ch++){const nz=rr()*255;d[k+ch]=d[k+ch]*w+nz*(1-w);}}
+    cx.putImageData(im,0,0);});
+})();
+
+/* ---------- interface mock ---------- */
+(function(){
+  const P={
+    stone:{name:'Булыжник',type:'vf1',cells:10,oct:2,str:1,lo:[70,66,60],hi:[168,160,148],prompt:'cobblestone pavement, top-down view, flat even lighting, seamless texture'},
+    bark:{name:'Кора',type:'perlin',cells:4,oct:5,str:4,lo:[46,32,22],hi:[132,100,70],prompt:'oak tree bark, deep vertical grooves, top-down, flat lighting, seamless texture'},
+    clay:{name:'Сухая глина',type:'vf2',cells:24,oct:3,str:1,lo:[92,62,40],hi:[208,164,116],prompt:'cracked dry clay ground, top-down, flat lighting, seamless texture'},
+    rust:{name:'Ржавый металл',type:'perlin',cells:3,oct:6,str:1,lo:[84,40,20],hi:[184,104,56],prompt:'rusty painted metal plate, top-down, flat lighting, seamless texture'}
+  };
+  const MODS={'mod-wet':', wet, glossy','mod-moss':', moss patches in crevices','mod-old':', weathered, worn'};
+  const TYPES={perlin:'Перлин fBm',vf1:'Вороной F1',vf2:'Вороной F2−F1'};
+  const $=id=>document.getElementById(id);
+  const st={preset:'stone',seed:42,type:'vf1',cells:10,oct:2,str:1};
+  let edited=false;
+  const mats=$('mats');
+  Object.entries(P).forEach(([k,v])=>{const b=document.createElement('button');b.type='button';b.textContent=v.name;b.dataset.k=k;
+    b.addEventListener('click',()=>{st.preset=k;Object.assign(st,{type:v.type,cells:v.cells,oct:v.oct,str:v.str});edited=false;sync();});mats.appendChild(b);});
+  const prompt=()=>{let s=P[st.preset].prompt;for(const id in MODS) if($(id).checked) s+=MODS[id];return s;};
+  function heights(T){
+    if(st.type==='perlin') return N.valueFBM(T,st.cells*st.str,st.cells,st.oct,st.seed);
+    const n=Math.max(2,Math.round(st.cells*st.cells/4)), V=N.voronoi(T,n,st.str,st.seed), H=new Float32Array(T*T);
+    for(let j=0;j<T*T;j++) H[j]=st.type==='vf1'?Math.min(1,V.f1[j]/(V.cell*0.6)):Math.min(1,(V.f2[j]-V.f1[j])/(V.cell*0.25));
+    if(st.oct>1){const F=N.valueFBM(T,st.cells*2,st.cells*2,st.oct-1,st.seed+1);for(let j=0;j<T*T;j++) H[j]=H[j]*0.82+F[j]*0.18;}
+    return H;
+  }
+  function draw(){
+    const T=110, H=heights(T), c=$('tile'), cx=c.getContext('2d');
+    const img=N.put(c,T,i=>{const v=30+H[i]*205;return[v,v,v]});
+    for(let j=0;j<3;j++) for(let i=0;i<3;i++) cx.putImageData(img,i*T,j*T);
+    const p=P[st.preset], wet=$('mod-wet').checked, moss=$('mod-moss').checked, old=$('mod-old').checked;
+    const A=new Uint8ClampedArray(T*T*3), r=N.rng(st.seed+9);
+    for(let j=0;j<T*T;j++){let h=H[j]; if(p===P.stone) h=1-h; if(old) h=Math.pow(h,1.4);
+      for(let ch=0;ch<3;ch++){let v=p.lo[ch]+(p.hi[ch]-p.lo[ch])*h+(r()-0.5)*14; if(wet) v*=0.78; A[j*3+ch]=v;}
+      if(moss&&h<0.45){const m=(0.45-h)/0.45; A[j*3]=A[j*3]*(1-m)+70*m; A[j*3+1]=A[j*3+1]*(1-m)+104*m; A[j*3+2]=A[j*3+2]*(1-m)+48*m;}}
+    const Hn=p===P.stone?H.map(v=>1-v):H;
+    N.sphere($('sphere'),T,A,N.normals(Hn,T,old?5:3.5),wet?0.55:0.12);
+  }
+  function sync(){
+    [...mats.children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===st.preset));
+    $('n-type').value=st.type;$('n-cells').value=st.cells;$('n-oct').value=st.oct;$('n-str').value=st.str;$('n-seed').value=st.seed;
+    $('v-cells').textContent=st.cells;$('v-oct').textContent=st.oct;$('v-str').textContent='×'+st.str;$('v-seed').textContent=st.seed;
+    if(!edited) $('n-prompt').value=prompt();
+    $('simple-only').textContent='Пресет подставит: '+TYPES[st.type]+' · масштаб '+st.cells+' · '+st.oct+' окт.'+(st.str>1?' · ×'+st.str:'')+'. Промпт: '+prompt();
+    $('tile-info').textContent=TYPES[st.type]+' · seed '+st.seed;
+    draw();
+  }
+  function mode(adv){$('m-simple').setAttribute('aria-pressed',!adv);$('m-adv').setAttribute('aria-pressed',adv);$('adv').hidden=!adv;$('simple-only').hidden=adv;}
+  $('m-simple').addEventListener('click',()=>mode(false));$('m-adv').addEventListener('click',()=>mode(true));
+  Object.keys(MODS).forEach(id=>$(id).addEventListener('change',()=>{edited=false;sync();}));
+  $('n-type').addEventListener('change',e=>{st.type=e.target.value;sync();});
+  [['n-cells','cells'],['n-oct','oct'],['n-str','str'],['n-seed','seed']].forEach(([id,k])=>$(id).addEventListener('input',e=>{st[k]=+e.target.value;sync();}));
+  $('n-prompt').addEventListener('input',()=>{edited=true;});
+  sync();mode(false);
+})();
+
+/* ---------- deck ---------- */
+(function(){
+  const deck=document.getElementById('deck'), frames=[...deck.querySelectorAll('.frame')], tb=document.getElementById('toolbar');
+  const count=document.getElementById('count'), allBtn=document.getElementById('all');
+  let cur=0, list=false;
+  const m=/^#s(\d+)$/.exec(location.hash||''); if(m) cur=Math.min(frames.length-1,Math.max(0,+m[1]-1));
+  function layout(){
+    const narrow=document.documentElement.clientWidth<760, L=list||narrow;
+    deck.classList.toggle('list',L);
+    allBtn.textContent=L?'По одному':'Все слайды'; allBtn.hidden=narrow;
+    const W=deck.clientWidth;
+    frames.forEach((f,i)=>{
+      let s;
+      if(L){s=W/1280;f.hidden=false;}
+      else{const avail=window.innerHeight-tb.offsetHeight-46;s=Math.min(W/1280,Math.max(avail,240)/720);f.hidden=i!==cur;}
+      f.style.width=Math.floor(1280*s)+'px';f.style.height=Math.floor(720*s)+'px';f.firstElementChild.style.transform='scale('+s+')';
+    });
+    if(!L) deck.insertBefore(frames[cur], tb);
+    count.textContent=(cur+1)+' / '+frames.length;
+  }
+  // keep original order in DOM for list mode
+  function restoreOrder(){frames.forEach(f=>deck.insertBefore(f,tb));}
+  function go(i){cur=Math.max(0,Math.min(frames.length-1,i));restoreOrder();layout();try{history.replaceState(null,'','#s'+(cur+1));}catch(e){}}
+  document.getElementById('prev').addEventListener('click',()=>go(cur-1));
+  document.getElementById('next').addEventListener('click',()=>go(cur+1));
+  allBtn.addEventListener('click',()=>{list=!list;restoreOrder();layout();});
+  document.getElementById('fs').addEventListener('click',()=>{
+    const d=document; try{ if(d.fullscreenElement) d.exitFullscreen(); else d.documentElement.requestFullscreen().catch(()=>{}); }catch(e){} });
+  document.addEventListener('keydown',e=>{
+    const t=e.target; if(t&&/^(INPUT|SELECT|TEXTAREA)$/.test(t.tagName)) return;
+    if(deck.classList.contains('list')) return;
+    if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(cur+1);}
+    else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(cur-1);}
+    else if(e.key==='Home'){go(0);} else if(e.key==='End'){go(frames.length-1);}
+  });
+  let rt; addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(layout,80);});
+  document.addEventListener('fullscreenchange',layout);
+  restoreOrder(); layout();
+})();
+</script>
+</body></html>

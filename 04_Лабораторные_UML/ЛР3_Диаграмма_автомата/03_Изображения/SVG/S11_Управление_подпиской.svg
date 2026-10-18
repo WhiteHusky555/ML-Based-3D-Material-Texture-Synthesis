@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="834" height="736" viewBox="39 52 834 736">
+<rect x="39" y="52" width="834" height="736" fill="#fff"/>
+<circle cx="420.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="281" y="132" width="278" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="420.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Окно тарифов</text>
+<line x1="281" y1="158" x2="559" y2="158" stroke="#000"/>
+<text x="289.0" y="175.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ тарифов и ожидание действия</text>
+<circle cx="840.0" cy="158.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="840.0" cy="158.0" r="8.0" fill="#000"/>
+<rect x="290" y="224" width="260" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="420.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Ожидание оплаты</text>
+<line x1="290" y1="250" x2="550" y2="250" stroke="#000"/>
+<text x="298.0" y="267.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Создание платежа</text>
+<text x="298.0" y="283.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Ожидание уведомления о платеже</text>
+<rect x="598" y="224" width="224" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="710.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отключение продления</text>
+<line x1="598" y1="250" x2="822" y2="250" stroke="#000"/>
+<text x="606.0" y="267.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Отключение автопродления</text>
+<text x="606.0" y="283.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Пересчёт срока хранения</text>
+<rect x="59" y="332" width="202" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="160.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Запрос статуса</text>
+<line x1="59" y1="358" x2="261" y2="358" stroke="#000"/>
+<text x="67.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Запрос статуса платежа</text>
+<circle cx="710.0" cy="358.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="710.0" cy="358.0" r="8.0" fill="#000"/>
+<circle cx="420.0" cy="432.0" r="8.0" fill="#000"/>
+<rect x="313" y="480" width="214" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="420.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Проверка уведомления</text>
+<line x1="313" y1="506" x2="527" y2="506" stroke="#000"/>
+<text x="321.0" y="523.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Проверка подписи и суммы</text>
+<polygon points="406,583.0 420.0,572 434,583.0 420.0,594" fill="#fff" stroke="#000"/>
+<rect x="308" y="634" width="224" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="420.0" y="652.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Подписка активна</text>
+<line x1="308" y1="660" x2="532" y2="660" stroke="#000"/>
+<text x="316.0" y="677.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Активация подписки</text>
+<text x="316.0" y="693.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Пересчёт срока хранения</text>
+<rect x="620" y="642" width="180" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="710.0" y="660.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отказ в оплате</text>
+<line x1="620" y1="668" x2="800" y2="668" stroke="#000"/>
+<text x="628.0" y="685.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Сообщение об отказе</text>
+<circle cx="420.0" cy="755.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="420.0" cy="755.0" r="8.0" fill="#000"/>
+<circle cx="710.0" cy="755.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="710.0" cy="755.0" r="8.0" fill="#000"/>
+<path d="M420.0,92.0 L420.0,132.0" fill="none" stroke="#000"/>
+<path d="M415.0,123.3 L420.0,132.0 L425.0,123.3" fill="none" stroke="#000"/>
+<path d="M420.0,184.0 L420.0,224.0" fill="none" stroke="#000"/>
+<path d="M415.0,215.3 L420.0,224.0 L425.0,215.3" fill="none" stroke="#000"/>
+<path d="M540.0,184.0 L540.0,210.0 L710.0,210.0 L710.0,224.0" fill="none" stroke="#000"/>
+<path d="M705.0,215.3 L710.0,224.0 L715.0,215.3" fill="none" stroke="#000"/>
+<path d="M559.0,158.0 L827.0,158.0" fill="none" stroke="#000"/>
+<path d="M818.3,163.0 L827.0,158.0 L818.3,153.0" fill="none" stroke="#000"/>
+<path d="M420.0,292.0 L420.0,424.0" fill="none" stroke="#000"/>
+<path d="M415.0,415.3 L420.0,424.0 L425.0,415.3" fill="none" stroke="#000"/>
+<path d="M290.0,258.0 L160.0,258.0 L160.0,332.0" fill="none" stroke="#000"/>
+<path d="M155.0,323.3 L160.0,332.0 L165.0,323.3" fill="none" stroke="#000"/>
+<path d="M160.0,384.0 L160.0,432.0 L412.0,432.0" fill="none" stroke="#000"/>
+<path d="M403.3,437.0 L412.0,432.0 L403.3,427.0" fill="none" stroke="#000"/>
+<path d="M710.0,292.0 L710.0,345.0" fill="none" stroke="#000"/>
+<path d="M705.0,336.3 L710.0,345.0 L715.0,336.3" fill="none" stroke="#000"/>
+<path d="M420.0,440.0 L420.0,480.0" fill="none" stroke="#000"/>
+<path d="M415.0,471.3 L420.0,480.0 L425.0,471.3" fill="none" stroke="#000"/>
+<path d="M420.0,532.0 L420.0,572.0" fill="none" stroke="#000"/>
+<path d="M415.0,563.3 L420.0,572.0 L425.0,563.3" fill="none" stroke="#000"/>
+<path d="M420.0,594.0 L420.0,634.0" fill="none" stroke="#000"/>
+<path d="M415.0,625.3 L420.0,634.0 L425.0,625.3" fill="none" stroke="#000"/>
+<path d="M434.0,583.0 L710.0,583.0 L710.0,642.0" fill="none" stroke="#000"/>
+<path d="M705.0,633.3 L710.0,642.0 L715.0,633.3" fill="none" stroke="#000"/>
+<path d="M420.0,702.0 L420.0,742.0" fill="none" stroke="#000"/>
+<path d="M415.0,733.3 L420.0,742.0 L425.0,733.3" fill="none" stroke="#000"/>
+<path d="M710.0,694.0 L710.0,742.0" fill="none" stroke="#000"/>
+<path d="M705.0,733.3 L710.0,742.0 L715.0,733.3" fill="none" stroke="#000"/>
+<rect x="202.1" y="190.0" width="211.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="308.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Оформить» [подписки нет]</text>
+<rect x="547.9" y="190.0" width="240.2" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="668.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Отменить» [подписка активна]</text>
+<rect x="566.1" y="138.0" width="87.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="610.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">окно закрыто</text>
+<rect x="425.8" y="298.0" width="144.5" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="498.0" y="310.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">получено уведомление</text>
+<rect x="176.2" y="238.0" width="105.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="229.0" y="250.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">прошло 15 минут</text>
+<rect x="82.0" y="599.0" width="332.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="248.0" y="611.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[подпись верна, платёж успешен] / Тариф := «Премиум»</text>
+<rect x="441.8" y="563.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="462.0" y="575.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+</svg>

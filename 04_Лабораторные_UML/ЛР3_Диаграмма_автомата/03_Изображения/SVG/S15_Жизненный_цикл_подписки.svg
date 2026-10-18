@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="835" height="538" viewBox="20 52 835 538">
+<rect x="20" y="52" width="835" height="538" fill="#fff"/>
+<circle cx="300.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="196" y="132" width="208" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="300.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Бесплатный тариф</text>
+<line x1="196" y1="158" x2="404" y2="158" stroke="#000"/>
+<text x="204.0" y="175.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Тариф := «Бесплатный»</text>
+<text x="204.0" y="191.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Срок хранения := 7</text>
+<rect x="195" y="240" width="210" height="84" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="300.0" y="258.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Премиум активна</text>
+<line x1="195" y1="266" x2="405" y2="266" stroke="#000"/>
+<text x="203.0" y="283.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Тариф := «Премиум»</text>
+<text x="203.0" y="299.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Срок хранения := 90</text>
+<text x="203.0" y="315.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Ожидание даты окончания</text>
+<rect x="555" y="364" width="210" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="660.0" y="382.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Продление отключено</text>
+<line x1="555" y1="390" x2="765" y2="390" stroke="#000"/>
+<text x="563.0" y="407.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Ожидание даты окончания</text>
+<rect x="189" y="364" width="222" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="300.0" y="382.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Продление</text>
+<line x1="189" y1="390" x2="411" y2="390" stroke="#000"/>
+<text x="197.0" y="407.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Списание оплаты за период</text>
+<polygon points="286,467.0 300.0,456 314,467.0 300.0,478" fill="#fff" stroke="#000"/>
+<rect x="195" y="518" width="210" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="300.0" y="536.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Истекла</text>
+<line x1="195" y1="544" x2="405" y2="544" stroke="#000"/>
+<text x="203.0" y="561.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Пересчёт срока хранения</text>
+<path d="M300.0,92.0 L300.0,132.0" fill="none" stroke="#000"/>
+<path d="M295.0,123.3 L300.0,132.0 L305.0,123.3" fill="none" stroke="#000"/>
+<path d="M300.0,200.0 L300.0,240.0" fill="none" stroke="#000"/>
+<path d="M295.0,231.3 L300.0,240.0 L305.0,231.3" fill="none" stroke="#000"/>
+<path d="M405.0,282.0 L660.0,282.0 L660.0,364.0" fill="none" stroke="#000"/>
+<path d="M655.0,355.3 L660.0,364.0 L665.0,355.3" fill="none" stroke="#000"/>
+<path d="M300.0,324.0 L300.0,364.0" fill="none" stroke="#000"/>
+<path d="M295.0,355.3 L300.0,364.0 L305.0,355.3" fill="none" stroke="#000"/>
+<path d="M300.0,416.0 L300.0,456.0" fill="none" stroke="#000"/>
+<path d="M295.0,447.3 L300.0,456.0 L305.0,447.3" fill="none" stroke="#000"/>
+<path d="M286.0,467.0 L80.0,467.0 L80.0,282.0 L195.0,282.0" fill="none" stroke="#000"/>
+<path d="M186.3,287.0 L195.0,282.0 L186.3,277.0" fill="none" stroke="#000"/>
+<path d="M300.0,478.0 L300.0,518.0" fill="none" stroke="#000"/>
+<path d="M295.0,509.3 L300.0,518.0 L305.0,509.3" fill="none" stroke="#000"/>
+<path d="M660.0,416.0 L660.0,544.0 L405.0,544.0" fill="none" stroke="#000"/>
+<path d="M413.7,539.0 L405.0,544.0 L413.7,549.0" fill="none" stroke="#000"/>
+<path d="M195.0,544.0 L40.0,544.0 L40.0,166.0 L196.0,166.0" fill="none" stroke="#000"/>
+<path d="M187.3,171.0 L196.0,166.0 L187.3,161.0" fill="none" stroke="#000"/>
+<rect x="305.2" y="205.0" width="215.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="413.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">подписка оплачена или назначена</text>
+<rect x="412.6" y="262.0" width="178.9" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="502.0" y="274.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Отменить подписку»</text>
+<rect x="305.3" y="329.0" width="169.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="390.0" y="341.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">наступила дата окончания</text>
+<rect x="174.6" y="448.0" width="102.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="226.0" y="460.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[оплата прошла]</text>
+<rect x="305.8" y="483.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="326.0" y="495.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="665.3" y="422.0" width="169.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="750.0" y="434.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">наступила дата окончания</text>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1145" height="665" viewBox="35 174 1145 665">
+<rect x="35" y="174" width="1145" height="665" fill="#fff"/>
+<ellipse cx="600.0" cy="300.0" rx="120.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="600.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Администрирование</text>
+<text x="600.0" y="312.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">системы</text>
+<line x1="480" y1="340" x2="720" y2="340" stroke="#000"/>
+<text x="485.0" y="357.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор раздела</text>
+<ellipse cx="1050.0" cy="299.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="1050.0" y="295.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Технический</text>
+<text x="1050.0" y="311.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">мониторинг</text>
+<ellipse cx="230.0" cy="559.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="230.0" y="555.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Управление учётными</text>
+<text x="230.0" y="571.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">записями пользователей</text>
+<ellipse cx="600.0" cy="559.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="600.0" y="555.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Ведение пресетов</text>
+<text x="600.0" y="571.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материалов</text>
+<ellipse cx="970.0" cy="559.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="970.0" y="555.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Обновление версии</text>
+<text x="970.0" y="571.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">модели</text>
+<ellipse cx="600.0" cy="789.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="600.0" y="785.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Запись в журнал</text>
+<text x="600.0" y="801.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">аудита</text>
+<rect x="55" y="276" width="130" height="48" fill="#fff" stroke="#000"/>
+<text x="120.0" y="294.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«worker»</text>
+<text x="120.0" y="311.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Администратор</text>
+<path d="M185.0,300.0 L480.0,300.0" fill="none" stroke="#000"/>
+<path d="M940.0,300.0 L720.0,300.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M730.6,294.4 L720.0,300.0 L730.6,305.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M270.0,532.0 L506.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M500.6,376.7 L506.0,366.0 L494.1,367.5" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M600.0,530.0 L600.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M605.6,376.6 L600.0,366.0 L594.4,376.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M930.0,532.0 L694.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M705.9,367.5 L694.0,366.0 L699.4,376.7" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M274.0,587.0 L556.0,762.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M544.0,761.2 L556.0,762.0 L550.0,751.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M600.0,589.0 L600.0,760.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M594.4,749.4 L600.0,760.0 L605.6,749.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M926.0,587.0 L644.0,762.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M650.0,751.6 L644.0,762.0 L656.0,761.2" fill="none" stroke="#000" stroke-width="1"/>
+<text x="850.0" y="210.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="850.0" y="226.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="850.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран раздел</text>
+<text x="850.0" y="258.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«Мониторинг»]</text>
+<text x="250.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="250.0" y="426.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="250.0" y="442.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран раздел</text>
+<text x="250.0" y="458.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«Пользователи»]</text>
+<text x="700.0" y="450.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="700.0" y="466.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="700.0" y="482.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран раздел</text>
+<text x="700.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«Пресеты»]</text>
+<text x="960.0" y="418.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="960.0" y="434.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор раздела)</text>
+<text x="960.0" y="450.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран раздел «Модели»]</text>
+<text x="430.0" y="652.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="629.0" y="677.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="800.0" y="703.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="782" height="768" viewBox="81 52 782 768">
+<rect x="81" y="52" width="782" height="768" fill="#fff"/>
+<circle cx="240.0" cy="82.0" r="10.0" fill="#000"/>
+<circle cx="240.0" cy="140.0" r="8.0" fill="#000"/>
+<rect x="112" y="188" width="256" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="240.0" y="206.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Окно генератора</text>
+<line x1="112" y1="214" x2="368" y2="214" stroke="#000"/>
+<text x="120.0" y="231.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Статус := «новая»</text>
+<text x="120.0" y="247.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ окна и ожидание действий</text>
+<circle cx="645.0" cy="222.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="645.0" cy="222.0" r="8.0" fill="#000"/>
+<rect x="122" y="296" width="236" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="240.0" y="314.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Проверка прав тарифа</text>
+<line x1="122" y1="322" x2="358" y2="322" stroke="#000"/>
+<text x="130.0" y="339.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Проверка квоты и параметров</text>
+<polygon points="226,399.0 240.0,388 254,399.0 240.0,410" fill="#fff" stroke="#000"/>
+<circle cx="835.0" cy="399.0" r="8.0" fill="#000"/>
+<polygon points="226,461.0 240.0,450 254,461.0 240.0,472" fill="#fff" stroke="#000"/>
+<rect x="101" y="512" width="278" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="240.0" y="530.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Выдача из кэша</text>
+<line x1="101" y1="538" x2="379" y2="538" stroke="#000"/>
+<text x="109.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Выдача готового материала из кэша</text>
+<rect x="500" y="517" width="290" height="42" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="645.0" y="535.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">обработка: Обработка задачи генерации</text>
+<ellipse cx="767" cy="546" rx="3" ry="3" fill="none" stroke="#000"/><line x1="770" y1="546" x2="776" y2="546" stroke="#000"/><ellipse cx="779" cy="546" rx="3" ry="3" fill="none" stroke="#000"/>
+<circle cx="240.0" cy="615.0" r="8.0" fill="#000"/>
+<polygon points="631,615.0 645.0,604 659,615.0 645.0,626" fill="#fff" stroke="#000"/>
+<rect x="112" y="666" width="256" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="240.0" y="684.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Сохранение материала</text>
+<line x1="112" y1="692" x2="368" y2="692" stroke="#000"/>
+<text x="120.0" y="709.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Сохранение в истории по тарифу</text>
+<text x="120.0" y="725.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Открытие 3D-просмотра</text>
+<circle cx="240.0" cy="787.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="240.0" cy="787.0" r="8.0" fill="#000"/>
+<path d="M240.0,92.0 L240.0,132.0" fill="none" stroke="#000"/>
+<path d="M235.0,123.3 L240.0,132.0 L245.0,123.3" fill="none" stroke="#000"/>
+<path d="M240.0,148.0 L240.0,188.0" fill="none" stroke="#000"/>
+<path d="M235.0,179.3 L240.0,188.0 L245.0,179.3" fill="none" stroke="#000"/>
+<path d="M240.0,256.0 L240.0,296.0" fill="none" stroke="#000"/>
+<path d="M235.0,287.3 L240.0,296.0 L245.0,287.3" fill="none" stroke="#000"/>
+<path d="M368.0,222.0 L632.0,222.0" fill="none" stroke="#000"/>
+<path d="M623.3,227.0 L632.0,222.0 L623.3,217.0" fill="none" stroke="#000"/>
+<path d="M240.0,348.0 L240.0,388.0" fill="none" stroke="#000"/>
+<path d="M235.0,379.3 L240.0,388.0 L245.0,379.3" fill="none" stroke="#000"/>
+<path d="M240.0,410.0 L240.0,450.0" fill="none" stroke="#000"/>
+<path d="M235.0,441.3 L240.0,450.0 L245.0,441.3" fill="none" stroke="#000"/>
+<path d="M254.0,399.0 L827.0,399.0" fill="none" stroke="#000"/>
+<path d="M818.3,404.0 L827.0,399.0 L818.3,394.0" fill="none" stroke="#000"/>
+<path d="M240.0,472.0 L240.0,512.0" fill="none" stroke="#000"/>
+<path d="M235.0,503.3 L240.0,512.0 L245.0,503.3" fill="none" stroke="#000"/>
+<path d="M254.0,461.0 L645.0,461.0 L645.0,517.0" fill="none" stroke="#000"/>
+<path d="M640.0,508.3 L645.0,517.0 L650.0,508.3" fill="none" stroke="#000"/>
+<path d="M645.0,559.0 L645.0,604.0" fill="none" stroke="#000"/>
+<path d="M640.0,595.3 L645.0,604.0 L650.0,595.3" fill="none" stroke="#000"/>
+<path d="M631.0,615.0 L248.0,615.0" fill="none" stroke="#000"/>
+<path d="M256.7,610.0 L248.0,615.0 L256.7,620.0" fill="none" stroke="#000"/>
+<path d="M659.0,615.0 L835.0,615.0 L835.0,407.0" fill="none" stroke="#000"/>
+<path d="M840.0,415.7 L835.0,407.0 L830.0,415.7" fill="none" stroke="#000"/>
+<path d="M240.0,564.0 L240.0,607.0" fill="none" stroke="#000"/>
+<path d="M235.0,598.3 L240.0,607.0 L245.0,598.3" fill="none" stroke="#000"/>
+<path d="M240.0,623.0 L240.0,666.0" fill="none" stroke="#000"/>
+<path d="M235.0,657.3 L240.0,666.0 L245.0,657.3" fill="none" stroke="#000"/>
+<path d="M240.0,734.0 L240.0,774.0" fill="none" stroke="#000"/>
+<path d="M235.0,765.3 L240.0,774.0 L245.0,765.3" fill="none" stroke="#000"/>
+<path d="M835.0,391.0 L835.0,140.0 L248.0,140.0" fill="none" stroke="#000"/>
+<path d="M256.7,135.0 L248.0,140.0 L256.7,145.0" fill="none" stroke="#000"/>
+<rect x="246.0" y="262.0" width="154.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="323.0" y="274.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Сгенерировать»</text>
+<rect x="375.1" y="202.0" width="87.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="419.0" y="214.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">окно закрыто</text>
+<rect x="245.9" y="416.0" width="138.3" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="315.0" y="428.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[права подтверждены]</text>
+<rect x="261.2" y="380.0" width="255.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="389.0" y="392.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else] / Показ сообщения об ограничении</text>
+<rect x="245.3" y="478.0" width="99.3" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="295.0" y="490.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[найден в кэше]</text>
+<rect x="261.8" y="442.0" width="182.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="353.0" y="454.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else] / Статус := «в очереди»</text>
+<rect x="499.5" y="595.0" width="123.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="561.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Статус = «готово»]</text>
+<rect x="666.8" y="595.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="687.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+</svg>

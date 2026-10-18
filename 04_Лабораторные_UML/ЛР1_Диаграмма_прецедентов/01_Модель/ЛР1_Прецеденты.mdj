@@ -1,0 +1,5967 @@
+{
+	"_type": "Project",
+	"_id": "Eca20/zBRbGDj1TYcus=",
+	"name": "Система генерации бесшовных PBR-материалов",
+	"author": "Непрокин И. С.",
+	"documentation": "Модель системы генерации бесшовных PBR-материалов на основе процедурного шума и генеративных нейронных сетей (ВКР, РГРТУ, 2027). ЛР1 — функциональная модель: диаграммы вариантов использования.",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "ElSG11zBTXipjli582U=",
+			"_parent": {
+				"$ref": "Eca20/zBRbGDj1TYcus="
+			},
+			"name": "Use Case View",
+			"documentation": "Функциональная модель системы: акторы, работники системы (администратор, аналитик, владелец) и варианты использования. Основная диаграмма и девять диаграмм декомпозиции.",
+			"ownedElements": [
+				{
+					"_type": "UMLActor",
+					"_id": "YcgmBzObTB6IWQLha2E=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Пользователь",
+					"documentation": "Зарегистрированный пользователь системы на бесплатном тарифе: технический художник, разработчик игр, студент. Создаёт материалы, просматривает их в 3D, экспортирует под игровые движки, ведёт историю материалов и управляет подпиской. Информация, ассоциированная с актором: учётная запись, параметры и файлы материалов, тариф.",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "3NGGdLlwT1GvAfB6HX0=",
+							"_parent": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"documentation": "Отношение ассоциации между актором «Пользователь» и прецедентом «Регистрация и вход в систему» выбрано ненаправленным, потому что актор является активным участником взаимодействия — не только запускает выполнение прецедента, задаёт исходные данные и получает результат, но и участвует в диалоге с программой, реализующей прецедент.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "ns5cn5keRWmOwzXy8Q8=",
+								"_parent": {
+									"$ref": "3NGGdLlwT1GvAfB6HX0="
+								},
+								"reference": {
+									"$ref": "YcgmBzObTB6IWQLha2E="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "vdLg2OEHRFOeQFCfObk=",
+								"_parent": {
+									"$ref": "3NGGdLlwT1GvAfB6HX0="
+								},
+								"reference": {
+									"$ref": "NaIPBTOXRfuAc8n9Bi0="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "maEuHKKuT3GS1T/q8hU=",
+							"_parent": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"documentation": "Отношение ассоциации между актором «Пользователь» и прецедентом «Генерация материала» выбрано ненаправленным, потому что актор является активным участником взаимодействия — не только запускает выполнение прецедента, задаёт исходные данные и получает результат, но и участвует в диалоге с программой, реализующей прецедент.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "HaKviXcDS9mzfHqnPK0=",
+								"_parent": {
+									"$ref": "maEuHKKuT3GS1T/q8hU="
+								},
+								"reference": {
+									"$ref": "YcgmBzObTB6IWQLha2E="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "NmWKERMnTzKOtWYjxWM=",
+								"_parent": {
+									"$ref": "maEuHKKuT3GS1T/q8hU="
+								},
+								"reference": {
+									"$ref": "P5R3WLyUQcOUrTwqDdI="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "wLbyYpjFQtydwRugLk4=",
+							"_parent": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"documentation": "Отношение ассоциации между актором «Пользователь» и прецедентом «Просмотр материала в 3D» выбрано ненаправленным, потому что актор является активным участником взаимодействия — не только запускает выполнение прецедента, задаёт исходные данные и получает результат, но и участвует в диалоге с программой, реализующей прецедент.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "P0G/Ha2ATtepehEz6DM=",
+								"_parent": {
+									"$ref": "wLbyYpjFQtydwRugLk4="
+								},
+								"reference": {
+									"$ref": "YcgmBzObTB6IWQLha2E="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "W6s70YeuQG6jsgAP6tY=",
+								"_parent": {
+									"$ref": "wLbyYpjFQtydwRugLk4="
+								},
+								"reference": {
+									"$ref": "L1Ze44htQ06BQmWgd/U="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "4hInpT8ZQny0jGP27rE=",
+							"_parent": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"documentation": "Отношение ассоциации между актором «Пользователь» и прецедентом «Работа с историей материалов» выбрано ненаправленным, потому что актор является активным участником взаимодействия — не только запускает выполнение прецедента, задаёт исходные данные и получает результат, но и участвует в диалоге с программой, реализующей прецедент.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "kzAGU1nJTq6nM4dngxE=",
+								"_parent": {
+									"$ref": "4hInpT8ZQny0jGP27rE="
+								},
+								"reference": {
+									"$ref": "YcgmBzObTB6IWQLha2E="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "Rb3Ye5tFRvOsRWCiqb4=",
+								"_parent": {
+									"$ref": "4hInpT8ZQny0jGP27rE="
+								},
+								"reference": {
+									"$ref": "0WGhbm87TzemrTRX6hk="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "F4aJp/CERbCwFqdmmF8=",
+							"_parent": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"documentation": "Отношение ассоциации между актором «Пользователь» и прецедентом «Управление подпиской» выбрано ненаправленным, потому что актор является активным участником взаимодействия — не только запускает выполнение прецедента, задаёт исходные данные и получает результат, но и участвует в диалоге с программой, реализующей прецедент.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "eKB8+5j3TKS7u1OMor4=",
+								"_parent": {
+									"$ref": "F4aJp/CERbCwFqdmmF8="
+								},
+								"reference": {
+									"$ref": "YcgmBzObTB6IWQLha2E="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "eLXims2gTbaTUb6iRco=",
+								"_parent": {
+									"$ref": "F4aJp/CERbCwFqdmmF8="
+								},
+								"reference": {
+									"$ref": "yyE49ER7SoOwe7vDvxk="
+								}
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "IkNiGRrQQka+wDdX6MQ=",
+							"_parent": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"documentation": "Отношение ассоциации выбрано направленным от актора «Пользователь» к прецеденту «Экспорт материала», потому что актор является пассивным участником взаимодействия — запускает выполнение прецедента, задаёт исходные данные и получает результат.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "5lJPHFxpT62L0z3nrjw=",
+								"_parent": {
+									"$ref": "IkNiGRrQQka+wDdX6MQ="
+								},
+								"reference": {
+									"$ref": "YcgmBzObTB6IWQLha2E="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "od31ASKiQI2Q/ku63fo=",
+								"_parent": {
+									"$ref": "IkNiGRrQQka+wDdX6MQ="
+								},
+								"reference": {
+									"$ref": "zcmK4pSiQEqF2hzI9Gk="
+								},
+								"navigable": "navigable"
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLActor",
+					"_id": "lL8Xw2NYTYCP2ssDljs=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Премиум-пользователь",
+					"documentation": "Пользователь с активной премиум-подпиской. Наследует всю функциональность актора «Пользователь» (генерализация). Дополнительно доступны: подсказки к промпту, картинка-референс, разрешение 2048²/4096², больше шагов и вариантов генерации, расширенные форматы экспорта, просмотр на своей 3D-модели, хранение материалов 90 дней, приоритет в очереди. Различия выражены условиями отношений extend на диаграммах декомпозиции.",
+					"ownedElements": [
+						{
+							"_type": "UMLGeneralization",
+							"_id": "yRYwBA1ySB+1dgrF7qQ=",
+							"_parent": {
+								"$ref": "lL8Xw2NYTYCP2ssDljs="
+							},
+							"source": {
+								"$ref": "lL8Xw2NYTYCP2ssDljs="
+							},
+							"target": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"documentation": "Отношение генерализации между акторами «Премиум-пользователь» и «Пользователь» выбрано потому, что премиум-пользователь может всё, что может пользователь, и дополнительно пользуется возможностями премиум-тарифа."
+						}
+					]
+				},
+				{
+					"_type": "UMLActor",
+					"_id": "spK+IkmmR76Fe6nV4Jg=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Платёжная система",
+					"documentation": "Внешняя система приёма платежей. Предоставляет функциональность оплаты в дополнение к прецеденту «Управление подпиской»: принимает запрос на оплату и сообщает результат. В ВКР подключается через интерфейс провайдера с тестовой заглушкой."
+				},
+				{
+					"_type": "UMLActor",
+					"_id": "I/vorfCLS5a5grUKA7A=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Почтовый сервис",
+					"documentation": "Внешняя система доставки электронной почты. Отправляет пользователю письма подтверждения адреса и восстановления пароля по запросу прецедента «Регистрация и вход в систему»."
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "HdEFM3sQRu69TyXrvOQ=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Администратор",
+					"documentation": "Работник системы (стереотип worker): технический специалист, выполняющий рутинные операции обслуживания — ведение учётных записей пользователей (поиск, блокировка, ручное назначение тарифа), справочника пресетов материалов и версий весов моделей, технический мониторинг сервисов. Цены и лимиты тарифов и роли сотрудников не меняет — это права владельца. Сотрудник является частью системы, а не сторонней сущностью, поэтому изображён классом со стереотипом worker, а не актором.",
+					"stereotype": "worker",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "caQh6M5sRUu1eE0Clgc=",
+							"_parent": {
+								"$ref": "HdEFM3sQRu69TyXrvOQ="
+							},
+							"documentation": "Отношение ассоциации между актором «Администратор» и прецедентом «Администрирование системы» выбрано ненаправленным, потому что актор является активным участником взаимодействия — не только запускает выполнение прецедента, задаёт исходные данные и получает результат, но и участвует в диалоге с программой, реализующей прецедент.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "MPR14gSHTDSxqLoZFjk=",
+								"_parent": {
+									"$ref": "caQh6M5sRUu1eE0Clgc="
+								},
+								"reference": {
+									"$ref": "HdEFM3sQRu69TyXrvOQ="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "4mQ+N11sQbm3wzCIyMM=",
+								"_parent": {
+									"$ref": "caQh6M5sRUu1eE0Clgc="
+								},
+								"reference": {
+									"$ref": "PziIUbhzQDS5u7vvtLc="
+								}
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "HqLZdw9mSNWKQ/8sVZg=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Аналитик",
+					"documentation": "Работник системы (стереотип worker): специалист по анализу данных. Получает агрегированные обезличенные показатели работы сервиса — регистрации, активность и удержание пользователей, конверсию в премиум, статистику генераций — и выгружает отчёты. Доступ только на чтение, персональные данные пользователей ему не показываются. Сотрудник является частью системы, а не сторонней сущностью, поэтому изображён классом со стереотипом worker, а не актором.",
+					"stereotype": "worker",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "AkUkgThDQiOxWHmyl9s=",
+							"_parent": {
+								"$ref": "HqLZdw9mSNWKQ/8sVZg="
+							},
+							"documentation": "Отношение ассоциации выбрано направленным от актора «Аналитик» к прецеденту «Анализ показателей системы», потому что актор является пассивным участником взаимодействия — запускает выполнение прецедента, задаёт исходные данные и получает результат.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "iM0NQbs1SUmSVDqFKPo=",
+								"_parent": {
+									"$ref": "AkUkgThDQiOxWHmyl9s="
+								},
+								"reference": {
+									"$ref": "HqLZdw9mSNWKQ/8sVZg="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "/OdBAPrXR/++/o4hMp0=",
+								"_parent": {
+									"$ref": "AkUkgThDQiOxWHmyl9s="
+								},
+								"reference": {
+									"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+								},
+								"navigable": "navigable"
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "sYHRvO9rSRSXtkDugiw=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Владелец",
+					"documentation": "Работник системы (стереотип worker): владелец сервиса, принимающий коммерческие решения. Устанавливает цены и лимиты тарифов, назначает и отзывает роли сотрудников (администратор, аналитик), получает финансовый отчёт; пользуется также анализом показателей. Учётная запись владельца создаётся при развёртывании системы. Сотрудник является частью системы, а не сторонней сущностью, поэтому изображён классом со стереотипом worker, а не актором.",
+					"stereotype": "worker",
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "oTSiQUmOS9CrmI7YXro=",
+							"_parent": {
+								"$ref": "sYHRvO9rSRSXtkDugiw="
+							},
+							"documentation": "Отношение ассоциации выбрано направленным от актора «Владелец» к прецеденту «Анализ показателей системы», потому что актор является пассивным участником взаимодействия — запускает выполнение прецедента, задаёт исходные данные и получает результат.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "/D2q4J+pT9qmIfnz1hk=",
+								"_parent": {
+									"$ref": "oTSiQUmOS9CrmI7YXro="
+								},
+								"reference": {
+									"$ref": "sYHRvO9rSRSXtkDugiw="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "fFUY1isFQJuGMhfDZEo=",
+								"_parent": {
+									"$ref": "oTSiQUmOS9CrmI7YXro="
+								},
+								"reference": {
+									"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+								},
+								"navigable": "navigable"
+							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "QvDNoDnpTwypYuada0I=",
+							"_parent": {
+								"$ref": "sYHRvO9rSRSXtkDugiw="
+							},
+							"documentation": "Отношение ассоциации между актором «Владелец» и прецедентом «Управление тарифами и персоналом» выбрано ненаправленным, потому что актор является активным участником взаимодействия — не только запускает выполнение прецедента, задаёт исходные данные и получает результат, но и участвует в диалоге с программой, реализующей прецедент.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "aCf94TYHS4yLRyGDqpo=",
+								"_parent": {
+									"$ref": "QvDNoDnpTwypYuada0I="
+								},
+								"reference": {
+									"$ref": "sYHRvO9rSRSXtkDugiw="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "atNNhPIIQ62WvdzPb7I=",
+								"_parent": {
+									"$ref": "QvDNoDnpTwypYuada0I="
+								},
+								"reference": {
+									"$ref": "ChQVKtyKQQyLrldSfOE="
+								}
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "NaIPBTOXRfuAc8n9Bi0=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Регистрация и вход в систему",
+					"documentation": "Базисный прецедент. Создание учётной записи, вход по e-mail и паролю, восстановление пароля. Без входа остальная функциональность недоступна: учётная запись нужна для тарифов, квот и истории.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "4xePGUMoRRCKMSxr8x0=",
+							"_parent": {
+								"$ref": "NaIPBTOXRfuAc8n9Bi0="
+							},
+							"name": "Выбор действия"
+						}
+					],
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "bVoMxbhnTzyOXemw2mc=",
+							"_parent": {
+								"$ref": "NaIPBTOXRfuAc8n9Bi0="
+							},
+							"documentation": "Отношение ассоциации выбрано направленным от прецедента «Регистрация и вход в систему» к актору «Почтовый сервис», потому что актор — внешняя система-поставщик: прецедент передаёт ей запрос и получает результат, диалога нет.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "QGOIP2NoTE2CC+pIGpo=",
+								"_parent": {
+									"$ref": "bVoMxbhnTzyOXemw2mc="
+								},
+								"reference": {
+									"$ref": "NaIPBTOXRfuAc8n9Bi0="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "HfEhwxV1RM6XfZEF7Ks=",
+								"_parent": {
+									"$ref": "bVoMxbhnTzyOXemw2mc="
+								},
+								"reference": {
+									"$ref": "I/vorfCLS5a5grUKA7A="
+								},
+								"navigable": "navigable"
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "P5R3WLyUQcOUrTwqDdI=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Генерация материала",
+					"documentation": "Базисный прецедент, главная функция системы. Пользователь задаёт форму материала (пресет и параметры процедурного шума с мгновенным превью) и описание; система проверяет права тарифа, генерирует текстуру диффузионной моделью, повышает разрешение и рассчитывает PBR-карты. Обработка асинхронная, прогресс приходит по WebSocket.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "m9rbQy1dQiq0xXF0y/Q=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"name": "Ввод описания"
+						},
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "pSkiOWS6TPiU4c7Y94w=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"name": "Запуск генерации"
+						},
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "5iiyV1q3Tfqe/5/NypI=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"name": "Ожидание результата"
+						}
+					],
+					"ownedElements": [
+						{
+							"_type": "UMLInclude",
+							"_id": "3TRJn4YMSvWm0/LUlmk=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"source": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"target": {
+								"$ref": "emaQoTk+TaiwmFRbHi4="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Задание формы материала» выбран «include», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Задание формы материала» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "cax2XpekQlO1fQEgaGI=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"source": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"target": {
+								"$ref": "q4WM2iIiSV6wyvTvIQQ="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Формирование промпта» выбран «include», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Формирование промпта» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "cWVk2bTARW2qTAYuo6k=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"source": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"target": {
+								"$ref": "MqSjK1MwRJW9ItIEVnU="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Проверка прав тарифа» выбран «include», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Проверка прав тарифа» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "TiLdb1ueTpa/OmXcImU=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"source": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"target": {
+								"$ref": "foJ0eTUtT8a8h++e00E="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Генерация текстуры» выбран «include», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Генерация текстуры» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "IloKbTgbR6yBMi5Jxec=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"source": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"target": {
+								"$ref": "4mvlwaxES5uHFL09KMs="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Повышение разрешения текстуры» выбран «include», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Повышение разрешения текстуры» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "EhAu9XjBR/2gJVHRQKE=",
+							"_parent": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"source": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"target": {
+								"$ref": "H7kUiIbjQdCK9+yWk/s="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Расчёт PBR-карт» выбран «include», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Расчёт PBR-карт» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "L1Ze44htQ06BQmWgd/U=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Просмотр материала в 3D",
+					"documentation": "Базисный прецедент. Просмотр готового материала на 3D-объекте с освещением: вращение, переключение карт, смена формы объекта; на премиум-тарифе — на собственной 3D-модели пользователя.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "fstTE2b8Rk2BmWKIiUs=",
+							"_parent": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"name": "Выбор режима"
+						}
+					],
+					"ownedElements": [
+						{
+							"_type": "UMLInclude",
+							"_id": "37kKmXXDQ8uzftL2Gkk=",
+							"_parent": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"source": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"target": {
+								"$ref": "D+YnB1vMRI+eqW95rOQ="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Просмотр материала в 3D» и «Загрузка карт материала» выбран «include», потому что при реализации прецедента «Просмотр материала в 3D» функциональность прецедента «Загрузка карт материала» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "zcmK4pSiQEqF2hzI9Gk=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Экспорт материала",
+					"documentation": "Базисный прецедент. Выдача набора карт архивом ZIP с упаковкой каналов и именами файлов под выбранный движок: Blender, Unity, Unreal Engine.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "vudkpa0uR52kCS/MZK4=",
+							"_parent": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"name": "Подготовка карт"
+						}
+					],
+					"ownedElements": [
+						{
+							"_type": "UMLInclude",
+							"_id": "1YC1/POuSFus4x/7eac=",
+							"_parent": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"source": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"target": {
+								"$ref": "FL8d6P4LR+eaoHnqHqI="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Экспорт материала» и «Выбор целевого движка» выбран «include», потому что при реализации прецедента «Экспорт материала» функциональность прецедента «Выбор целевого движка» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "dcraGtzwQPmqhWnEVxo=",
+							"_parent": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"source": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"target": {
+								"$ref": "HWM+FQXuQqqOvngaD/4="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Экспорт материала» и «Упаковка карт под движок» выбран «include», потому что при реализации прецедента «Экспорт материала» функциональность прецедента «Упаковка карт под движок» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "gpNEy7DNQti9kMrRP9E=",
+							"_parent": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"source": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"target": {
+								"$ref": "Hzh4h57KTg+svXudGFQ="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Экспорт материала» и «Формирование архива материала» выбран «include», потому что при реализации прецедента «Экспорт материала» функциональность прецедента «Формирование архива материала» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "0WGhbm87TzemrTRX6hk=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Работа с историей материалов",
+					"documentation": "Базисный прецедент. Просмотр списка созданных материалов с миниатюрами и сроком хранения, повторное открытие, удаление, создание варианта с изменёнными параметрами.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "GCIBr0IRSievNDcPPx8=",
+							"_parent": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"name": "Выбор действия"
+						}
+					],
+					"ownedElements": [
+						{
+							"_type": "UMLInclude",
+							"_id": "c44KM0c2T+up2EGl9WM=",
+							"_parent": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"source": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"target": {
+								"$ref": "dHpzMlZXS/Gobh7McSk="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Работа с историей материалов» и «Просмотр списка материалов» выбран «include», потому что при реализации прецедента «Работа с историей материалов» функциональность прецедента «Просмотр списка материалов» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "yyE49ER7SoOwe7vDvxk=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Управление подпиской",
+					"documentation": "Базисный прецедент. Просмотр тарифов, оформление премиум-подписки с оплатой через платёжную систему, отмена подписки; при смене тарифа пересчитывается срок хранения материалов.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "6rpMprhVTTC1TkkXquA=",
+							"_parent": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"name": "Выбор действия"
+						}
+					],
+					"ownedElements": [
+						{
+							"_type": "UMLAssociation",
+							"_id": "tAziyPQYR3272M/at2g=",
+							"_parent": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"documentation": "Отношение ассоциации выбрано направленным от прецедента «Управление подпиской» к актору «Платёжная система», потому что актор — внешняя система-поставщик: прецедент передаёт ей запрос и получает результат, диалога нет.",
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "O8a0eBxeQeyFPdiLrOI=",
+								"_parent": {
+									"$ref": "tAziyPQYR3272M/at2g="
+								},
+								"reference": {
+									"$ref": "yyE49ER7SoOwe7vDvxk="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "3NPUp4tVRMq1+9P+uRM=",
+								"_parent": {
+									"$ref": "tAziyPQYR3272M/at2g="
+								},
+								"reference": {
+									"$ref": "spK+IkmmR76Fe6nV4Jg="
+								},
+								"navigable": "navigable"
+							}
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "rzJnZqbBQceVkTl2kQM=",
+							"_parent": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"source": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"target": {
+								"$ref": "cGTokD3BS4y0XFdT19g="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Управление подпиской» и «Просмотр тарифов и текущей подписки» выбран «include», потому что при реализации прецедента «Управление подпиской» функциональность прецедента «Просмотр тарифов и текущей подписки» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "PziIUbhzQDS5u7vvtLc=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Администрирование системы",
+					"documentation": "Базисный прецедент. Техническое обслуживание системы: ведение учётных записей пользователей (поиск, блокировка, ручное назначение тарифа), справочника пресетов материалов и версий весов моделей, технический мониторинг сервисов. Изменения записываются в журнал аудита.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "HrS7/EXXRRCgUR4s6sQ=",
+							"_parent": {
+								"$ref": "PziIUbhzQDS5u7vvtLc="
+							},
+							"name": "Выбор раздела"
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "Ph0xEOR/TGSyZ6UxaWQ=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Анализ показателей системы",
+					"documentation": "Базисный прецедент. Расчёт и просмотр агрегированных обезличенных показателей за период: использование сервиса, конверсия в премиум, статистика генераций; выгрузка отчёта в CSV. Данные системы не изменяются.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "0AMLccjERMqJt+JKPPk=",
+							"_parent": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"name": "Выбор отчёта"
+						},
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "GeOxUvUqRHCFexfR4As=",
+							"_parent": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"name": "Просмотр результата"
+						}
+					],
+					"ownedElements": [
+						{
+							"_type": "UMLInclude",
+							"_id": "pU52DGlhQaWtE69WriU=",
+							"_parent": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"source": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"target": {
+								"$ref": "eeOKCAjCQ1uQBV58M2M="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Анализ показателей системы» и «Выбор периода и фильтров» выбран «include», потому что при реализации прецедента «Анализ показателей системы» функциональность прецедента «Выбор периода и фильтров» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "8AXMlU+DRmS75bR8cGw=",
+							"_parent": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"source": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"target": {
+								"$ref": "RRmmWLZ1R8OaYmGb76A="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Анализ показателей системы» и «Расчёт агрегированных показателей» выбран «include», потому что при реализации прецедента «Анализ показателей системы» функциональность прецедента «Расчёт агрегированных показателей» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "ChQVKtyKQQyLrldSfOE=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Управление тарифами и персоналом",
+					"documentation": "Базисный прецедент. Коммерческое управление сервисом: цены и лимиты тарифов (хранятся данными в базе), назначение и отзыв ролей сотрудников с немедленным действием, финансовый отчёт по платежам.",
+					"extensionPoints": [
+						{
+							"_type": "UMLExtensionPoint",
+							"_id": "Etr9MG5WThi5IPoQjOA=",
+							"_parent": {
+								"$ref": "ChQVKtyKQQyLrldSfOE="
+							},
+							"name": "Выбор раздела"
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "IjU6UPa6SDihhBkPpPM=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Регистрация учётной записи",
+					"documentation": "Ввод e-mail и пароля, проверка уникальности адреса, создание учётной записи на бесплатном тарифе.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "p0MU2qEBT7mKGzfyO5A=",
+							"_parent": {
+								"$ref": "IjU6UPa6SDihhBkPpPM="
+							},
+							"source": {
+								"$ref": "IjU6UPa6SDihhBkPpPM="
+							},
+							"target": {
+								"$ref": "NaIPBTOXRfuAc8n9Bi0="
+							},
+							"condition": "выбрана регистрация",
+							"extensionLocations": [
+								{
+									"$ref": "4xePGUMoRRCKMSxr8x0="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Регистрация и вход в систему» и «Регистрация учётной записи» выбран «extend», потому что при реализации прецедента «Регистрация и вход в систему» функциональность прецедента «Регистрация учётной записи» используется только при выполнении условия: выбрана регистрация."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "BRge4EekQnW0rgXNhPg=",
+							"_parent": {
+								"$ref": "IjU6UPa6SDihhBkPpPM="
+							},
+							"source": {
+								"$ref": "IjU6UPa6SDihhBkPpPM="
+							},
+							"target": {
+								"$ref": "7VxjpRciTCyiKH2hUjw="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Регистрация учётной записи» и «Отправка письма пользователю» выбран «include», потому что при реализации прецедента «Регистрация учётной записи» функциональность прецедента «Отправка письма пользователю» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "Hlm2rUWER02PuPMzrP8=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Вход по e-mail и паролю",
+					"documentation": "Проверка учётных данных пользователя.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "cdxjKDUKT621Y5hX+bY=",
+							"_parent": {
+								"$ref": "Hlm2rUWER02PuPMzrP8="
+							},
+							"source": {
+								"$ref": "Hlm2rUWER02PuPMzrP8="
+							},
+							"target": {
+								"$ref": "NaIPBTOXRfuAc8n9Bi0="
+							},
+							"condition": "выбран вход",
+							"extensionLocations": [
+								{
+									"$ref": "4xePGUMoRRCKMSxr8x0="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Регистрация и вход в систему» и «Вход по e-mail и паролю» выбран «extend», потому что при реализации прецедента «Регистрация и вход в систему» функциональность прецедента «Вход по e-mail и паролю» используется только при выполнении условия: выбран вход."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "tRGtZaTGQvGnyNd0x2g=",
+							"_parent": {
+								"$ref": "Hlm2rUWER02PuPMzrP8="
+							},
+							"source": {
+								"$ref": "Hlm2rUWER02PuPMzrP8="
+							},
+							"target": {
+								"$ref": "omMyir4MR0ae21elmcw="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Вход по e-mail и паролю» и «Выдача токенов доступа» выбран «include», потому что при реализации прецедента «Вход по e-mail и паролю» функциональность прецедента «Выдача токенов доступа» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "IRmzmh2CSUWHlMYm13g=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Восстановление пароля",
+					"documentation": "Отправка ссылки сброса и установка нового пароля.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "iMjw1ZZNTJ6RHmWg9AQ=",
+							"_parent": {
+								"$ref": "IRmzmh2CSUWHlMYm13g="
+							},
+							"source": {
+								"$ref": "IRmzmh2CSUWHlMYm13g="
+							},
+							"target": {
+								"$ref": "NaIPBTOXRfuAc8n9Bi0="
+							},
+							"condition": "нажата «Забыли пароль?»",
+							"extensionLocations": [
+								{
+									"$ref": "4xePGUMoRRCKMSxr8x0="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Регистрация и вход в систему» и «Восстановление пароля» выбран «extend», потому что при реализации прецедента «Регистрация и вход в систему» функциональность прецедента «Восстановление пароля» используется только при выполнении условия: нажата «Забыли пароль?»."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "uyArIFlySj2a261kc6I=",
+							"_parent": {
+								"$ref": "IRmzmh2CSUWHlMYm13g="
+							},
+							"source": {
+								"$ref": "IRmzmh2CSUWHlMYm13g="
+							},
+							"target": {
+								"$ref": "7VxjpRciTCyiKH2hUjw="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Восстановление пароля» и «Отправка письма пользователю» выбран «include», потому что при реализации прецедента «Восстановление пароля» функциональность прецедента «Отправка письма пользователю» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "7VxjpRciTCyiKH2hUjw=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Отправка письма пользователю",
+					"documentation": "Формирование письма (подтверждение адреса или сброс пароля) и передача его почтовому сервису."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "omMyir4MR0ae21elmcw=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Выдача токенов доступа",
+					"documentation": "Выдача короткоживущего токена доступа JWT и токена обновления."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "emaQoTk+TaiwmFRbHi4=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Задание формы материала",
+					"documentation": "Выбор пресета или параметров процедурного шума (тип, масштаб, октавы, растяжение, seed) с мгновенным бесшовным превью плиткой 3×3."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "q4WM2iIiSV6wyvTvIQQ=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Формирование промпта",
+					"documentation": "Сборка итогового промпта по шаблону: описание, модификаторы, обязательные слова (seamless texture, top-down, flat lighting), триггер LoRA, negative prompt; проверка длины не больше 77 токенов CLIP."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "MqSjK1MwRJW9ItIEVnU=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Проверка прав тарифа",
+					"documentation": "Проверка суточной квоты и допустимости параметров (разрешение, шаги, число вариантов, референс) для тарифа пользователя."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "foJ0eTUtT8a8h++e00E=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Генерация текстуры",
+					"documentation": "Генерация цветовой текстуры 512² моделью Stable Diffusion 1.5 + ControlNet + LoRA с циклическим padding (бесшовность). Модель одна для всех тарифов; на премиуме — больше шагов и до 4 вариантов."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "4mvlwaxES5uHFL09KMs=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Повышение разрешения текстуры",
+					"documentation": "Бесшовное увеличение Real-ESRGAN до 1024² (бесплатный тариф) или 2048²/4096² (премиум)."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "H7kUiIbjQdCK9+yWk/s=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Расчёт PBR-карт",
+					"documentation": "Расчёт карт высот, нормалей, шероховатости и затенения формулами с заворачиванием краёв."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "Xc820iEvRg+ZNb/D+8s=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Получение подсказок к промпту",
+					"documentation": "Всплывающая подсказка с 1–3 вариантами улучшения промпта от языковой модели (перевод, детали, удаление мешающих слов, подходящий пресет); каждый вариант применяется одной кнопкой. Модель — локальная в кластере или через OpenRouter.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "9t2KWotNTESvNoAOzjI=",
+							"_parent": {
+								"$ref": "Xc820iEvRg+ZNb/D+8s="
+							},
+							"source": {
+								"$ref": "Xc820iEvRg+ZNb/D+8s="
+							},
+							"target": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"condition": "тариф «Премиум» и пауза в наборе",
+							"extensionLocations": [
+								{
+									"$ref": "m9rbQy1dQiq0xXF0y/Q="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Получение подсказок к промпту» выбран «extend», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Получение подсказок к промпту» используется только при выполнении условия: тариф «Премиум» и пауза в наборе."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "XtnPEef2QBqWMoUSbZs=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Выдача готового материала из кэша",
+					"documentation": "Если материал с такими же параметрами уже создан, результат выдаётся сразу без повторной генерации.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "Kvc+KX3aQPuNkuLHDqU=",
+							"_parent": {
+								"$ref": "XtnPEef2QBqWMoUSbZs="
+							},
+							"source": {
+								"$ref": "XtnPEef2QBqWMoUSbZs="
+							},
+							"target": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"condition": "параметры совпадают с готовым материалом",
+							"extensionLocations": [
+								{
+									"$ref": "pSkiOWS6TPiU4c7Y94w="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Выдача готового материала из кэша» выбран «extend», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Выдача готового материала из кэша» используется только при выполнении условия: параметры совпадают с готовым материалом."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "yigltSUISo+g70pmW3U=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Отмена генерации",
+					"documentation": "Прерывание задачи по запросу пользователя; квота не списывается.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "ixzvtx07SBapuoyba+U=",
+							"_parent": {
+								"$ref": "yigltSUISo+g70pmW3U="
+							},
+							"source": {
+								"$ref": "yigltSUISo+g70pmW3U="
+							},
+							"target": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"condition": "нажата «Отменить»",
+							"extensionLocations": [
+								{
+									"$ref": "5iiyV1q3Tfqe/5/NypI="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Отмена генерации» выбран «extend», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Отмена генерации» используется только при выполнении условия: нажата «Отменить»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "Ub9shKB/Qsi6NdVUx5A=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Учёт картинки-референса",
+					"documentation": "Загруженная картинка-образец задаёт внешний вид материала через IP-Adapter; форма по-прежнему задаётся шумом.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "vLeIORnTS5yzSHF0zb0=",
+							"_parent": {
+								"$ref": "Ub9shKB/Qsi6NdVUx5A="
+							},
+							"source": {
+								"$ref": "Ub9shKB/Qsi6NdVUx5A="
+							},
+							"target": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"condition": "тариф «Премиум» и загружен референс",
+							"extensionLocations": [
+								{
+									"$ref": "m9rbQy1dQiq0xXF0y/Q="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Генерация материала» и «Учёт картинки-референса» выбран «extend», потому что при реализации прецедента «Генерация материала» функциональность прецедента «Учёт картинки-референса» используется только при выполнении условия: тариф «Премиум» и загружен референс."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "FL8d6P4LR+eaoHnqHqI=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Выбор целевого движка",
+					"documentation": "Выбор Blender, Unity или Unreal Engine."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "HWM+FQXuQqqOvngaD/4=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Упаковка карт под движок",
+					"documentation": "Упаковка каналов и именование файлов по соглашениям движка (ORM для Unreal, Metallic/Smoothness для Unity)."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "Hzh4h57KTg+svXudGFQ=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Формирование архива материала",
+					"documentation": "Сборка ZIP с картами и manifest.json с параметрами материала, выдача ссылки на скачивание."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "0Dzl4iU2SEWaPPglu4o=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Перевод карты нормалей в формат DirectX",
+					"documentation": "Инверсия зелёного канала карты нормалей: Unreal Engine использует формат DirectX.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "uQuPuXXNRhGb3uoMDUo=",
+							"_parent": {
+								"$ref": "0Dzl4iU2SEWaPPglu4o="
+							},
+							"source": {
+								"$ref": "0Dzl4iU2SEWaPPglu4o="
+							},
+							"target": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"condition": "выбран Unreal Engine",
+							"extensionLocations": [
+								{
+									"$ref": "vudkpa0uR52kCS/MZK4="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Экспорт материала» и «Перевод карты нормалей в формат DirectX» выбран «extend», потому что при реализации прецедента «Экспорт материала» функциональность прецедента «Перевод карты нормалей в формат DirectX» используется только при выполнении условия: выбран Unreal Engine."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "KNI8UNvNTvShJyiTFMo=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Экспорт в расширенных форматах",
+					"documentation": "Карта высот в 16 бит, формат EXR и файл .glb со сферой предпросмотра.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "kdAC1tWBQSOhkbznrwk=",
+							"_parent": {
+								"$ref": "KNI8UNvNTvShJyiTFMo="
+							},
+							"source": {
+								"$ref": "KNI8UNvNTvShJyiTFMo="
+							},
+							"target": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"condition": "тариф «Премиум», выбраны 16 бит / EXR / glb",
+							"extensionLocations": [
+								{
+									"$ref": "vudkpa0uR52kCS/MZK4="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Экспорт материала» и «Экспорт в расширенных форматах» выбран «extend», потому что при реализации прецедента «Экспорт материала» функциональность прецедента «Экспорт в расширенных форматах» используется только при выполнении условия: тариф «Премиум», выбраны 16 бит / EXR / glb."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "dHpzMlZXS/Gobh7McSk=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Просмотр списка материалов",
+					"documentation": "Список материалов пользователя с миниатюрами, датой и сроком хранения."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "eQeF1EgIQ4+iLpoAU78=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Открытие материала",
+					"documentation": "Открытие выбранного материала в генераторе и 3D-просмотре.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "Mt3XwxuMTvaFCDONGF0=",
+							"_parent": {
+								"$ref": "eQeF1EgIQ4+iLpoAU78="
+							},
+							"source": {
+								"$ref": "eQeF1EgIQ4+iLpoAU78="
+							},
+							"target": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"condition": "выбран материал в списке",
+							"extensionLocations": [
+								{
+									"$ref": "GCIBr0IRSievNDcPPx8="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Работа с историей материалов» и «Открытие материала» выбран «extend», потому что при реализации прецедента «Работа с историей материалов» функциональность прецедента «Открытие материала» используется только при выполнении условия: выбран материал в списке."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "Qo5sRRV8RG+JDMAkNRY=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Удаление материала",
+					"documentation": "Удаление материала и его файлов после подтверждения.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "a8igPGI6Sa2CWUmcEPw=",
+							"_parent": {
+								"$ref": "Qo5sRRV8RG+JDMAkNRY="
+							},
+							"source": {
+								"$ref": "Qo5sRRV8RG+JDMAkNRY="
+							},
+							"target": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"condition": "нажата «Удалить», удаление подтверждено",
+							"extensionLocations": [
+								{
+									"$ref": "GCIBr0IRSievNDcPPx8="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Работа с историей материалов» и «Удаление материала» выбран «extend», потому что при реализации прецедента «Работа с историей материалов» функциональность прецедента «Удаление материала» используется только при выполнении условия: нажата «Удалить», удаление подтверждено."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "BXAaQS1HRh6Ls8mlkis=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Создание варианта материала",
+					"documentation": "Копирование параметров выбранного материала в генератор для изменения и новой генерации.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "reg0AP7iSxWSKOw17XY=",
+							"_parent": {
+								"$ref": "BXAaQS1HRh6Ls8mlkis="
+							},
+							"source": {
+								"$ref": "BXAaQS1HRh6Ls8mlkis="
+							},
+							"target": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"condition": "нажата «Изменить параметры»",
+							"extensionLocations": [
+								{
+									"$ref": "GCIBr0IRSievNDcPPx8="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Работа с историей материалов» и «Создание варианта материала» выбран «extend», потому что при реализации прецедента «Работа с историей материалов» функциональность прецедента «Создание варианта материала» используется только при выполнении условия: нажата «Изменить параметры»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "cGTokD3BS4y0XFdT19g=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Просмотр тарифов и текущей подписки",
+					"documentation": "Сравнение тарифов, текущий тариф, остаток квоты, дата окончания подписки."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "8rxxwowaRKKcctGP25k=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Оформление премиум-подписки",
+					"documentation": "Выбор премиум-тарифа, оплата, активация подписки после подтверждения платёжной системы.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "Rq2ZsRitRDO3Ztgl9QA=",
+							"_parent": {
+								"$ref": "8rxxwowaRKKcctGP25k="
+							},
+							"source": {
+								"$ref": "8rxxwowaRKKcctGP25k="
+							},
+							"target": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"condition": "выбран «Премиум», подписки нет",
+							"extensionLocations": [
+								{
+									"$ref": "6rpMprhVTTC1TkkXquA="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Управление подпиской» и «Оформление премиум-подписки» выбран «extend», потому что при реализации прецедента «Управление подпиской» функциональность прецедента «Оформление премиум-подписки» используется только при выполнении условия: выбран «Премиум», подписки нет."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "nY3Ht79fRUmlnoDJPWI=",
+							"_parent": {
+								"$ref": "8rxxwowaRKKcctGP25k="
+							},
+							"source": {
+								"$ref": "8rxxwowaRKKcctGP25k="
+							},
+							"target": {
+								"$ref": "9Ufje5ybTSSsBINSwyE="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Оформление премиум-подписки» и «Оплата подписки» выбран «include», потому что при реализации прецедента «Оформление премиум-подписки» функциональность прецедента «Оплата подписки» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "LKJcpUdiTsCStDoBrkQ=",
+							"_parent": {
+								"$ref": "8rxxwowaRKKcctGP25k="
+							},
+							"source": {
+								"$ref": "8rxxwowaRKKcctGP25k="
+							},
+							"target": {
+								"$ref": "JsnqKn5YT1S2iQSOI4s="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Оформление премиум-подписки» и «Пересчёт срока хранения материалов» выбран «include», потому что при реализации прецедента «Оформление премиум-подписки» функциональность прецедента «Пересчёт срока хранения материалов» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "jwYFuxCKQFeZTwIhX/A=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Отмена подписки",
+					"documentation": "Отмена продления; подписка действует до конца оплаченного периода.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "5aa+fiLLT/ORIehPe3Q=",
+							"_parent": {
+								"$ref": "jwYFuxCKQFeZTwIhX/A="
+							},
+							"source": {
+								"$ref": "jwYFuxCKQFeZTwIhX/A="
+							},
+							"target": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"condition": "нажата «Отменить подписку», подписка активна",
+							"extensionLocations": [
+								{
+									"$ref": "6rpMprhVTTC1TkkXquA="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Управление подпиской» и «Отмена подписки» выбран «extend», потому что при реализации прецедента «Управление подпиской» функциональность прецедента «Отмена подписки» используется только при выполнении условия: нажата «Отменить подписку», подписка активна."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "4DRAuEW3QeGAP6J9GAc=",
+							"_parent": {
+								"$ref": "jwYFuxCKQFeZTwIhX/A="
+							},
+							"source": {
+								"$ref": "jwYFuxCKQFeZTwIhX/A="
+							},
+							"target": {
+								"$ref": "JsnqKn5YT1S2iQSOI4s="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Отмена подписки» и «Пересчёт срока хранения материалов» выбран «include», потому что при реализации прецедента «Отмена подписки» функциональность прецедента «Пересчёт срока хранения материалов» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "9Ufje5ybTSSsBINSwyE=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Оплата подписки",
+					"documentation": "Передача платежа платёжной системе и получение результата."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "JsnqKn5YT1S2iQSOI4s=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Пересчёт срока хранения материалов",
+					"documentation": "Изменение срока хранения существующих материалов при смене тарифа."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "D+YnB1vMRI+eqW95rOQ=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Загрузка карт материала",
+					"documentation": "Загрузка всех карт материала из хранилища в 3D-просмотр."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "YVx1hf07RUqBqYeadSE=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Переключение отображаемой карты",
+					"documentation": "Показ отдельной карты (albedo, normal, height, roughness, AO) на объекте.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "drWpCkpsSWyDw1ii31A=",
+							"_parent": {
+								"$ref": "YVx1hf07RUqBqYeadSE="
+							},
+							"source": {
+								"$ref": "YVx1hf07RUqBqYeadSE="
+							},
+							"target": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"condition": "выбрана вкладка карты",
+							"extensionLocations": [
+								{
+									"$ref": "fstTE2b8Rk2BmWKIiUs="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Просмотр материала в 3D» и «Переключение отображаемой карты» выбран «extend», потому что при реализации прецедента «Просмотр материала в 3D» функциональность прецедента «Переключение отображаемой карты» используется только при выполнении условия: выбрана вкладка карты."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "mgcvye70Sl+tnn0lehI=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Смена формы объекта",
+					"documentation": "Выбор объекта просмотра: сфера, плоскость с повтором 3×3 для проверки шва, куб.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "CT3jHZ/2RRqn2oFQkcA=",
+							"_parent": {
+								"$ref": "mgcvye70Sl+tnn0lehI="
+							},
+							"source": {
+								"$ref": "mgcvye70Sl+tnn0lehI="
+							},
+							"target": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"condition": "выбрана сфера, плоскость или куб",
+							"extensionLocations": [
+								{
+									"$ref": "fstTE2b8Rk2BmWKIiUs="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Просмотр материала в 3D» и «Смена формы объекта» выбран «extend», потому что при реализации прецедента «Просмотр материала в 3D» функциональность прецедента «Смена формы объекта» используется только при выполнении условия: выбрана сфера, плоскость или куб."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "jH7iAs/URaqvmxC0nWE=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Просмотр на своей 3D-модели",
+					"documentation": "Загрузка модели пользователя (GLB, OBJ, FBX) и наложение на неё материала.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "7crjqIYiS5iQ0tr1Ko0=",
+							"_parent": {
+								"$ref": "jH7iAs/URaqvmxC0nWE="
+							},
+							"source": {
+								"$ref": "jH7iAs/URaqvmxC0nWE="
+							},
+							"target": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"condition": "тариф «Премиум» и загружена модель",
+							"extensionLocations": [
+								{
+									"$ref": "fstTE2b8Rk2BmWKIiUs="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Просмотр материала в 3D» и «Просмотр на своей 3D-модели» выбран «extend», потому что при реализации прецедента «Просмотр материала в 3D» функциональность прецедента «Просмотр на своей 3D-модели» используется только при выполнении условия: тариф «Премиум» и загружена модель."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "PKsyy4sZQnWJtmy03TA=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Управление учётными записями пользователей",
+					"documentation": "Поиск пользователя по e-mail, просмотр тарифа, квот и истории подписки, блокировка и разблокировка, ручное назначение тарифа (компенсация, тестирование). При блокировке сеансы пользователя аннулируются сразу.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "siMKG/J8SdiVDJzuYyw=",
+							"_parent": {
+								"$ref": "PKsyy4sZQnWJtmy03TA="
+							},
+							"source": {
+								"$ref": "PKsyy4sZQnWJtmy03TA="
+							},
+							"target": {
+								"$ref": "PziIUbhzQDS5u7vvtLc="
+							},
+							"condition": "выбран раздел «Пользователи»",
+							"extensionLocations": [
+								{
+									"$ref": "HrS7/EXXRRCgUR4s6sQ="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Администрирование системы» и «Управление учётными записями пользователей» выбран «extend», потому что при реализации прецедента «Администрирование системы» функциональность прецедента «Управление учётными записями пользователей» используется только при выполнении условия: выбран раздел «Пользователи»."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "OIt+DyErSWWv1d88dc8=",
+							"_parent": {
+								"$ref": "PKsyy4sZQnWJtmy03TA="
+							},
+							"source": {
+								"$ref": "PKsyy4sZQnWJtmy03TA="
+							},
+							"target": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Управление учётными записями пользователей» и «Запись в журнал аудита» выбран «include», потому что при реализации прецедента «Управление учётными записями пользователей» функциональность прецедента «Запись в журнал аудита» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "ASbIhLw2Syq1jL/Xq4Y=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Ведение пресетов материалов",
+					"documentation": "Создание и правка пресетов: параметры шума, шаблон промпта, базовая шероховатость, миниатюра; скрытие устаревших пресетов.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "m/BxUBEKREW6xWYYhR0=",
+							"_parent": {
+								"$ref": "ASbIhLw2Syq1jL/Xq4Y="
+							},
+							"source": {
+								"$ref": "ASbIhLw2Syq1jL/Xq4Y="
+							},
+							"target": {
+								"$ref": "PziIUbhzQDS5u7vvtLc="
+							},
+							"condition": "выбран раздел «Пресеты»",
+							"extensionLocations": [
+								{
+									"$ref": "HrS7/EXXRRCgUR4s6sQ="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Администрирование системы» и «Ведение пресетов материалов» выбран «extend», потому что при реализации прецедента «Администрирование системы» функциональность прецедента «Ведение пресетов материалов» используется только при выполнении условия: выбран раздел «Пресеты»."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "U9NTGwnxRmGf9nPTrVY=",
+							"_parent": {
+								"$ref": "ASbIhLw2Syq1jL/Xq4Y="
+							},
+							"source": {
+								"$ref": "ASbIhLw2Syq1jL/Xq4Y="
+							},
+							"target": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Ведение пресетов материалов» и «Запись в журнал аудита» выбран «include», потому что при реализации прецедента «Ведение пресетов материалов» функциональность прецедента «Запись в журнал аудита» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "n6F2aqLTTgWTzUj0oqI=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Обновление версии модели",
+					"documentation": "Загрузка новой версии весов LoRA (safetensors), проверка совместимости с базовой моделью SD 1.5 и пробная генерация, переключение генерации на новую версию; кэш результатов старой версии больше не используется.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "tIe//lQtQnaO5eJxoZs=",
+							"_parent": {
+								"$ref": "n6F2aqLTTgWTzUj0oqI="
+							},
+							"source": {
+								"$ref": "n6F2aqLTTgWTzUj0oqI="
+							},
+							"target": {
+								"$ref": "PziIUbhzQDS5u7vvtLc="
+							},
+							"condition": "выбран раздел «Модели»",
+							"extensionLocations": [
+								{
+									"$ref": "HrS7/EXXRRCgUR4s6sQ="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Администрирование системы» и «Обновление версии модели» выбран «extend», потому что при реализации прецедента «Администрирование системы» функциональность прецедента «Обновление версии модели» используется только при выполнении условия: выбран раздел «Модели»."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "5NfgaIF4Tr627WpVnK8=",
+							"_parent": {
+								"$ref": "n6F2aqLTTgWTzUj0oqI="
+							},
+							"source": {
+								"$ref": "n6F2aqLTTgWTzUj0oqI="
+							},
+							"target": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Обновление версии модели» и «Запись в журнал аудита» выбран «include», потому что при реализации прецедента «Обновление версии модели» функциональность прецедента «Запись в журнал аудита» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "RDiCCkTjSdmv9lhlp3Q=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Технический мониторинг",
+					"documentation": "Просмотр длины очередей, загрузки видеокарт, времени этапов генерации, доли ошибок и состояния сервисов (данные Prometheus и Grafana).",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "xSa3QWonRKGMhTR16cE=",
+							"_parent": {
+								"$ref": "RDiCCkTjSdmv9lhlp3Q="
+							},
+							"source": {
+								"$ref": "RDiCCkTjSdmv9lhlp3Q="
+							},
+							"target": {
+								"$ref": "PziIUbhzQDS5u7vvtLc="
+							},
+							"condition": "выбран раздел «Мониторинг»",
+							"extensionLocations": [
+								{
+									"$ref": "HrS7/EXXRRCgUR4s6sQ="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Администрирование системы» и «Технический мониторинг» выбран «extend», потому что при реализации прецедента «Администрирование системы» функциональность прецедента «Технический мониторинг» используется только при выполнении условия: выбран раздел «Мониторинг»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "TQyw/Fg4QTm8Kg1tq2M=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Запись в журнал аудита",
+					"documentation": "Сохранение записи о действии сотрудника: кто, когда, какое действие, над каким объектом, старое и новое значение. Журнал только пополняется; просматривает его владелец."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "eeOKCAjCQ1uQBV58M2M=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Выбор периода и фильтров",
+					"documentation": "Задание периода и фильтров (тариф, пресет), по которым считаются показатели."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "RRmmWLZ1R8OaYmGb76A=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Расчёт агрегированных показателей",
+					"documentation": "Расчёт сводных показателей по обезличенным данным: e-mail и другие персональные данные в отчёт не попадают, группы меньше 5 пользователей объединяются в «прочие»."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "4tN9bkYuTa2fPssn72s=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Отчёт об использовании сервиса",
+					"documentation": "Регистрации, активные пользователи за день и месяц, удержание по неделям, число генераций по тарифам.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "CC2EdpgQRzmyWdjEZko=",
+							"_parent": {
+								"$ref": "4tN9bkYuTa2fPssn72s="
+							},
+							"source": {
+								"$ref": "4tN9bkYuTa2fPssn72s="
+							},
+							"target": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"condition": "выбран отчёт «Использование»",
+							"extensionLocations": [
+								{
+									"$ref": "0AMLccjERMqJt+JKPPk="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Анализ показателей системы» и «Отчёт об использовании сервиса» выбран «extend», потому что при реализации прецедента «Анализ показателей системы» функциональность прецедента «Отчёт об использовании сервиса» используется только при выполнении условия: выбран отчёт «Использование»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "UP2BGOJaRkuYywc/2Es=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Отчёт о конверсии в премиум",
+					"documentation": "Доля пользователей, оформивших премиум, отказы от подписки, переходы к тарифам после исчерпания квоты.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "9KhoqIyxQvK39LTYJ1o=",
+							"_parent": {
+								"$ref": "UP2BGOJaRkuYywc/2Es="
+							},
+							"source": {
+								"$ref": "UP2BGOJaRkuYywc/2Es="
+							},
+							"target": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"condition": "выбран отчёт «Конверсия»",
+							"extensionLocations": [
+								{
+									"$ref": "0AMLccjERMqJt+JKPPk="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Анализ показателей системы» и «Отчёт о конверсии в премиум» выбран «extend», потому что при реализации прецедента «Анализ показателей системы» функциональность прецедента «Отчёт о конверсии в премиум» используется только при выполнении условия: выбран отчёт «Конверсия»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "VdsguYTCSkOQyAXMVq4=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Отчёт о генерациях",
+					"documentation": "Популярность пресетов, среднее время этапов, доля выдач из кэша, доля отмен и ошибок, использование подсказок и референсов.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "ML1284JPSqWWCMJSBtg=",
+							"_parent": {
+								"$ref": "VdsguYTCSkOQyAXMVq4="
+							},
+							"source": {
+								"$ref": "VdsguYTCSkOQyAXMVq4="
+							},
+							"target": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"condition": "выбран отчёт «Генерации»",
+							"extensionLocations": [
+								{
+									"$ref": "0AMLccjERMqJt+JKPPk="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Анализ показателей системы» и «Отчёт о генерациях» выбран «extend», потому что при реализации прецедента «Анализ показателей системы» функциональность прецедента «Отчёт о генерациях» используется только при выполнении условия: выбран отчёт «Генерации»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "aw8DoR68QauVRslAxbc=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Выгрузка отчёта в CSV",
+					"documentation": "Формирование файла CSV с показателями отчёта и выдача ссылки на скачивание.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "dBqfcRASTrmdSmCdT+4=",
+							"_parent": {
+								"$ref": "aw8DoR68QauVRslAxbc="
+							},
+							"source": {
+								"$ref": "aw8DoR68QauVRslAxbc="
+							},
+							"target": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"condition": "нажата «Выгрузить CSV»",
+							"extensionLocations": [
+								{
+									"$ref": "GeOxUvUqRHCFexfR4As="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Анализ показателей системы» и «Выгрузка отчёта в CSV» выбран «extend», потому что при реализации прецедента «Анализ показателей системы» функциональность прецедента «Выгрузка отчёта в CSV» используется только при выполнении условия: нажата «Выгрузить CSV»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "zSHQ5OD1Qwy4XFCNy+A=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Изменение цен и лимитов тарифов",
+					"documentation": "Изменение цены, периода оплаты и прав тарифа (генераций в сутки, разрешение, шаги, варианты, срок хранения). Лимиты действуют для новых задач без перевыпуска программы, цена — с нового периода оплаты.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "A7WcTUxrS9Ct6tdMSuc=",
+							"_parent": {
+								"$ref": "zSHQ5OD1Qwy4XFCNy+A="
+							},
+							"source": {
+								"$ref": "zSHQ5OD1Qwy4XFCNy+A="
+							},
+							"target": {
+								"$ref": "ChQVKtyKQQyLrldSfOE="
+							},
+							"condition": "выбран раздел «Тарифы»",
+							"extensionLocations": [
+								{
+									"$ref": "Etr9MG5WThi5IPoQjOA="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Управление тарифами и персоналом» и «Изменение цен и лимитов тарифов» выбран «extend», потому что при реализации прецедента «Управление тарифами и персоналом» функциональность прецедента «Изменение цен и лимитов тарифов» используется только при выполнении условия: выбран раздел «Тарифы»."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "7YQumf2TT5m6+WaACRg=",
+							"_parent": {
+								"$ref": "zSHQ5OD1Qwy4XFCNy+A="
+							},
+							"source": {
+								"$ref": "zSHQ5OD1Qwy4XFCNy+A="
+							},
+							"target": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Изменение цен и лимитов тарифов» и «Запись в журнал аудита» выбран «include», потому что при реализации прецедента «Изменение цен и лимитов тарифов» функциональность прецедента «Запись в журнал аудита» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "pWPklxlCSOusANxkEEA=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Назначение роли сотруднику",
+					"documentation": "Выдача существующей учётной записи роли «администратор» или «аналитик»; права действуют со следующего запроса сотрудника.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "cXDOSdZzTo2awclRCao=",
+							"_parent": {
+								"$ref": "pWPklxlCSOusANxkEEA="
+							},
+							"source": {
+								"$ref": "pWPklxlCSOusANxkEEA="
+							},
+							"target": {
+								"$ref": "ChQVKtyKQQyLrldSfOE="
+							},
+							"condition": "раздел «Персонал», нажата «Назначить роль»",
+							"extensionLocations": [
+								{
+									"$ref": "Etr9MG5WThi5IPoQjOA="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Управление тарифами и персоналом» и «Назначение роли сотруднику» выбран «extend», потому что при реализации прецедента «Управление тарифами и персоналом» функциональность прецедента «Назначение роли сотруднику» используется только при выполнении условия: раздел «Персонал», нажата «Назначить роль»."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "r+6RJYssT0+lXDqXqxU=",
+							"_parent": {
+								"$ref": "pWPklxlCSOusANxkEEA="
+							},
+							"source": {
+								"$ref": "pWPklxlCSOusANxkEEA="
+							},
+							"target": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Назначение роли сотруднику» и «Запись в журнал аудита» выбран «include», потому что при реализации прецедента «Назначение роли сотруднику» функциональность прецедента «Запись в журнал аудита» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "Seu0ntM5Rjid3YQiGcQ=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Отзыв роли сотрудника",
+					"documentation": "Снятие роли с сотрудника; права перестают действовать сразу.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "MmdUlaGgTfWZNVTUpag=",
+							"_parent": {
+								"$ref": "Seu0ntM5Rjid3YQiGcQ="
+							},
+							"source": {
+								"$ref": "Seu0ntM5Rjid3YQiGcQ="
+							},
+							"target": {
+								"$ref": "ChQVKtyKQQyLrldSfOE="
+							},
+							"condition": "раздел «Персонал», нажата «Отозвать роль»",
+							"extensionLocations": [
+								{
+									"$ref": "Etr9MG5WThi5IPoQjOA="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Управление тарифами и персоналом» и «Отзыв роли сотрудника» выбран «extend», потому что при реализации прецедента «Управление тарифами и персоналом» функциональность прецедента «Отзыв роли сотрудника» используется только при выполнении условия: раздел «Персонал», нажата «Отозвать роль»."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "4MWPZUuQRNmLAW8JQqo=",
+							"_parent": {
+								"$ref": "Seu0ntM5Rjid3YQiGcQ="
+							},
+							"source": {
+								"$ref": "Seu0ntM5Rjid3YQiGcQ="
+							},
+							"target": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Отзыв роли сотрудника» и «Запись в журнал аудита» выбран «include», потому что при реализации прецедента «Отзыв роли сотрудника» функциональность прецедента «Запись в журнал аудита» используется безусловно."
+						},
+						{
+							"_type": "UMLInclude",
+							"_id": "X/0MBRuIR6WvawX5Rs0=",
+							"_parent": {
+								"$ref": "Seu0ntM5Rjid3YQiGcQ="
+							},
+							"source": {
+								"$ref": "Seu0ntM5Rjid3YQiGcQ="
+							},
+							"target": {
+								"$ref": "7nAmqzSrReKiD+MLch0="
+							},
+							"documentation": "Тип отношения зависимости между прецедентами «Отзыв роли сотрудника» и «Аннулирование сеансов сотрудника» выбран «include», потому что при реализации прецедента «Отзыв роли сотрудника» функциональность прецедента «Аннулирование сеансов сотрудника» используется безусловно."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "7nAmqzSrReKiD+MLch0=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Аннулирование сеансов сотрудника",
+					"documentation": "Отзыв токенов обновления и увеличение версии токенов учётной записи: следующий запрос с прежним токеном доступа отклоняется шлюзом."
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "pgr0KiHSQm2tZt4H9G4=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Формирование финансового отчёта",
+					"documentation": "Выручка по периодам, число платежей и возвратов, число активных подписок, средний доход на пользователя (ARPU), отток подписчиков.",
+					"ownedElements": [
+						{
+							"_type": "UMLExtend",
+							"_id": "iUI9l/iZQxmW6zDQiVw=",
+							"_parent": {
+								"$ref": "pgr0KiHSQm2tZt4H9G4="
+							},
+							"source": {
+								"$ref": "pgr0KiHSQm2tZt4H9G4="
+							},
+							"target": {
+								"$ref": "ChQVKtyKQQyLrldSfOE="
+							},
+							"condition": "выбран раздел «Финансы»",
+							"extensionLocations": [
+								{
+									"$ref": "Etr9MG5WThi5IPoQjOA="
+								}
+							],
+							"documentation": "Тип отношения зависимости между прецедентами «Управление тарифами и персоналом» и «Формирование финансового отчёта» выбран «extend», потому что при реализации прецедента «Управление тарифами и персоналом» функциональность прецедента «Формирование финансового отчёта» используется только при выполнении условия: выбран раздел «Финансы»."
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseSubject",
+					"_id": "3gdMTDoNT+eY8sn8Jgs=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Система генерации бесшовных PBR-материалов"
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "WozFVuhKSHOraJYWcbM=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Варианты использования проектируемой системы",
+					"documentation": "Основная диаграмма: относительно независимые функции системы и их пользователи. Отношений зависимости между прецедентами нет; информационные связи показаны заметками.\n\nКоличественная характеристика диаграммы: акторов и работников — 7; прецедентов — 9; дуг (отношений) — 13.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseSubjectView",
+							"_id": "6QtDKmWIT/6zO9zLDvg=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "3gdMTDoNT+eY8sn8Jgs="
+							},
+							"left": 300,
+							"top": 40,
+							"width": 960,
+							"height": 800
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "OOdwpiQuSOS2podVaC4=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "NaIPBTOXRfuAc8n9Bi0="
+							},
+							"left": 330,
+							"top": 80,
+							"width": 220,
+							"height": 90,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "1F1H5n1NR6yG6sWIQkI=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"left": 433,
+							"top": 199,
+							"width": 220,
+							"height": 119,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Okvwwk4BR8u1MBiTTT8=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"left": 486,
+							"top": 346,
+							"width": 220,
+							"height": 90,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "fgDDYb69T9On5e2hpzc=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"left": 483,
+							"top": 479,
+							"width": 220,
+							"height": 83,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Mo7zqCCiTii6sPlalAM=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"left": 439,
+							"top": 596,
+							"width": 220,
+							"height": 90,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "N6OgWDGsRgG/MiLPmTM=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"left": 360,
+							"top": 719,
+							"width": 220,
+							"height": 83,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Ao9ckMm6T1uP4p5+rx4=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "PziIUbhzQDS5u7vvtLc="
+							},
+							"left": 945,
+							"top": 270,
+							"width": 270,
+							"height": 91,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "hVRd1r4KSNayMKEixAo=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"left": 945,
+							"top": 415,
+							"width": 270,
+							"height": 109,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Fq8kPF1+T72iA3tDgEw=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "ChQVKtyKQQyLrldSfOE="
+							},
+							"left": 945,
+							"top": 575,
+							"width": 270,
+							"height": 91,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "9lpVIfM8RaieSxKja/g=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"left": 180,
+							"top": 385,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "Prv3ZAVxRPS9cluVi9M=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "lL8Xw2NYTYCP2ssDljs="
+							},
+							"left": 40,
+							"top": 385,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "+DVXDJQsQF6FuRteggw=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "I/vorfCLS5a5grUKA7A="
+							},
+							"left": 1380,
+							"top": 65,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "1PFyaVDlQaOIf2V0VuA=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "HdEFM3sQRu69TyXrvOQ="
+							},
+							"left": 1335,
+							"top": 276,
+							"width": 130,
+							"height": 48,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true,
+							"stereotypeDisplay": "label"
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "YyWhaEPYQhW1Kt/Q3fw=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "HqLZdw9mSNWKQ/8sVZg="
+							},
+							"left": 1335,
+							"top": 376,
+							"width": 130,
+							"height": 48,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true,
+							"stereotypeDisplay": "label"
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "2mMv/8+PT0+PZrftnHo=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "sYHRvO9rSRSXtkDugiw="
+							},
+							"left": 1335,
+							"top": 471,
+							"width": 130,
+							"height": 48,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true,
+							"stereotypeDisplay": "label"
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "Zxdjgd/3RriuAaZGUFQ=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "spK+IkmmR76Fe6nV4Jg="
+							},
+							"left": 1380,
+							"top": 785,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "eZGnTQqrSfu/fGFm7q4=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"text": "Пополняются база «Материалы» и хранилище S3; учитывается квота тарифа",
+							"left": 735,
+							"top": 175,
+							"width": 180,
+							"height": 76
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "vDsmqwlZQsC4PnT9fKo=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"text": "Ведутся базы «Пользователи и тарифы» и «Пресеты», обновляются веса моделей",
+							"left": 975,
+							"top": 150,
+							"width": 230,
+							"height": 60
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "WoXE4UaYQ72wurKYjQI=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"text": "Используются обезличенные данные баз «Материалы» и «Пользователи и тарифы»",
+							"left": 735,
+							"top": 330,
+							"width": 180,
+							"height": 76
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "F241ZMdNSxO9EMTGKJw=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"text": "Используются база «Материалы» и хранилище S3",
+							"left": 735,
+							"top": 525,
+							"width": 180,
+							"height": 60
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "kND9LHO8TIeIwIy5/L8=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"text": "Меняет тариф в базе «Пользователи и тарифы»; от тарифа зависят возможности UC2–UC5",
+							"left": 735,
+							"top": 605,
+							"width": 180,
+							"height": 76
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "vt10N9VHQ9+n7LxnuKg=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"text": "Меняются тарифы и роли сотрудников; ведётся журнал аудита",
+							"left": 975,
+							"top": 690,
+							"width": 230,
+							"height": 60
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "yeGJVGMVRD2Zm6D/FQs=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "3NGGdLlwT1GvAfB6HX0="
+							},
+							"tail": {
+								"$ref": "9lpVIfM8RaieSxKja/g="
+							},
+							"head": {
+								"$ref": "OOdwpiQuSOS2podVaC4="
+							},
+							"points": "220:403;395:170",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "h1UxdLOvRP22C0PuG4I=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "maEuHKKuT3GS1T/q8hU="
+							},
+							"tail": {
+								"$ref": "9lpVIfM8RaieSxKja/g="
+							},
+							"head": {
+								"$ref": "1F1H5n1NR6yG6sWIQkI="
+							},
+							"points": "220:418;433:291",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "fIq9MzG+S/2s2nFplXQ=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "wLbyYpjFQtydwRugLk4="
+							},
+							"tail": {
+								"$ref": "9lpVIfM8RaieSxKja/g="
+							},
+							"head": {
+								"$ref": "Okvwwk4BR8u1MBiTTT8="
+							},
+							"points": "220:427;498:389",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "ZI8CZEdrTWSSboobbMg=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "4hInpT8ZQny0jGP27rE="
+							},
+							"tail": {
+								"$ref": "9lpVIfM8RaieSxKja/g="
+							},
+							"head": {
+								"$ref": "Mo7zqCCiTii6sPlalAM="
+							},
+							"points": "220:441;502:599",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "XtaszoG0T/Ovpmude7Y=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "F4aJp/CERbCwFqdmmF8="
+							},
+							"tail": {
+								"$ref": "9lpVIfM8RaieSxKja/g="
+							},
+							"head": {
+								"$ref": "N6OgWDGsRgG/MiLPmTM="
+							},
+							"points": "220:453;448:720",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "oT47OkNuTCGWMjWcmWI=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "IkNiGRrQQka+wDdX6MQ="
+							},
+							"tail": {
+								"$ref": "9lpVIfM8RaieSxKja/g="
+							},
+							"head": {
+								"$ref": "fgDDYb69T9On5e2hpzc="
+							},
+							"points": "220:434;507:489",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "zj9tQHHgR2Kd/eEv99g=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "yRYwBA1ySB+1dgrF7qQ="
+							},
+							"tail": {
+								"$ref": "Prv3ZAVxRPS9cluVi9M="
+							},
+							"head": {
+								"$ref": "9lpVIfM8RaieSxKja/g="
+							},
+							"points": "80:430;180:430",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "OLO4XWqKT6uwq72CcLs=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "bVoMxbhnTzyOXemw2mc="
+							},
+							"tail": {
+								"$ref": "OOdwpiQuSOS2podVaC4="
+							},
+							"head": {
+								"$ref": "+DVXDJQsQF6FuRteggw="
+							},
+							"points": "550:110;1380:110",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "n6ovCBsiRUSsEAIyMbQ=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "tAziyPQYR3272M/at2g="
+							},
+							"tail": {
+								"$ref": "N6OgWDGsRgG/MiLPmTM="
+							},
+							"head": {
+								"$ref": "Zxdjgd/3RriuAaZGUFQ="
+							},
+							"points": "573:754;1380:828",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "wc4Df6kUS6mx2XBQ6tg=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "caQh6M5sRUu1eE0Clgc="
+							},
+							"tail": {
+								"$ref": "1PFyaVDlQaOIf2V0VuA="
+							},
+							"head": {
+								"$ref": "Ao9ckMm6T1uP4p5+rx4="
+							},
+							"points": "1335:300;1215:300",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "pz5tLXS4TSaYK2oaUGU=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "AkUkgThDQiOxWHmyl9s="
+							},
+							"tail": {
+								"$ref": "YyWhaEPYQhW1Kt/Q3fw="
+							},
+							"head": {
+								"$ref": "hVRd1r4KSNayMKEixAo="
+							},
+							"points": "1335:409;1194:429",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "aAbnd0ZkS0uZkxDWUFc=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "oTSiQUmOS9CrmI7YXro="
+							},
+							"tail": {
+								"$ref": "2mMv/8+PT0+PZrftnHo="
+							},
+							"head": {
+								"$ref": "hVRd1r4KSNayMKEixAo="
+							},
+							"points": "1335:485;1190:462",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "whZsAbqDSwuSUGcMvzs=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"model": {
+								"$ref": "QvDNoDnpTwypYuada0I="
+							},
+							"tail": {
+								"$ref": "2mMv/8+PT0+PZrftnHo="
+							},
+							"head": {
+								"$ref": "Fq8kPF1+T72iA3tDgEw="
+							},
+							"points": "1335:517;1153:580",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "gBR/Yu4hSUuqYbN9bA4=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "eZGnTQqrSfu/fGFm7q4="
+							},
+							"head": {
+								"$ref": "1F1H5n1NR6yG6sWIQkI="
+							},
+							"points": "735:217;651:220",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "3ErRFsSZQwS1/QBNrxo=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "F241ZMdNSxO9EMTGKJw="
+							},
+							"head": {
+								"$ref": "Okvwwk4BR8u1MBiTTT8="
+							},
+							"points": "787:525;673:436",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "1QXKH2PTRTeb01AjAzE=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "F241ZMdNSxO9EMTGKJw="
+							},
+							"head": {
+								"$ref": "fgDDYb69T9On5e2hpzc="
+							},
+							"points": "735:536;674:523",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "p7b+qslaSUmXKHG5OM0=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "F241ZMdNSxO9EMTGKJw="
+							},
+							"head": {
+								"$ref": "Mo7zqCCiTii6sPlalAM="
+							},
+							"points": "735:578;629:605",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "TqewKFxZQv2HJ0eiiec=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "vDsmqwlZQsC4PnT9fKo="
+							},
+							"head": {
+								"$ref": "Ao9ckMm6T1uP4p5+rx4="
+							},
+							"points": "1088:210;1082:270",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "Msj41Xe9Tx2RadTXRl8=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "WoXE4UaYQ72wurKYjQI="
+							},
+							"head": {
+								"$ref": "hVRd1r4KSNayMKEixAo="
+							},
+							"points": "915:395;1000:421",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "SF/TSTj5QnChcSFFZRo=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "kND9LHO8TIeIwIy5/L8="
+							},
+							"head": {
+								"$ref": "N6OgWDGsRgG/MiLPmTM="
+							},
+							"points": "735:669;540:725",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "EVpJv9crTJSWnraTJ8s=",
+							"_parent": {
+								"$ref": "WozFVuhKSHOraJYWcbM="
+							},
+							"tail": {
+								"$ref": "vt10N9VHQ9+n7LxnuKg="
+							},
+							"head": {
+								"$ref": "Fq8kPF1+T72iA3tDgEw="
+							},
+							"points": "1087:690;1085:666",
+							"lineStyle": 1
+						}
+					],
+					"defaultDiagram": true
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "vFBfHireT96bhyK8pgg=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Регистрация и вход в систему»",
+					"documentation": "Декомпозиция базисного прецедента «Регистрация и вход в систему».\n\nКоличественная характеристика диаграммы: акторов и работников — 2; прецедентов — 6; дуг (отношений) — 8.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "p9TOXCUASd+U7WomFp0=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "NaIPBTOXRfuAc8n9Bi0="
+							},
+							"left": 500,
+							"top": 365,
+							"width": 240,
+							"height": 101,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Hf/iTCBGSZWE/Rs1Pnk=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "IjU6UPa6SDihhBkPpPM="
+							},
+							"left": 160,
+							"top": 100,
+							"width": 200,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "evHcT+2nQuGOqzffb/U=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "7VxjpRciTCyiKH2hUjw="
+							},
+							"left": 520,
+							"top": 100,
+							"width": 200,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "omXTA8MBTuKywQ5gshk=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "IRmzmh2CSUWHlMYm13g="
+							},
+							"left": 880,
+							"top": 100,
+							"width": 200,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "pCrmb0H7QhSMml30H0w=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "Hlm2rUWER02PuPMzrP8="
+							},
+							"left": 520,
+							"top": 650,
+							"width": 200,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "43UAWTYoQTusgcCK4BU=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "omMyir4MR0ae21elmcw="
+							},
+							"left": 880,
+							"top": 650,
+							"width": 200,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "16R8beHDRXyvV5lQSv0=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"left": 100,
+							"top": 355,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "8bip0WccStyE4phvGxs=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "I/vorfCLS5a5grUKA7A="
+							},
+							"left": 1130,
+							"top": 355,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "dNhPUfr9ROi2uEFpcnA=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "3NGGdLlwT1GvAfB6HX0="
+							},
+							"tail": {
+								"$ref": "16R8beHDRXyvV5lQSv0="
+							},
+							"head": {
+								"$ref": "p9TOXCUASd+U7WomFp0="
+							},
+							"points": "140:400;500:400",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "nyC45X6eRLaiN3e04U4=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "bVoMxbhnTzyOXemw2mc="
+							},
+							"tail": {
+								"$ref": "p9TOXCUASd+U7WomFp0="
+							},
+							"head": {
+								"$ref": "8bip0WccStyE4phvGxs="
+							},
+							"points": "740:400;1130:400",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "6ERvrNNBS2ySFtIMjK4=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "p0MU2qEBT7mKGzfyO5A="
+							},
+							"tail": {
+								"$ref": "Hf/iTCBGSZWE/Rs1Pnk="
+							},
+							"head": {
+								"$ref": "p9TOXCUASd+U7WomFp0="
+							},
+							"points": "297:157;577:367",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "iMF8u00OTQmsuXjC6zE=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"text": "«extend»\n(Выбор действия)\n[выбрана регистрация]",
+							"left": 225,
+							"top": 262,
+							"width": 190,
+							"height": 56,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "cpAzIvwpS9qM8jhVSeI=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "iMjw1ZZNTJ6RHmWg9AQ="
+							},
+							"tail": {
+								"$ref": "omXTA8MBTuKywQ5gshk="
+							},
+							"head": {
+								"$ref": "p9TOXCUASd+U7WomFp0="
+							},
+							"points": "943:157;663:367",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "bgqfv34JSpWK+JikAZw=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"text": "«extend»\n(Выбор действия)\n[нажата «Забыли пароль?»]",
+							"left": 825,
+							"top": 262,
+							"width": 190,
+							"height": 56,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "eJskCgMpTbSlprQDAyc=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "cdxjKDUKT621Y5hX+bY="
+							},
+							"tail": {
+								"$ref": "pCrmb0H7QhSMml30H0w="
+							},
+							"head": {
+								"$ref": "p9TOXCUASd+U7WomFp0="
+							},
+							"points": "620:650;620:466",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "JF0WYeqWSpuZgYwdLEA=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"text": "«extend»\n(Выбор действия)\n[выбран вход]",
+							"left": 650,
+							"top": 532,
+							"width": 190,
+							"height": 56,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "tfwZqpEfSmufZSGVMmY=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "BRge4EekQnW0rgXNhPg="
+							},
+							"tail": {
+								"$ref": "Hf/iTCBGSZWE/Rs1Pnk="
+							},
+							"head": {
+								"$ref": "evHcT+2nQuGOqzffb/U="
+							},
+							"points": "360:130;520:130",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "8t6LhzSnRn+xAli3C00=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "uyArIFlySj2a261kc6I="
+							},
+							"tail": {
+								"$ref": "omXTA8MBTuKywQ5gshk="
+							},
+							"head": {
+								"$ref": "evHcT+2nQuGOqzffb/U="
+							},
+							"points": "880:130;720:130",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "IUd3XCiVTPCD366vYpk=",
+							"_parent": {
+								"$ref": "vFBfHireT96bhyK8pgg="
+							},
+							"model": {
+								"$ref": "tRGtZaTGQvGnyNd0x2g="
+							},
+							"tail": {
+								"$ref": "pCrmb0H7QhSMml30H0w="
+							},
+							"head": {
+								"$ref": "43UAWTYoQTusgcCK4BU="
+							},
+							"points": "720:680;880:680",
+							"lineStyle": 1
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "/rxOR9BwQ16IO4F5T3c=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Генерация материала»",
+					"documentation": "Декомпозиция базисного прецедента «Генерация материала». Модель генерации одна для всех тарифов; различия премиум-тарифа — условия extend и альтернативные потоки.\n\nКоличественная характеристика диаграммы: акторов и работников — 1; прецедентов — 11; дуг (отношений) — 11.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "3PF/pe8YTGaFQIwzy0U=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "P5R3WLyUQcOUrTwqDdI="
+							},
+							"left": 510,
+							"top": 345,
+							"width": 260,
+							"height": 137,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "093cC7t0SKO/1vEznxQ=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "Xc820iEvRg+ZNb/D+8s="
+							},
+							"left": 80,
+							"top": 220,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "hGIsWp/oR4WDfzjtnLo=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "Ub9shKB/Qsi6NdVUx5A="
+							},
+							"left": 80,
+							"top": 440,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "RIyMZFeZR2O2EiYHRus=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "XtnPEef2QBqWMoUSbZs="
+							},
+							"left": 290,
+							"top": 620,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "4QfxMzY1T/SJNJGceM0=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "yigltSUISo+g70pmW3U="
+							},
+							"left": 770,
+							"top": 630,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "64gymNKvRwmV399b6pk=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "emaQoTk+TaiwmFRbHi4="
+							},
+							"left": 1050,
+							"top": 100,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "QO4/PMcKTUeJvvefiVA=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "q4WM2iIiSV6wyvTvIQQ="
+							},
+							"left": 1050,
+							"top": 220,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "e4qfQXQMSfeWAB2NbPM=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "MqSjK1MwRJW9ItIEVnU="
+							},
+							"left": 1050,
+							"top": 330,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "0cSUYEe3TpKsWRiQ3GE=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "foJ0eTUtT8a8h++e00E="
+							},
+							"left": 1050,
+							"top": 440,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "FnFWitPyQ3Wler23bOs=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "4mvlwaxES5uHFL09KMs="
+							},
+							"left": 1050,
+							"top": 540,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "5fNvP6waTT2g+nKzI9A=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "H7kUiIbjQdCK9+yWk/s="
+							},
+							"left": 1050,
+							"top": 660,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "uQ0SbO5BTlarwwxSxOA=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"left": 620,
+							"top": 65,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "ziTWZq2xT7WLERtvibI=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"text": "Подсказки формирует языковая модель: локальная в кластере или OpenRouter",
+							"left": 60,
+							"top": 120,
+							"width": 250,
+							"height": 60
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "rgzkZqpJSzuUZp6Zm68=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"text": "Модель одна для всех тарифов. Премиум: 2048²/4096², 30–40 шагов, до 4 вариантов — альтернативные потоки «Генерации текстуры»",
+							"left": 1300,
+							"top": 400,
+							"width": 230,
+							"height": 92
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "9Im8rbwzSzC1kU6g9OY=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "maEuHKKuT3GS1T/q8hU="
+							},
+							"tail": {
+								"$ref": "uQ0SbO5BTlarwwxSxOA="
+							},
+							"head": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"points": "640:155;640:345",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "pDZUhwwGTuCA5oUqrKA=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "9t2KWotNTESvNoAOzjI="
+							},
+							"tail": {
+								"$ref": "093cC7t0SKO/1vEznxQ="
+							},
+							"head": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"points": "265:271;552:354",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "+j3Fy0GaS+GCs77HikU=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"text": "«extend»\n(Ввод описания)\n[тариф «Премиум» и пауза в наборе]",
+							"left": 315,
+							"top": 189,
+							"width": 190,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "zQGMNdQhThCdCVNW5qM=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "vLeIORnTS5yzSHF0zb0="
+							},
+							"tail": {
+								"$ref": "hGIsWp/oR4WDfzjtnLo="
+							},
+							"head": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"points": "278:452;535:401",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "Kh0J82MmRO62WRD5fe8=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"text": "«extend»\n(Ввод описания)\n[тариф «Премиум» и загружен референс]",
+							"left": 310,
+							"top": 340,
+							"width": 190,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "qVYSBZv+SR2nICupDco=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "Kvc+KX3aQPuNkuLHDqU="
+							},
+							"tail": {
+								"$ref": "RIyMZFeZR2O2EiYHRus="
+							},
+							"head": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"points": "426:621;549:482",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "AM4UPsBWT8CsqJwvzzA=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"text": "«extend»\n(Запуск генерации)\n[параметры совпадают с готовым материалом]",
+							"left": 205,
+							"top": 534,
+							"width": 190,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "cjQ4blO2QEOitbYHkTI=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "ixzvtx07SBapuoyba+U="
+							},
+							"tail": {
+								"$ref": "4QfxMzY1T/SJNJGceM0="
+							},
+							"head": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"points": "862:630;731:482",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "ohBta/ZMQDWTCPmFFH0=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"text": "«extend»\n(Ожидание результата)\n[нажата «Отменить»]",
+							"left": 545,
+							"top": 552,
+							"width": 190,
+							"height": 56,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "WL0nsw+EQ3Ov2R3/eSk=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "3TRJn4YMSvWm0/LUlmk="
+							},
+							"tail": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"head": {
+								"$ref": "64gymNKvRwmV399b6pk="
+							},
+							"points": "703:349;1106:155",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "tqKw8H+ERxSYAO/hpoo=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "cax2XpekQlO1fQEgaGI="
+							},
+							"tail": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"head": {
+								"$ref": "QO4/PMcKTUeJvvefiVA="
+							},
+							"points": "732:355;1098:257",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "XHBRlZo1QhWJSm5p9DM=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "cWVk2bTARW2qTAYuo6k="
+							},
+							"tail": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"head": {
+								"$ref": "e4qfQXQMSfeWAB2NbPM="
+							},
+							"points": "767:373;1055:356",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "TJYoIa+pTRa06BHANEU=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "TiLdb1ueTpa/OmXcImU="
+							},
+							"tail": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"head": {
+								"$ref": "0cSUYEe3TpKsWRiQ3GE="
+							},
+							"points": "753:397;1076:447",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "0eeFgszzSBS04u5LWhs=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "IloKbTgbR6yBMi5Jxec="
+							},
+							"tail": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"head": {
+								"$ref": "FnFWitPyQ3Wler23bOs="
+							},
+							"points": "770:427;1095:546",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "8uQsoj6uRticJKpuXYI=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"model": {
+								"$ref": "EhAu9XjBR/2gJVHRQKE="
+							},
+							"tail": {
+								"$ref": "3PF/pe8YTGaFQIwzy0U="
+							},
+							"head": {
+								"$ref": "5fNvP6waTT2g+nKzI9A="
+							},
+							"points": "770:455;1127:661",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "8Cu8QzBTQJGzQLd8D+E=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"tail": {
+								"$ref": "ziTWZq2xT7WLERtvibI="
+							},
+							"head": {
+								"$ref": "093cC7t0SKO/1vEznxQ="
+							},
+							"points": "187:180;189:220",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLNoteLinkView",
+							"_id": "+d0aJJbnSp204Vs4V7U=",
+							"_parent": {
+								"$ref": "/rxOR9BwQ16IO4F5T3c="
+							},
+							"tail": {
+								"$ref": "rgzkZqpJSzuUZp6Zm68="
+							},
+							"head": {
+								"$ref": "0cSUYEe3TpKsWRiQ3GE="
+							},
+							"points": "1300:452;1265:454",
+							"lineStyle": 1
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "l6hARk5iTWaS8paAQDo=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Экспорт материала»",
+					"documentation": "Декомпозиция базисного прецедента «Экспорт материала».\n\nКоличественная характеристика диаграммы: акторов и работников — 1; прецедентов — 6; дуг (отношений) — 6.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "UFW7vobbTB+xEpDyZx4=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "zcmK4pSiQEqF2hzI9Gk="
+							},
+							"left": 440,
+							"top": 295,
+							"width": 240,
+							"height": 101,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "1bgfTEekTHOL8tHKyAA=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "FL8d6P4LR+eaoHnqHqI="
+							},
+							"left": 900,
+							"top": 160,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "pz+O8WpDS/6muyCXoRs=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "HWM+FQXuQqqOvngaD/4="
+							},
+							"left": 900,
+							"top": 300,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "/2NQhyLwQhefCoJNdic=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "Hzh4h57KTg+svXudGFQ="
+							},
+							"left": 900,
+							"top": 450,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "ccXdj8ElTJW3GGw+nFk=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "0Dzl4iU2SEWaPPglu4o="
+							},
+							"left": 240,
+							"top": 570,
+							"width": 260,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "XPWPqhI9TrCQn+gzNes=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "KNI8UNvNTvShJyiTFMo="
+							},
+							"left": 640,
+							"top": 570,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "PCMXgrVAQDCzGJS5q48=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"left": 90,
+							"top": 285,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "2ZhmHUtiTcOh/rp7kf8=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "IkNiGRrQQka+wDdX6MQ="
+							},
+							"tail": {
+								"$ref": "PCMXgrVAQDCzGJS5q48="
+							},
+							"head": {
+								"$ref": "UFW7vobbTB+xEpDyZx4="
+							},
+							"points": "130:330;440:330",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "hRu5uYmBSG2rdD98ya4=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "1YC1/POuSFus4x/7eac="
+							},
+							"tail": {
+								"$ref": "UFW7vobbTB+xEpDyZx4="
+							},
+							"head": {
+								"$ref": "1bgfTEekTHOL8tHKyAA="
+							},
+							"points": "639:304;957:198",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "q1rc4L8ETOy79eRxCQM=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "dcraGtzwQPmqhWnEVxo="
+							},
+							"tail": {
+								"$ref": "UFW7vobbTB+xEpDyZx4="
+							},
+							"head": {
+								"$ref": "pz+O8WpDS/6muyCXoRs="
+							},
+							"points": "680:330;900:330",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "FLqduH55RPy4KfU48ss=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "gpNEy7DNQti9kMrRP9E="
+							},
+							"tail": {
+								"$ref": "UFW7vobbTB+xEpDyZx4="
+							},
+							"head": {
+								"$ref": "/2NQhyLwQhefCoJNdic="
+							},
+							"points": "639:356;941:457",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "2sFFewYQRnOlVrCb+Yo=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "uQuPuXXNRhGb3uoMDUo="
+							},
+							"tail": {
+								"$ref": "ccXdj8ElTJW3GGw+nFk="
+							},
+							"head": {
+								"$ref": "UFW7vobbTB+xEpDyZx4="
+							},
+							"points": "391:570;513:396",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "adyfkVbvQhqKZYM2OeA=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"text": "«extend»\n(Подготовка карт)\n[выбран Unreal Engine]",
+							"left": 215,
+							"top": 442,
+							"width": 170,
+							"height": 56,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "047TrE4sQTC5qBp6/HE=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"model": {
+								"$ref": "kdAC1tWBQSOhkbznrwk="
+							},
+							"tail": {
+								"$ref": "XPWPqhI9TrCQn+gzNes="
+							},
+							"head": {
+								"$ref": "UFW7vobbTB+xEpDyZx4="
+							},
+							"points": "738:570;609:396",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "RoysC3kVSTW7D1RM1y8=",
+							"_parent": {
+								"$ref": "l6hARk5iTWaS8paAQDo="
+							},
+							"text": "«extend»\n(Подготовка карт)\n[тариф «Премиум», выбраны 16 бит / EXR / glb]",
+							"left": 705,
+							"top": 434,
+							"width": 170,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "TEyR5WMRRXSeBYEjnHo=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Работа с историей материалов»",
+					"documentation": "Декомпозиция базисного прецедента «Работа с историей материалов».\n\nКоличественная характеристика диаграммы: акторов и работников — 1; прецедентов — 5; дуг (отношений) — 5.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "nOdrZAwNSjO/OdizM3o=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "0WGhbm87TzemrTRX6hk="
+							},
+							"left": 440,
+							"top": 265,
+							"width": 240,
+							"height": 101,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "PG2fViIMSpKN/JFHohU=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "dHpzMlZXS/Gobh7McSk="
+							},
+							"left": 900,
+							"top": 270,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "XqIzdBxeSs+2R/4RqlI=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "eQeF1EgIQ4+iLpoAU78="
+							},
+							"left": 70,
+							"top": 660,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Scs9JP/1RyOPOQGcqLQ=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "Qo5sRRV8RG+JDMAkNRY="
+							},
+							"left": 450,
+							"top": 660,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "fYVFbyRzQbKqZrwpPOY=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "BXAaQS1HRh6Ls8mlkis="
+							},
+							"left": 830,
+							"top": 650,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "MaGxSL7zTsmncytdxHg=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"left": 90,
+							"top": 255,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "ffwJq2OJSZeycFlgwm0=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "4hInpT8ZQny0jGP27rE="
+							},
+							"tail": {
+								"$ref": "MaGxSL7zTsmncytdxHg="
+							},
+							"head": {
+								"$ref": "nOdrZAwNSjO/OdizM3o="
+							},
+							"points": "130:300;440:300",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "AhPgeIngSYuTuEgBaio=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "c44KM0c2T+up2EGl9WM="
+							},
+							"tail": {
+								"$ref": "nOdrZAwNSjO/OdizM3o="
+							},
+							"head": {
+								"$ref": "PG2fViIMSpKN/JFHohU="
+							},
+							"points": "680:300;900:300",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "zQqkeWEaTM2JBe+zOqI=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "Mt3XwxuMTvaFCDONGF0="
+							},
+							"tail": {
+								"$ref": "XqIzdBxeSs+2R/4RqlI="
+							},
+							"head": {
+								"$ref": "nOdrZAwNSjO/OdizM3o="
+							},
+							"points": "200:660;494:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "qzgHRBVdTMOf7ZuvFkA=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"text": "«extend»\n(Выбор действия)\n[выбран материал в списке]",
+							"left": 150,
+							"top": 464,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "2qLwglU7Sc6Poi6RHQw=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "a8igPGI6Sa2CWUmcEPw="
+							},
+							"tail": {
+								"$ref": "Scs9JP/1RyOPOQGcqLQ="
+							},
+							"head": {
+								"$ref": "nOdrZAwNSjO/OdizM3o="
+							},
+							"points": "560:660;560:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "pWTT7z+XRdGuDkxvlP0=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"text": "«extend»\n(Выбор действия)\n[нажата «Удалить», удаление подтверждено]",
+							"left": 570,
+							"top": 456,
+							"width": 150,
+							"height": 88,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "MhmWox+9SradWcDfexU=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"model": {
+								"$ref": "reg0AP7iSxWSKOw17XY="
+							},
+							"tail": {
+								"$ref": "fYVFbyRzQbKqZrwpPOY="
+							},
+							"head": {
+								"$ref": "nOdrZAwNSjO/OdizM3o="
+							},
+							"points": "911:651;626:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "ilZS2tISSR+8FOMOBzg=",
+							"_parent": {
+								"$ref": "TEyR5WMRRXSeBYEjnHo="
+							},
+							"text": "«extend»\n(Выбор действия)\n[нажата «Изменить параметры»]",
+							"left": 850,
+							"top": 444,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "dJvET6V1RZKYy3KUsWQ=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Управление подпиской»",
+					"documentation": "Декомпозиция базисного прецедента «Управление подпиской».\n\nКоличественная характеристика диаграммы: акторов и работников — 2; прецедентов — 6; дуг (отношений) — 8.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "boRJSYRpQ0idYLsz6sM=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "yyE49ER7SoOwe7vDvxk="
+							},
+							"left": 500,
+							"top": 295,
+							"width": 240,
+							"height": 101,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "v6IFmjZ1Q8SIad+lewo=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "cGTokD3BS4y0XFdT19g="
+							},
+							"left": 500,
+							"top": 80,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "3UcgqqZ2Tc2yPF1V7mU=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "8rxxwowaRKKcctGP25k="
+							},
+							"left": 220,
+							"top": 530,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "/yWhGc14RnmPcWgkYgo=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "jwYFuxCKQFeZTwIhX/A="
+							},
+							"left": 800,
+							"top": 540,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "3aWpxIiQQoW1FSO9DOs=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "9Ufje5ybTSSsBINSwyE="
+							},
+							"left": 100,
+							"top": 740,
+							"width": 200,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Xp2jqaprR4GDAkDiK5Y=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "JsnqKn5YT1S2iQSOI4s="
+							},
+							"left": 500,
+							"top": 730,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "qNSwhFghQeaDvnEQ6u0=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"left": 90,
+							"top": 285,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "BGfptOjRS7K0+PUolOA=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "spK+IkmmR76Fe6nV4Jg="
+							},
+							"left": 1110,
+							"top": 285,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "qRjlylJcTCK4h/dTROs=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "F4aJp/CERbCwFqdmmF8="
+							},
+							"tail": {
+								"$ref": "qNSwhFghQeaDvnEQ6u0="
+							},
+							"head": {
+								"$ref": "boRJSYRpQ0idYLsz6sM="
+							},
+							"points": "130:330;500:330",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "uJRyNlzrTfyh2PnxntI=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "tAziyPQYR3272M/at2g="
+							},
+							"tail": {
+								"$ref": "boRJSYRpQ0idYLsz6sM="
+							},
+							"head": {
+								"$ref": "BGfptOjRS7K0+PUolOA="
+							},
+							"points": "740:330;1110:330",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "DR0gvmRjQOSeQPKva6g=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "rzJnZqbBQceVkTl2kQM="
+							},
+							"tail": {
+								"$ref": "boRJSYRpQ0idYLsz6sM="
+							},
+							"head": {
+								"$ref": "v6IFmjZ1Q8SIad+lewo="
+							},
+							"points": "620:295;620:139",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "qaq9mPC0Rr2DMdMkEJ0=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "Rq2ZsRitRDO3Ztgl9QA="
+							},
+							"tail": {
+								"$ref": "3UcgqqZ2Tc2yPF1V7mU="
+							},
+							"head": {
+								"$ref": "boRJSYRpQ0idYLsz6sM="
+							},
+							"points": "365:532;537:396",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "tDLiqifhQtuxPfKd3ng=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"text": "«extend»\n(Выбор действия)\n[выбран «Премиум», подписки нет]",
+							"left": 225,
+							"top": 404,
+							"width": 190,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "9M3O+Xr8S9GZohu0wdA=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "5aa+fiLLT/ORIehPe3Q="
+							},
+							"tail": {
+								"$ref": "/yWhGc14RnmPcWgkYgo="
+							},
+							"head": {
+								"$ref": "boRJSYRpQ0idYLsz6sM="
+							},
+							"points": "885:541;703:396",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "eOWOtgMIQwWC6QiR/CU=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"text": "«extend»\n(Выбор действия)\n[нажата «Отменить подписку», подписка активна]",
+							"left": 825,
+							"top": 404,
+							"width": 190,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "5jY94l8uTG+83Wr9lgE=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "nY3Ht79fRUmlnoDJPWI="
+							},
+							"tail": {
+								"$ref": "3UcgqqZ2Tc2yPF1V7mU="
+							},
+							"head": {
+								"$ref": "3aWpxIiQQoW1FSO9DOs="
+							},
+							"points": "311:589;213:740",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "DP1WgtYmTfWJ4bh42sA=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "LKJcpUdiTsCStDoBrkQ="
+							},
+							"tail": {
+								"$ref": "3UcgqqZ2Tc2yPF1V7mU="
+							},
+							"head": {
+								"$ref": "Xp2jqaprR4GDAkDiK5Y="
+							},
+							"points": "370:587;580:732",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "+q2YBySgTxSK5kE8tuw=",
+							"_parent": {
+								"$ref": "dJvET6V1RZKYy3KUsWQ="
+							},
+							"model": {
+								"$ref": "4DRAuEW3QeGAP6J9GAc="
+							},
+							"tail": {
+								"$ref": "/yWhGc14RnmPcWgkYgo="
+							},
+							"head": {
+								"$ref": "Xp2jqaprR4GDAkDiK5Y="
+							},
+							"points": "882:579;660:732",
+							"lineStyle": 1
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "CWvlUql9R1OoWsZWWoE=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Просмотр материала в 3D»",
+					"documentation": "Декомпозиция базисного прецедента «Просмотр материала в 3D».\n\nКоличественная характеристика диаграммы: акторов и работников — 1; прецедентов — 5; дуг (отношений) — 5.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "lRqXUhxMTYGztfOdJjA=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "L1Ze44htQ06BQmWgd/U="
+							},
+							"left": 440,
+							"top": 265,
+							"width": 240,
+							"height": 101,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Y2sNFZ5AQV+wYm/MeQg=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "D+YnB1vMRI+eqW95rOQ="
+							},
+							"left": 900,
+							"top": 270,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "QH4M2u8JRIq0FJ7Zzwo=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "YVx1hf07RUqBqYeadSE="
+							},
+							"left": 70,
+							"top": 650,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "pEgDmczJRJaJGcGha18=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "mgcvye70Sl+tnn0lehI="
+							},
+							"left": 450,
+							"top": 660,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "cuNDYUQkSGSjLRt/j04=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "jH7iAs/URaqvmxC0nWE="
+							},
+							"left": 830,
+							"top": 650,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLActorView",
+							"_id": "+kBZUbNbRda9D5+W34w=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "YcgmBzObTB6IWQLha2E="
+							},
+							"left": 90,
+							"top": 255,
+							"width": 40,
+							"height": 90,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "fc+h2W2JQ4GCRxZnNdI=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "wLbyYpjFQtydwRugLk4="
+							},
+							"tail": {
+								"$ref": "+kBZUbNbRda9D5+W34w="
+							},
+							"head": {
+								"$ref": "lRqXUhxMTYGztfOdJjA="
+							},
+							"points": "130:300;440:300",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "ZYyNGsn6Sr2++Gkvczk=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "37kKmXXDQ8uzftL2Gkk="
+							},
+							"tail": {
+								"$ref": "lRqXUhxMTYGztfOdJjA="
+							},
+							"head": {
+								"$ref": "Y2sNFZ5AQV+wYm/MeQg="
+							},
+							"points": "680:300;900:300",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "ZhYrwOH9R5ymQpJSe3c=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "drWpCkpsSWyDw1ii31A="
+							},
+							"tail": {
+								"$ref": "QH4M2u8JRIq0FJ7Zzwo="
+							},
+							"head": {
+								"$ref": "lRqXUhxMTYGztfOdJjA="
+							},
+							"points": "209:651;494:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "RdssnwEuS9arUSRUMBQ=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"text": "«extend»\n(Выбор режима)\n[выбрана вкладка карты]",
+							"left": 150,
+							"top": 472,
+							"width": 160,
+							"height": 56,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "Lxg/MWzIR7mP8KSdEqI=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "CT3jHZ/2RRqn2oFQkcA="
+							},
+							"tail": {
+								"$ref": "pEgDmczJRJaJGcGha18="
+							},
+							"head": {
+								"$ref": "lRqXUhxMTYGztfOdJjA="
+							},
+							"points": "560:660;560:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "XBVnCx2hSRSkv1hvvVg=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"text": "«extend»\n(Выбор режима)\n[выбрана сфера, плоскость или куб]",
+							"left": 570,
+							"top": 464,
+							"width": 150,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "aXbLstHZR+SFi1IU+W0=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"model": {
+								"$ref": "7crjqIYiS5iQ0tr1Ko0="
+							},
+							"tail": {
+								"$ref": "cuNDYUQkSGSjLRt/j04="
+							},
+							"head": {
+								"$ref": "lRqXUhxMTYGztfOdJjA="
+							},
+							"points": "911:651;626:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "cuU4qx9NS+6O7bz4+RE=",
+							"_parent": {
+								"$ref": "CWvlUql9R1OoWsZWWoE="
+							},
+							"text": "«extend»\n(Выбор режима)\n[тариф «Премиум» и загружена модель]",
+							"left": 850,
+							"top": 444,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "2widx/gkRWKsK6+TGfI=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Администрирование системы»",
+					"documentation": "Декомпозиция базисного прецедента «Администрирование системы». Разделы панели — расширения в точке «Выбор раздела»; каждое изменение записывается в журнал аудита.\n\nКоличественная характеристика диаграммы: акторов и работников — 1; прецедентов — 6; дуг (отношений) — 8.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "2sOuAzFrR1GKCv9DG/o=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "PziIUbhzQDS5u7vvtLc="
+							},
+							"left": 480,
+							"top": 265,
+							"width": 240,
+							"height": 101,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "ZlwRXXVvRQKODXLcP0I=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "RDiCCkTjSdmv9lhlp3Q="
+							},
+							"left": 940,
+							"top": 270,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "xF5nP+51Sp+aQtxWu6M=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "PKsyy4sZQnWJtmy03TA="
+							},
+							"left": 110,
+							"top": 530,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Th+UzKF0QiqvzDiPF6Y=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "ASbIhLw2Syq1jL/Xq4Y="
+							},
+							"left": 480,
+							"top": 530,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "us+1pzpXTp6xqRVA9k8=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "n6F2aqLTTgWTzUj0oqI="
+							},
+							"left": 850,
+							"top": 530,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "bcp2CRjyT4elTuxhZKk=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"left": 490,
+							"top": 760,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "Y7bgCv//R3+uakvdPuI=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "HdEFM3sQRu69TyXrvOQ="
+							},
+							"left": 55,
+							"top": 276,
+							"width": 130,
+							"height": 48,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true,
+							"stereotypeDisplay": "label"
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "oGqecv07QFue/u6KAS0=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "caQh6M5sRUu1eE0Clgc="
+							},
+							"tail": {
+								"$ref": "Y7bgCv//R3+uakvdPuI="
+							},
+							"head": {
+								"$ref": "2sOuAzFrR1GKCv9DG/o="
+							},
+							"points": "185:300;480:300",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "esW2DfEKT6G8i9swPbo=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "xSa3QWonRKGMhTR16cE="
+							},
+							"tail": {
+								"$ref": "ZlwRXXVvRQKODXLcP0I="
+							},
+							"head": {
+								"$ref": "2sOuAzFrR1GKCv9DG/o="
+							},
+							"points": "940:300;720:300",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "TtgQ+uLGTZGERHu11YE=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[выбран раздел «Мониторинг»]",
+							"left": 765,
+							"top": 194,
+							"width": 170,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "qBcLrF0kR+m7rasQdcs=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "siMKG/J8SdiVDJzuYyw="
+							},
+							"tail": {
+								"$ref": "xF5nP+51Sp+aQtxWu6M="
+							},
+							"head": {
+								"$ref": "2sOuAzFrR1GKCv9DG/o="
+							},
+							"points": "270:532;506:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "YMfOoEZoRleiHHasX0Q=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[выбран раздел «Пользователи»]",
+							"left": 165,
+							"top": 394,
+							"width": 170,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "sJr0I/7OQMy4QPKHyd4=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "m/BxUBEKREW6xWYYhR0="
+							},
+							"tail": {
+								"$ref": "Th+UzKF0QiqvzDiPF6Y="
+							},
+							"head": {
+								"$ref": "2sOuAzFrR1GKCv9DG/o="
+							},
+							"points": "600:530;600:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "hj9LCpLcR/6UWmR7T8g=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[выбран раздел «Пресеты»]",
+							"left": 620,
+							"top": 434,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "JoXsratfQWKsWOxgcxY=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "tIe//lQtQnaO5eJxoZs="
+							},
+							"tail": {
+								"$ref": "us+1pzpXTp6xqRVA9k8="
+							},
+							"head": {
+								"$ref": "2sOuAzFrR1GKCv9DG/o="
+							},
+							"points": "930:532;694:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "4zawCZ1ERoOnoaWjhKM=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[выбран раздел «Модели»]",
+							"left": 880,
+							"top": 394,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "loFnUxuyRLOUfWzHxRo=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "OIt+DyErSWWv1d88dc8="
+							},
+							"tail": {
+								"$ref": "xF5nP+51Sp+aQtxWu6M="
+							},
+							"head": {
+								"$ref": "bcp2CRjyT4elTuxhZKk="
+							},
+							"points": "274:587;556:762",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "xuMWMNrYQvWQXWOmFQI=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "U9NTGwnxRmGf9nPTrVY="
+							},
+							"tail": {
+								"$ref": "Th+UzKF0QiqvzDiPF6Y="
+							},
+							"head": {
+								"$ref": "bcp2CRjyT4elTuxhZKk="
+							},
+							"points": "600:589;600:760",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "wUkJUc3QRzi4tDvCNI4=",
+							"_parent": {
+								"$ref": "2widx/gkRWKsK6+TGfI="
+							},
+							"model": {
+								"$ref": "5NfgaIF4Tr627WpVnK8="
+							},
+							"tail": {
+								"$ref": "us+1pzpXTp6xqRVA9k8="
+							},
+							"head": {
+								"$ref": "bcp2CRjyT4elTuxhZKk="
+							},
+							"points": "926:587;644:762",
+							"lineStyle": 1
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "CHluzoYXSqK5IWANHcY=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Анализ показателей системы»",
+					"documentation": "Декомпозиция базисного прецедента «Анализ показателей системы». Виды отчётов — расширения в точке «Выбор отчёта»; выгрузка — расширение в точке «Просмотр результата».\n\nКоличественная характеристика диаграммы: акторов и работников — 2; прецедентов — 7; дуг (отношений) — 8.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "PUWZyQdfRHmelAXOb2I=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "Ph0xEOR/TGSyZ6UxaWQ="
+							},
+							"left": 475,
+							"top": 295,
+							"width": 250,
+							"height": 119,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "02aPlUk6QUitrVimzW8=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "aw8DoR68QauVRslAxbc="
+							},
+							"left": 490,
+							"top": 70,
+							"width": 220,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "5fN1TnNARtq2PPqvVaY=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "eeOKCAjCQ1uQBV58M2M="
+							},
+							"left": 950,
+							"top": 200,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "7AKZxMeDRCaHLvebVY4=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "RRmmWLZ1R8OaYmGb76A="
+							},
+							"left": 950,
+							"top": 409,
+							"width": 220,
+							"height": 82,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "xk4BUsY/TNCeSNCOZp8=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "4tN9bkYuTa2fPssn72s="
+							},
+							"left": 110,
+							"top": 660,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "guNmdtW8Q027+8mH1bU=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "UP2BGOJaRkuYywc/2Es="
+							},
+							"left": 480,
+							"top": 660,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "ln6qZl13R9yMgzbDzwM=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "VdsguYTCSkOQyAXMVq4="
+							},
+							"left": 850,
+							"top": 670,
+							"width": 240,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "i+L05ftmTc60b5fBx8Q=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "HqLZdw9mSNWKQ/8sVZg="
+							},
+							"left": 55,
+							"top": 226,
+							"width": 130,
+							"height": 48,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true,
+							"stereotypeDisplay": "label"
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "dL7zH9OHS9ykZwp3e1I=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "sYHRvO9rSRSXtkDugiw="
+							},
+							"left": 55,
+							"top": 396,
+							"width": 130,
+							"height": 48,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true,
+							"stereotypeDisplay": "label"
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "Itfpy3SVRjaHMU/Ha60=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "AkUkgThDQiOxWHmyl9s="
+							},
+							"tail": {
+								"$ref": "i+L05ftmTc60b5fBx8Q="
+							},
+							"head": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"points": "185:261;493:312",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "ZzkazbzeR4eLAmRkoU0=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "oTSiQUmOS9CrmI7YXro="
+							},
+							"tail": {
+								"$ref": "dL7zH9OHS9ykZwp3e1I="
+							},
+							"head": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"points": "185:408;496:349",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "GsCNhPq4QuOGH0EyWN4=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "pU52DGlhQaWtE69WriU="
+							},
+							"tail": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"head": {
+								"$ref": "5fN1TnNARtq2PPqvVaY="
+							},
+							"points": "699:308;975:248",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "l4hmtgqtTqeYfK9g/oY=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "8AXMlU+DRmS75bR8cGw="
+							},
+							"tail": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"head": {
+								"$ref": "7AKZxMeDRCaHLvebVY4="
+							},
+							"points": "691:354;970:426",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "/I62kWS9QMOvwoDWVlU=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "dBqfcRASTrmdSmCdT+4="
+							},
+							"tail": {
+								"$ref": "02aPlUk6QUitrVimzW8="
+							},
+							"head": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"points": "600:110;600:295",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "KNJwVitQQ1CJ2sF2A4k=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"text": "«extend»\n(Просмотр результата)\n[нажата «Выгрузить CSV»]",
+							"left": 665,
+							"top": 162,
+							"width": 170,
+							"height": 56,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "i+KpbM13TEaSJPhbp2A=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "CC2EdpgQRzmyWdjEZko="
+							},
+							"tail": {
+								"$ref": "xk4BUsY/TNCeSNCOZp8="
+							},
+							"head": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"points": "259:661;514:414",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "SqDoeSF6QISGVpfxho0=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"text": "«extend»\n(Выбор отчёта)\n[выбран отчёт «Использование»]",
+							"left": 155,
+							"top": 504,
+							"width": 170,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "FVckPbg2Qp2TfHEeREQ=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "9KhoqIyxQvK39LTYJ1o="
+							},
+							"tail": {
+								"$ref": "guNmdtW8Q027+8mH1bU="
+							},
+							"head": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"points": "600:660;600:414",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "DZ+dg60pTM+PooP5oKQ=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"text": "«extend»\n(Выбор отчёта)\n[выбран отчёт «Конверсия»]",
+							"left": 620,
+							"top": 554,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "e3GFX2d4RPu3Z6rbLNA=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"model": {
+								"$ref": "ML1284JPSqWWCMJSBtg="
+							},
+							"tail": {
+								"$ref": "ln6qZl13R9yMgzbDzwM="
+							},
+							"head": {
+								"$ref": "PUWZyQdfRHmelAXOb2I="
+							},
+							"points": "950:670;686:414",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "A5cZpx/VSxiUcFIIlis=",
+							"_parent": {
+								"$ref": "CHluzoYXSqK5IWANHcY="
+							},
+							"text": "«extend»\n(Выбор отчёта)\n[выбран отчёт «Генерации»]",
+							"left": 880,
+							"top": 504,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						}
+					]
+				},
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "vNow8fGuRW+VCxTpht8=",
+					"_parent": {
+						"$ref": "ElSG11zBTXipjli582U="
+					},
+					"name": "Декомпозиция варианта использования «Управление тарифами и персоналом»",
+					"documentation": "Декомпозиция базисного прецедента «Управление тарифами и персоналом». Изменения тарифов и ролей записываются в журнал аудита (тот же прецедент, что на декомпозиции «Администрирование системы»); отзыв роли сразу аннулирует сеансы сотрудника.\n\nКоличественная характеристика диаграммы: акторов и работников — 1; прецедентов — 7; дуг (отношений) — 9.",
+					"ownedViews": [
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "ihprkYzRQ8uSbzg2auA=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "ChQVKtyKQQyLrldSfOE="
+							},
+							"left": 470,
+							"top": 265,
+							"width": 260,
+							"height": 101,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "H7SS8MODRueEeBrDyes=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "pgr0KiHSQm2tZt4H9G4="
+							},
+							"left": 950,
+							"top": 270,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "qX7en0AeS4edHAjGwmA=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "zSHQ5OD1Qwy4XFCNy+A="
+							},
+							"left": 110,
+							"top": 530,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "Zq00/YB1Qd2qTbtLG9k=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "pWPklxlCSOusANxkEEA="
+							},
+							"left": 480,
+							"top": 530,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "lVsiwS7JQnC8yonreSc=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "Seu0ntM5Rjid3YQiGcQ="
+							},
+							"left": 850,
+							"top": 540,
+							"width": 240,
+							"height": 40,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "ygSSZhZqSjupdqP3t+A=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "TQyw/Fg4QTm8Kg1tq2M="
+							},
+							"left": 305,
+							"top": 760,
+							"width": 220,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLUseCaseView",
+							"_id": "aMJ2CQ7ATWO9x6P+CJ0=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "7nAmqzSrReKiD+MLch0="
+							},
+							"left": 850,
+							"top": 760,
+							"width": 240,
+							"height": 59,
+							"wordWrap": true,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "I9V8P03/Sxuhrv7ewQs=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "sYHRvO9rSRSXtkDugiw="
+							},
+							"left": 55,
+							"top": 276,
+							"width": 130,
+							"height": 48,
+							"suppressAttributes": true,
+							"suppressOperations": true,
+							"suppressReceptions": true,
+							"stereotypeDisplay": "label"
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "hQaSmpQNR4iZrTDU6jU=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "QvDNoDnpTwypYuada0I="
+							},
+							"tail": {
+								"$ref": "I9V8P03/Sxuhrv7ewQs="
+							},
+							"head": {
+								"$ref": "ihprkYzRQ8uSbzg2auA="
+							},
+							"points": "185:300;470:300",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "F4CfbN/EQp+sZuryrdM=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "iUI9l/iZQxmW6zDQiVw="
+							},
+							"tail": {
+								"$ref": "H7SS8MODRueEeBrDyes="
+							},
+							"head": {
+								"$ref": "ihprkYzRQ8uSbzg2auA="
+							},
+							"points": "950:300;730:300",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "mM+JOzNCQSyvzKnwqfQ=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[выбран раздел «Финансы»]",
+							"left": 780,
+							"top": 194,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "+am3kznISLO0rzMXkDk=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "A7WcTUxrS9Ct6tdMSuc="
+							},
+							"tail": {
+								"$ref": "qX7en0AeS4edHAjGwmA="
+							},
+							"head": {
+								"$ref": "ihprkYzRQ8uSbzg2auA="
+							},
+							"points": "270:532;506:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "ipOFovQJTTCzL/VH6S8=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[выбран раздел «Тарифы»]",
+							"left": 170,
+							"top": 394,
+							"width": 160,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "6qTj2UPBQKKBuwBAS78=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "cXDOSdZzTo2awclRCao="
+							},
+							"tail": {
+								"$ref": "Zq00/YB1Qd2qTbtLG9k="
+							},
+							"head": {
+								"$ref": "ihprkYzRQ8uSbzg2auA="
+							},
+							"points": "600:530;600:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "xm77oR0RQUaHJ0ycBbQ=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[раздел «Персонал», нажата «Назначить роль»]",
+							"left": 615,
+							"top": 434,
+							"width": 170,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLExtendView",
+							"_id": "JuTYwsCVT+OA4aKdXSg=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "MmdUlaGgTfWZNVTUpag="
+							},
+							"tail": {
+								"$ref": "lVsiwS7JQnC8yonreSc="
+							},
+							"head": {
+								"$ref": "ihprkYzRQ8uSbzg2auA="
+							},
+							"points": "942:541;694:366",
+							"lineStyle": 1,
+							"stereotypeDisplay": "none"
+						},
+						{
+							"_type": "UMLTextView",
+							"_id": "LRcxsoLURBeKVmR+CXA=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"text": "«extend»\n(Выбор раздела)\n[раздел «Персонал», нажата «Отозвать роль»]",
+							"left": 815,
+							"top": 384,
+							"width": 170,
+							"height": 72,
+							"horzAlign": 2,
+							"vertAlign": 5
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "clfy91ILR0qCj8fM/kw=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "7YQumf2TT5m6+WaACRg="
+							},
+							"tail": {
+								"$ref": "qX7en0AeS4edHAjGwmA="
+							},
+							"head": {
+								"$ref": "ygSSZhZqSjupdqP3t+A="
+							},
+							"points": "253:588;392:761",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "/+ywAT6HRS+KUNYhX7c=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "r+6RJYssT0+lXDqXqxU="
+							},
+							"tail": {
+								"$ref": "Zq00/YB1Qd2qTbtLG9k="
+							},
+							"head": {
+								"$ref": "ygSSZhZqSjupdqP3t+A="
+							},
+							"points": "577:588;438:761",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "2Dj1UUttR0+BOAkUuPs=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "4MWPZUuQRNmLAW8JQqo="
+							},
+							"tail": {
+								"$ref": "lVsiwS7JQnC8yonreSc="
+							},
+							"head": {
+								"$ref": "ygSSZhZqSjupdqP3t+A="
+							},
+							"points": "925:579;475:765",
+							"lineStyle": 1
+						},
+						{
+							"_type": "UMLIncludeView",
+							"_id": "zYWWoWS5Sva9+MvVcm4=",
+							"_parent": {
+								"$ref": "vNow8fGuRW+VCxTpht8="
+							},
+							"model": {
+								"$ref": "X/0MBRuIR6WvawX5Rs0="
+							},
+							"tail": {
+								"$ref": "lVsiwS7JQnC8yonreSc="
+							},
+							"head": {
+								"$ref": "aMJ2CQ7ATWO9x6P+CJ0="
+							},
+							"points": "970:580;970:760",
+							"lineStyle": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "8XvCoM0YRMidesrHozY=",
+			"_parent": {
+				"$ref": "Eca20/zBRbGDj1TYcus="
+			},
+			"name": "Logical View"
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "khfgfPZqScGPeMm0ChE=",
+			"_parent": {
+				"$ref": "Eca20/zBRbGDj1TYcus="
+			},
+			"name": "Component View"
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "olZQBNQlScKoYUx8Res=",
+			"_parent": {
+				"$ref": "Eca20/zBRbGDj1TYcus="
+			},
+			"name": "Deployment View"
+		}
+	]
+}

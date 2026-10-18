@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1030" height="1400" viewBox="0 0 1030 1400">
+<rect x="0" y="0" width="1030" height="1400" fill="#fff"/>
+<rect x="20" y="20" width="300" height="24" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M20,1380 V20 H320 V1380" fill="none" stroke="#000" stroke-width="2"/>
+<text x="170.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#000">Пользователь</text>
+<rect x="320" y="20" width="470" height="24" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M320,1380 V20 H790 V1380" fill="none" stroke="#000" stroke-width="2"/>
+<text x="555.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#000">Система</text>
+<rect x="790" y="20" width="220" height="24" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M790,1380 V20 H1010 V1380" fill="none" stroke="#000" stroke-width="2"/>
+<text x="900.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#000">Почтовый сервис</text>
+<circle cx="440.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="350" y="132" width="180" height="40" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="156.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отображение окна входа</text>
+<rect x="40" y="212" width="200" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="140.0" y="232.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Выбор действия в окне</text>
+<text x="140.0" y="248.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">входа</text>
+<polygon points="125,312.0 140.0,300 155,312.0 140.0,324" fill="#fff" stroke="#000"/>
+<polygon points="425,312.0 440.0,300 455,312.0 440.0,324" fill="#fff" stroke="#000"/>
+<circle cx="65.0" cy="388.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="65.0" cy="388.0" r="8.0" fill="#000"/>
+<rect x="340" y="364" width="200" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="432.5" y="384.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">вход:Вход по e-mail и</text>
+<text x="432.5" y="400.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">паролю</text>
+<path d="M532,400 V408 M528,408 V404 H536 V408" fill="none" stroke="#000"/>
+<rect x="570" y="364" width="200" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="662.5" y="384.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">регистрация:Регистрация</text>
+<text x="662.5" y="400.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">учётной записи</text>
+<path d="M762,400 V408 M758,408 V404 H766 V408" fill="none" stroke="#000"/>
+<rect x="40" y="452" width="200" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="132.5" y="472.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">восстановление:Запрос</text>
+<text x="132.5" y="488.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">восстановления пароля</text>
+<path d="M232,488 V496 M228,496 V492 H236 V496" fill="none" stroke="#000"/>
+<polygon points="425,476.0 440.0,464 455,476.0 440.0,488" fill="#fff" stroke="#000"/>
+<rect x="350" y="540" width="180" height="40" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="564.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Выдача токенов доступа</text>
+<circle cx="600.0" cy="560.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="600.0" cy="560.0" r="8.0" fill="#000"/>
+<rect x="350" y="620" width="180" height="40" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="644.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Открытие главного окна</text>
+<circle cx="440.0" cy="713.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="440.0" cy="713.0" r="8.0" fill="#000"/>
+<polygon points="655,778.0 670.0,766 685,778.0 670.0,790" fill="#fff" stroke="#000"/>
+<rect x="580" y="830" width="180" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="670.0" y="850.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отправка письма</text>
+<text x="670.0" y="866.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">пользователю</text>
+<rect x="810" y="918" width="180" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="900.0" y="938.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Доставка письма на</text>
+<text x="900.0" y="954.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">адрес пользователя</text>
+<polygon points="655,1018.0 670.0,1006 685,1018.0 670.0,1030" fill="#fff" stroke="#000"/>
+<rect x="580" y="1070" width="180" height="64" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="670.0" y="1090.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Сообщение о</text>
+<text x="670.0" y="1106.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">необходимости</text>
+<text x="670.0" y="1122.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">подтвердить адрес</text>
+<rect x="80" y="1078" width="180" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="170.0" y="1098.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Переход по ссылке и</text>
+<text x="170.0" y="1114.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">ввод нового пароля</text>
+<rect x="350" y="1174" width="180" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="1194.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Сохранение пароля и</text>
+<text x="440.0" y="1210.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">аннулирование токенов</text>
+<polygon points="655,1274.0 670.0,1262 685,1274.0 670.0,1286" fill="#fff" stroke="#000"/>
+<circle cx="670.0" cy="1339.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="670.0" cy="1339.0" r="8.0" fill="#000"/>
+<path d="M440.0,92.0 L440.0,132.0" fill="none" stroke="#000"/>
+<path d="M435.0,123.3 L440.0,132.0 L445.0,123.3" fill="none" stroke="#000"/>
+<path d="M440.0,172.0 L440.0,192.0 L140.0,192.0 L140.0,212.0" fill="none" stroke="#000"/>
+<path d="M135.0,203.3 L140.0,212.0 L145.0,203.3" fill="none" stroke="#000"/>
+<path d="M140.0,260.0 L140.0,300.0" fill="none" stroke="#000"/>
+<path d="M135.0,291.3 L140.0,300.0 L145.0,291.3" fill="none" stroke="#000"/>
+<path d="M125.0,312.0 L65.0,312.0 L65.0,375.0" fill="none" stroke="#000"/>
+<path d="M60.0,366.3 L65.0,375.0 L70.0,366.3" fill="none" stroke="#000"/>
+<path d="M155.0,312.0 L425.0,312.0" fill="none" stroke="#000"/>
+<path d="M416.3,317.0 L425.0,312.0 L416.3,307.0" fill="none" stroke="#000"/>
+<path d="M140.0,324.0 L140.0,452.0" fill="none" stroke="#000"/>
+<path d="M135.0,443.3 L140.0,452.0 L145.0,443.3" fill="none" stroke="#000"/>
+<path d="M440.0,324.0 L440.0,364.0" fill="none" stroke="#000"/>
+<path d="M435.0,355.3 L440.0,364.0 L445.0,355.3" fill="none" stroke="#000"/>
+<path d="M455.0,312.0 L670.0,312.0 L670.0,364.0" fill="none" stroke="#000"/>
+<path d="M665.0,355.3 L670.0,364.0 L675.0,355.3" fill="none" stroke="#000"/>
+<path d="M440.0,412.0 L440.0,464.0" fill="none" stroke="#000"/>
+<path d="M435.0,455.3 L440.0,464.0 L445.0,455.3" fill="none" stroke="#000"/>
+<path d="M440.0,488.0 L440.0,540.0" fill="none" stroke="#000"/>
+<path d="M435.0,531.3 L440.0,540.0 L445.0,531.3" fill="none" stroke="#000"/>
+<path d="M455.0,476.0 L600.0,476.0 L600.0,547.0" fill="none" stroke="#000"/>
+<path d="M595.0,538.3 L600.0,547.0 L605.0,538.3" fill="none" stroke="#000"/>
+<path d="M440.0,580.0 L440.0,620.0" fill="none" stroke="#000"/>
+<path d="M435.0,611.3 L440.0,620.0 L445.0,611.3" fill="none" stroke="#000"/>
+<path d="M440.0,660.0 L440.0,700.0" fill="none" stroke="#000"/>
+<path d="M435.0,691.3 L440.0,700.0 L445.0,691.3" fill="none" stroke="#000"/>
+<path d="M670.0,412.0 L670.0,766.0" fill="none" stroke="#000"/>
+<path d="M665.0,757.3 L670.0,766.0 L675.0,757.3" fill="none" stroke="#000"/>
+<path d="M140.0,500.0 L140.0,778.0 L655.0,778.0" fill="none" stroke="#000"/>
+<path d="M646.3,783.0 L655.0,778.0 L646.3,773.0" fill="none" stroke="#000"/>
+<path d="M670.0,790.0 L670.0,830.0" fill="none" stroke="#000"/>
+<path d="M665.0,821.3 L670.0,830.0 L675.0,821.3" fill="none" stroke="#000"/>
+<path d="M670.0,878.0 L670.0,898.0 L900.0,898.0 L900.0,918.0" fill="none" stroke="#000"/>
+<path d="M895.0,909.3 L900.0,918.0 L905.0,909.3" fill="none" stroke="#000"/>
+<path d="M900.0,966.0 L900.0,1018.0 L685.0,1018.0" fill="none" stroke="#000"/>
+<path d="M693.7,1013.0 L685.0,1018.0 L693.7,1023.0" fill="none" stroke="#000"/>
+<path d="M670.0,1030.0 L670.0,1070.0" fill="none" stroke="#000"/>
+<path d="M665.0,1061.3 L670.0,1070.0 L675.0,1061.3" fill="none" stroke="#000"/>
+<path d="M655.0,1018.0 L170.0,1018.0 L170.0,1078.0" fill="none" stroke="#000"/>
+<path d="M165.0,1069.3 L170.0,1078.0 L175.0,1069.3" fill="none" stroke="#000"/>
+<path d="M670.0,1134.0 L670.0,1262.0" fill="none" stroke="#000"/>
+<path d="M665.0,1253.3 L670.0,1262.0 L675.0,1253.3" fill="none" stroke="#000"/>
+<path d="M170.0,1126.0 L170.0,1160.0 L440.0,1160.0 L440.0,1174.0" fill="none" stroke="#000"/>
+<path d="M435.0,1165.3 L440.0,1174.0 L445.0,1165.3" fill="none" stroke="#000"/>
+<path d="M440.0,1222.0 L440.0,1274.0 L655.0,1274.0" fill="none" stroke="#000"/>
+<path d="M646.3,1279.0 L655.0,1274.0 L646.3,1269.0" fill="none" stroke="#000"/>
+<path d="M670.0,1286.0 L670.0,1326.0" fill="none" stroke="#000"/>
+<path d="M665.0,1317.3 L670.0,1326.0 L675.0,1317.3" fill="none" stroke="#000"/>
+<rect x="21.1" y="293.0" width="95.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="69.0" y="305.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[окно закрыто]</text>
+<rect x="162.8" y="292.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="183.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="145.2" y="330.0" width="165.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="228.0" y="342.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[нажата «Забыли пароль?»]</text>
+<rect x="445.7" y="330.0" width="88.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="490.0" y="342.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[выбран вход]</text>
+<rect x="462.8" y="293.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="483.0" y="305.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="445.6" y="494.0" width="102.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="497.0" y="506.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[вход выполнен]</text>
+<rect x="462.8" y="457.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="483.0" y="469.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="464.6" y="1035.0" width="198.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="564.0" y="1047.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[письмо подтверждения адреса]</text>
+<rect x="605.8" y="999.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="626.0" y="1011.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="323.1" y="1141.0" width="171.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="409.0" y="1153.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Сохранить пароль»</text>
+</svg>
