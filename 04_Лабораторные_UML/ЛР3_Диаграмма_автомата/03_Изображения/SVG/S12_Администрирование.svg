@@ -1,91 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="788" height="644" viewBox="10 52 788 644">
-<rect x="10" y="52" width="788" height="644" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="788" height="858" viewBox="10 52 788 858">
+<rect x="10" y="52" width="788" height="858" fill="#fff"/>
 <circle cx="230.0" cy="82.0" r="10.0" fill="#000"/>
-<rect x="74" y="132" width="312" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="230.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Панель</text>
-<line x1="74" y1="158" x2="386" y2="158" stroke="#000"/>
-<text x="82.0" y="175.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Проверка роли admin</text>
-<text x="82.0" y="191.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ панели и ожидание выбора раздела</text>
-<circle cx="100.0" cy="266.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="100.0" cy="266.0" r="8.0" fill="#000"/>
-<polygon points="216,266.0 230.0,255 244,266.0 230.0,277" fill="#fff" stroke="#000"/>
-<rect x="416" y="240" width="278" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="555.0" y="258.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Мониторинг</text>
-<line x1="416" y1="266" x2="694" y2="266" stroke="#000"/>
-<text x="424.0" y="283.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ метрик очередей и видеокарт</text>
-<polygon points="216,358.0 230.0,347 244,358.0 230.0,369" fill="#fff" stroke="#000"/>
-<rect x="425" y="332" width="260" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="555.0" y="350.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Пользователи</text>
-<line x1="425" y1="358" x2="685" y2="358" stroke="#000"/>
-<text x="433.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Поиск, блокировка, ручной тариф</text>
-<polygon points="216,450.0 230.0,439 244,450.0 230.0,461" fill="#fff" stroke="#000"/>
-<rect x="440" y="424" width="230" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="555.0" y="442.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Пресеты</text>
-<line x1="440" y1="450" x2="670" y2="450" stroke="#000"/>
-<text x="448.0" y="467.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Создание и правка пресетов</text>
-<rect x="425" y="516" width="260" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="555.0" y="534.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Модели</text>
-<line x1="425" y1="542" x2="685" y2="542" stroke="#000"/>
-<text x="433.0" y="559.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Загрузка и проверка весов LoRA</text>
-<text x="433.0" y="575.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Переключение версии модели</text>
-<circle cx="770.0" cy="266.0" r="8.0" fill="#000"/>
-<circle cx="770.0" cy="358.0" r="8.0" fill="#000"/>
-<circle cx="770.0" cy="450.0" r="8.0" fill="#000"/>
-<circle cx="770.0" cy="550.0" r="8.0" fill="#000"/>
-<rect x="431" y="624" width="248" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="555.0" y="642.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Запись в журнал аудита</text>
-<line x1="431" y1="650" x2="679" y2="650" stroke="#000"/>
-<text x="439.0" y="667.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Добавление записи в audit_log</text>
+<circle cx="230.0" cy="140.0" r="8.0" fill="#000"/>
+<rect x="190" y="188" width="405" height="6" rx="2" fill="#000"/>
+<rect x="100" y="234" width="260" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="230.0" y="252.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отображение панели</text>
+<line x1="100" y1="260" x2="360" y2="260" stroke="#000"/>
+<text x="108.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">entry/Проверка роли admin</text>
+<text x="108.0" y="293.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ панели и реакция на выбор</text>
+<rect x="425" y="234" width="260" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="555.0" y="252.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Действия администратора</text>
+<line x1="425" y1="260" x2="685" y2="260" stroke="#000"/>
+<text x="433.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Выбор раздела и действия</text>
+<text x="433.0" y="293.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Нажатие раздела или «Закрыть»</text>
+<rect x="190" y="342" width="405" height="6" rx="2" fill="#000"/>
+<polygon points="216,401.0 230.0,390 244,401.0 230.0,412" fill="#fff" stroke="#000"/>
+<circle cx="100.0" cy="401.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="100.0" cy="401.0" r="8.0" fill="#000"/>
+<polygon points="216,480.0 230.0,469 244,480.0 230.0,491" fill="#fff" stroke="#000"/>
+<rect x="416" y="454" width="278" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="555.0" y="472.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Мониторинг</text>
+<line x1="416" y1="480" x2="694" y2="480" stroke="#000"/>
+<text x="424.0" y="497.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ метрик очередей и видеокарт</text>
+<polygon points="216,572.0 230.0,561 244,572.0 230.0,583" fill="#fff" stroke="#000"/>
+<rect x="425" y="546" width="260" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="555.0" y="564.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Пользователи</text>
+<line x1="425" y1="572" x2="685" y2="572" stroke="#000"/>
+<text x="433.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Поиск, блокировка, ручной тариф</text>
+<polygon points="216,664.0 230.0,653 244,664.0 230.0,675" fill="#fff" stroke="#000"/>
+<rect x="440" y="638" width="230" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="555.0" y="656.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Пресеты</text>
+<line x1="440" y1="664" x2="670" y2="664" stroke="#000"/>
+<text x="448.0" y="681.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Создание и правка пресетов</text>
+<rect x="425" y="730" width="260" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="555.0" y="748.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Модели</text>
+<line x1="425" y1="756" x2="685" y2="756" stroke="#000"/>
+<text x="433.0" y="773.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Загрузка и проверка весов LoRA</text>
+<text x="433.0" y="789.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Переключение версии модели</text>
+<circle cx="770.0" cy="480.0" r="8.0" fill="#000"/>
+<circle cx="770.0" cy="572.0" r="8.0" fill="#000"/>
+<circle cx="770.0" cy="664.0" r="8.0" fill="#000"/>
+<circle cx="770.0" cy="764.0" r="8.0" fill="#000"/>
+<rect x="431" y="838" width="248" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="555.0" y="856.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Запись в журнал аудита</text>
+<line x1="431" y1="864" x2="679" y2="864" stroke="#000"/>
+<text x="439.0" y="881.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Добавление записи в audit_log</text>
+<path d="M230.0,194.0 L230.0,234.0" fill="none" stroke="#000"/>
+<path d="M225.0,225.3 L230.0,234.0 L235.0,225.3" fill="none" stroke="#000"/>
+<path d="M555.0,194.0 L555.0,234.0" fill="none" stroke="#000"/>
+<path d="M550.0,225.3 L555.0,234.0 L560.0,225.3" fill="none" stroke="#000"/>
+<path d="M230.0,302.0 L230.0,342.0" fill="none" stroke="#000"/>
+<path d="M225.0,333.3 L230.0,342.0 L235.0,333.3" fill="none" stroke="#000"/>
+<path d="M555.0,302.0 L555.0,342.0" fill="none" stroke="#000"/>
+<path d="M550.0,333.3 L555.0,342.0 L560.0,333.3" fill="none" stroke="#000"/>
 <path d="M230.0,92.0 L230.0,132.0" fill="none" stroke="#000"/>
 <path d="M225.0,123.3 L230.0,132.0 L235.0,123.3" fill="none" stroke="#000"/>
-<path d="M230.0,200.0 L230.0,255.0" fill="none" stroke="#000"/>
-<path d="M225.0,246.3 L230.0,255.0 L235.0,246.3" fill="none" stroke="#000"/>
-<path d="M100.0,200.0 L100.0,210.0 L100.0,253.0" fill="none" stroke="#000"/>
-<path d="M95.0,244.3 L100.0,253.0 L105.0,244.3" fill="none" stroke="#000"/>
-<path d="M244.0,266.0 L416.0,266.0" fill="none" stroke="#000"/>
-<path d="M407.3,271.0 L416.0,266.0 L407.3,261.0" fill="none" stroke="#000"/>
-<path d="M230.0,277.0 L230.0,347.0" fill="none" stroke="#000"/>
-<path d="M225.0,338.3 L230.0,347.0 L235.0,338.3" fill="none" stroke="#000"/>
-<path d="M244.0,358.0 L425.0,358.0" fill="none" stroke="#000"/>
-<path d="M416.3,363.0 L425.0,358.0 L416.3,353.0" fill="none" stroke="#000"/>
-<path d="M230.0,369.0 L230.0,439.0" fill="none" stroke="#000"/>
-<path d="M225.0,430.3 L230.0,439.0 L235.0,430.3" fill="none" stroke="#000"/>
-<path d="M244.0,450.0 L440.0,450.0" fill="none" stroke="#000"/>
-<path d="M431.3,455.0 L440.0,450.0 L431.3,445.0" fill="none" stroke="#000"/>
-<path d="M230.0,461.0 L230.0,550.0 L425.0,550.0" fill="none" stroke="#000"/>
-<path d="M416.3,555.0 L425.0,550.0 L416.3,545.0" fill="none" stroke="#000"/>
-<path d="M694.0,266.0 L762.0,266.0" fill="none" stroke="#000"/>
-<path d="M753.3,271.0 L762.0,266.0 L753.3,261.0" fill="none" stroke="#000"/>
-<path d="M770.0,258.0 L770.0,166.0 L386.0,166.0" fill="none" stroke="#000"/>
-<path d="M394.7,161.0 L386.0,166.0 L394.7,171.0" fill="none" stroke="#000"/>
-<path d="M685.0,358.0 L762.0,358.0" fill="none" stroke="#000"/>
-<path d="M753.3,363.0 L762.0,358.0 L753.3,353.0" fill="none" stroke="#000"/>
-<path d="M770.0,366.0 L770.0,442.0" fill="none" stroke="#000"/>
-<path d="M765.0,433.3 L770.0,442.0 L775.0,433.3" fill="none" stroke="#000"/>
-<path d="M670.0,450.0 L762.0,450.0" fill="none" stroke="#000"/>
-<path d="M753.3,455.0 L762.0,450.0 L753.3,445.0" fill="none" stroke="#000"/>
-<path d="M770.0,458.0 L770.0,542.0" fill="none" stroke="#000"/>
-<path d="M765.0,533.3 L770.0,542.0 L775.0,533.3" fill="none" stroke="#000"/>
-<path d="M685.0,550.0 L762.0,550.0" fill="none" stroke="#000"/>
-<path d="M753.3,555.0 L762.0,550.0 L753.3,545.0" fill="none" stroke="#000"/>
-<path d="M770.0,558.0 L770.0,650.0 L679.0,650.0" fill="none" stroke="#000"/>
-<path d="M687.7,645.0 L679.0,650.0 L687.7,655.0" fill="none" stroke="#000"/>
-<path d="M431.0,650.0 L30.0,650.0 L30.0,166.0 L74.0,166.0" fill="none" stroke="#000"/>
-<path d="M65.3,171.0 L74.0,166.0 L65.3,161.0" fill="none" stroke="#000"/>
-<rect x="235.6" y="205.0" width="94.8" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="283.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбран раздел</text>
-<rect x="105.3" y="206.0" width="111.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="161.0" y="218.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Закрыть»</text>
-<rect x="251.7" y="247.0" width="140.7" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="322.0" y="259.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[раздел «Мониторинг»]</text>
-<rect x="235.8" y="283.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="256.0" y="295.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
-<rect x="251.6" y="339.0" width="154.9" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="329.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[раздел «Пользователи»]</text>
-<rect x="235.8" y="375.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="256.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
-<rect x="251.3" y="431.0" width="119.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="311.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[раздел «Пресеты»]</text>
-<rect x="235.8" y="467.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="256.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<path d="M230.0,148.0 L230.0,188.0" fill="none" stroke="#000"/>
+<path d="M225.0,179.3 L230.0,188.0 L235.0,179.3" fill="none" stroke="#000"/>
+<path d="M230.0,348.0 L230.0,390.0" fill="none" stroke="#000"/>
+<path d="M225.0,381.3 L230.0,390.0 L235.0,381.3" fill="none" stroke="#000"/>
+<path d="M230.0,412.0 L230.0,469.0" fill="none" stroke="#000"/>
+<path d="M225.0,460.3 L230.0,469.0 L235.0,460.3" fill="none" stroke="#000"/>
+<path d="M216.0,401.0 L113.0,401.0" fill="none" stroke="#000"/>
+<path d="M121.7,396.0 L113.0,401.0 L121.7,406.0" fill="none" stroke="#000"/>
+<path d="M244.0,480.0 L416.0,480.0" fill="none" stroke="#000"/>
+<path d="M407.3,485.0 L416.0,480.0 L407.3,475.0" fill="none" stroke="#000"/>
+<path d="M230.0,491.0 L230.0,561.0" fill="none" stroke="#000"/>
+<path d="M225.0,552.3 L230.0,561.0 L235.0,552.3" fill="none" stroke="#000"/>
+<path d="M244.0,572.0 L425.0,572.0" fill="none" stroke="#000"/>
+<path d="M416.3,577.0 L425.0,572.0 L416.3,567.0" fill="none" stroke="#000"/>
+<path d="M230.0,583.0 L230.0,653.0" fill="none" stroke="#000"/>
+<path d="M225.0,644.3 L230.0,653.0 L235.0,644.3" fill="none" stroke="#000"/>
+<path d="M244.0,664.0 L440.0,664.0" fill="none" stroke="#000"/>
+<path d="M431.3,669.0 L440.0,664.0 L431.3,659.0" fill="none" stroke="#000"/>
+<path d="M230.0,675.0 L230.0,764.0 L425.0,764.0" fill="none" stroke="#000"/>
+<path d="M416.3,769.0 L425.0,764.0 L416.3,759.0" fill="none" stroke="#000"/>
+<path d="M694.0,480.0 L762.0,480.0" fill="none" stroke="#000"/>
+<path d="M753.3,485.0 L762.0,480.0 L753.3,475.0" fill="none" stroke="#000"/>
+<path d="M770.0,472.0 L770.0,140.0 L238.0,140.0" fill="none" stroke="#000"/>
+<path d="M246.7,135.0 L238.0,140.0 L246.7,145.0" fill="none" stroke="#000"/>
+<path d="M685.0,572.0 L762.0,572.0" fill="none" stroke="#000"/>
+<path d="M753.3,577.0 L762.0,572.0 L753.3,567.0" fill="none" stroke="#000"/>
+<path d="M770.0,580.0 L770.0,656.0" fill="none" stroke="#000"/>
+<path d="M765.0,647.3 L770.0,656.0 L775.0,647.3" fill="none" stroke="#000"/>
+<path d="M670.0,664.0 L762.0,664.0" fill="none" stroke="#000"/>
+<path d="M753.3,669.0 L762.0,664.0 L753.3,659.0" fill="none" stroke="#000"/>
+<path d="M770.0,672.0 L770.0,756.0" fill="none" stroke="#000"/>
+<path d="M765.0,747.3 L770.0,756.0 L775.0,747.3" fill="none" stroke="#000"/>
+<path d="M685.0,764.0 L762.0,764.0" fill="none" stroke="#000"/>
+<path d="M753.3,769.0 L762.0,764.0 L753.3,759.0" fill="none" stroke="#000"/>
+<path d="M770.0,772.0 L770.0,864.0 L679.0,864.0" fill="none" stroke="#000"/>
+<path d="M687.7,859.0 L679.0,864.0 L687.7,869.0" fill="none" stroke="#000"/>
+<path d="M431.0,864.0 L30.0,864.0 L30.0,140.0 L222.0,140.0" fill="none" stroke="#000"/>
+<path d="M213.3,145.0 L222.0,140.0 L213.3,135.0" fill="none" stroke="#000"/>
+<rect x="235.1" y="308.0" width="267.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="369.0" y="320.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбрано действие / Действие := выбранное</text>
+<rect x="235.1" y="418.0" width="145.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="308.0" y="430.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Действие ≠ «Закрыть»]</text>
+<rect x="166.8" y="381.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="187.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="251.7" y="461.0" width="140.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="322.0" y="473.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[раздел «Мониторинг»]</text>
+<rect x="235.8" y="497.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="256.0" y="509.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="251.6" y="553.0" width="154.9" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="329.0" y="565.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[раздел «Пользователи»]</text>
+<rect x="235.8" y="589.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="256.0" y="601.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="251.3" y="645.0" width="119.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="311.0" y="657.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[раздел «Пресеты»]</text>
+<rect x="235.8" y="681.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="256.0" y="693.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
 </svg>

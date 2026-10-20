@@ -16,7 +16,7 @@ StarUML 5.0 (UMLModels.pas, UMLFacto.pas): UMLStateMachine в Behaviors паке
 """
 import math
 
-from activity import Activity, Node, RAKE, label_text  # noqa: F401  (RAKE — для единообразия импорта)
+from activity import BAR_H, BARS, XPD_PSEUDO, Activity, Node, RAKE, label_text  # noqa: F401
 from staruml_xpd import LINE_H, Obj, text_w
 
 PSIZE = {"initial": (20, 20), "final": (26, 26), "choice": (28, 22), "junction": (16, 16)}
@@ -39,6 +39,8 @@ class StateNode(Node):
     def size(self, machines):
         if self.kind in PSIZE:
             return PSIZE[self.kind]
+        if self.kind in BARS:
+            return 0, BAR_H
         texts = [self.label(machines)] + self.items()
         w = max([math.ceil(text_w(t) * FONT_K) + 24 for t in texts] + [self.w or 0, 80])
         h = LINE_H + 10 + ((LINE_H * len(self.items()) + 10) if self.items() else 0) + (SUB_ICON if self.sub else 0)
@@ -64,6 +66,19 @@ class Machine(Activity):
     def junction(self, key, row, doc="", dx=0):
         return self._add(StateNode(key, "junction", "", doc, row, dx))
 
+    def _bar(self, kind, key, row, cols, doc, pad):
+        n = StateNode(key, kind, "", doc, row)
+        n.cols, n.pad = [(0, dx) for dx in cols], pad
+        return self._add(n)
+
+    def fork(self, key, row, cols, doc="", pad=40):
+        """Псевдосостояние разветвления (линейка); cols — dx колонок параллельных состояний."""
+        return self._bar("fork", key, row, cols, doc, pad)
+
+    def join(self, key, row, cols, doc="", pad=40):
+        """Псевдосостояние синхронизации: переход дальше — после завершения всех параллельных состояний."""
+        return self._bar("join", key, row, cols, doc, pad)
+
     def state(self, key, name, row, doc="", dx=0, w=None, entry=(), do=(), exit=()):
         return self._add(StateNode(key, "state", name, doc, row, dx, w, entry, do, exit))
 
@@ -77,10 +92,12 @@ class Machine(Activity):
 def quantitative(m):
     kinds = [n.kind for n in m.nodes.values()]
     subs = sum(1 for n in m.nodes.values() if getattr(n, "sub", None))
+    bars = (f"разветвления — {kinds.count('fork')}; синхронизации — {kinds.count('join')}; "
+            if "fork" in kinds else "")
     return (f"Количественная характеристика диаграммы: простых состояний — {kinds.count('state') - subs}; "
             f"ссылочных состояний — {subs}; псевдосостояний выбора — {kinds.count('choice')}; соединения — "
-            f"{kinds.count('junction')}; начальных — {kinds.count('initial')}; конечных — {kinds.count('final')}; "
-            f"переходов — {len(m.flows)}.")
+            f"{kinds.count('junction')}; {bars}начальных — {kinds.count('initial')}; конечных — "
+            f"{kinds.count('final')}; переходов — {len(m.flows)}.")
 
 
 # ---------------------------------------------------------------- StarUML 6 (.mdj)
@@ -245,9 +262,8 @@ def xpd_machines(model, machines):
                 o.attr("Name", n.name)
             if n.doc:
                 o.attr("Documentation", n.doc)
-            if n.kind in ("initial", "choice", "junction"):
-                o.attr("PseudostateKind", {"initial": "pkInitial", "choice": "pkChoice", "junction": "pkJunction"}[n.kind],
-                       "UMLPseudostateKind")
+            if n.kind in XPD_PSEUDO:
+                o.attr("PseudostateKind", XPD_PSEUDO[n.kind], "UMLPseudostateKind")
             if n.sub:
                 o.ref("Submachine", sms[n.sub])
             o.ref("ContainerState", top)

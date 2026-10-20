@@ -1,94 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="675" height="992" viewBox="108 52 675 992">
-<rect x="108" y="52" width="675" height="992" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="811" height="1182" viewBox="-14 52 811 1182">
+<rect x="-14" y="52" width="811" height="1182" fill="#fff"/>
 <circle cx="280.0" cy="82.0" r="10.0" fill="#000"/>
-<rect x="128" y="132" width="304" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="280.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Выбор движка</text>
-<line x1="128" y1="158" x2="432" y2="158" stroke="#000"/>
-<text x="136.0" y="175.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ окна экспорта и ожидание выбора</text>
-<circle cx="695.0" cy="158.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="695.0" cy="158.0" r="8.0" fill="#000"/>
-<rect x="162" y="224" width="236" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="280.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Упаковка карт</text>
-<line x1="162" y1="250" x2="398" y2="250" stroke="#000"/>
-<text x="170.0" y="267.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Упаковка каналов под движок</text>
-<polygon points="266,327.0 280.0,316 294,327.0 280.0,338" fill="#fff" stroke="#000"/>
-<rect x="526" y="378" width="218" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="635.0" y="396.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Перевод нормалей</text>
-<line x1="526" y1="404" x2="744" y2="404" stroke="#000"/>
-<text x="534.0" y="421.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Инверсия зелёного канала</text>
-<circle cx="280.0" cy="478.0" r="8.0" fill="#000"/>
-<polygon points="266,537.0 280.0,526 294,537.0 280.0,548" fill="#fff" stroke="#000"/>
-<rect x="514" y="588" width="242" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="635.0" y="606.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Расширенные форматы</text>
-<line x1="514" y1="614" x2="756" y2="614" stroke="#000"/>
-<text x="522.0" y="631.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Добавление 16 бит, EXR и .glb</text>
-<circle cx="280.0" cy="688.0" r="8.0" fill="#000"/>
-<rect x="168" y="736" width="224" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="280.0" y="754.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Формирование архива</text>
-<line x1="168" y1="762" x2="392" y2="762" stroke="#000"/>
-<text x="176.0" y="779.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Сборка ZIP и manifest.json</text>
-<text x="176.0" y="795.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Выдача временной ссылки</text>
-<polygon points="266,855.0 280.0,844 294,855.0 280.0,866" fill="#fff" stroke="#000"/>
-<rect x="162" y="906" width="236" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="280.0" y="924.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Скачивание</text>
-<line x1="162" y1="932" x2="398" y2="932" stroke="#000"/>
-<text x="170.0" y="949.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Скачивание архива по ссылке</text>
-<rect x="507" y="906" width="256" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="635.0" y="924.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Файлы удалены</text>
-<line x1="507" y1="932" x2="763" y2="932" stroke="#000"/>
-<text x="515.0" y="949.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Сообщение об удалении по сроку</text>
-<circle cx="280.0" cy="1011.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="280.0" cy="1011.0" r="8.0" fill="#000"/>
-<circle cx="635.0" cy="1011.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="635.0" cy="1011.0" r="8.0" fill="#000"/>
+<rect x="240" y="132" width="435" height="6" rx="2" fill="#000"/>
+<rect x="158" y="194" width="244" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="212.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отображение окна экспорта</text>
+<line x1="158" y1="220" x2="402" y2="220" stroke="#000"/>
+<text x="166.0" y="237.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ окна и реакция на выбор</text>
+<rect x="493" y="178" width="284" height="84" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="635.0" y="196.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Действия пользователя</text>
+<line x1="493" y1="204" x2="777" y2="204" stroke="#000"/>
+<text x="501.0" y="221.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Выбор движка</text>
+<text x="501.0" y="237.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Выбор расширенных форматов</text>
+<text x="501.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Нажатие кнопки или закрытие окна</text>
+<rect x="240" y="302" width="435" height="6" rx="2" fill="#000"/>
+<polygon points="266,361.0 280.0,350 294,361.0 280.0,372" fill="#fff" stroke="#000"/>
+<circle cx="635.0" cy="361.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="635.0" cy="361.0" r="8.0" fill="#000"/>
+<rect x="162" y="414" width="236" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="432.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Упаковка карт</text>
+<line x1="162" y1="440" x2="398" y2="440" stroke="#000"/>
+<text x="170.0" y="457.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Упаковка каналов под движок</text>
+<polygon points="266,517.0 280.0,506 294,517.0 280.0,528" fill="#fff" stroke="#000"/>
+<rect x="526" y="568" width="218" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="635.0" y="586.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Перевод нормалей</text>
+<line x1="526" y1="594" x2="744" y2="594" stroke="#000"/>
+<text x="534.0" y="611.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Инверсия зелёного канала</text>
+<circle cx="280.0" cy="668.0" r="8.0" fill="#000"/>
+<polygon points="266,727.0 280.0,716 294,727.0 280.0,738" fill="#fff" stroke="#000"/>
+<rect x="514" y="778" width="242" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="635.0" y="796.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Расширенные форматы</text>
+<line x1="514" y1="804" x2="756" y2="804" stroke="#000"/>
+<text x="522.0" y="821.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Добавление 16 бит, EXR и .glb</text>
+<circle cx="280.0" cy="878.0" r="8.0" fill="#000"/>
+<rect x="168" y="926" width="224" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="944.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Формирование архива</text>
+<line x1="168" y1="952" x2="392" y2="952" stroke="#000"/>
+<text x="176.0" y="969.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Сборка ZIP и manifest.json</text>
+<text x="176.0" y="985.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Выдача временной ссылки</text>
+<polygon points="266,1045.0 280.0,1034 294,1045.0 280.0,1056" fill="#fff" stroke="#000"/>
+<rect x="162" y="1096" width="236" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="1114.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Скачивание</text>
+<line x1="162" y1="1122" x2="398" y2="1122" stroke="#000"/>
+<text x="170.0" y="1139.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Скачивание архива по ссылке</text>
+<rect x="507" y="1096" width="256" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="635.0" y="1114.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Файлы удалены</text>
+<line x1="507" y1="1122" x2="763" y2="1122" stroke="#000"/>
+<text x="515.0" y="1139.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Сообщение об удалении по сроку</text>
+<circle cx="280.0" cy="1201.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="280.0" cy="1201.0" r="8.0" fill="#000"/>
+<circle cx="635.0" cy="1201.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="635.0" cy="1201.0" r="8.0" fill="#000"/>
+<path d="M280.0,138.0 L280.0,194.0" fill="none" stroke="#000"/>
+<path d="M275.0,185.3 L280.0,194.0 L285.0,185.3" fill="none" stroke="#000"/>
+<path d="M635.0,138.0 L635.0,178.0" fill="none" stroke="#000"/>
+<path d="M630.0,169.3 L635.0,178.0 L640.0,169.3" fill="none" stroke="#000"/>
+<path d="M280.0,246.0 L280.0,302.0" fill="none" stroke="#000"/>
+<path d="M275.0,293.3 L280.0,302.0 L285.0,293.3" fill="none" stroke="#000"/>
+<path d="M635.0,262.0 L635.0,302.0" fill="none" stroke="#000"/>
+<path d="M630.0,293.3 L635.0,302.0 L640.0,293.3" fill="none" stroke="#000"/>
 <path d="M280.0,92.0 L280.0,132.0" fill="none" stroke="#000"/>
 <path d="M275.0,123.3 L280.0,132.0 L285.0,123.3" fill="none" stroke="#000"/>
-<path d="M280.0,184.0 L280.0,224.0" fill="none" stroke="#000"/>
-<path d="M275.0,215.3 L280.0,224.0 L285.0,215.3" fill="none" stroke="#000"/>
-<path d="M432.0,158.0 L682.0,158.0" fill="none" stroke="#000"/>
-<path d="M673.3,163.0 L682.0,158.0 L673.3,153.0" fill="none" stroke="#000"/>
-<path d="M280.0,276.0 L280.0,316.0" fill="none" stroke="#000"/>
-<path d="M275.0,307.3 L280.0,316.0 L285.0,307.3" fill="none" stroke="#000"/>
-<path d="M294.0,327.0 L635.0,327.0 L635.0,378.0" fill="none" stroke="#000"/>
-<path d="M630.0,369.3 L635.0,378.0 L640.0,369.3" fill="none" stroke="#000"/>
-<path d="M280.0,338.0 L280.0,470.0" fill="none" stroke="#000"/>
-<path d="M275.0,461.3 L280.0,470.0 L285.0,461.3" fill="none" stroke="#000"/>
-<path d="M635.0,430.0 L635.0,478.0 L288.0,478.0" fill="none" stroke="#000"/>
-<path d="M296.7,473.0 L288.0,478.0 L296.7,483.0" fill="none" stroke="#000"/>
-<path d="M280.0,486.0 L280.0,526.0" fill="none" stroke="#000"/>
-<path d="M275.0,517.3 L280.0,526.0 L285.0,517.3" fill="none" stroke="#000"/>
-<path d="M294.0,537.0 L635.0,537.0 L635.0,588.0" fill="none" stroke="#000"/>
-<path d="M630.0,579.3 L635.0,588.0 L640.0,579.3" fill="none" stroke="#000"/>
-<path d="M280.0,548.0 L280.0,680.0" fill="none" stroke="#000"/>
-<path d="M275.0,671.3 L280.0,680.0 L285.0,671.3" fill="none" stroke="#000"/>
-<path d="M635.0,640.0 L635.0,688.0 L288.0,688.0" fill="none" stroke="#000"/>
-<path d="M296.7,683.0 L288.0,688.0 L296.7,693.0" fill="none" stroke="#000"/>
-<path d="M280.0,696.0 L280.0,736.0" fill="none" stroke="#000"/>
-<path d="M275.0,727.3 L280.0,736.0 L285.0,727.3" fill="none" stroke="#000"/>
-<path d="M280.0,804.0 L280.0,844.0" fill="none" stroke="#000"/>
-<path d="M275.0,835.3 L280.0,844.0 L285.0,835.3" fill="none" stroke="#000"/>
-<path d="M280.0,866.0 L280.0,906.0" fill="none" stroke="#000"/>
-<path d="M275.0,897.3 L280.0,906.0 L285.0,897.3" fill="none" stroke="#000"/>
-<path d="M294.0,855.0 L635.0,855.0 L635.0,906.0" fill="none" stroke="#000"/>
-<path d="M630.0,897.3 L635.0,906.0 L640.0,897.3" fill="none" stroke="#000"/>
-<path d="M280.0,958.0 L280.0,998.0" fill="none" stroke="#000"/>
-<path d="M275.0,989.3 L280.0,998.0 L285.0,989.3" fill="none" stroke="#000"/>
-<path d="M635.0,958.0 L635.0,998.0" fill="none" stroke="#000"/>
-<path d="M630.0,989.3 L635.0,998.0 L640.0,989.3" fill="none" stroke="#000"/>
-<rect x="285.9" y="190.0" width="232.3" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="402.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбран движок / Движок := выбранный</text>
-<rect x="439.1" y="139.0" width="87.7" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="483.0" y="151.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">окно закрыто</text>
-<rect x="301.4" y="307.0" width="167.2" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="385.0" y="319.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Движок = «Unreal Engine»]</text>
-<rect x="285.8" y="343.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="306.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
-<rect x="301.7" y="518.0" width="304.6" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="454.0" y="530.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[тариф «Премиум», выбраны расширенные форматы]</text>
-<rect x="285.8" y="553.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="306.0" y="565.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
-<rect x="285.1" y="872.0" width="109.9" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="340.0" y="884.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[файлы доступны]</text>
-<rect x="301.8" y="836.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="322.0" y="848.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<path d="M280.0,308.0 L280.0,350.0" fill="none" stroke="#000"/>
+<path d="M275.0,341.3 L280.0,350.0 L285.0,341.3" fill="none" stroke="#000"/>
+<path d="M280.0,372.0 L280.0,414.0" fill="none" stroke="#000"/>
+<path d="M275.0,405.3 L280.0,414.0 L285.0,405.3" fill="none" stroke="#000"/>
+<path d="M294.0,361.0 L622.0,361.0" fill="none" stroke="#000"/>
+<path d="M613.3,366.0 L622.0,361.0 L613.3,356.0" fill="none" stroke="#000"/>
+<path d="M280.0,466.0 L280.0,506.0" fill="none" stroke="#000"/>
+<path d="M275.0,497.3 L280.0,506.0 L285.0,497.3" fill="none" stroke="#000"/>
+<path d="M294.0,517.0 L635.0,517.0 L635.0,568.0" fill="none" stroke="#000"/>
+<path d="M630.0,559.3 L635.0,568.0 L640.0,559.3" fill="none" stroke="#000"/>
+<path d="M280.0,528.0 L280.0,660.0" fill="none" stroke="#000"/>
+<path d="M275.0,651.3 L280.0,660.0 L285.0,651.3" fill="none" stroke="#000"/>
+<path d="M635.0,620.0 L635.0,668.0 L288.0,668.0" fill="none" stroke="#000"/>
+<path d="M296.7,663.0 L288.0,668.0 L296.7,673.0" fill="none" stroke="#000"/>
+<path d="M280.0,676.0 L280.0,716.0" fill="none" stroke="#000"/>
+<path d="M275.0,707.3 L280.0,716.0 L285.0,707.3" fill="none" stroke="#000"/>
+<path d="M294.0,727.0 L635.0,727.0 L635.0,778.0" fill="none" stroke="#000"/>
+<path d="M630.0,769.3 L635.0,778.0 L640.0,769.3" fill="none" stroke="#000"/>
+<path d="M280.0,738.0 L280.0,870.0" fill="none" stroke="#000"/>
+<path d="M275.0,861.3 L280.0,870.0 L285.0,861.3" fill="none" stroke="#000"/>
+<path d="M635.0,830.0 L635.0,878.0 L288.0,878.0" fill="none" stroke="#000"/>
+<path d="M296.7,873.0 L288.0,878.0 L296.7,883.0" fill="none" stroke="#000"/>
+<path d="M280.0,886.0 L280.0,926.0" fill="none" stroke="#000"/>
+<path d="M275.0,917.3 L280.0,926.0 L285.0,917.3" fill="none" stroke="#000"/>
+<path d="M280.0,994.0 L280.0,1034.0" fill="none" stroke="#000"/>
+<path d="M275.0,1025.3 L280.0,1034.0 L285.0,1025.3" fill="none" stroke="#000"/>
+<path d="M280.0,1056.0 L280.0,1096.0" fill="none" stroke="#000"/>
+<path d="M275.0,1087.3 L280.0,1096.0 L285.0,1087.3" fill="none" stroke="#000"/>
+<path d="M294.0,1045.0 L635.0,1045.0 L635.0,1096.0" fill="none" stroke="#000"/>
+<path d="M630.0,1087.3 L635.0,1096.0 L640.0,1087.3" fill="none" stroke="#000"/>
+<path d="M280.0,1148.0 L280.0,1188.0" fill="none" stroke="#000"/>
+<path d="M275.0,1179.3 L280.0,1188.0 L285.0,1179.3" fill="none" stroke="#000"/>
+<path d="M635.0,1148.0 L635.0,1188.0" fill="none" stroke="#000"/>
+<path d="M630.0,1179.3 L635.0,1188.0 L640.0,1179.3" fill="none" stroke="#000"/>
+<rect x="6.1" y="252.0" width="267.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="140.0" y="264.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбрано действие / Действие := выбранное</text>
+<rect x="285.5" y="377.0" width="333.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="452.0" y="389.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Действие = «Экспортировать»] / Движок := выбранный</text>
+<rect x="301.8" y="342.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="322.0" y="354.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="301.4" y="497.0" width="167.2" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="385.0" y="509.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Движок = «Unreal Engine»]</text>
+<rect x="285.8" y="533.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="306.0" y="545.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="301.7" y="708.0" width="304.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="454.0" y="720.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[тариф «Премиум», выбраны расширенные форматы]</text>
+<rect x="285.8" y="743.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="306.0" y="755.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="285.1" y="1062.0" width="109.9" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="340.0" y="1074.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[файлы доступны]</text>
+<rect x="301.8" y="1026.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="322.0" y="1038.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
 </svg>

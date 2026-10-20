@@ -1,73 +1,98 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="811" height="626" viewBox="31 52 811 626">
-<rect x="31" y="52" width="811" height="626" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="812" height="862" viewBox="31 52 812 862">
+<rect x="31" y="52" width="812" height="862" fill="#fff"/>
 <circle cx="440.0" cy="82.0" r="10.0" fill="#000"/>
-<rect x="291" y="132" width="298" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="440.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Окно входа</text>
-<line x1="291" y1="158" x2="589" y2="158" stroke="#000"/>
-<text x="299.0" y="175.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ окна входа и ожидание действия</text>
-<circle cx="790.0" cy="158.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="790.0" cy="158.0" r="8.0" fill="#000"/>
-<rect x="51" y="224" width="248" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="175.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Восстановление пароля</text>
-<line x1="51" y1="250" x2="299" y2="250" stroke="#000"/>
-<text x="59.0" y="267.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Запрос восстановления пароля</text>
-<rect x="340" y="224" width="200" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="440.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Вход</text>
-<line x1="340" y1="250" x2="540" y2="250" stroke="#000"/>
-<text x="348.0" y="267.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Вход по e-mail и паролю</text>
-<rect x="588" y="224" width="234" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="705.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Регистрация</text>
-<line x1="588" y1="250" x2="822" y2="250" stroke="#000"/>
-<text x="596.0" y="267.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Регистрация учётной записи</text>
-<polygon points="426,329.0 440.0,318 454,329.0 440.0,340" fill="#fff" stroke="#000"/>
-<circle cx="572.0" cy="329.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="572.0" cy="329.0" r="8.0" fill="#000"/>
-<rect x="310" y="382" width="260" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="440.0" y="400.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Выдача токенов</text>
-<line x1="310" y1="408" x2="570" y2="408" stroke="#000"/>
-<text x="318.0" y="425.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Выдача JWT и токена обновления</text>
-<circle cx="440.0" cy="487.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="440.0" cy="487.0" r="8.0" fill="#000"/>
-<rect x="299" y="540" width="282" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="440.0" y="558.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отправка письма</text>
-<line x1="299" y1="566" x2="581" y2="566" stroke="#000"/>
-<text x="307.0" y="583.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Передача письма почтовому сервису</text>
-<circle cx="440.0" cy="645.0" r="13.0" fill="#fff" stroke="#000"/>
-<circle cx="440.0" cy="645.0" r="8.0" fill="#000"/>
+<rect x="400" y="132" width="345" height="6" rx="2" fill="#000"/>
+<rect x="306" y="186" width="268" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="204.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отображение окна входа</text>
+<line x1="306" y1="212" x2="574" y2="212" stroke="#000"/>
+<text x="314.0" y="229.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ окна и реакция на действия</text>
+<rect x="587" y="178" width="236" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="705.0" y="196.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Действия пользователя</text>
+<line x1="587" y1="204" x2="823" y2="204" stroke="#000"/>
+<text x="595.0" y="221.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Ввод e-mail и пароля</text>
+<text x="595.0" y="237.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Нажатие кнопки или ссылки</text>
+<rect x="400" y="286" width="345" height="6" rx="2" fill="#000"/>
+<polygon points="426,345.0 440.0,334 454,345.0 440.0,356" fill="#fff" stroke="#000"/>
+<circle cx="705.0" cy="345.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="705.0" cy="345.0" r="8.0" fill="#000"/>
+<polygon points="426,409.0 440.0,398 454,409.0 440.0,420" fill="#fff" stroke="#000"/>
+<rect x="51" y="460" width="248" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="175.0" y="478.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Восстановление пароля</text>
+<line x1="51" y1="486" x2="299" y2="486" stroke="#000"/>
+<text x="59.0" y="503.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Запрос восстановления пароля</text>
+<rect x="340" y="460" width="200" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="478.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Вход</text>
+<line x1="340" y1="486" x2="540" y2="486" stroke="#000"/>
+<text x="348.0" y="503.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Вход по e-mail и паролю</text>
+<rect x="588" y="460" width="234" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="705.0" y="478.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Регистрация</text>
+<line x1="588" y1="486" x2="822" y2="486" stroke="#000"/>
+<text x="596.0" y="503.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Регистрация учётной записи</text>
+<polygon points="426,565.0 440.0,554 454,565.0 440.0,576" fill="#fff" stroke="#000"/>
+<circle cx="572.0" cy="565.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="572.0" cy="565.0" r="8.0" fill="#000"/>
+<rect x="310" y="618" width="260" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="636.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Выдача токенов</text>
+<line x1="310" y1="644" x2="570" y2="644" stroke="#000"/>
+<text x="318.0" y="661.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Выдача JWT и токена обновления</text>
+<circle cx="440.0" cy="723.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="440.0" cy="723.0" r="8.0" fill="#000"/>
+<rect x="299" y="776" width="282" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="440.0" y="794.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отправка письма</text>
+<line x1="299" y1="802" x2="581" y2="802" stroke="#000"/>
+<text x="307.0" y="819.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Передача письма почтовому сервису</text>
+<circle cx="440.0" cy="881.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="440.0" cy="881.0" r="8.0" fill="#000"/>
+<path d="M440.0,138.0 L440.0,186.0" fill="none" stroke="#000"/>
+<path d="M435.0,177.3 L440.0,186.0 L445.0,177.3" fill="none" stroke="#000"/>
+<path d="M705.0,138.0 L705.0,178.0" fill="none" stroke="#000"/>
+<path d="M700.0,169.3 L705.0,178.0 L710.0,169.3" fill="none" stroke="#000"/>
+<path d="M440.0,238.0 L440.0,286.0" fill="none" stroke="#000"/>
+<path d="M435.0,277.3 L440.0,286.0 L445.0,277.3" fill="none" stroke="#000"/>
+<path d="M705.0,246.0 L705.0,286.0" fill="none" stroke="#000"/>
+<path d="M700.0,277.3 L705.0,286.0 L710.0,277.3" fill="none" stroke="#000"/>
 <path d="M440.0,92.0 L440.0,132.0" fill="none" stroke="#000"/>
 <path d="M435.0,123.3 L440.0,132.0 L445.0,123.3" fill="none" stroke="#000"/>
-<path d="M440.0,184.0 L440.0,224.0" fill="none" stroke="#000"/>
-<path d="M435.0,215.3 L440.0,224.0 L445.0,215.3" fill="none" stroke="#000"/>
-<path d="M315.0,184.0 L315.0,210.0 L175.0,210.0 L175.0,224.0" fill="none" stroke="#000"/>
-<path d="M170.0,215.3 L175.0,224.0 L180.0,215.3" fill="none" stroke="#000"/>
-<path d="M565.0,184.0 L565.0,210.0 L705.0,210.0 L705.0,224.0" fill="none" stroke="#000"/>
-<path d="M700.0,215.3 L705.0,224.0 L710.0,215.3" fill="none" stroke="#000"/>
-<path d="M589.0,158.0 L777.0,158.0" fill="none" stroke="#000"/>
-<path d="M768.3,163.0 L777.0,158.0 L768.3,153.0" fill="none" stroke="#000"/>
-<path d="M440.0,276.0 L440.0,318.0" fill="none" stroke="#000"/>
-<path d="M435.0,309.3 L440.0,318.0 L445.0,309.3" fill="none" stroke="#000"/>
-<path d="M440.0,340.0 L440.0,382.0" fill="none" stroke="#000"/>
-<path d="M435.0,373.3 L440.0,382.0 L445.0,373.3" fill="none" stroke="#000"/>
-<path d="M454.0,329.0 L559.0,329.0" fill="none" stroke="#000"/>
-<path d="M550.3,334.0 L559.0,329.0 L550.3,324.0" fill="none" stroke="#000"/>
-<path d="M440.0,434.0 L440.0,474.0" fill="none" stroke="#000"/>
-<path d="M435.0,465.3 L440.0,474.0 L445.0,465.3" fill="none" stroke="#000"/>
-<path d="M175.0,276.0 L175.0,566.0 L299.0,566.0" fill="none" stroke="#000"/>
-<path d="M290.3,571.0 L299.0,566.0 L290.3,561.0" fill="none" stroke="#000"/>
-<path d="M705.0,276.0 L705.0,566.0 L581.0,566.0" fill="none" stroke="#000"/>
-<path d="M589.7,561.0 L581.0,566.0 L589.7,571.0" fill="none" stroke="#000"/>
-<path d="M440.0,592.0 L440.0,632.0" fill="none" stroke="#000"/>
-<path d="M435.0,623.3 L440.0,632.0 L445.0,623.3" fill="none" stroke="#000"/>
-<rect x="445.4" y="189.0" width="97.2" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="494.0" y="201.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Войти»</text>
-<rect x="149.2" y="191.0" width="157.6" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="228.0" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Забыли пароль?»</text>
-<rect x="572.2" y="190.0" width="189.5" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="667.0" y="202.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">нажата «Зарегистрироваться»</text>
-<rect x="596.1" y="138.0" width="87.7" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="640.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">окно закрыто</text>
-<rect x="445.6" y="345.0" width="102.8" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="497.0" y="357.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[вход выполнен]</text>
-<rect x="461.8" y="310.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="482.0" y="322.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<path d="M440.0,292.0 L440.0,334.0" fill="none" stroke="#000"/>
+<path d="M435.0,325.3 L440.0,334.0 L445.0,325.3" fill="none" stroke="#000"/>
+<path d="M454.0,345.0 L692.0,345.0" fill="none" stroke="#000"/>
+<path d="M683.3,350.0 L692.0,345.0 L683.3,340.0" fill="none" stroke="#000"/>
+<path d="M440.0,356.0 L440.0,398.0" fill="none" stroke="#000"/>
+<path d="M435.0,389.3 L440.0,398.0 L445.0,389.3" fill="none" stroke="#000"/>
+<path d="M440.0,420.0 L440.0,460.0" fill="none" stroke="#000"/>
+<path d="M435.0,451.3 L440.0,460.0 L445.0,451.3" fill="none" stroke="#000"/>
+<path d="M426.0,409.0 L175.0,409.0 L175.0,460.0" fill="none" stroke="#000"/>
+<path d="M170.0,451.3 L175.0,460.0 L180.0,451.3" fill="none" stroke="#000"/>
+<path d="M454.0,409.0 L705.0,409.0 L705.0,460.0" fill="none" stroke="#000"/>
+<path d="M700.0,451.3 L705.0,460.0 L710.0,451.3" fill="none" stroke="#000"/>
+<path d="M440.0,512.0 L440.0,554.0" fill="none" stroke="#000"/>
+<path d="M435.0,545.3 L440.0,554.0 L445.0,545.3" fill="none" stroke="#000"/>
+<path d="M440.0,576.0 L440.0,618.0" fill="none" stroke="#000"/>
+<path d="M435.0,609.3 L440.0,618.0 L445.0,609.3" fill="none" stroke="#000"/>
+<path d="M454.0,565.0 L559.0,565.0" fill="none" stroke="#000"/>
+<path d="M550.3,570.0 L559.0,565.0 L550.3,560.0" fill="none" stroke="#000"/>
+<path d="M440.0,670.0 L440.0,710.0" fill="none" stroke="#000"/>
+<path d="M435.0,701.3 L440.0,710.0 L445.0,701.3" fill="none" stroke="#000"/>
+<path d="M175.0,512.0 L175.0,802.0 L299.0,802.0" fill="none" stroke="#000"/>
+<path d="M290.3,807.0 L299.0,802.0 L290.3,797.0" fill="none" stroke="#000"/>
+<path d="M705.0,512.0 L705.0,802.0 L581.0,802.0" fill="none" stroke="#000"/>
+<path d="M589.7,797.0 L581.0,802.0 L589.7,807.0" fill="none" stroke="#000"/>
+<path d="M440.0,828.0 L440.0,868.0" fill="none" stroke="#000"/>
+<path d="M435.0,859.3 L440.0,868.0 L445.0,859.3" fill="none" stroke="#000"/>
+<rect x="166.1" y="244.0" width="267.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="300.0" y="256.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбрано действие / Действие := выбранное</text>
+<rect x="461.1" y="325.0" width="145.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="534.0" y="337.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Действие = «Закрыть»]</text>
+<rect x="445.8" y="362.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="466.0" y="374.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="445.2" y="425.0" width="131.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="511.0" y="437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Действие = «Войти»]</text>
+<rect x="226.0" y="390.0" width="192.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="322.0" y="402.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Действие = «Забыли пароль?»]</text>
+<rect x="461.8" y="390.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="482.0" y="402.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="445.6" y="581.0" width="102.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="497.0" y="593.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[вход выполнен]</text>
+<rect x="461.8" y="546.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="482.0" y="558.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
 </svg>

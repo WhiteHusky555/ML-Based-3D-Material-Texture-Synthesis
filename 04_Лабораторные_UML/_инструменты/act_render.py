@@ -111,7 +111,9 @@ def render(diagram, ids):
         elif t == "UMLControlNodeView":
             k = it["kind"]
             cx, cy = x0 + w / 2, y0 + h / 2
-            if k == "UMLInitialNode":
+            if k in ("UMLForkNode", "UMLJoinNode"):
+                nodes.append(f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" rx="2" fill="#000"/>')
+            elif k == "UMLInitialNode":
                 nodes.append(f'<circle cx="{cx}" cy="{cy}" r="{w / 2}" fill="#000"/>')
             elif k == "UMLActivityFinalNode":
                 nodes.append(f'<circle cx="{cx}" cy="{cy}" r="{w / 2}" fill="#fff" stroke="#000"/>')
@@ -133,7 +135,9 @@ def render(diagram, ids):
         elif t in ("UMLPseudostateView", "UMLFinalStateView"):
             k = it["kind"]
             cx, cy = x0 + w / 2, y0 + h / 2
-            if k in ("initial", "junction"):
+            if k in ("fork", "join"):
+                nodes.append(f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" rx="2" fill="#000"/>')
+            elif k in ("initial", "junction"):
                 nodes.append(f'<circle cx="{cx}" cy="{cy}" r="{w / 2}" fill="#000"/>')
             elif k == "final":
                 nodes.append(f'<circle cx="{cx}" cy="{cy}" r="{w / 2}" fill="#fff" stroke="#000"/>')
@@ -235,8 +239,9 @@ def check(diagram, ids):
     for na, ba, _ in labels:                         # подпись не лежит на границе дорожек
         if any(ba[0] + 1 < x < ba[2] - 1 for x in borders):
             problems.append(f"{na} пересекает границу дорожки")
-    for na, ba, _ in solids:                         # узел целиком в своей дорожке
-        if lanes and not any(l["box"][0] <= ba[0] and ba[2] <= l["box"][2] for l in lanes):
+    bars = {it["view"]["_id"] for it in items if it.get("kind") in ("UMLForkNode", "UMLJoinNode", "fork", "join")}
+    for na, ba, vid in solids:                       # узел целиком в своей дорожке (линейки — поперёк дорожек)
+        if lanes and vid not in bars and not any(l["box"][0] <= ba[0] and ba[2] <= l["box"][2] for l in lanes):
             problems.append(f"узел выходит за дорожку: {na}")
     by_view = {it["view"]["_id"]: it for it in items}
     flows = [it for it in items if "points" in it]
@@ -246,7 +251,8 @@ def check(diagram, ids):
         pts = it["points"]
         name = f'[{by_view[v["tail"]["$ref"]].get("label", "?")[:20]} → {by_view[v["head"]["$ref"]].get("label", "?")[:20]}]'
         for na, ba, vid in solids:
-            if vid not in ends and any(_seg_box(pts[k], pts[k + 1], ba) for k in range(len(pts) - 1)):
+            sh = 0 if vid in bars else 3                 # линейка тонкая: без отступа внутрь
+            if vid not in ends and any(_seg_box(pts[k], pts[k + 1], ba, sh) for k in range(len(pts) - 1)):
                 problems.append(f"линия {name} проходит через {na}")
         for na, ba, vid in labels:
             shrink = 1 if vid == v["_id"] else 0

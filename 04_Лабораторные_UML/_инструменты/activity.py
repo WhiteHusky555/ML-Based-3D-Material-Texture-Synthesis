@@ -33,6 +33,8 @@ def label_text(trigger, guard, effect=""):
 
 
 PSEUDO = ("decision", "choice", "junction")      # узлы-ромбы и точки: выход и вход сбоку
+BARS = ("fork", "join")   # линейки разветвления и синхронизации параллельных потоков
+BAR_H = 6                 # толщина линейки (FORKNODE_MINTHICK в StarUML 6, SYNCHRONIZATION_MINTHICK в 5.0)
 
 
 def _away_line(p1, p2, alpha, distance):
@@ -71,10 +73,11 @@ def alpha_distance(points, center):
 
 
 class Node:
-    def __init__(self, key, kind, name="", doc="", lane=0, row=0, dx=0, w=None, call=None):
+    def __init__(self, key, kind, name="", doc="", lane=0, row=0, dx=0, w=None, call=None, cols=(), pad=40):
         self.key, self.kind, self.name, self.doc = key, kind, name, doc
         self.lane, self.row, self.dx, self.w = lane, row, dx, w
         self.call = call          # ключ вызываемой деятельности (ссылка на деятельность)
+        self.cols, self.pad = list(cols), pad      # линейка: колонки (дорожка, dx), которые она перекрывает
         self.box = None
 
     def label(self, acts):
@@ -83,6 +86,8 @@ class Node:
     def size(self, acts):
         if self.kind in SIZES:
             return SIZES[self.kind]
+        if self.kind in BARS:
+            return 0, BAR_H                   # ширина — по колонкам при раскладке
         w = (self.w or 180) // 2 * 2         # чётная ширина: центр узла — целый пиксель
         # перенос с запасом: StarUML может разбить строку раньше, тогда узел вырастет вниз
         lines = wrap(self.label(acts), w - 26 - (RAKE if self.call else 0))
@@ -146,6 +151,14 @@ class Activity:
     def call(self, key, ref_name, target, lane, row, doc="", dx=0, w=None):
         return self._add(Node(key, "action", ref_name, doc, lane, row, dx, w, call=target))
 
+    def fork(self, key, row, cols, doc="", pad=40):
+        """Линейка разветвления; cols — колонки [(дорожка, dx)] параллельных потоков."""
+        return self._add(Node(key, "fork", "", doc, cols[0][0], row, cols=cols, pad=pad))
+
+    def join(self, key, row, cols, doc="", pad=40):
+        """Линейка синхронизации: переход дальше — после завершения всех входящих потоков."""
+        return self._add(Node(key, "join", "", doc, cols[0][0], row, cols=cols, pad=pad))
+
     def flow(self, a, b, trigger="", guard="", doc="", **kw):
         f = Flow(a, b, trigger, guard, doc, **kw)
         self.flows.append(f)
@@ -170,6 +183,11 @@ class Activity:
         self.lane_boxes = [(lane_x[i], y0, w, self.height) for i, (_, w) in enumerate(self.lanes)]
         for n in self.nodes.values():
             w, h = sizes[n.key]
+            if n.kind in BARS:                      # горизонтальная линейка поперёк своих колонок
+                xs = [lane_x[ln] + self.lanes[ln][1] / 2 + dx for ln, dx in n.cols]
+                x0, x1 = round(min(xs) - n.pad), round(max(xs) + n.pad)
+                n.box = (x0, round(row_c[n.row] - h / 2), max(x1 - x0, 70), h)
+                continue
             cx = lane_x[n.lane] + self.lanes[n.lane][1] / 2 + n.dx
             n.box = (round(cx - w / 2), round(row_c[n.row] - h / 2), w, h)
         for f in self.flows:
@@ -190,6 +208,10 @@ class Activity:
             p2 = H.side(f.enter or side)
             return [p1, (cx, p1[1]), (cx, p2[1]), p2]
         tb, ht = T.box[1] + T.box[3], H.box[1]
+        if T.kind in BARS:                          # из линейки — вертикально вниз, над узлом
+            return [(hc[0], tb), H.side("top")]
+        if H.kind in BARS:                          # в линейку — вертикально вниз из-под узла
+            return [T.side("bottom"), (tc[0], ht)]
         if ht > tb and f.exit in ("left", "right") and T.kind not in PSEUDO:   # выход сбоку действия
             s = T.side(f.exit)
             return [s, (hc[0], s[1]), H.side("top")]
@@ -310,8 +332,8 @@ def mdj_logical_view(mod, project_obj, acts, doc=""):
             parts.append(p)
         nobj = {}
         for n in a.order:
-            t = {"initial": "UMLInitialNode", "final": "UMLActivityFinalNode",
-                 "decision": "UMLDecisionNode", "action": "UMLAction"}[n.kind]
+            t = {"initial": "UMLInitialNode", "final": "UMLActivityFinalNode", "decision": "UMLDecisionNode",
+                 "fork": "UMLForkNode", "join": "UMLJoinNode", "action": "UMLAction"}[n.kind]
             no = _mdj(mod, t, parts[n.lane], name=n.name)
             if n.doc:
                 no["documentation"] = n.doc
@@ -368,9 +390,11 @@ def mdj_logical_view(mod, project_obj, acts, doc=""):
 def quantitative(a):
     kinds = [n.kind for n in a.nodes.values()]
     calls = sum(1 for n in a.nodes.values() if n.call)
+    bars = (f"узлов разветвления (Fork) — {kinds.count('fork')}; узлов синхронизации (Join) — "
+            f"{kinds.count('join')}; " if "fork" in kinds else "")
     return (f"Количественная характеристика диаграммы: разделов активности (дорожек) — {len(a.lanes)}; "
             f"состояний действия — {kinds.count('action') - calls}; ссылок на деятельности — {calls}; "
-            f"узлов решения — {kinds.count('decision')}; начальных состояний — {kinds.count('initial')}; "
+            f"узлов решения — {kinds.count('decision')}; {bars}начальных состояний — {kinds.count('initial')}; "
             f"конечных состояний — {kinds.count('final')}; переходов — {len(a.flows)}.")
 
 
@@ -378,6 +402,11 @@ def quantitative(a):
 
 def _pts5(points):
     return ";".join(f"{int(round(x))},{int(round(y))}" for x, y in points)
+
+
+# в StarUML 5.0 разветвление и синхронизация — один вид псевдосостояния (линейка), ориентация — по размерам вида
+XPD_PSEUDO = {"initial": "pkInitial", "decision": "pkDecision", "choice": "pkChoice", "junction": "pkJunction",
+              "fork": "pkSynchronization", "join": "pkSynchronization"}
 
 
 def xpd_logical_view(project_obj, acts, doc="", extra_behaviors=(), extra_owned=None):
@@ -402,7 +431,8 @@ def xpd_logical_view(project_obj, acts, doc="", extra_behaviors=(), extra_owned=
         parts = [Obj("UMLPartition") for _ in a.lanes]
         lane_content = [[] for _ in a.lanes]
         for n in a.order:
-            t = {"initial": "UMLPseudostate", "decision": "UMLPseudostate", "final": "UMLFinalState",
+            t = {"initial": "UMLPseudostate", "decision": "UMLPseudostate", "fork": "UMLPseudostate",
+                 "join": "UMLPseudostate", "final": "UMLFinalState",
                  "action": "UMLSubactivityState" if n.call else "UMLActionState"}[n.kind]
             vert[n.key] = Obj(t)
             out[n.key], inc[n.key] = [], []
@@ -466,8 +496,8 @@ def xpd_logical_view(project_obj, acts, doc="", extra_behaviors=(), extra_owned=
                 o.attr("Name", n.name)
             if n.doc:
                 o.attr("Documentation", n.doc)
-            if n.kind in ("initial", "decision"):
-                o.attr("PseudostateKind", "pkInitial" if n.kind == "initial" else "pkDecision", "UMLPseudostateKind")
+            if n.kind in XPD_PSEUDO:
+                o.attr("PseudostateKind", XPD_PSEUDO[n.kind], "UMLPseudostateKind")
             if n.call:
                 o.ref("Submachine", graphs[n.call])
             o.ref("ContainerState", top)
