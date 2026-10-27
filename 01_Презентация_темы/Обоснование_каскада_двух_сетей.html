@@ -1,0 +1,486 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Обоснование каскада двух сетей</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#E9EDEC; --surface:#FFFFFF; --ink:#172023; --muted:#5A676A; --line:#D5DBDA; --soft:#F2F4F3;
+  --own:#1F7A66; --own-bg:#E2F1EC;
+  --wrap:#A5620F; --wrap-bg:#F7EBDA;
+  --ext:#4F5E78; --ext-bg:#E6EAF1;
+  --bad:#B03A33; --bad-bg:#F6E3E1;
+  --display:"Unbounded","Arial Black",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1315; --surface:#182023; --ink:#E6ECEB; --muted:#9AA7A9; --line:#2C3639; --soft:#1F282B;
+    --own:#5CC4A8; --own-bg:#16312A; --wrap:#E3A456; --wrap-bg:#35270F; --ext:#97A8C8; --ext-bg:#1F2738;
+    --bad:#EE8A82; --bad-bg:#3A1F1D;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1315; --surface:#182023; --ink:#E6ECEB; --muted:#9AA7A9; --line:#2C3639; --soft:#1F282B;
+  --own:#5CC4A8; --own-bg:#16312A; --wrap:#E3A456; --wrap-bg:#35270F; --ext:#97A8C8; --ext-bg:#1F2738;
+  --bad:#EE8A82; --bad-bg:#3A1F1D;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);padding:16px}
+.deck{display:grid;gap:14px;justify-items:center}
+.frame{position:relative;overflow:hidden;border-radius:10px;background:var(--surface);box-shadow:0 0 0 1px var(--line),0 18px 40px -24px rgba(0,0,0,.45)}
+.slide{position:absolute;top:0;left:0;width:1280px;height:720px;transform-origin:0 0;padding:48px 64px 56px;display:flex;flex-direction:column;gap:22px;background:var(--surface);color:var(--ink);overflow:hidden;font-size:19px;line-height:1.5}
+.foot{position:absolute;left:64px;right:64px;bottom:18px;display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.03em}
+.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center;font-size:14px}
+.toolbar button{font:inherit;font-size:14px;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.toolbar button:hover{border-color:var(--own)}
+.toolbar button:focus-visible{outline:2px solid var(--own);outline-offset:2px}
+.toolbar .count{font-family:var(--mono);min-width:70px;text-align:center;font-variant-numeric:tabular-nums}
+.deck.list .nav{display:none}
+
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+p{margin:0}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.sh{display:grid;gap:8px}
+.sh h2{font-family:var(--display);font-weight:600;font-size:34px;line-height:1.18;letter-spacing:-.01em}
+.lead{font-size:20px;color:var(--muted);max-width:1080px}
+.cap{font-size:15px;color:var(--muted);line-height:1.4}
+.src{font-family:var(--mono);font-size:13.5px;color:var(--muted)}
+.tag{display:inline-block;justify-self:start;font-family:var(--mono);font-size:13.5px;padding:2px 8px;border-radius:4px;white-space:nowrap}
+.tag.own{background:var(--own-bg);color:var(--own)}
+.tag.wrap{background:var(--wrap-bg);color:var(--wrap)}
+.tag.ext{background:var(--ext-bg);color:var(--ext)}
+.tag.bad{background:var(--bad-bg);color:var(--bad)}
+.card{border:1px solid var(--line);border-radius:10px;padding:24px 26px;display:grid;gap:10px;align-content:start;background:var(--surface)}
+.card h3{font-size:22px;line-height:1.3}
+.card p{font-size:18px;line-height:1.45}
+.card .src{margin-top:2px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;flex:1;grid-auto-rows:1fr}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;grid-auto-rows:1fr}
+.note{border-left:4px solid var(--wrap);background:var(--wrap-bg);border-radius:0 8px 8px 0;padding:14px 20px;font-size:18px;line-height:1.45}
+.note.own{border-color:var(--own);background:var(--own-bg)}
+
+/* 1 title */
+.s-title{justify-content:space-between}
+.s-title h1{font-family:var(--display);font-weight:600;font-size:56px;line-height:1.15;letter-spacing:-.015em;max-width:1000px}
+.s-title .lead{font-size:23px;max-width:1040px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0 40px}
+.st{position:relative;border-radius:10px;padding:20px 22px;display:grid;gap:6px;align-content:start;border:2px solid var(--line);min-height:170px}
+.st:not(:last-child)::after{content:"→";position:absolute;right:-31px;top:62px;font-size:26px;color:var(--muted)}
+.st b{font-size:20px;line-height:1.3}
+.st span{font-size:16.5px;color:var(--muted);line-height:1.35}
+.st .k{font-family:var(--mono);font-size:13.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--own)}
+.st.inp{border-style:dashed;border-color:var(--muted)}
+.st.own{border-color:var(--own);background:var(--own-bg)}
+.st.out{border-color:var(--ink)}
+
+/* 2 compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px;flex:1}
+.cmp .card{gap:16px;padding:28px 30px}
+.cmp .card.a{border-top:4px solid var(--bad)}
+.cmp .card.b{border-top:4px solid var(--own);background:var(--own-bg)}
+.cmp dl{margin:0;display:grid;grid-template-columns:190px 1fr;gap:18px 16px;font-size:19px;line-height:1.4}
+.cmp dt{color:var(--muted);font-size:16.5px}
+.cmp dd{margin:0}
+
+/* 3 receptive field */
+.rf{display:grid;grid-template-columns:1fr 470px;gap:28px;flex:1;align-items:start}
+.pts{list-style:none;margin:0;padding:0;counter-reset:p;display:grid;gap:22px}
+.pts li{display:grid;grid-template-columns:44px 1fr;gap:4px 0;font-size:18px;line-height:1.45}
+.pts li::before{counter-increment:p;content:counter(p);grid-row:1/span 3;font-family:var(--display);font-size:26px;color:var(--own)}
+.pts li b{font-size:20px}
+.rfbox{border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:grid;gap:10px}
+.rfbox svg{display:block;width:100%;height:auto}
+svg text{font-family:var(--body);fill:var(--ink)}
+svg .t-s{font-size:13px;fill:var(--muted)}
+svg .t-b{font-size:15px;font-weight:600}
+svg .t-m{font-family:var(--mono);font-size:12px;fill:var(--muted)}
+
+/* 4 calc */
+.calc{display:grid;grid-template-columns:600px 1fr;gap:32px;flex:1;align-items:start}
+table.t{border-collapse:collapse;width:100%;font-size:18.5px}
+table.t th,table.t td{padding:14px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.35}
+table.t th{font-family:var(--mono);font-size:13.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+table.t td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.t tr.hi td{font-weight:600}
+.bars{display:grid;gap:22px}
+.bar{display:grid;gap:6px}
+.bar .lbl{display:flex;justify-content:space-between;font-size:18px}
+.bar .lbl b{font-family:var(--mono)}
+.bar .track{height:28px;border-radius:5px;background:var(--soft);overflow:hidden}
+.bar .fill{height:100%;border-radius:5px}
+
+/* 5-6 precedents */
+.prec .card{gap:6px}
+.prec .org{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.params{display:grid;gap:8px;margin-top:6px}
+.params div{display:grid;grid-template-columns:110px 1fr 76px;gap:10px;align-items:center;font-size:16px}
+.params i{display:block;height:15px;border-radius:3px;background:var(--own)}
+.params span:last-child{font-family:var(--mono);font-size:14px;color:var(--muted);text-align:right}
+
+/* 7 analogy */
+.lanes{display:grid;gap:22px;flex:1;align-content:start}
+.lane{display:grid;grid-template-columns:200px 1fr 44px 1fr;align-items:stretch;gap:0 14px;min-height:150px}
+.lane .who{display:grid;align-content:center;gap:4px}
+.lane .who b{font-size:21px}
+.lane .who span{font-size:15.5px;color:var(--muted)}
+.blk{border-radius:10px;padding:18px 22px;display:grid;gap:4px;align-content:center;border:2px solid}
+.blk b{font-size:20px}
+.blk span{font-size:16.5px;line-height:1.4;color:var(--muted)}
+.blk.heavy{border-color:var(--ext);background:var(--ext-bg)}
+.blk.light{border-color:var(--own);background:var(--own-bg)}
+.lane .arr{display:grid;place-content:center;font-size:24px;color:var(--muted)}
+.mult{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.mult .tag{font-size:13.5px}
+
+/* 8 freq */
+.freq{display:grid;grid-template-columns:1fr 1fr;gap:18px;flex:1}
+.chain{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.chain li{display:grid;grid-template-columns:28px 1fr;font-size:18px;line-height:1.4}
+.chain li::before{content:"↻";color:var(--own);font-weight:700}
+
+/* 9 wins */
+.wins .card{padding:24px 26px}
+.wins .card h3{font-size:22px}
+.wins .card p{font-size:18px}
+
+/* 11 sources */
+.refs{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;flex:1}
+.refs ol{margin:0;padding-left:26px;display:grid;gap:8px;align-content:start;font-size:14.6px;line-height:1.38}
+.refs h4{font-family:var(--mono);font-size:13.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;font-weight:600}
+.refs .col{display:grid;gap:12px;align-content:start}
+
+/* 12 summary */
+.s-end{justify-content:center;gap:28px}
+.s-end h2{font-family:var(--display);font-weight:600;font-size:48px;line-height:1.15;max-width:1150px}
+.concl{list-style:none;margin:0;padding:0;display:grid;gap:20px;max-width:1120px}
+.concl li{display:grid;grid-template-columns:44px 1fr;font-size:23px;line-height:1.45}
+.concl li::before{content:"✓";color:var(--own);font-weight:700;font-size:22px}
+
+/* print → PDF: каждый слайд на своей странице */
+@page{size:1280px 720px;margin:0}
+@media print{
+  body{padding:0;background:#fff}
+  .toolbar{display:none!important}
+  .deck{display:block}
+  .frame,.frame[hidden]{display:block!important;width:1280px!important;height:720px!important;border-radius:0;box-shadow:none;break-after:page;page-break-after:always}
+  .slide{transform:none!important}
+}
+</style></head><body>
+
+<div class="deck" id="deck">
+
+<!-- 1 -->
+<div class="frame"><section class="slide s-title" aria-label="Слайд 1: титул">
+  <div style="display:grid;gap:18px">
+    <span class="eyebrow">Аргументация архитектуры ВКР · Непрокин И. С.</span>
+    <h1>Две нейросети вместо одной большой</h1>
+    <p class="lead">Почему материал генерируется в два этапа: диффузионная модель SD 1.5 в её родном разрешении 512² и сеть сверхразрешения Real-ESRGAN до 1024²–4096²</p>
+  </div>
+  <div class="flow">
+    <div class="st inp"><b>Карта процедурного шума</b><span>задаёт форму материала</span></div>
+    <div class="st own"><span class="k">Этап 1 · 512²</span><b>SD 1.5 + ControlNet + LoRA</b><span>структура и раскладка элементов</span></div>
+    <div class="st own"><span class="k">Этап 2 · ×2 / ×4</span><b>Real-ESRGAN</b><span>мелкая фактура, по тайлам с заворачиванием краёв</span></div>
+    <div class="st out"><b>1024² · 2048² · 4096²</b><span>albedo → PBR-карты формулами</span></div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>01 / 12</span></div>
+</section></div>
+
+<!-- 2 -->
+<div class="frame"><section class="slide" aria-label="Слайд 2: постановка вопроса">
+  <div class="sh"><span class="eyebrow">Постановка вопроса</span><h2>Как получить карту 2048², если модель обучена на 512²</h2></div>
+  <div class="cmp">
+    <div class="card a">
+      <h3>A. Одна модель сразу в итоговом разрешении</h3>
+      <dl>
+        <dt>Как получается 2048²</dt><dd>диффузия на холсте 2048² — латент 256×256</dd>
+        <dt>Модель</dt><dd>SD 1.5 вне своего разрешения или более крупная модель (SDXL и др.)</dd>
+        <dt>Форма</dt><dd>задаётся на большом холсте</dd>
+        <dt>Мелкая деталь</dt><dd>в той же диффузии, на каждом шаге</dd>
+      </dl>
+    </div>
+    <div class="card b">
+      <h3>B. Каскад из двух этапов — решение ВКР</h3>
+      <dl>
+        <dt>Как получается 2048²</dt><dd>диффузия на 512² — латент 64×64, затем Real-ESRGAN ×4</dd>
+        <dt>Модели</dt><dd>SD 1.5 + ControlNet + LoRA (+ IP-Adapter) и Real-ESRGAN</dd>
+        <dt>Форма</dt><dd>задаётся на 512² по карте шума</dd>
+        <dt>Мелкая деталь</dt><dd>добавляется сетью сверхразрешения локально, за один проход</dd>
+      </dl>
+    </div>
+  </div>
+  <p class="cap">«Две сети» — это два этапа конвейера. Первый сам состоит из нескольких сетей (CLIP, U-Net, VAE, ControlNet, адаптер LoRA), второй — одна свёрточная сеть.</p>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>02 / 12</span></div>
+</section></div>
+
+<!-- 3 -->
+<div class="frame"><section class="slide" aria-label="Слайд 3: почему не сразу в 2048">
+  <div class="sh"><span class="eyebrow">Почему не генерировать сразу в 2048²</span><h2>Вне обучающего разрешения диффузия ломает структуру</h2></div>
+  <div class="rf">
+    <ol class="pts">
+      <li><b>Повторы и распад формы уже на 1024²</b><span>SD, обученная на 512², при генерации 1024² даёт повторяющиеся объекты и неправдоподобную структуру. Причина — ограниченное поле восприятия свёрточных ядер U-Net.</span><span class="src">He et al., ScaleCrafter, ICLR 2024</span></li>
+      <li><b>Обходные методы дороже</b><span>Генерация выше обучающего разрешения без дообучения меняет сэмплирование; DemoFusion требует больше проходов и сам начинает с изображения в исходном разрешении.</span><span class="src">Du et al., DemoFusion, CVPR 2024</span></li>
+      <li><b>Для бесшовной текстуры повтор — брак</b><span>Повторяющийся фрагмент внутри плитки читается как шов, даже если края стыкуются идеально.</span></li>
+    </ol>
+    <div class="rfbox">
+      <svg viewBox="0 0 440 270" role="img" aria-label="Поле восприятия на холстах 512 и 2048">
+        <rect x="10" y="30" width="190" height="190" rx="6" fill="var(--soft)" stroke="var(--line)"/>
+        <circle cx="105" cy="125" r="48" fill="var(--own-bg)" stroke="var(--own)" stroke-width="2"/>
+        <text class="t-b" x="105" y="20" text-anchor="middle">холст 512²</text>
+        <text class="t-s" x="105" y="243" text-anchor="middle">поле восприятия охватывает</text>
+        <text class="t-s" x="105" y="260" text-anchor="middle">заметную часть изображения</text>
+        <rect x="240" y="30" width="190" height="190" rx="6" fill="var(--soft)" stroke="var(--line)"/>
+        <circle cx="335" cy="125" r="12" fill="var(--bad-bg)" stroke="var(--bad)" stroke-width="2"/>
+        <text class="t-b" x="335" y="20" text-anchor="middle">холст 2048²</text>
+        <text class="t-s" x="335" y="243" text-anchor="middle">то же поле — 1/16 прежней доли:</text>
+        <text class="t-s" x="335" y="260" text-anchor="middle">сеть не видит картину целиком</text>
+      </svg>
+      <p class="cap">Холсты показаны в одном масштабе. Иллюстрация вывода ScaleCrafter: поле восприятия задано архитектурой и не растёт вместе с холстом.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>03 / 12</span></div>
+</section></div>
+
+<!-- 4 -->
+<div class="frame"><section class="slide" aria-label="Слайд 4: вычислительный аргумент">
+  <div class="sh"><span class="eyebrow">Вычислительный аргумент · собственный расчёт</span><h2>Шаг диффузии на 2048² дороже в 16–256 раз</h2></div>
+  <div class="calc">
+    <table class="t">
+      <thead><tr><th>SD 1.5 (VAE уменьшает в 8 раз)</th><th>512²</th><th>2048²</th></tr></thead>
+      <tbody>
+        <tr><td>Латент</td><td class="n">64×64</td><td class="n">256×256</td></tr>
+        <tr><td>Токенов в верхних блоках внимания</td><td class="n">4 096</td><td class="n">65 536</td></tr>
+        <tr class="hi"><td>Свёртки — линейно по пикселям латента</td><td class="n">×1</td><td class="n">×16</td></tr>
+        <tr class="hi"><td>Самовнимание — квадратично по токенам</td><td class="n">×1</td><td class="n">×256</td></tr>
+        <tr><td>Число шагов</td><td class="n">20–40</td><td class="n">20–40</td></tr>
+      </tbody>
+    </table>
+    <div class="bars">
+      <div class="bar"><div class="lbl"><span>Самовнимание, рост за шаг</span><b>×256</b></div><div class="track"><div class="fill" style="width:100%;background:var(--bad)"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Свёртки, рост за шаг</span><b>×16</b></div><div class="track"><div class="fill" style="width:6.25%;background:var(--wrap)"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Апскейл Real-ESRGAN: один проход, по тайлам</span><b>линейно</b></div><div class="track"><div class="fill" style="width:2%;background:var(--own)"></div></div></div>
+      <p class="note">Рост «×256» относится только к слоям самовнимания; свёрточные слои дорожают в 16 раз. Каскад платит за дорогие итерации диффузии только на 512².</p>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>04 / 12</span></div>
+</section></div>
+
+<!-- 5 -->
+<div class="frame"><section class="slide prec" aria-label="Слайд 5: каскад в генеративных моделях">
+  <div class="sh"><span class="eyebrow">Прецеденты: генеративные модели</span><h2>Каскад — стандартный приём крупных генеративных моделей</h2></div>
+  <div class="grid2">
+    <div class="card"><div class="org"><span class="tag ext">Google</span><span class="src">Ho et al., JMLR 2022</span></div>
+      <h3>Cascaded Diffusion Models</h3>
+      <p>Модель низкого разрешения, затем модели сверхразрешения последовательно увеличивают изображение и добавляют детали. Качество выше BigGAN-deep и VQ-VAE-2 на ImageNet.</p></div>
+    <div class="card"><div class="org"><span class="tag ext">Google</span><span class="src">Saharia et al., NeurIPS 2022</span></div>
+      <h3>Imagen: сети сверхразрешения в 3–5 раз меньше базовой</h3>
+      <div class="params">
+        <div><span>64² базовая</span><i style="width:100%"></i><span>2 млрд</span></div>
+        <div><span>64→256</span><i style="width:30%"></i><span>600 млн</span></div>
+        <div><span>256→1024</span><i style="width:20%"></i><span>400 млн</span></div>
+      </div></div>
+    <div class="card"><div class="org"><span class="tag ext">Stability AI</span><span class="src">Podell et al., ICLR 2024</span></div>
+      <h3>SDXL: базовая модель + уточнитель</h3>
+      <p>Отдельная модель-уточнитель (refiner) повышает детализацию результата базовой модели.</p></div>
+    <div class="card"><div class="org"><span class="tag ext">LMU / Runway</span><span class="src">Rombach et al., CVPR 2022</span></div>
+      <h3>Сама SD — уже две сети</h3>
+      <p>Автокодировщик сжимает изображение, диффузия работает в латентном пространстве — это значительно снижает вычислительные затраты по сравнению с диффузией в пикселях.</p></div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>05 / 12</span></div>
+</section></div>
+
+<!-- 6 -->
+<div class="frame"><section class="slide prec" aria-label="Слайд 6: графика реального времени">
+  <div class="sh"><span class="eyebrow">Прецеденты: графика реального времени</span><h2>Тот же принцип — в NVIDIA DLSS и аналогах</h2></div>
+  <div class="grid2">
+    <div class="card"><div class="org"><span class="tag own">NVIDIA</span><span class="src">DLSS Super Resolution</span></div>
+      <h3>Рендер в меньшем разрешении + нейросеть</h3>
+      <p>Дорогая работа делается на малом разрешении, детали итогового кадра восстанавливает нейросеть.</p></div>
+    <div class="card"><div class="org"><span class="tag ext">Meta</span><span class="src">Xiao et al., SIGGRAPH 2020 (NSRR)</span></div>
+      <h3>На входе в 16 раз меньше пикселей</h3>
+      <p>Например, 960×540 вместо 3840×2160: изображение увеличивается нейросетью в реальном времени.</p></div>
+    <div class="card"><div class="org"><span class="tag own">NVIDIA Research</span><span class="src">Hasselgren et al., Eurographics 2020</span></div>
+      <h3>Две сети работают вместе</h3>
+      <p>Сеть адаптивного сэмплирования решает, где трассировать лучи, сеть-денойзер восстанавливает изображение; обучаются совместно.</p></div>
+    <div class="card"><div class="org"><span class="tag own">NVIDIA ADLR</span><span class="src">DLSS 4, 2025</span></div>
+      <h3>Сеть генерации кадров разделена пополам</h3>
+      <p>Большая половина — раз на пару исходных кадров, результат переиспользуется; меньшая — на каждый новый кадр. Модель на 40 % быстрее и требует на 30 % меньше видеопамяти.</p></div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>06 / 12</span></div>
+</section></div>
+
+<!-- 7 -->
+<div class="frame"><section class="slide" aria-label="Слайд 7: аналогия с DLSS 4">
+  <div class="sh"><span class="eyebrow">Инженерная аналогия</span><h2>Тяжёлая часть — один раз, лёгкая — на каждый результат</h2></div>
+  <div class="lanes">
+    <div class="lane">
+      <div class="who"><b>NVIDIA DLSS 4</b><span>генерация кадров</span></div>
+      <div class="blk heavy"><b>Большая половина сети</b><span>один раз на пару исходных кадров; результат переиспользуется</span></div>
+      <div class="arr">→</div>
+      <div class="blk light"><b>Меньшая половина сети</b><span>на каждый из трёх сгенерированных кадров</span></div>
+    </div>
+    <div class="lane">
+      <div class="who"><b>Система ВКР</b><span>генерация материала</span></div>
+      <div class="blk heavy"><b>Диффузия 512² (20–40 шагов)</b><span>один раз; база кэшируется по хэшу параметров</span></div>
+      <div class="arr">→</div>
+      <div class="blk light"><b>Real-ESRGAN, один проход</b><span>на каждое выходное разрешение</span>
+        <div class="mult"><span class="tag own">1024² · бесплатный</span><span class="tag own">2048² · премиум</span><span class="tag own">4096² · премиум</span></div></div>
+    </div>
+    <p class="note own">Повторный экспорт в большем разрешении или переход на премиум не запускают диффузию заново — только этап сверхразрешения.</p>
+    <p class="cap">Цифры NVIDIA: ≈3,25 мс на кадр 4K у DLSS 3 (RTX 4090) и ≈1 мс на каждый из трёх кадров у DLSS 4 (RTX 5090). Измерены на разных видеокартах, поэтому напрямую не сравниваются.</p>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>07 / 12</span></div>
+</section></div>
+
+<!-- 8 -->
+<div class="frame"><section class="slide" aria-label="Слайд 8: частоты и бесшовность">
+  <div class="sh"><span class="eyebrow">Качество текстуры</span><h2>Разделение частот и бесшовность на каждом этапе</h2></div>
+  <div class="freq">
+    <div style="display:grid;gap:14px;align-content:start">
+      <div class="card"><span class="tag own">Низкие и средние частоты · 512²</span><h3>Структура и раскладка</h3><p>Камни, трещины, ячейки задаёт диффузия по карте шума через ControlNet — в разрешении, на котором модели обучены.</p></div>
+      <div class="card"><span class="tag wrap">Высокие частоты · 1024²–4096²</span><h3>Зерно и мелкие поры</h3><p>Real-ESRGAN добавляет фактуру локально, по тайлам, не меняя крупную структуру.</p></div>
+      <p class="note">Ограничение: сверхразрешение не добавляет новых смысловых деталей. Если на 4096² фактуры мало — перспектива: уточнение по тайлам диффузией (img2img, как refiner SDXL).</p>
+    </div>
+    <div style="display:grid;gap:14px;align-content:start">
+      <div class="card"><h3>Бесшовность сохраняется на каждом этапе</h3>
+        <ul class="chain">
+          <li>периодический процедурный шум</li>
+          <li>циклический padding в U-Net, ControlNet и VAE</li>
+          <li>перед апскейлом края дополняются на 32 px с заворачиванием, после ×4 вырезается центр</li>
+          <li>PBR-карты считаются фильтрами с заворачиванием краёв</li>
+        </ul></div>
+      <div class="card"><span class="src">Chen et al., PBR-SR, NeurIPS 2025</span><p>Сверхразрешение применимо и к картам материалов: PBR-SR увеличивает PBR-текстуры готовой моделью сверхразрешения, обученной на обычных изображениях, без дообучения.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>08 / 12</span></div>
+</section></div>
+
+<!-- 9 -->
+<div class="frame"><section class="slide wins" aria-label="Слайд 9: выигрыши для архитектуры">
+  <div class="sh"><span class="eyebrow">Аргументы программной инженерии</span><h2>Что каскад даёт архитектуре системы</h2></div>
+  <div class="grid3">
+    <div class="card"><h3>Качество формы</h3><p>Диффузия работает в родном разрешении модели — без повторов и распада структуры.</p></div>
+    <div class="card"><h3>Тарифы без второй модели</h3><p>Бесплатный и премиум различаются этапом сверхразрешения (×2 или ×4) и числом шагов.</p></div>
+    <div class="card"><h3>Кэш и повторный экспорт</h3><p>База 512² переиспользуется для любого разрешения и любого движка.</p></div>
+    <div class="card"><h3>Видеопамять</h3><p>GPU-воркер целиком — ориентир 5–8 ГБ; на облачной L4 24 ГБ остаётся запас.</p></div>
+    <div class="card"><h3>Дообучение в курсовой</h3><p>LoRA обучается только для SD 1.5 на 512² — на одной потребительской видеокарте.</p></div>
+    <div class="card"><h3>Заменяемость</h3><p>Модель сверхразрешения меняется независимо от генерации: тот же интерфейс, другие веса.</p></div>
+  </div>
+  <p class="note own">Итог: одна обучаемая модель, одна точка кэширования, тарифы настраиваются параметрами этапов, а не отдельными моделями.</p>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>09 / 12</span></div>
+</section></div>
+
+<!-- 10 -->
+<div class="frame"><section class="slide" aria-label="Слайд 10: план замеров">
+  <div class="sh"><span class="eyebrow">Экспериментальная часть ВКР</span><h2>Что подтвердим замерами на L4 24 ГБ</h2></div>
+  <table class="t">
+    <thead><tr><th>Показатель</th><th>Каскад (решение ВКР)</th><th>Прямая генерация</th></tr></thead>
+    <tbody>
+      <tr><td>Пиковая видеопамять, ГБ</td><td>512² + апскейл ×2 / ×4 по тайлам</td><td>SD 1.5 напрямую в 1024² и 2048²; ScaleCrafter или DemoFusion</td></tr>
+      <tr><td>Время до готовой карты, с</td><td>20 и 30 шагов + апскейл</td><td>те же шаги</td></tr>
+      <tr><td>Повторы структуры</td><td>доля текстур с повторами — экспертная оценка</td><td>то же</td></tr>
+      <tr><td>Соответствие описанию</td><td>CLIP score</td><td>CLIP score</td></tr>
+      <tr><td>Бесшовность</td><td>разница яркости по шву при плитке 3×3</td><td>то же</td></tr>
+    </tbody>
+  </table>
+  <p class="note own">До замеров в обосновании нет непроверенных чисел: только опубликованные данные и расчёт по архитектуре SD 1.5.</p>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>10 / 12</span></div>
+</section></div>
+
+<!-- 11 -->
+<div class="frame"><section class="slide" aria-label="Слайд 11: источники">
+  <div class="sh"><span class="eyebrow">Источники · проверены 27.10.2026</span><h2>Литература</h2></div>
+  <div class="refs">
+    <div class="col">
+      <div><h4>Генеративные модели и сверхразрешение</h4>
+      <ol>
+        <li>Ho J. et al. Cascaded Diffusion Models for High Fidelity Image Generation // JMLR. 2022. Vol. 23, No. 47. P. 1–33.</li>
+        <li>Saharia C. et al. Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding // NeurIPS 35. 2022. P. 36479–36494.</li>
+        <li>Rombach R. et al. High-Resolution Image Synthesis with Latent Diffusion Models // CVPR. 2022. P. 10674–10685.</li>
+        <li>Podell D. et al. SDXL: Improving Latent Diffusion Models for High-Resolution Image Synthesis // ICLR. 2024. arXiv:2307.01952.</li>
+        <li>He Y. et al. ScaleCrafter: Tuning-free Higher-Resolution Visual Generation with Diffusion Models // ICLR. 2024. arXiv:2310.07702.</li>
+        <li>Du R. et al. DemoFusion: Democratising High-Resolution Image Generation With No $$$ // CVPR. 2024. P. 6159–6168.</li>
+        <li>Wang X., Xie L., Dong C., Shan Y. Real-ESRGAN // ICCV Workshops. 2021. P. 1905–1914.</li>
+        <li>Zhang L., Rao A., Agrawala M. Adding Conditional Control to Text-to-Image Diffusion Models // ICCV. 2023. P. 3813–3824.</li>
+      </ol></div>
+    </div>
+    <div class="col">
+      <div><h4>Материалы и графика реального времени</h4>
+      <ol start="9">
+        <li>Vecchio G. et al. MatFuse: Controllable Material Generation with Diffusion Models // CVPR. 2024. P. 4429–4438.</li>
+        <li>Chen Y. et al. PBR-SR: Mesh PBR Texture Super Resolution from 2D Image Priors // NeurIPS. 2025. arXiv:2506.02846.</li>
+        <li>Hasselgren J. et al. Neural Temporal Adaptive Sampling and Denoising // Computer Graphics Forum. 2020. Vol. 39, No. 2. P. 147–155.</li>
+        <li>Xiao L. et al. Neural Supersampling for Real-Time Rendering // ACM TOG. 2020. Vol. 39, No. 4. Art. 142.</li>
+        <li>DLSS 4: Transforming Real-Time Graphics with AI / NVIDIA ADLR. 2025. URL: research.nvidia.com/labs/adlr/DLSS4</li>
+        <li>NVIDIA DLSS 4 Introduces Multi Frame Generation // NVIDIA GeForce News. 2025.</li>
+      </ol></div>
+      <p class="cap">Полные описания по ГОСТ Р 7.0.100–2018 с DOI — в заметке «Обоснование каскада двух сетей» (раздел нейросетевых моделей).</p>
+    </div>
+  </div>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>11 / 12</span></div>
+</section></div>
+
+<!-- 12 -->
+<div class="frame"><section class="slide s-end" aria-label="Слайд 12: вывод">
+  <span class="eyebrow">Вывод</span>
+  <h2>Каскад из двух этапов — осознанный инженерный выбор</h2>
+  <ul class="concl">
+    <li>Диффузия работает в разрешении, на котором обучена: форма точно следует процедурному шуму, без повторов.</li>
+    <li>Тот же принцип применяют Google (Imagen, Cascaded Diffusion), Stability AI (SDXL) и NVIDIA (DLSS): дорогая модель — на малом разрешении, лёгкая сеть — на детали.</li>
+    <li>Для системы это кэш базы 512², тарифы без второй модели и запас видеопамяти; цифры подтвердим замерами на L4.</li>
+  </ul>
+  <div class="foot"><span>Непрокин И. С. · Обоснование каскада</span><span>12 / 12</span></div>
+</section></div>
+
+<div class="toolbar" id="toolbar">
+  <button type="button" class="nav" id="prev" aria-label="Предыдущий слайд">‹ Назад</button>
+  <span class="count nav" id="count">1 / 12</span>
+  <button type="button" class="nav" id="next" aria-label="Следующий слайд">Вперёд ›</button>
+  <button type="button" id="all">Все слайды</button>
+  <button type="button" id="fs">На весь экран</button>
+</div>
+</div>
+
+<script>
+(function(){
+  const deck=document.getElementById('deck'), frames=[...deck.querySelectorAll('.frame')], tb=document.getElementById('toolbar');
+  const count=document.getElementById('count'), allBtn=document.getElementById('all');
+  let cur=0, list=false;
+  const m=/^#s(\d+)$/.exec(location.hash||''); if(m) cur=Math.min(frames.length-1,Math.max(0,+m[1]-1));
+  function layout(){
+    const narrow=document.documentElement.clientWidth<760, L=list||narrow;
+    deck.classList.toggle('list',L);
+    allBtn.textContent=L?'По одному':'Все слайды'; allBtn.hidden=narrow;
+    const W=deck.clientWidth;
+    frames.forEach((f,i)=>{
+      let s;
+      if(L){s=W/1280;f.hidden=false;}
+      else{const avail=window.innerHeight-tb.offsetHeight-46;s=Math.min(W/1280,Math.max(avail,240)/720);f.hidden=i!==cur;}
+      f.style.width=Math.floor(1280*s)+'px';f.style.height=Math.floor(720*s)+'px';f.firstElementChild.style.transform='scale('+s+')';
+    });
+    if(!L) deck.insertBefore(frames[cur], tb);
+    count.textContent=(cur+1)+' / '+frames.length;
+  }
+  function restoreOrder(){frames.forEach(f=>deck.insertBefore(f,tb));}
+  function go(i){cur=Math.max(0,Math.min(frames.length-1,i));restoreOrder();layout();try{history.replaceState(null,'','#s'+(cur+1));}catch(e){}}
+  document.getElementById('prev').addEventListener('click',()=>go(cur-1));
+  document.getElementById('next').addEventListener('click',()=>go(cur+1));
+  allBtn.addEventListener('click',()=>{list=!list;restoreOrder();layout();});
+  document.getElementById('fs').addEventListener('click',()=>{
+    const d=document; try{ if(d.fullscreenElement) d.exitFullscreen(); else d.documentElement.requestFullscreen().catch(()=>{}); }catch(e){} });
+  document.addEventListener('keydown',e=>{
+    if(deck.classList.contains('list')) return;
+    if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(cur+1);}
+    else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(cur-1);}
+    else if(e.key==='Home'){go(0);} else if(e.key==='End'){go(frames.length-1);}
+  });
+  let rt; addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(layout,80);});
+  document.addEventListener('fullscreenchange',layout);
+  restoreOrder(); layout();
+})();
+</script>
+</body></html>
