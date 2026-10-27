@@ -9,6 +9,7 @@
   python -I mdj_render.py <проект.mdj> <папка_вывода> [имена ...] --png  — и PNG (в <папка>/PNG, через LibreOffice)
   python -I mdj_render.py --check <проект.mdj>                          — проверка раскладки
   --activity / --statechart — только диаграммы деятельности / автомата (рендер и проверка — act_render.py)
+  --classes — только диаграммы классов (рендер и проверка — class_render.py)
 """
 import json
 import math
@@ -19,6 +20,7 @@ from xml.sax.saxutils import escape
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from staruml_xpd import LINE_H, EXT_ITEM_H, label_pos, text_w, wrap  # noqa: E402
 import act_render  # noqa: E402
+import class_render  # noqa: E402
 
 FONT = "Arial, Helvetica, sans-serif"
 FS = 13
@@ -52,7 +54,8 @@ def load(path):
         if isinstance(o, dict):
             if "_id" in o:
                 ids[o["_id"]] = o
-            if o.get("_type") in ("UMLUseCaseDiagram", "UMLActivityDiagram", "UMLStatechartDiagram"):
+            if o.get("_type") in ("UMLUseCaseDiagram", "UMLActivityDiagram", "UMLStatechartDiagram",
+                                  "UMLClassDiagram"):
                 diagrams.append(o)
             for v in o.values():
                 index(v)
@@ -252,15 +255,25 @@ def _pick(diagrams, kind):
 BEHAVIOR = ("UMLActivityDiagram", "UMLStatechartDiagram")    # рисуются и проверяются act_render.py
 
 
+def _renderer(dg):
+    if dg["_type"] in BEHAVIOR:
+        return act_render
+    if dg["_type"] == "UMLClassDiagram":
+        return class_render
+    return None
+
+
 def main():
     only_act = ("UMLActivityDiagram" if "--activity" in sys.argv else
-                "UMLStatechartDiagram" if "--statechart" in sys.argv else None)
-    sys.argv = [a for a in sys.argv if a not in ("--activity", "--statechart")]
+                "UMLStatechartDiagram" if "--statechart" in sys.argv else
+                "UMLClassDiagram" if "--classes" in sys.argv else None)
+    sys.argv = [a for a in sys.argv if a not in ("--activity", "--statechart", "--classes")]
     if sys.argv[1] == "--check":
         project, ids, diagrams = load(sys.argv[2])
         total = 0
         for dg in _pick(diagrams, only_act):
-            pr = (act_render.check if dg["_type"] in BEHAVIOR else check)(dg, ids)
+            r = _renderer(dg)
+            pr = (r.check if r else check)(dg, ids)
             total += len(pr)
             print(f"{dg['name'][:64]:64} проблем: {len(pr)}")
             for p in pr:
@@ -277,7 +290,8 @@ def main():
     for i, dg in enumerate(_pick(diagrams, only_act)):
         name = names[i] if i < len(names) else f"D{i + 1}"
         with open(os.path.join(svg_dir, name + ".svg"), "w", encoding="utf-8") as f:
-            f.write((act_render.render if dg["_type"] in BEHAVIOR else render)(dg, ids))
+            r = _renderer(dg)
+            f.write((r.render if r else render)(dg, ids))
         print(name + ".svg —", dg["name"])
     if png:
         to_png(svg_dir, os.path.join(out, "PNG"))

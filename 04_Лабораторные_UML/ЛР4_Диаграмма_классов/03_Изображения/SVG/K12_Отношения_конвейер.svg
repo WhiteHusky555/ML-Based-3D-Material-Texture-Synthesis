@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="945" height="644" viewBox="20 20 945 644">
+<rect x="20" y="20" width="945" height="644" fill="#fff"/>
+<rect x="160" y="40" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="205.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="205.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Этап</text>
+<rect x="400" y="40" width="172" height="44" fill="#fff" stroke="#000"/>
+<text x="486.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="486.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонвейерГенерации</text>
+<rect x="760" y="40" width="92" height="44" fill="#fff" stroke="#000"/>
+<text x="806.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="806.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Материал</text>
+<rect x="441" y="200" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="486.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="486.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" fill="#000">Воркер</text>
+<rect x="40" y="400" width="112" height="44" fill="#fff" stroke="#000"/>
+<text x="96.0" y="417.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="96.0" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерШума</text>
+<rect x="240" y="400" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="317.0" y="417.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="317.0" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерГенерации</text>
+<rect x="560" y="400" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="633.0" y="417.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="633.0" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерАпскейла</text>
+<rect x="800" y="400" width="106" height="44" fill="#fff" stroke="#000"/>
+<text x="853.0" y="417.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="853.0" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерPBR</text>
+<rect x="40" y="600" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="109.0" y="617.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="109.0" y="635.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПараметрыШума</text>
+<rect x="253" y="600" width="128" height="44" fill="#fff" stroke="#000"/>
+<text x="317.0" y="617.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="317.0" y="635.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВерсияМодели</text>
+<rect x="780" y="600" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="853.0" y="617.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="853.0" y="635.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КартаМатериала</text>
+<path d="M400.0,62.0 L250.0,62.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M260.6,56.4 L250.0,62.0 L260.6,67.6" fill="none" stroke="#000"/>
+<path d="M572.0,62.0 L760.0,62.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M749.4,67.6 L760.0,62.0 L749.4,56.4" fill="none" stroke="#000"/>
+<path d="M486.0,84.0 L486.0,200.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M480.4,189.4 L486.0,200.0 L491.6,189.4" fill="none" stroke="#000"/>
+<path d="M531.0,222.0 L806.0,222.0 L806.0,84.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M811.6,94.6 L806.0,84.0 L800.4,94.6" fill="none" stroke="#000"/>
+<path d="M96.0,444.0 L96.0,600.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M90.4,589.4 L96.0,600.0 L101.6,589.4" fill="none" stroke="#000"/>
+<path d="M317.0,444.0 L317.0,600.0" fill="none" stroke="#000"/>
+<polygon points="317.0,444.0 323.0,454.0 317.0,464.0 311.0,454.0" fill="#fff" stroke="#000"/>
+<path d="M853.0,444.0 L853.0,600.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M847.4,589.4 L853.0,600.0 L858.6,589.4" fill="none" stroke="#000"/>
+<path d="M96.0,400.0 L96.0,330.0 L486.0,330.0 L486.0,244.0" fill="none" stroke="#000"/>
+<polygon points="486.0,244.0 494.0,258.0 478.0,258.0" fill="#fff" stroke="#000"/>
+<path d="M317.0,400.0 L317.0,330.0 L486.0,330.0 L486.0,244.0" fill="none" stroke="#000"/>
+<polygon points="486.0,244.0 494.0,258.0 478.0,258.0" fill="#fff" stroke="#000"/>
+<path d="M633.0,400.0 L633.0,330.0 L486.0,330.0 L486.0,244.0" fill="none" stroke="#000"/>
+<polygon points="486.0,244.0 494.0,258.0 478.0,258.0" fill="#fff" stroke="#000"/>
+<path d="M853.0,400.0 L853.0,330.0 L486.0,330.0 L486.0,244.0" fill="none" stroke="#000"/>
+<polygon points="486.0,244.0 494.0,258.0 478.0,258.0" fill="#fff" stroke="#000"/>
+<rect x="281.7" y="43.0" width="86.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="325.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«instantiate»</text>
+<rect x="649.1" y="43.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="666.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="491.8" y="134.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="512.0" y="146.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="651.1" y="202.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="668.0" y="214.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="101.1" y="514.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="118.0" y="526.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="325.9" y="449.0" width="28.3" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="340.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">0..*</text>
+<rect x="321.4" y="578.0" width="13.2" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="328.0" y="590.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">1</text>
+<rect x="858.7" y="514.0" width="86.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="902.0" y="526.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«instantiate»</text>
+</svg>
