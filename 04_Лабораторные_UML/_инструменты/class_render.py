@@ -39,6 +39,8 @@ def attr_text(a):
         t += f": {a['type']}"
     if a.get("defaultValue"):
         t += f" = {a['defaultValue']}"
+    if a.get("isReadOnly"):
+        t += " {readOnly}"
     return t
 
 

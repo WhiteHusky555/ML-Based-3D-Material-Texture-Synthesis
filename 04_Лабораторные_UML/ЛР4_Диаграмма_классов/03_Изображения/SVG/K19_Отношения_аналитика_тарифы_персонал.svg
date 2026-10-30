@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="564" viewBox="20 20 1020 564">
+<rect x="20" y="20" width="1020" height="564" fill="#fff"/>
+<rect x="314" y="40" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="391.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="391.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельВладельца</text>
+<rect x="857" y="40" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="934.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="934.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельАналитика</text>
+<rect x="40" y="200" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="130.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="130.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеТарифами</text>
+<rect x="310" y="200" width="162" height="44" fill="#fff" stroke="#000"/>
+<text x="391.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="391.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеРолями</text>
+<rect x="562" y="200" width="196" height="44" fill="#fff" stroke="#000"/>
+<text x="660.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="660.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ФинансоваяОтчётность</text>
+<rect x="848" y="200" width="172" height="44" fill="#fff" stroke="#000"/>
+<text x="934.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="934.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">РасчётПоказателей</text>
+<rect x="40" y="360" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="85.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="85.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Тариф</text>
+<rect x="346" y="360" width="126" height="44" fill="#fff" stroke="#000"/>
+<text x="409.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="409.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Пользователь</text>
+<rect x="562" y="360" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="607.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="607.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Платёж</text>
+<rect x="757" y="420" width="92" height="44" fill="#fff" stroke="#000"/>
+<text x="803.0" y="437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="803.0" y="455.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Подписка</text>
+<rect x="930" y="360" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="975.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="975.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Этап</text>
+<rect x="201" y="520" width="128" height="44" fill="#fff" stroke="#000"/>
+<text x="265.0" y="537.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="265.0" y="555.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЖурналАудита</text>
+<path d="M391.0,84.0 L391.0,200.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M385.4,189.4 L391.0,200.0 L396.6,189.4" fill="none" stroke="#000"/>
+<path d="M934.0,84.0 L934.0,200.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M928.4,189.4 L934.0,200.0 L939.6,189.4" fill="none" stroke="#000"/>
+<path d="M314.0,62.0 L314.0,62.0 L130.0,62.0 L130.0,200.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M124.4,189.4 L130.0,200.0 L135.6,189.4" fill="none" stroke="#000"/>
+<path d="M468.0,62.0 L468.0,62.0 L660.0,62.0 L660.0,200.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M654.4,189.4 L660.0,200.0 L665.6,189.4" fill="none" stroke="#000"/>
+<path d="M70.0,244.0 L70.0,302.0 L70.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M64.4,349.4 L70.0,360.0 L75.6,349.4" fill="none" stroke="#000"/>
+<path d="M376.0,244.0 L376.0,302.0 L376.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M370.4,349.4 L376.0,360.0 L381.6,349.4" fill="none" stroke="#000"/>
+<path d="M592.0,244.0 L592.0,302.0 L592.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M586.4,349.4 L592.0,360.0 L597.6,349.4" fill="none" stroke="#000"/>
+<path d="M960.0,244.0 L960.0,302.0 L960.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M954.4,349.4 L960.0,360.0 L965.6,349.4" fill="none" stroke="#000"/>
+<path d="M196.0,244.0 L196.0,542.0 L201.0,542.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M190.4,547.6 L201.0,542.0 L190.4,536.4" fill="none" stroke="#000"/>
+<path d="M334.0,244.0 L334.0,542.0 L329.0,542.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M339.6,536.4 L329.0,542.0 L339.6,547.6" fill="none" stroke="#000"/>
+<path d="M734.0,244.0 L734.0,442.0 L757.0,442.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M746.4,447.6 L757.0,442.0 L746.4,436.4" fill="none" stroke="#000"/>
+<path d="M872.0,244.0 L872.0,442.0 L849.0,442.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M859.6,436.4 L849.0,442.0 L859.6,447.6" fill="none" stroke="#000"/>
+<rect x="396.8" y="134.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="417.0" y="146.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="939.8" y="134.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="960.0" y="146.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="201.8" y="43.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="222.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="543.8" y="43.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="564.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="75.1" y="265.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="92.0" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="381.1" y="264.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="398.0" y="276.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="597.1" y="264.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="614.0" y="276.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="965.1" y="264.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="982.0" y="276.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="201.8" y="385.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="222.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="286.8" y="385.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="307.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="739.1" y="335.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="756.0" y="347.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="877.1" y="335.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="894.0" y="347.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+</svg>

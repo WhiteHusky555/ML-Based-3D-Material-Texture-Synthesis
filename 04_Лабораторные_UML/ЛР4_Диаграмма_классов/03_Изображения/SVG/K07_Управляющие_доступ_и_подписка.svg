@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="584" height="588" viewBox="0 0 584 588">
+<rect x="0" y="0" width="584" height="588" fill="#fff"/>
+<rect x="20" y="20" width="448" height="116" fill="#fff" stroke="#000"/>
+<text x="244.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="244.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПроверкаДоступа</text>
+<line x1="20" y1="64" x2="468" y2="64" stroke="#000"/>
+<line x1="20" y1="74" x2="468" y2="74" stroke="#000"/>
+<text x="27.0" y="91.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОпределитьПользователя(токен: str): Пользователь</text>
+<text x="27.0" y="109.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ПроверитьРоль(пользователь: Пользователь, роль: Роль): bool</text>
+<text x="27.0" y="127.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ЗавершитьСеанс(пользователь: Пользователь): None</text>
+<rect x="20" y="166" width="410" height="186" fill="#fff" stroke="#000"/>
+<text x="225.0" y="183.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="225.0" y="201.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерВхода</text>
+<line x1="20" y1="210" x2="430" y2="210" stroke="#000"/>
+<text x="27.0" y="227.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-срокТокенаДоступа: int = 15</text>
+<text x="27.0" y="245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-срокТокенаОбновления: int = 30</text>
+<line x1="20" y1="254" x2="430" y2="254" stroke="#000"/>
+<text x="27.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Войти(email: str, пароль: str): dict</text>
+<text x="27.0" y="289.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Зарегистрировать(email: str, пароль: str): Пользователь</text>
+<text x="27.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ЗапроситьВосстановление(email: str): None</text>
+<text x="27.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+СменитьПароль(токенСброса: str, пароль: str): None</text>
+<text x="27.0" y="343.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ВыдатьТокены(пользователь: Пользователь): dict</text>
+<rect x="20" y="382" width="544" height="186" fill="#fff" stroke="#000"/>
+<text x="292.0" y="399.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="292.0" y="417.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПодписки</text>
+<line x1="20" y1="426" x2="564" y2="426" stroke="#000"/>
+<text x="27.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-платёжнаяСистема: ПлатёжнаяСистема</text>
+<text x="27.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-таймаутОплаты: int = 15</text>
+<line x1="20" y1="470" x2="564" y2="470" stroke="#000"/>
+<text x="27.0" y="487.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОформитьПремиум(пользователь: Пользователь): str</text>
+<text x="27.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОбработатьУведомление(тело: bytes, подпись: str): None</text>
+<text x="27.0" y="523.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ЗапроситьСтатус(платёж: Платёж): None</text>
+<text x="27.0" y="541.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОтключитьПродление(пользователь: Пользователь): None</text>
+<text x="27.0" y="559.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ОпубликоватьСменуТарифа(пользователь: Пользователь, тариф: Тариф): None</text>
+</svg>

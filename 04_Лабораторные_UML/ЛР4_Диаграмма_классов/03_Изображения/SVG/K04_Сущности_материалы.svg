@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1430" height="884" viewBox="0 0 1430 884">
+<rect x="0" y="0" width="1430" height="884" fill="#fff"/>
+<rect x="20" y="20" width="336" height="420" fill="#fff" stroke="#000"/>
+<text x="188.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="188.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Материал</text>
+<line x1="20" y1="64" x2="356" y2="64" stroke="#000"/>
+<text x="27.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: UUID</text>
+<text x="27.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идПользователя: UUID</text>
+<text x="27.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идВерсииМодели: int</text>
+<text x="27.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-параметры: ПараметрыГенерации</text>
+<text x="27.0" y="153.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-хэшПараметров: str</text>
+<text x="27.0" y="171.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-тарифПриСоздании: str</text>
+<text x="27.0" y="189.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-статус: СтатусЗадачи</text>
+<text x="27.0" y="207.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-попытка: int</text>
+<text x="27.0" y="225.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-этапы: list[Этап]</text>
+<text x="27.0" y="243.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-карты: list[КартаМатериала]</text>
+<text x="27.0" y="261.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-создан: datetime</text>
+<text x="27.0" y="279.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-хранитьДо: datetime</text>
+<line x1="20" y1="288" x2="356" y2="288" stroke="#000"/>
+<text x="27.0" y="305.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+НачатьЭтап(вид: ВидЭтапа): None</text>
+<text x="27.0" y="323.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ЗафиксироватьСбойГенерации(): None</text>
+<text x="27.0" y="341.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Завершить(): None</text>
+<text x="27.0" y="359.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Отменить(): None</text>
+<text x="27.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ДобавитьЭтап(этап: Этап): None</text>
+<text x="27.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ДобавитьКарту(карта: КартаМатериала): None</text>
+<text x="27.0" y="413.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ИзменитьСрокХранения(до: datetime): None</text>
+<text x="27.0" y="431.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Истёк(сейчас: datetime): bool</text>
+<rect x="20" y="470" width="128" height="196" fill="#fff" stroke="#000"/>
+<text x="84.0" y="487.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="84.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусЗадачи</text>
+<line x1="20" y1="514" x2="148" y2="514" stroke="#000"/>
+<text x="27.0" y="531.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+вОчереди</text>
+<text x="27.0" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+шум</text>
+<text x="27.0" y="567.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+генерация</text>
+<text x="27.0" y="585.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+апскейл</text>
+<text x="27.0" y="603.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+pbr</text>
+<text x="27.0" y="621.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+готово</text>
+<text x="27.0" y="639.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ошибка</text>
+<text x="27.0" y="657.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+отменена</text>
+<rect x="20" y="696" width="246" height="168" fill="#fff" stroke="#000"/>
+<text x="143.0" y="713.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="143.0" y="731.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Этап</text>
+<line x1="20" y1="740" x2="266" y2="740" stroke="#000"/>
+<text x="27.0" y="757.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+вид: ВидЭтапа {readOnly}</text>
+<text x="27.0" y="775.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+начат: datetime {readOnly}</text>
+<text x="27.0" y="793.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+завершён: datetime {readOnly}</text>
+<text x="27.0" y="811.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+пикПамятиGPU: int {readOnly}</text>
+<text x="27.0" y="829.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+воркер: str {readOnly}</text>
+<line x1="20" y1="838" x2="266" y2="838" stroke="#000"/>
+<text x="27.0" y="855.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ВычислитьДлительность(): float</text>
+<rect x="396" y="20" width="110" height="124" fill="#fff" stroke="#000"/>
+<text x="451.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="451.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВидЭтапа</text>
+<line x1="396" y1="64" x2="506" y2="64" stroke="#000"/>
+<text x="403.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+шум</text>
+<text x="403.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+генерация</text>
+<text x="403.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+апскейл</text>
+<text x="403.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+pbr</text>
+<rect x="396" y="174" width="308" height="186" fill="#fff" stroke="#000"/>
+<text x="550.0" y="191.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="550.0" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КартаМатериала</text>
+<line x1="396" y1="218" x2="704" y2="218" stroke="#000"/>
+<text x="403.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+вид: ВидКарты {readOnly}</text>
+<text x="403.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ключS3: str {readOnly}</text>
+<text x="403.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ширина: int {readOnly}</text>
+<text x="403.0" y="289.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+высота: int {readOnly}</text>
+<text x="403.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+формат: str {readOnly}</text>
+<text x="403.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+байт: int {readOnly}</text>
+<line x1="396" y1="334" x2="704" y2="334" stroke="#000"/>
+<text x="403.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+СоздатьВременнуюСсылку(минут: int): str</text>
+<rect x="396" y="390" width="110" height="160" fill="#fff" stroke="#000"/>
+<text x="451.0" y="407.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="451.0" y="425.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВидКарты</text>
+<line x1="396" y1="434" x2="506" y2="434" stroke="#000"/>
+<text x="403.0" y="451.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+albedo</text>
+<text x="403.0" y="469.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+normal</text>
+<text x="403.0" y="487.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+height</text>
+<text x="403.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+roughness</text>
+<text x="403.0" y="523.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ao</text>
+<text x="403.0" y="541.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+миниатюра</text>
+<rect x="396" y="580" width="334" height="276" fill="#fff" stroke="#000"/>
+<text x="563.0" y="597.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="563.0" y="615.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПараметрыГенерации</text>
+<line x1="396" y1="624" x2="730" y2="624" stroke="#000"/>
+<text x="403.0" y="641.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+описание: str {readOnly}</text>
+<text x="403.0" y="659.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+модификаторы: list[str] {readOnly}</text>
+<text x="403.0" y="677.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+шум: ПараметрыШума {readOnly}</text>
+<text x="403.0" y="695.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+промпт: str {readOnly}</text>
+<text x="403.0" y="713.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+seed: int {readOnly}</text>
+<text x="403.0" y="731.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+разрешение: int {readOnly}</text>
+<text x="403.0" y="749.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+шагов: int {readOnly}</text>
+<text x="403.0" y="767.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+вариантов: int {readOnly}</text>
+<text x="403.0" y="785.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+референс: str {readOnly}</text>
+<text x="403.0" y="803.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+силаРеференса: float {readOnly}</text>
+<line x1="396" y1="812" x2="730" y2="812" stroke="#000"/>
+<text x="403.0" y="829.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+СПромптом(промпт: str): ПараметрыГенерации</text>
+<text x="403.0" y="847.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ВычислитьХэш(версииМоделей: dict): str</text>
+<rect x="770" y="20" width="228" height="142" fill="#fff" stroke="#000"/>
+<text x="884.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="884.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПараметрыШума</text>
+<line x1="770" y1="64" x2="998" y2="64" stroke="#000"/>
+<text x="777.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+тип: ТипШума {readOnly}</text>
+<text x="777.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+масштаб: float {readOnly}</text>
+<text x="777.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+октав: int {readOnly}</text>
+<text x="777.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+растяжение: float {readOnly}</text>
+<text x="777.0" y="153.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+seed: int {readOnly}</text>
+<rect x="770" y="192" width="110" height="106" fill="#fff" stroke="#000"/>
+<text x="825.0" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="825.0" y="227.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТипШума</text>
+<line x1="770" y1="236" x2="880" y2="236" stroke="#000"/>
+<text x="777.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+перлин</text>
+<text x="777.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+вороной</text>
+<text x="777.0" y="289.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+трещины</text>
+<rect x="770" y="328" width="482" height="204" fill="#fff" stroke="#000"/>
+<text x="1011.0" y="345.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="1011.0" y="363.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Пресет</text>
+<line x1="770" y1="372" x2="1252" y2="372" stroke="#000"/>
+<text x="777.0" y="389.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: int</text>
+<text x="777.0" y="407.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-название: str</text>
+<text x="777.0" y="425.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-шаблонПромпта: str</text>
+<text x="777.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-шум: ПараметрыШума</text>
+<text x="777.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-базоваяШероховатость: float</text>
+<text x="777.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-толькоПремиум: bool</text>
+<text x="777.0" y="497.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-скрыт: bool</text>
+<line x1="770" y1="506" x2="1252" y2="506" stroke="#000"/>
+<text x="777.0" y="523.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ПрименитьК(параметры: ПараметрыГенерации): ПараметрыГенерации</text>
+<rect x="770" y="562" width="170" height="168" fill="#fff" stroke="#000"/>
+<text x="855.0" y="579.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="855.0" y="597.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВерсияМодели</text>
+<line x1="770" y1="606" x2="940" y2="606" stroke="#000"/>
+<text x="777.0" y="623.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: int</text>
+<text x="777.0" y="641.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-файлВесов: str</text>
+<text x="777.0" y="659.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-базоваяМодель: str</text>
+<text x="777.0" y="677.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-активна: bool</text>
+<text x="777.0" y="695.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-загружена: datetime</text>
+<line x1="770" y1="704" x2="940" y2="704" stroke="#000"/>
+<text x="777.0" y="721.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Активировать(): None</text>
+<rect x="1292" y="20" width="118" height="106" fill="#fff" stroke="#000"/>
+<text x="1351.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="1351.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Движок</text>
+<line x1="1292" y1="64" x2="1410" y2="64" stroke="#000"/>
+<text x="1299.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+blender</text>
+<text x="1299.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+unity</text>
+<text x="1299.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+unrealEngine</text>
+</svg>

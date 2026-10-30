@@ -56,9 +56,11 @@ def _split_params(s):
 
 
 class Attr:
-    """«-имя: тип» (+ необязательно « = значение»)."""
+    """«-имя: тип» (+ необязательно « = значение» и « {readOnly}» — неизменяемый атрибут)."""
 
     def __init__(self, spec, doc=""):
+        self.read_only = spec.endswith("{readOnly}")
+        spec = spec.removesuffix("{readOnly}").rstrip()
         m = re.match(r"^([+\-#~])\s*([^:=]+?)\s*(?::\s*([^=]+?))?\s*(?:=\s*(.+))?$", spec)
         if not m:
             raise ValueError(f"атрибут: {spec}")
@@ -71,6 +73,8 @@ class Attr:
             t += f": {self.type}"
         if self.default:
             t += f" = {self.default}"
+        if self.read_only:
+            t += " {readOnly}"
         return t
 
 
@@ -103,8 +107,8 @@ class Cls:
 
     @property
     def no_ops(self):
-        """У перечисления без операций отсек операций скрыт."""
-        return self.stereo == "enumeration" and not self.ops
+        """У класса без операций (перечисление, объект-значение, событие) отсек операций скрыт."""
+        return not self.ops and not self.interface
 
     def stereo_text(self):
         return "interface" if self.interface else self.stereo
@@ -402,6 +406,8 @@ def mdj_package(mod, parent, model, container_name, container_doc):
                         ao["type"] = a.type
                     if a.default:
                         ao["defaultValue"] = a.default
+                    if a.read_only:
+                        ao["isReadOnly"] = True
                     if a.doc:
                         ao["documentation"] = a.doc
                     o["attributes"].append(ao)
@@ -751,6 +757,8 @@ def xpd_package(parent, model, container_name, container_doc):
                     ao.attr("TypeExpression", a.type)
                 if a.default:
                     ao.attr("InitialValue", a.default)
+                if a.read_only:
+                    ao.attr("Changeability", "ckFrozen", "UMLChangeableKind")
                 if a.doc:
                     ao.attr("Documentation", a.doc)
                 ao.ref("Owner", o)

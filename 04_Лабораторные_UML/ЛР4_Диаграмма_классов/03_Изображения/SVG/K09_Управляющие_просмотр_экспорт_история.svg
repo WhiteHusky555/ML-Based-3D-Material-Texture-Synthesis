@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="602" height="466" viewBox="0 0 602 466">
-<rect x="0" y="0" width="602" height="466" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="602" height="576" viewBox="0 0 602 576">
+<rect x="0" y="0" width="602" height="576" fill="#fff"/>
 <rect x="20" y="20" width="466" height="98" fill="#fff" stroke="#000"/>
 <text x="253.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
 <text x="253.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПросмотра</text>
@@ -7,13 +7,13 @@
 <line x1="20" y1="74" x2="486" y2="74" stroke="#000"/>
 <text x="27.0" y="91.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ЗагрузитьКарты(материал: Материал): list[КартаМатериала]</text>
 <text x="27.0" y="109.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ПроверитьМодель(файл: bytes, пользователь: Пользователь): bool</text>
-<rect x="20" y="148" width="518" height="134" fill="#fff" stroke="#000"/>
-<text x="279.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="279.0" y="183.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерЭкспорта</text>
-<line x1="20" y1="192" x2="538" y2="192" stroke="#000"/>
-<line x1="20" y1="202" x2="538" y2="202" stroke="#000"/>
-<text x="27.0" y="219.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Экспортировать(материал: Материал, движок: str, форматы: list[str]): str</text>
-<text x="27.0" y="237.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-УпаковатьКарты(карты: list[КартаМатериала], движок: str): dict</text>
+<rect x="20" y="148" width="544" height="134" fill="#fff" stroke="#000"/>
+<text x="292.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="292.0" y="183.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерЭкспорта</text>
+<line x1="20" y1="192" x2="564" y2="192" stroke="#000"/>
+<line x1="20" y1="202" x2="564" y2="202" stroke="#000"/>
+<text x="27.0" y="219.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Экспортировать(материал: Материал, движок: Движок, форматы: list[str]): str</text>
+<text x="27.0" y="237.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-УпаковатьКарты(карты: list[КартаМатериала], движок: Движок): dict</text>
 <text x="27.0" y="255.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ПеревестиНормали(карта: bytes): bytes</text>
 <text x="27.0" y="273.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-СформироватьАрхив(файлы: dict): str</text>
 <rect x="20" y="312" width="562" height="134" fill="#fff" stroke="#000"/>
@@ -25,4 +25,10 @@
 <text x="27.0" y="401.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Открыть(материал: Материал): ПараметрыГенерации</text>
 <text x="27.0" y="419.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+СоздатьВариант(материал: Материал): ПараметрыГенерации</text>
 <text x="27.0" y="437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Удалить(материал: Материал): None</text>
+<rect x="20" y="476" width="404" height="80" fill="#fff" stroke="#000"/>
+<text x="222.0" y="493.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="222.0" y="511.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПересчётСроковХранения</text>
+<line x1="20" y1="520" x2="424" y2="520" stroke="#000"/>
+<line x1="20" y1="530" x2="424" y2="530" stroke="#000"/>
+<text x="27.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Обработать(событие: ТарифПользователяИзменён): None</text>
 </svg>

@@ -41,6 +41,8 @@
 <path d="M480.4,189.4 L486.0,200.0 L491.6,189.4" fill="none" stroke="#000"/>
 <path d="M531.0,222.0 L806.0,222.0 L806.0,84.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
 <path d="M811.6,94.6 L806.0,84.0 L800.4,94.6" fill="none" stroke="#000"/>
+<path d="M441.0,222.0 L205.0,222.0 L205.0,84.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M210.6,94.6 L205.0,84.0 L199.4,94.6" fill="none" stroke="#000"/>
 <path d="M96.0,444.0 L96.0,600.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
 <path d="M90.4,589.4 L96.0,600.0 L101.6,589.4" fill="none" stroke="#000"/>
 <path d="M317.0,444.0 L317.0,600.0" fill="none" stroke="#000"/>
@@ -55,14 +57,16 @@
 <polygon points="486.0,244.0 494.0,258.0 478.0,258.0" fill="#fff" stroke="#000"/>
 <path d="M853.0,400.0 L853.0,330.0 L486.0,330.0 L486.0,244.0" fill="none" stroke="#000"/>
 <polygon points="486.0,244.0 494.0,258.0 478.0,258.0" fill="#fff" stroke="#000"/>
-<rect x="281.7" y="43.0" width="86.6" height="16" fill="#fff" fill-opacity="0.85"/>
-<text x="325.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«instantiate»</text>
+<rect x="308.1" y="43.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="325.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
 <rect x="649.1" y="43.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
 <text x="666.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
 <rect x="491.8" y="134.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
 <text x="512.0" y="146.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
 <rect x="651.1" y="202.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
 <text x="668.0" y="214.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="279.7" y="203.0" width="86.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="323.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«instantiate»</text>
 <rect x="101.1" y="514.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
 <text x="118.0" y="526.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
 <rect x="325.9" y="449.0" width="28.3" height="16" fill="#fff" fill-opacity="0.85"/>

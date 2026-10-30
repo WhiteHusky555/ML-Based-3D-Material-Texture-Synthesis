@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1216" height="786" viewBox="0 0 1216 786">
+<rect x="0" y="0" width="1216" height="786" fill="#fff"/>
+<rect x="20" y="20" width="528" height="186" fill="#fff" stroke="#000"/>
+<text x="284.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="284.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Тариф</text>
+<line x1="20" y1="64" x2="548" y2="64" stroke="#000"/>
+<text x="27.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-код: str</text>
+<text x="27.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-название: str</text>
+<text x="27.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-цена: Деньги</text>
+<text x="27.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-период: int</text>
+<text x="27.0" y="153.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-права: ПраваТарифа</text>
+<text x="27.0" y="171.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-версии: list[ВерсияТарифа]</text>
+<line x1="20" y1="180" x2="548" y2="180" stroke="#000"/>
+<text x="27.0" y="197.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ИзменитьУсловия(цена: Деньги, права: ПраваТарифа, изменил: UUID): None</text>
+<rect x="20" y="236" width="250" height="168" fill="#fff" stroke="#000"/>
+<text x="145.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="145.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВерсияТарифа</text>
+<line x1="20" y1="280" x2="270" y2="280" stroke="#000"/>
+<text x="27.0" y="297.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+версия: int {readOnly}</text>
+<text x="27.0" y="315.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+цена: Деньги {readOnly}</text>
+<text x="27.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+права: ПраваТарифа {readOnly}</text>
+<text x="27.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+действуетС: datetime {readOnly}</text>
+<text x="27.0" y="369.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+изменил: UUID {readOnly}</text>
+<line x1="20" y1="378" x2="270" y2="378" stroke="#000"/>
+<text x="27.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Применима(дата: datetime): bool</text>
+<rect x="20" y="434" width="432" height="240" fill="#fff" stroke="#000"/>
+<text x="236.0" y="451.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="236.0" y="469.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПраваТарифа</text>
+<line x1="20" y1="478" x2="452" y2="478" stroke="#000"/>
+<text x="27.0" y="495.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+генерацийВСутки: int {readOnly}</text>
+<text x="27.0" y="513.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+подсказокВСутки: int {readOnly}</text>
+<text x="27.0" y="531.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+разрешения: list[int] {readOnly}</text>
+<text x="27.0" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+максШагов: int {readOnly}</text>
+<text x="27.0" y="567.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+максВариантов: int {readOnly}</text>
+<text x="27.0" y="585.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+референс: bool {readOnly}</text>
+<text x="27.0" y="603.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+свояМодель: bool {readOnly}</text>
+<text x="27.0" y="621.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+расширенныйЭкспорт: bool {readOnly}</text>
+<text x="27.0" y="639.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+срокХранения: int {readOnly}</text>
+<line x1="20" y1="648" x2="452" y2="648" stroke="#000"/>
+<text x="27.0" y="665.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+НайтиНарушения(параметры: ПараметрыГенерации): list[str]</text>
+<rect x="588" y="20" width="226" height="88" fill="#fff" stroke="#000"/>
+<text x="701.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="701.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Деньги</text>
+<line x1="588" y1="64" x2="814" y2="64" stroke="#000"/>
+<text x="595.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+сумма: Decimal {readOnly}</text>
+<text x="595.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+валюта: str = RUB {readOnly}</text>
+<rect x="588" y="138" width="240" height="294" fill="#fff" stroke="#000"/>
+<text x="708.0" y="155.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="708.0" y="173.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Подписка</text>
+<line x1="588" y1="182" x2="828" y2="182" stroke="#000"/>
+<text x="595.0" y="199.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: UUID</text>
+<text x="595.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идПользователя: UUID</text>
+<text x="595.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-кодТарифа: str</text>
+<text x="595.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-статус: СтатусПодписки</text>
+<text x="595.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-начало: datetime</text>
+<text x="595.0" y="289.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-окончание: datetime</text>
+<text x="595.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-автопродление: bool</text>
+<text x="595.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идВПровайдере: str</text>
+<line x1="588" y1="334" x2="828" y2="334" stroke="#000"/>
+<text x="595.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Активировать(дней: int): None</text>
+<text x="595.0" y="369.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОтключитьПродление(): None</text>
+<text x="595.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Продлить(дней: int): None</text>
+<text x="595.0" y="405.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Истечь(): None</text>
+<text x="595.0" y="423.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Активна(сейчас: datetime): bool</text>
+<rect x="588" y="462" width="168" height="124" fill="#fff" stroke="#000"/>
+<text x="672.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="672.0" y="497.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусПодписки</text>
+<line x1="588" y1="506" x2="756" y2="506" stroke="#000"/>
+<text x="595.0" y="523.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+активна</text>
+<text x="595.0" y="541.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+продлениеОтключено</text>
+<text x="595.0" y="559.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+продление</text>
+<text x="595.0" y="577.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+истекла</text>
+<rect x="868" y="20" width="308" height="222" fill="#fff" stroke="#000"/>
+<text x="1022.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="1022.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Платёж</text>
+<line x1="868" y1="64" x2="1176" y2="64" stroke="#000"/>
+<text x="875.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: UUID</text>
+<text x="875.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идПодписки: UUID</text>
+<text x="875.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-сумма: Деньги</text>
+<text x="875.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-статус: СтатусПлатежа</text>
+<text x="875.0" y="153.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идВПровайдере: str</text>
+<text x="875.0" y="171.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ключИдемпотентности: str</text>
+<text x="875.0" y="189.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-создан: datetime</text>
+<line x1="868" y1="198" x2="1176" y2="198" stroke="#000"/>
+<text x="875.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОтметитьПроведённым(): None</text>
+<text x="875.0" y="233.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОтметитьОтклонённым(причина: str): None</text>
+<rect x="868" y="272" width="138" height="106" fill="#fff" stroke="#000"/>
+<text x="937.0" y="289.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="937.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусПлатежа</text>
+<line x1="868" y1="316" x2="1006" y2="316" stroke="#000"/>
+<text x="875.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ожидает</text>
+<text x="875.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+проведён</text>
+<text x="875.0" y="369.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+отклонён</text>
+<rect x="868" y="408" width="328" height="204" fill="#fff" stroke="#000"/>
+<text x="1032.0" y="425.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="1032.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СуточныйСчётчик</text>
+<line x1="868" y1="452" x2="1196" y2="452" stroke="#000"/>
+<text x="875.0" y="469.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идПользователя: UUID</text>
+<text x="875.0" y="487.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-дата: date</text>
+<text x="875.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-генераций: int</text>
+<text x="875.0" y="523.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-подсказок: int</text>
+<text x="875.0" y="541.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ключиРезервов: list[str]</text>
+<line x1="868" y1="550" x2="1196" y2="550" stroke="#000"/>
+<text x="875.0" y="567.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Зарезервировать(ключ: str, лимит: int): None</text>
+<text x="875.0" y="585.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ВернутьРезерв(ключ: str): None</text>
+<text x="875.0" y="603.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ВычислитьОстаток(лимит: int): int</text>
+<rect x="868" y="642" width="262" height="124" fill="#fff" stroke="#000"/>
+<text x="999.0" y="659.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="999.0" y="677.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТарифПользователяИзменён</text>
+<line x1="868" y1="686" x2="1130" y2="686" stroke="#000"/>
+<text x="875.0" y="703.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+идПользователя: UUID {readOnly}</text>
+<text x="875.0" y="721.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+кодТарифа: str {readOnly}</text>
+<text x="875.0" y="739.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+срокХранения: int {readOnly}</text>
+<text x="875.0" y="757.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+момент: datetime {readOnly}</text>
+</svg>
