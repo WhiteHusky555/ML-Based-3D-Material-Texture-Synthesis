@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1234" height="794" viewBox="0 0 1234 794">
+<rect x="0" y="0" width="1234" height="794" fill="#fff"/>
+<rect x="20" y="20" width="394" height="222" fill="#fff" stroke="#000"/>
+<text x="217.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="217.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЦепочкаЗапросов</text>
+<line x1="20" y1="64" x2="414" y2="64" stroke="#000"/>
+<text x="27.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: UUID</text>
+<text x="27.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идПользователя: UUID</text>
+<text x="27.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-название: str</text>
+<text x="27.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идИсточника: UUID | None</text>
+<text x="27.0" y="153.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-предыстория: list[ШагПредыстории]</text>
+<text x="27.0" y="171.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-создана: datetime</text>
+<text x="27.0" y="189.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-изменена: datetime</text>
+<line x1="20" y1="198" x2="414" y2="198" stroke="#000"/>
+<text x="27.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Переименовать(название: str): None</text>
+<text x="27.0" y="233.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ЗадатьПредысторию(шаги: list[ШагПредыстории]): None</text>
+<rect x="20" y="272" width="324" height="142" fill="#fff" stroke="#000"/>
+<text x="182.0" y="289.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="182.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ШагПредыстории</text>
+<line x1="20" y1="316" x2="344" y2="316" stroke="#000"/>
+<text x="27.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+позиция: int {readOnly}</text>
+<text x="27.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+описание: str {readOnly}</text>
+<text x="27.0" y="369.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+параметры: ПараметрыГенерации {readOnly}</text>
+<text x="27.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ключМиниатюры: str {readOnly}</text>
+<text x="27.0" y="405.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+кодИсточника: str {readOnly}</text>
+<rect x="20" y="444" width="458" height="330" fill="#fff" stroke="#000"/>
+<text x="249.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="249.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЗапросГенерации</text>
+<line x1="20" y1="488" x2="478" y2="488" stroke="#000"/>
+<text x="27.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: UUID</text>
+<text x="27.0" y="523.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идПользователя: UUID</text>
+<text x="27.0" y="541.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идЦепочки: UUID</text>
+<text x="27.0" y="559.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идРодителя: UUID | None</text>
+<text x="27.0" y="577.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-номер: int {readOnly}</text>
+<text x="27.0" y="595.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-код: str {readOnly}</text>
+<text x="27.0" y="613.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-параметры: ПараметрыГенерации</text>
+<text x="27.0" y="631.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-статус: СтатусЗапроса</text>
+<text x="27.0" y="649.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идМатериалов: list[UUID]</text>
+<text x="27.0" y="667.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-изКэша: bool</text>
+<text x="27.0" y="685.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ключИдемпотентности: str {readOnly}</text>
+<text x="27.0" y="703.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-создан: datetime {readOnly}</text>
+<line x1="20" y1="712" x2="478" y2="712" stroke="#000"/>
+<text x="27.0" y="729.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ПривязатьМатериалы(ид: list[UUID]): None</text>
+<text x="27.0" y="747.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ПривязатьИзКэша(ид: UUID): None</text>
+<text x="27.0" y="765.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОбновитьСтатус(статусыМатериалов: list[СтатусЗадачи]): None</text>
+<rect x="518" y="20" width="138" height="124" fill="#fff" stroke="#000"/>
+<text x="587.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="587.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусЗапроса</text>
+<line x1="518" y1="64" x2="656" y2="64" stroke="#000"/>
+<text x="525.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+вРаботе</text>
+<text x="525.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+готово</text>
+<text x="525.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ошибка</text>
+<text x="525.0" y="135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+отменён</text>
+<rect x="518" y="174" width="184" height="114" fill="#fff" stroke="#000"/>
+<text x="610.0" y="191.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="610.0" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СчётчикЗапросов</text>
+<line x1="518" y1="218" x2="702" y2="218" stroke="#000"/>
+<text x="525.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идПользователя: UUID</text>
+<text x="525.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-последнийНомер: int</text>
+<line x1="518" y1="262" x2="702" y2="262" stroke="#000"/>
+<text x="525.0" y="279.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ВыдатьНомер(): int</text>
+<rect x="742" y="20" width="324" height="106" fill="#fff" stroke="#000"/>
+<text x="904.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="904.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">НовыйЗапрос</text>
+<line x1="742" y1="64" x2="1066" y2="64" stroke="#000"/>
+<text x="749.0" y="81.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+идЦепочки: UUID | None {readOnly}</text>
+<text x="749.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+идРодителя: UUID | None {readOnly}</text>
+<text x="749.0" y="117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+параметры: ПараметрыГенерации {readOnly}</text>
+<rect x="742" y="156" width="342" height="222" fill="#fff" stroke="#000"/>
+<text x="913.0" y="173.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="913.0" y="191.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПубличнаяСсылка</text>
+<line x1="742" y1="200" x2="1084" y2="200" stroke="#000"/>
+<text x="749.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-ид: UUID</text>
+<text x="749.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-идЦепочки: UUID</text>
+<text x="749.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-хэшТокена: str {readOnly}</text>
+<text x="749.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-снимок: СнимокЦепочки</text>
+<text x="749.0" y="289.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-создана: datetime {readOnly}</text>
+<text x="749.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">-отозвана: datetime | None</text>
+<line x1="742" y1="316" x2="1084" y2="316" stroke="#000"/>
+<text x="749.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ОбновитьСнимок(снимок: СнимокЦепочки): None</text>
+<text x="749.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Отозвать(момент: datetime): None</text>
+<text x="749.0" y="369.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+Действует(): bool</text>
+<rect x="742" y="408" width="256" height="88" fill="#fff" stroke="#000"/>
+<text x="870.0" y="425.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="870.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СнимокЦепочки</text>
+<line x1="742" y1="452" x2="998" y2="452" stroke="#000"/>
+<text x="749.0" y="469.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+название: str {readOnly}</text>
+<text x="749.0" y="487.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+шаги: list[ШагСнимка] {readOnly}</text>
+<rect x="742" y="526" width="472" height="168" fill="#fff" stroke="#000"/>
+<text x="978.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="978.0" y="561.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ШагСнимка</text>
+<line x1="742" y1="570" x2="1214" y2="570" stroke="#000"/>
+<text x="749.0" y="587.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+описание: str {readOnly}</text>
+<text x="749.0" y="605.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+параметры: ПараметрыГенерации {readOnly}</text>
+<text x="749.0" y="623.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+кодЗапроса: str {readOnly}</text>
+<text x="749.0" y="641.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ключМиниатюры: str {readOnly}</text>
+<text x="749.0" y="659.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+карты: list[КартаМатериала] {readOnly}</text>
+<line x1="742" y1="668" x2="1214" y2="668" stroke="#000"/>
+<text x="749.0" y="685.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">+ВПредысторию(позиция: int, ключМиниатюры: str): ШагПредыстории</text>
+</svg>

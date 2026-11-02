@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="1086" viewBox="0 0 920 1086">
+<rect x="0" y="0" width="920" height="1086" fill="#fff"/>
+<rect x="20" y="20" width="260" height="24" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M20,1066 V20 H280 V1066" fill="none" stroke="#000" stroke-width="2"/>
+<text x="150.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#000">Гость</text>
+<rect x="280" y="20" width="620" height="24" fill="#fff" stroke="#000" stroke-width="2"/>
+<path d="M280,1066 V20 H900 V1066" fill="none" stroke="#000" stroke-width="2"/>
+<text x="590.0" y="37.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" fill="#000">Система</text>
+<circle cx="400.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="305" y="132" width="190" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="400.0" y="152.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Проверка ссылки и</text>
+<text x="400.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">загрузка снимка</text>
+<polygon points="385,233.0 400.0,221 415,233.0 400.0,245" fill="#fff" stroke="#000"/>
+<circle cx="780.0" cy="233.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="780.0" cy="233.0" r="8.0" fill="#000"/>
+<polygon points="385,298.0 400.0,286 415,298.0 400.0,310" fill="#fff" stroke="#000"/>
+<rect x="110" y="350" width="330" height="6" rx="2" fill="#000"/>
+<rect x="305" y="396" width="190" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="400.0" y="416.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отображение снимка</text>
+<text x="400.0" y="432.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">цепочки</text>
+<rect x="60" y="396" width="180" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="150.0" y="416.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Просмотр шагов и выбор</text>
+<text x="150.0" y="432.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">действия</text>
+<rect x="110" y="484" width="330" height="6" rx="2" fill="#000"/>
+<polygon points="385,543.0 400.0,531 415,543.0 400.0,555" fill="#fff" stroke="#000"/>
+<circle cx="90.0" cy="543.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="90.0" cy="543.0" r="8.0" fill="#000"/>
+<polygon points="385,620.0 400.0,608 415,620.0 400.0,632" fill="#fff" stroke="#000"/>
+<rect x="680" y="596" width="200" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="772.5" y="616.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3D-просмотр:Просмотр</text>
+<text x="772.5" y="632.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">материала цепочки в 3D</text>
+<path d="M872,632 V640 M868,640 V636 H876 V640" fill="none" stroke="#000"/>
+<polygon points="385,708.0 400.0,696 415,708.0 400.0,720" fill="#fff" stroke="#000"/>
+<rect x="515" y="684" width="150" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="582.5" y="704.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">вход:Регистрация</text>
+<text x="582.5" y="720.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">и вход в систему</text>
+<path d="M657,720 V728 M653,728 V724 H661 V728" fill="none" stroke="#000"/>
+<polygon points="385,784.0 400.0,772 415,784.0 400.0,796" fill="#fff" stroke="#000"/>
+<rect x="305" y="836" width="190" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="400.0" y="856.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Создание копии цепочки в</text>
+<text x="400.0" y="872.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">аккаунте</text>
+<rect x="305" y="924" width="190" height="48" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="400.0" y="944.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Открытие копии в</text>
+<text x="400.0" y="960.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">генераторе</text>
+<circle cx="400.0" cy="1025.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="400.0" cy="1025.0" r="8.0" fill="#000"/>
+<path d="M400.0,92.0 L400.0,132.0" fill="none" stroke="#000"/>
+<path d="M395.0,123.3 L400.0,132.0 L405.0,123.3" fill="none" stroke="#000"/>
+<path d="M400.0,180.0 L400.0,221.0" fill="none" stroke="#000"/>
+<path d="M395.0,212.3 L400.0,221.0 L405.0,212.3" fill="none" stroke="#000"/>
+<path d="M400.0,245.0 L400.0,286.0" fill="none" stroke="#000"/>
+<path d="M395.0,277.3 L400.0,286.0 L405.0,277.3" fill="none" stroke="#000"/>
+<path d="M415.0,233.0 L767.0,233.0" fill="none" stroke="#000"/>
+<path d="M758.3,238.0 L767.0,233.0 L758.3,228.0" fill="none" stroke="#000"/>
+<path d="M400.0,310.0 L400.0,350.0" fill="none" stroke="#000"/>
+<path d="M395.0,341.3 L400.0,350.0 L405.0,341.3" fill="none" stroke="#000"/>
+<path d="M150.0,356.0 L150.0,396.0" fill="none" stroke="#000"/>
+<path d="M145.0,387.3 L150.0,396.0 L155.0,387.3" fill="none" stroke="#000"/>
+<path d="M400.0,356.0 L400.0,396.0" fill="none" stroke="#000"/>
+<path d="M395.0,387.3 L400.0,396.0 L405.0,387.3" fill="none" stroke="#000"/>
+<path d="M400.0,444.0 L400.0,484.0" fill="none" stroke="#000"/>
+<path d="M395.0,475.3 L400.0,484.0 L405.0,475.3" fill="none" stroke="#000"/>
+<path d="M150.0,444.0 L150.0,484.0" fill="none" stroke="#000"/>
+<path d="M145.0,475.3 L150.0,484.0 L155.0,475.3" fill="none" stroke="#000"/>
+<path d="M400.0,490.0 L400.0,531.0" fill="none" stroke="#000"/>
+<path d="M395.0,522.3 L400.0,531.0 L405.0,522.3" fill="none" stroke="#000"/>
+<path d="M385.0,543.0 L103.0,543.0" fill="none" stroke="#000"/>
+<path d="M111.7,538.0 L103.0,543.0 L111.7,548.0" fill="none" stroke="#000"/>
+<path d="M400.0,555.0 L400.0,608.0" fill="none" stroke="#000"/>
+<path d="M395.0,599.3 L400.0,608.0 L405.0,599.3" fill="none" stroke="#000"/>
+<path d="M415.0,620.0 L680.0,620.0" fill="none" stroke="#000"/>
+<path d="M671.3,625.0 L680.0,620.0 L671.3,615.0" fill="none" stroke="#000"/>
+<path d="M400.0,632.0 L400.0,696.0" fill="none" stroke="#000"/>
+<path d="M395.0,687.3 L400.0,696.0 L405.0,687.3" fill="none" stroke="#000"/>
+<path d="M880.0,620.0 L890.0,620.0 L890.0,298.0 L415.0,298.0" fill="none" stroke="#000"/>
+<path d="M423.7,293.0 L415.0,298.0 L423.7,303.0" fill="none" stroke="#000"/>
+<path d="M400.0,720.0 L400.0,772.0" fill="none" stroke="#000"/>
+<path d="M395.0,763.3 L400.0,772.0 L405.0,763.3" fill="none" stroke="#000"/>
+<path d="M415.0,708.0 L515.0,708.0" fill="none" stroke="#000"/>
+<path d="M506.3,713.0 L515.0,708.0 L506.3,703.0" fill="none" stroke="#000"/>
+<path d="M590.0,732.0 L590.0,784.0 L415.0,784.0" fill="none" stroke="#000"/>
+<path d="M423.7,779.0 L415.0,784.0 L423.7,789.0" fill="none" stroke="#000"/>
+<path d="M400.0,796.0 L400.0,836.0" fill="none" stroke="#000"/>
+<path d="M395.0,827.3 L400.0,836.0 L405.0,827.3" fill="none" stroke="#000"/>
+<path d="M400.0,884.0 L400.0,924.0" fill="none" stroke="#000"/>
+<path d="M395.0,915.3 L400.0,924.0 L405.0,915.3" fill="none" stroke="#000"/>
+<path d="M400.0,972.0 L400.0,1012.0" fill="none" stroke="#000"/>
+<path d="M395.0,1003.3 L400.0,1012.0 L405.0,1003.3" fill="none" stroke="#000"/>
+<rect x="405.9" y="251.0" width="124.1" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="468.0" y="263.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[ссылка действует]</text>
+<rect x="422.8" y="213.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="443.0" y="225.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="405.9" y="450.0" width="116.1" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="464.0" y="462.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбрано действие</text>
+<rect x="150.9" y="523.0" width="124.1" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="213.0" y="535.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[страница закрыта]</text>
+<rect x="405.8" y="560.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="426.0" y="572.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="422.6" y="601.0" width="166.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="506.0" y="613.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[выбран шаг с материалом]</text>
+<rect x="405.8" y="638.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="426.0" y="650.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="405.6" y="726.0" width="102.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="457.0" y="738.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[вход выполнен]</text>
+<rect x="422.8" y="689.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="443.0" y="701.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+</svg>

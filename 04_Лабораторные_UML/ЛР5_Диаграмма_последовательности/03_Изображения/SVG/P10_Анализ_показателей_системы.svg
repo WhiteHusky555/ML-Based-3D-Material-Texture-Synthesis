@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="857" height="863" viewBox="0 0 857 863">
+<rect width="857" height="863" fill="#fff"/>
+<line x1="88.0" y1="81.0" x2="88.0" y2="833.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="312.0" y1="81.0" x2="312.0" y2="833.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="627.0" y1="81.0" x2="627.0" y2="833.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="40.0" y="40.0" width="96.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="88.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«worker»</text>
+<text x="88.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Аналитик</text>
+<rect x="237.0" y="40.0" width="150.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="312.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="312.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПанельАналитика</text>
+<rect x="544.0" y="40.0" width="166.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="627.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="627.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: РасчётПоказателей</text>
+<rect x="305.0" y="119.0" width="14.0" height="684.0" fill="#fff" stroke="#000"/>
+<rect x="620.0" y="149.0" width="14.0" height="101.0" fill="#fff" stroke="#000"/>
+<rect x="627.0" y="199.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="312.0" y="373.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="312.0" y="499.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="620.0" y="633.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="312.0" y="734.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="172.0" y="266.0" width="507.0" height="525.0" fill="none" stroke="#000"/>
+<polygon points="172.0,266.0 172.0,292.0 209.7,292.0 222.7,279.0 222.7,266.0" fill="#fff" stroke="#000"/>
+<text x="177.0" y="284.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="192.0" y="319.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[данных нет]</text>
+<line x1="172.0" y1="418.0" x2="678.0" y2="418.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="192.0" y="445.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[данные есть]</text>
+<rect x="182.0" y="546.0" width="473.0" height="231.0" fill="none" stroke="#000"/>
+<polygon points="182.0,546.0 182.0,572.0 219.7,572.0 232.7,559.0 232.7,546.0" fill="#fff" stroke="#000"/>
+<text x="187.0" y="564.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">opt</text>
+<text x="202.0" y="599.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[нажата «CSV»]</text>
+<path d="M89.0,119.0 L305.0,119.0" fill="none" stroke="#000"/>
+<polygon points="305.0,119.0 294.1,113.9 294.1,124.1" fill="#000" stroke="#000"/>
+<text x="186.0" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ВыбранныеПараметры()</text>
+<path d="M319.0,149.0 L620.0,149.0" fill="none" stroke="#000"/>
+<polygon points="620.0,149.0 609.1,143.9 609.1,154.1" fill="#000" stroke="#000"/>
+<text x="461.0" y="143.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : Рассчитать(отчёт, период, фильтры)</text>
+<path d="M634.0,179.0 L664.0,179.0 L664.0,199.0 L641.0,199.0" fill="none" stroke="#000"/>
+<polygon points="641.0,199.0 651.9,204.1 651.9,193.9" fill="#000" stroke="#000"/>
+<text x="748.0" y="194.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Обезличить(строки)</text>
+<path d="M627.0,250.0 L319.0,250.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M329.6,255.6 L319.0,250.0 L329.6,244.4" fill="none" stroke="#000"/>
+<text x="585.0" y="244.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : отчёт</text>
+<path d="M319.0,353.0 L349.0,353.0 L349.0,373.0 L326.0,373.0" fill="none" stroke="#000"/>
+<polygon points="326.0,373.0 336.9,378.1 336.9,367.9" fill="#000" stroke="#000"/>
+<text x="439.0" y="368.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : ПоказатьНетДанных()</text>
+<path d="M319.0,479.0 L349.0,479.0 L349.0,499.0 L326.0,499.0" fill="none" stroke="#000"/>
+<polygon points="326.0,499.0 336.9,504.1 336.9,493.9" fill="#000" stroke="#000"/>
+<text x="442.0" y="494.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ПоказатьОтчёт(отчёт)</text>
+<path d="M319.0,633.0 L620.0,633.0" fill="none" stroke="#000"/>
+<polygon points="620.0,633.0 609.1,627.9 609.1,638.1" fill="#000" stroke="#000"/>
+<text x="413.0" y="626.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : ВыгрузитьCSV(отчёт)</text>
+<path d="M627.0,684.0 L319.0,684.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M329.6,689.6 L319.0,684.0 L329.6,678.4" fill="none" stroke="#000"/>
+<text x="581.0" y="677.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ссылка</text>
+<path d="M319.0,714.0 L349.0,714.0 L349.0,734.0 L326.0,734.0" fill="none" stroke="#000"/>
+<polygon points="326.0,734.0 336.9,739.1 336.9,728.9" fill="#000" stroke="#000"/>
+<text x="436.0" y="729.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : СкачатьCSV(ссылка)</text>
+</svg>

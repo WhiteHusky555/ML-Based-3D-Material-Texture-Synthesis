@@ -391,6 +391,7 @@ def mdj_package(mod, parent, model, container_name, container_doc):
         for k in keys:
             c = model.cls[k]
             o = node("UMLInterface" if c.interface else "UMLClass", p, name=c.name)
+            c.obj6 = o                                          # для ссылок из диаграмм последовательности
             if c.doc:
                 o["documentation"] = c.doc
             st = c.stereo_text() if not c.interface else ""
@@ -415,6 +416,7 @@ def mdj_package(mod, parent, model, container_name, container_doc):
                 o["operations"] = []
                 for op in c.ops:
                     oo = node("UMLOperation", o, name=op.name, visibility=VIS6[op.vis])
+                    op.obj6 = oo
                     if op.abstract:
                         oo["isAbstract"] = True
                     if op.doc:
@@ -712,6 +714,7 @@ def xpd_package(parent, model, container_name, container_doc):
         items = []
         for k in keys:
             c, o = model.cls[k], cls_obj[k]
+            c.obj5 = o
             o.attr("Name", c.name)
             if c.doc:
                 o.attr("Documentation", c.doc)
@@ -727,6 +730,7 @@ def xpd_package(parent, model, container_name, container_doc):
             ops = []
             for op in c.ops:
                 oo = Obj("UMLOperation")
+                op.obj5 = oo
                 oo.attr("Name", op.name).attr("Visibility", VIS5[op.vis], "UMLVisibilityKind")
                 if op.abstract:
                     oo.attr("IsAbstract", True)

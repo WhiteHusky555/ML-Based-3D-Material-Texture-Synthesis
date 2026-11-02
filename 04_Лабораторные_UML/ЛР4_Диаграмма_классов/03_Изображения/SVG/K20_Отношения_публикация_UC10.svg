@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1356" height="404" viewBox="20 20 1356 404">
+<rect x="20" y="20" width="1356" height="404" fill="#fff"/>
+<rect x="40" y="40" width="120" height="44" fill="#fff" stroke="#000"/>
+<text x="100.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="100.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноИстории</text>
+<rect x="400" y="40" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="473.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="473.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноПубликации</text>
+<rect x="1200" y="40" width="156" height="44" fill="#fff" stroke="#000"/>
+<text x="1278.0" y="57.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1278.0" y="75.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноПросмотра3D</text>
+<rect x="40" y="200" width="172" height="44" fill="#fff" stroke="#000"/>
+<text x="126.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="126.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерИстории</text>
+<rect x="400" y="200" width="240" height="44" fill="#fff" stroke="#000"/>
+<text x="520.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="520.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПубликации</text>
+<rect x="860" y="200" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="933.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="933.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтраницаСнимка</text>
+<rect x="1200" y="200" width="104" height="44" fill="#fff" stroke="#000"/>
+<text x="1252.0" y="217.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1252.0" y="235.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноВхода</text>
+<rect x="40" y="360" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="117.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="117.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЦепочкаЗапросов</text>
+<rect x="280" y="360" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="357.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="357.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЗапросГенерации</text>
+<rect x="520" y="360" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="597.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="597.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПубличнаяСсылка</text>
+<rect x="760" y="360" width="104" height="44" fill="#fff" stroke="#000"/>
+<text x="812.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="812.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ШагСнимка</text>
+<rect x="1200" y="360" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="1273.0" y="377.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1273.0" y="395.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноГенератора</text>
+<path d="M160.0,62.0 L400.0,62.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M389.4,67.6 L400.0,62.0 L389.4,56.4" fill="none" stroke="#000"/>
+<path d="M473.0,84.0 L473.0,200.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M467.4,189.4 L473.0,200.0 L478.6,189.4" fill="none" stroke="#000"/>
+<path d="M212.0,222.0 L400.0,222.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M389.4,227.6 L400.0,222.0 L389.4,216.4" fill="none" stroke="#000"/>
+<path d="M860.0,222.0 L640.0,222.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M650.6,216.4 L640.0,222.0 L650.6,227.6" fill="none" stroke="#000"/>
+<path d="M1006.0,222.0 L1200.0,222.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M1189.4,227.6 L1200.0,222.0 L1189.4,216.4" fill="none" stroke="#000"/>
+<path d="M580.0,244.0 L580.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M574.4,349.4 L580.0,360.0 L585.6,349.4" fill="none" stroke="#000"/>
+<path d="M933.0,200.0 L933.0,62.0 L1200.0,62.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M1189.4,67.6 L1200.0,62.0 L1189.4,56.4" fill="none" stroke="#000"/>
+<path d="M933.0,244.0 L933.0,382.0 L1200.0,382.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M1189.4,387.6 L1200.0,382.0 L1189.4,376.4" fill="none" stroke="#000"/>
+<path d="M420.0,244.0 L420.0,278.0 L117.0,278.0 L117.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M111.4,349.4 L117.0,360.0 L122.6,349.4" fill="none" stroke="#000"/>
+<path d="M460.0,244.0 L460.0,314.0 L357.0,314.0 L357.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M351.4,349.4 L357.0,360.0 L362.6,349.4" fill="none" stroke="#000"/>
+<path d="M620.0,244.0 L620.0,278.0 L812.0,278.0 L812.0,360.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M806.4,349.4 L812.0,360.0 L817.6,349.4" fill="none" stroke="#000"/>
+<rect x="253.2" y="43.0" width="53.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="280.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«create»</text>
+<rect x="478.8" y="134.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="499.0" y="146.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="285.8" y="203.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="306.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="729.8" y="203.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="750.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«call»</text>
+<rect x="1076.2" y="203.0" width="53.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="1103.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«create»</text>
+<rect x="585.7" y="294.0" width="86.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="629.0" y="306.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«instantiate»</text>
+<rect x="1039.2" y="43.0" width="53.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="1066.0" y="55.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«create»</text>
+<rect x="1039.2" y="363.0" width="53.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="1066.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«create»</text>
+<rect x="224.7" y="259.0" width="86.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="268.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«instantiate»</text>
+<rect x="391.1" y="295.0" width="33.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="408.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«use»</text>
+<rect x="672.7" y="259.0" width="86.6" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="716.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«instantiate»</text>
+</svg>

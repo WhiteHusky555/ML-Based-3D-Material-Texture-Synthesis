@@ -12,6 +12,7 @@
 | Сервис | Взаимодействие | Как устроена асинхронность | Как масштабируется |
 |---|---|---|---|
 | nginx (шлюз) | HTTP, WebSocket | событийная модель nginx | Deployment ×2+, HPA по CPU |
+| web-bff, staff-bff | HTTP, WebSocket | async FastAPI + httpx; параллельные вызовы сервисов (`asyncio.gather`); сеансы в Redis | web-bff — HPA по CPU; staff-bff — 2 реплики |
 | Веб-клиент | — | статика + WebSocket | раздаёт nginx / CDN |
 | API-сервис | HTTP, WebSocket, RabbitMQ | async FastAPI, aio-pika; ответ `202` + id задачи | HPA по CPU / числу запросов |
 | Сервис пользователей | HTTP | async FastAPI, asyncpg; письма — через очередь | HPA по CPU |
@@ -40,7 +41,7 @@ POST /api/materials ──► API-сервис: проверка тарифа и
 - **Масштабирование WebSocket без «липких» сессий:** каждая реплика API-сервиса при подключении клиента привязывает свою временную очередь к `job.<id>.#`. Событие дойдёт до той реплики, где открыт сокет, а запись в БД делает ровно один потребитель общей очереди.
 
 ## 4. Требования к сервисам, чтобы масштабироваться в ширину
-- **Без локального состояния:** файлы — в S3, сессии — в JWT, данные — в PostgreSQL.
+- **Без локального состояния:** файлы — в S3, сеансы — в Redis у BFF, данные — в PostgreSQL.
 - **Идемпотентность задач:** ключи объектов в S3 детерминированы id задачи; повторная доставка (`acks_late`) просто перезапишет тот же объект.
 - **Квоты** считаются атомарным `UPDATE … RETURNING` в PostgreSQL, а не в памяти реплики.
 - **Лимиты nginx** (`limit_req`) работают на каждую реплику отдельно — это грубая защита; точные квоты — в API-сервисе.
@@ -54,7 +55,7 @@ POST /api/materials ──► API-сервис: проверка тарифа и
 | **Helm-чарт `texgen`** | вся система одной командой: `helm install texgen ./chart -f values-aws.yaml` |
 | `values-local.yaml` | локальный кластер (k3d / minikube / Docker Desktop), без GPU — заглушка GPU-воркера или маленькая модель |
 | `values-aws.yaml` | облако AWS (EKS) |
-| Шлюз | **свой nginx** как Deployment + Service типа LoadBalancer (AWS NLB через AWS Load Balancer Controller). Конфиг тот же, что в Docker Compose, включая `auth_request` |
+| Шлюз | **свой nginx** как Deployment + Service типа LoadBalancer (AWS NLB через AWS Load Balancer Controller). Конфиг тот же, что в Docker Compose; сеанс проверяет BFF, `auth_request` не используется |
 | Альтернатива шлюзу | Kubernetes **Gateway API** (NGINX Gateway Fabric, Envoy Gateway, Traefik). **Не использовать ingress-nginx**: проект официально выведен из поддержки в марте 2026 г. |
 | NVIDIA device plugin / GPU Operator | выдача видеокарт подам (`nvidia.com/gpu: 1`) |
 | **KEDA** | масштабирование воркеров по длине очередей RabbitMQ (в т. ч. до нуля) |

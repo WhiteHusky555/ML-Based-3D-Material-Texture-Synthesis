@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1215" height="554" viewBox="45 155 1215 554">
+<rect x="45" y="155" width="1215" height="554" fill="#fff"/>
+<ellipse cx="600.0" cy="330.0" rx="130.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="600.0" y="326.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Просмотр опубликованной</text>
+<text x="600.0" y="342.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">цепочки</text>
+<line x1="470" y1="370" x2="730" y2="370" stroke="#000"/>
+<text x="475.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
+<ellipse cx="1060.0" cy="329.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="1060.0" y="325.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Загрузка снимка</text>
+<text x="1060.0" y="341.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">цепочки</text>
+<ellipse cx="330.0" cy="659.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="330.0" y="655.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Просмотр материала</text>
+<text x="330.0" y="671.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">цепочки в 3D</text>
+<ellipse cx="870.0" cy="659.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="870.0" y="655.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Продолжение цепочки у</text>
+<text x="870.0" y="671.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">себя</text>
+<circle cx="110.0" cy="184.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="110.0" y1="193.6" x2="110.0" y2="221.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="90.0" y1="201.6" x2="130.0" y2="201.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="221.2" x2="93.0" y2="245.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="221.2" x2="127.0" y2="245.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="110.0" y="261.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Гость</text>
+<circle cx="110.0" cy="484.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="110.0" y1="493.6" x2="110.0" y2="521.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="90.0" y1="501.6" x2="130.0" y2="501.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="521.2" x2="93.0" y2="545.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="521.2" x2="127.0" y2="545.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="110.0" y="561.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пользователь</text>
+<path d="M130.0,224.0 L500.0,308.0" fill="none" stroke="#000"/>
+<path d="M110.0,475.0 L110.0,265.0" fill="none" stroke="#000"/>
+<polygon points="110.0,265.0 118.0,279.0 102.0,279.0" fill="#fff" stroke="#000" stroke-width="1"/>
+<path d="M730.0,330.0 L950.0,330.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M939.4,335.6 L950.0,330.0 L939.4,324.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M354.0,631.0 L546.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M543.7,407.8 L546.0,396.0 L534.9,400.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M846.0,631.0 L654.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M665.1,400.6 L654.0,396.0 L656.3,407.8" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M1015.0,620.0 L950.0,638.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M1010,560 H1230 L1240,570 V620 H1010 Z" fill="#fff" stroke="#000"/>
+<path d="M1230,560 V570 H1240" fill="none" stroke="#000"/>
+<text x="1016.0" y="577.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Без входа «Продолжить у себя»</text>
+<text x="1016.0" y="593.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">сначала открывает «Регистрацию и</text>
+<text x="1016.0" y="609.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">вход в систему»</text>
+<text x="840.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="330.0" y="480.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="330.0" y="496.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="330.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран шаг с готовым</text>
+<text x="330.0" y="528.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материалом]</text>
+<text x="870.0" y="480.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="870.0" y="496.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="870.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Продолжить у</text>
+<text x="870.0" y="528.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">себя», вход выполнен]</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="832" height="592" viewBox="-54 52 832 592">
+<rect x="-54" y="52" width="832" height="592" fill="#fff"/>
+<circle cx="240.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="200" y="132" width="485" height="6" rx="2" fill="#000"/>
+<rect x="78" y="186" width="324" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="240.0" y="204.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отображение окна публикации</text>
+<line x1="78" y1="212" x2="402" y2="212" stroke="#000"/>
+<text x="86.0" y="229.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Показ предупреждения и состояния ссылки</text>
+<rect x="545" y="178" width="200" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="645.0" y="196.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Действия пользователя</text>
+<line x1="545" y1="204" x2="745" y2="204" stroke="#000"/>
+<text x="553.0" y="221.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Чтение предупреждения</text>
+<text x="553.0" y="237.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Нажатие кнопки</text>
+<rect x="200" y="286" width="485" height="6" rx="2" fill="#000"/>
+<polygon points="226,345.0 240.0,334 254,345.0 240.0,356" fill="#fff" stroke="#000"/>
+<circle cx="645.0" cy="345.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="645.0" cy="345.0" r="8.0" fill="#000"/>
+<polygon points="226,424.0 240.0,413 254,424.0 240.0,435" fill="#fff" stroke="#000"/>
+<rect x="532" y="398" width="226" height="52" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="645.0" y="416.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Отключение ссылки</text>
+<line x1="532" y1="424" x2="758" y2="424" stroke="#000"/>
+<text x="540.0" y="441.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Отметка ссылки отозванной</text>
+<circle cx="645.0" cy="524.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="645.0" cy="524.0" r="8.0" fill="#000"/>
+<rect x="86" y="490" width="308" height="68" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="240.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">Создание снимка</text>
+<line x1="86" y1="516" x2="394" y2="516" stroke="#000"/>
+<text x="94.0" y="533.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">do/Копирование цепочки без личных данных</text>
+<text x="94.0" y="549.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">exit/Показ ссылки с кнопкой «Копировать»</text>
+<circle cx="240.0" cy="611.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="240.0" cy="611.0" r="8.0" fill="#000"/>
+<path d="M240.0,138.0 L240.0,186.0" fill="none" stroke="#000"/>
+<path d="M235.0,177.3 L240.0,186.0 L245.0,177.3" fill="none" stroke="#000"/>
+<path d="M645.0,138.0 L645.0,178.0" fill="none" stroke="#000"/>
+<path d="M640.0,169.3 L645.0,178.0 L650.0,169.3" fill="none" stroke="#000"/>
+<path d="M240.0,238.0 L240.0,286.0" fill="none" stroke="#000"/>
+<path d="M235.0,277.3 L240.0,286.0 L245.0,277.3" fill="none" stroke="#000"/>
+<path d="M645.0,246.0 L645.0,286.0" fill="none" stroke="#000"/>
+<path d="M640.0,277.3 L645.0,286.0 L650.0,277.3" fill="none" stroke="#000"/>
+<path d="M240.0,92.0 L240.0,132.0" fill="none" stroke="#000"/>
+<path d="M235.0,123.3 L240.0,132.0 L245.0,123.3" fill="none" stroke="#000"/>
+<path d="M240.0,292.0 L240.0,334.0" fill="none" stroke="#000"/>
+<path d="M235.0,325.3 L240.0,334.0 L245.0,325.3" fill="none" stroke="#000"/>
+<path d="M254.0,345.0 L632.0,345.0" fill="none" stroke="#000"/>
+<path d="M623.3,350.0 L632.0,345.0 L623.3,340.0" fill="none" stroke="#000"/>
+<path d="M240.0,356.0 L240.0,413.0" fill="none" stroke="#000"/>
+<path d="M235.0,404.3 L240.0,413.0 L245.0,404.3" fill="none" stroke="#000"/>
+<path d="M240.0,435.0 L240.0,490.0" fill="none" stroke="#000"/>
+<path d="M235.0,481.3 L240.0,490.0 L245.0,481.3" fill="none" stroke="#000"/>
+<path d="M254.0,424.0 L532.0,424.0" fill="none" stroke="#000"/>
+<path d="M523.3,429.0 L532.0,424.0 L523.3,419.0" fill="none" stroke="#000"/>
+<path d="M645.0,450.0 L645.0,511.0" fill="none" stroke="#000"/>
+<path d="M640.0,502.3 L645.0,511.0 L650.0,502.3" fill="none" stroke="#000"/>
+<path d="M240.0,558.0 L240.0,598.0" fill="none" stroke="#000"/>
+<path d="M235.0,589.3 L240.0,598.0 L245.0,589.3" fill="none" stroke="#000"/>
+<rect x="-33.9" y="244.0" width="267.8" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="100.0" y="256.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">выбрано действие / Действие := выбранное</text>
+<rect x="261.6" y="325.0" width="138.7" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="331.0" y="337.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Действие = «Отмена»]</text>
+<rect x="245.8" y="361.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="266.0" y="373.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+<rect x="245.0" y="440.0" width="192.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="341.0" y="452.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[Действие = «Создать ссылку»]</text>
+<rect x="261.8" y="404.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="282.0" y="416.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+</svg>

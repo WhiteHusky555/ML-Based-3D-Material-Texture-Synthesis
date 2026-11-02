@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1509" height="1447" viewBox="0 0 1509 1447">
+<rect width="1509" height="1447" fill="#fff"/>
+<line x1="103.0" y1="107.0" x2="103.0" y2="1417.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="396.0" y1="81.0" x2="396.0" y2="1417.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="711.0" y1="81.0" x2="711.0" y2="1417.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="1058.0" y1="81.0" x2="1058.0" y2="1417.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="1230.0" y1="339.0" x2="1230.0" y2="1417.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="1401.0" y1="81.0" x2="1401.0" y2="1417.0" stroke="#000" stroke-dasharray="3,3"/>
+<circle cx="103.0" cy="46.4" r="5.4" fill="#fff" stroke="#000"/><line x1="103.0" y1="51.9" x2="103.0" y2="64.4" stroke="#000"/><line x1="92.5" y1="55.7" x2="113.5" y2="55.7" stroke="#000"/><line x1="103.0" y1="64.4" x2="92.5" y2="79.0" stroke="#000"/><line x1="103.0" y1="64.4" x2="113.5" y2="79.0" stroke="#000"/>
+<text x="103.0" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Пользователь</text>
+<rect x="336.0" y="40.0" width="120.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="396.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="396.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноТарифов</text>
+<rect x="624.0" y="40.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="711.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="711.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПодписки</text>
+<rect x="979.0" y="40.0" width="158.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="1058.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«interface»</text>
+<text x="1058.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПлатёжнаяСистема</text>
+<rect x="1167.0" y="298.0" width="126.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="1230.0" y="314.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="1230.0" y="331.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">платёж: Платёж</text>
+<rect x="1323.0" y="40.0" width="156.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="1401.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="1401.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">подписка: Подписка</text>
+<rect x="389.0" y="145.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="389.0" y="175.0" width="14.0" height="502.0" fill="#fff" stroke="#000"/>
+<rect x="704.0" y="278.0" width="14.0" height="165.0" fill="#fff" stroke="#000"/>
+<rect x="1051.0" y="362.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="396.0" y="493.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="704.0" y="599.0" width="14.0" height="60.0" fill="#fff" stroke="#000"/>
+<rect x="1394.0" y="629.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="704.0" y="774.0" width="14.0" height="425.0" fill="#fff" stroke="#000"/>
+<rect x="1051.0" y="804.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="1223.0" y="958.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="1394.0" y="988.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="711.0" y="1038.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="1223.0" y="1144.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="704.0" y="1288.0" width="14.0" height="91.0" fill="#fff" stroke="#000"/>
+<rect x="1051.0" y="1318.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="216.0" y="191.0" width="1213.0" height="474.0" fill="none" stroke="#000"/>
+<polygon points="216.0,191.0 216.0,217.0 253.7,217.0 266.7,204.0 266.7,191.0" fill="#fff" stroke="#000"/>
+<text x="221.0" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="236.0" y="244.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[«Оформить премиум»]</text>
+<line x1="216.0" y1="538.0" x2="1428.0" y2="538.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="236.0" y="565.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[«Отменить подписку»]</text>
+<rect x="455.0" y="687.0" width="998.0" height="698.0" fill="none" stroke="#000"/>
+<polygon points="455.0,687.0 455.0,713.0 492.7,713.0 505.7,700.0 505.7,687.0" fill="#fff" stroke="#000"/>
+<text x="460.0" y="705.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="475.0" y="740.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[пришло уведомление]</text>
+<line x1="455.0" y1="1207.0" x2="1452.0" y2="1207.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="475.0" y="1234.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[уведомления нет 15 минут]</text>
+<rect x="465.0" y="871.0" width="964.0" height="316.0" fill="none" stroke="#000"/>
+<polygon points="465.0,871.0 465.0,897.0 502.7,897.0 515.7,884.0 515.7,871.0" fill="#fff" stroke="#000"/>
+<text x="470.0" y="889.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="485.0" y="924.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[подпись верна, оплата прошла]</text>
+<line x1="465.0" y1="1083.0" x2="1428.0" y2="1083.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="485.0" y="1110.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[подпись верна, отказ в оплате]</text>
+<path d="M104.0,145.0 L389.0,145.0" fill="none" stroke="#000"/>
+<polygon points="389.0,145.0 378.1,139.9 378.1,150.1" fill="#000" stroke="#000"/>
+<text x="235.0" y="139.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : Показать(тарифы, остатокКвоты)</text>
+<path d="M104.0,175.0 L389.0,175.0" fill="none" stroke="#000"/>
+<polygon points="389.0,175.0 378.1,169.9 378.1,180.1" fill="#000" stroke="#000"/>
+<text x="197.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ВыбранноеДействие()</text>
+<path d="M403.0,278.0 L704.0,278.0" fill="none" stroke="#000"/>
+<polygon points="704.0,278.0 693.1,272.9 693.1,283.1" fill="#000" stroke="#000"/>
+<text x="534.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ОформитьПремиум(пользователь)</text>
+<path d="M718.0,318.0 L1167.0,318.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M1156.4,312.4 L1167.0,318.0 L1156.4,323.6" fill="none" stroke="#000"/>
+<text x="756.0" y="311.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : </text>
+<text x="756.0" y="295.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«create»</text>
+<path d="M718.0,362.0 L1051.0,362.0" fill="none" stroke="#000"/>
+<polygon points="1051.0,362.0 1040.1,356.9 1040.1,367.1" fill="#000" stroke="#000"/>
+<text x="873.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : СоздатьПлатёж(платёж, адресВозврата)</text>
+<path d="M1058.0,413.0 L718.0,413.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M728.6,418.6 L718.0,413.0 L728.6,407.4" fill="none" stroke="#000"/>
+<text x="991.0" y="406.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : адрес оплаты</text>
+<path d="M711.0,443.0 L403.0,443.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M413.6,448.6 L403.0,443.0 L413.6,437.4" fill="none" stroke="#000"/>
+<text x="644.0" y="437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : адрес оплаты</text>
+<path d="M403.0,473.0 L433.0,473.0 L433.0,493.0 L410.0,493.0" fill="none" stroke="#000"/>
+<polygon points="410.0,493.0 420.9,498.1 420.9,487.9" fill="#000" stroke="#000"/>
+<text x="529.0" y="488.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ОткрытьОплату(ссылка)</text>
+<path d="M403.0,599.0 L704.0,599.0" fill="none" stroke="#000"/>
+<polygon points="704.0,599.0 693.1,593.9 693.1,604.1" fill="#000" stroke="#000"/>
+<text x="545.0" y="593.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : ОтключитьПродление(пользователь)</text>
+<path d="M718.0,629.0 L1394.0,629.0" fill="none" stroke="#000"/>
+<polygon points="1394.0,629.0 1383.1,623.9 1383.1,634.1" fill="#000" stroke="#000"/>
+<text x="818.0" y="623.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">10 : ОтключитьПродление()</text>
+<path d="M1058.0,774.0 L718.0,774.0" fill="none" stroke="#000"/>
+<path d="M728.6,779.6 L718.0,774.0 L728.6,768.4" fill="none" stroke="#000"/>
+<text x="899.0" y="768.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">11 : ОбработатьУведомление(тело, подпись)</text>
+<path d="M718.0,804.0 L1051.0,804.0" fill="none" stroke="#000"/>
+<polygon points="1051.0,804.0 1040.1,798.9 1040.1,809.1" fill="#000" stroke="#000"/>
+<text x="857.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">12 : ПроверитьПодпись(тело, подпись)</text>
+<path d="M1058.0,855.0 L718.0,855.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M728.6,860.6 L718.0,855.0 L728.6,849.4" fill="none" stroke="#000"/>
+<text x="979.0" y="849.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">13 : верна | неверна</text>
+<path d="M718.0,958.0 L1223.0,958.0" fill="none" stroke="#000"/>
+<polygon points="1223.0,958.0 1212.1,952.9 1212.1,963.1" fill="#000" stroke="#000"/>
+<text x="822.0" y="951.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">14 : ОтметитьПроведённым()</text>
+<path d="M718.0,988.0 L1394.0,988.0" fill="none" stroke="#000"/>
+<polygon points="1394.0,988.0 1383.1,982.9 1383.1,993.1" fill="#000" stroke="#000"/>
+<text x="803.0" y="982.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">15 : Активировать(30)</text>
+<path d="M718.0,1018.0 L748.0,1018.0 L748.0,1038.0 L725.0,1038.0" fill="none" stroke="#000"/>
+<polygon points="725.0,1038.0 735.9,1043.1 735.9,1032.9" fill="#000" stroke="#000"/>
+<text x="933.0" y="1033.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">16 : ОпубликоватьСменуТарифа(пользователь, тариф)</text>
+<path d="M718.0,1144.0 L1223.0,1144.0" fill="none" stroke="#000"/>
+<polygon points="1223.0,1144.0 1212.1,1138.9 1212.1,1149.1" fill="#000" stroke="#000"/>
+<text x="849.0" y="1138.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">17 : ОтметитьОтклонённым(причина)</text>
+<path d="M712.0,1268.0 L742.0,1268.0 L742.0,1288.0 L718.0,1288.0" fill="none" stroke="#000"/>
+<polygon points="718.0,1288.0 728.9,1293.1 728.9,1282.9" fill="#000" stroke="#000"/>
+<text x="850.0" y="1283.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">18 : ЗапроситьСтатус(платёж)</text>
+<path d="M718.0,1318.0 L1051.0,1318.0" fill="none" stroke="#000"/>
+<polygon points="1051.0,1318.0 1040.1,1312.9 1040.1,1323.1" fill="#000" stroke="#000"/>
+<text x="858.0" y="1312.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">19 : ЗапроситьСтатус(идВПровайдере)</text>
+<path d="M1058.0,1369.0 L718.0,1369.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M728.6,1374.6 L718.0,1369.0 L728.6,1363.4" fill="none" stroke="#000"/>
+<text x="1008.0" y="1363.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">20 : статус</text>
+</svg>

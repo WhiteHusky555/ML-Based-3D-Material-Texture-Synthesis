@@ -1,225 +1,273 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1144" height="1504" viewBox="0 0 1144 1504">
-<rect x="0" y="0" width="1144" height="1504" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1852" height="1120" viewBox="0 0 1852 1120">
+<rect x="0" y="0" width="1852" height="1120" fill="#fff"/>
 <rect x="20" y="20" width="90" height="22" fill="#fff" stroke="#000"/>
-<rect x="20" y="42" width="532" height="914" fill="#fff" stroke="#000"/>
+<rect x="20" y="42" width="1044" height="658" fill="#fff" stroke="#000"/>
 <text x="30.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Сущности</text>
-<rect x="592" y="20" width="149" height="22" fill="#fff" stroke="#000"/>
-<rect x="592" y="42" width="532" height="594" fill="#fff" stroke="#000"/>
-<text x="602.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Граничные классы</text>
-<rect x="20" y="996" width="165" height="22" fill="#fff" stroke="#000"/>
-<rect x="20" y="1018" width="1044" height="466" fill="#fff" stroke="#000"/>
-<text x="30.0" y="1012.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Управляющие классы</text>
+<rect x="1104" y="20" width="149" height="22" fill="#fff" stroke="#000"/>
+<rect x="1104" y="42" width="532" height="658" fill="#fff" stroke="#000"/>
+<text x="1114.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Граничные классы</text>
+<rect x="20" y="740" width="165" height="22" fill="#fff" stroke="#000"/>
+<rect x="20" y="762" width="1812" height="338" fill="#fff" stroke="#000"/>
+<text x="30.0" y="756.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" font-style="normal" fill="#000">Управляющие классы</text>
 <rect x="95" y="60" width="126" height="44" fill="#fff" stroke="#000"/>
 <text x="158.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
 <text x="158.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Пользователь</text>
-<rect x="359" y="60" width="110" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="414.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Роль</text>
-<rect x="63" y="124" width="190" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="158.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусУчётнойЗаписи</text>
-<rect x="369" y="124" width="90" height="44" fill="#fff" stroke="#000"/>
+<rect x="369" y="60" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="414.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Сеанс</text>
+<rect x="615" y="60" width="110" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="670.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Роль</text>
+<rect x="831" y="60" width="190" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="926.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусУчётнойЗаписи</text>
+<rect x="113" y="124" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="158.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Тариф</text>
+<rect x="350" y="124" width="128" height="44" fill="#fff" stroke="#000"/>
 <text x="414.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Тариф</text>
-<rect x="94" y="188" width="128" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВерсияТарифа</text>
+<rect x="610" y="124" width="120" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="670.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПраваТарифа</text>
+<rect x="881" y="124" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="926.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Деньги</text>
+<rect x="112" y="188" width="92" height="44" fill="#fff" stroke="#000"/>
 <text x="158.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВерсияТарифа</text>
-<rect x="354" y="188" width="120" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПраваТарифа</text>
-<rect x="113" y="252" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Подписка</text>
+<rect x="341" y="188" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="414.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусПодписки</text>
+<rect x="625" y="188" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="670.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Платёж</text>
+<rect x="857" y="188" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="926.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусПлатежа</text>
+<rect x="81" y="252" width="154" height="44" fill="#fff" stroke="#000"/>
 <text x="158.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Деньги</text>
-<rect x="368" y="252" width="92" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СуточныйСчётчик</text>
+<rect x="350" y="252" width="128" height="44" fill="#fff" stroke="#000"/>
 <text x="414.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Подписка</text>
-<rect x="85" y="316" width="146" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="158.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусПодписки</text>
-<rect x="369" y="316" width="90" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Платёж</text>
-<rect x="89" y="380" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЗаписьАудита</text>
+<rect x="625" y="252" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="670.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Период</text>
+<rect x="810" y="252" width="232" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="926.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТарифПользователяИзменён</text>
+<rect x="112" y="316" width="92" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="158.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Материал</text>
+<rect x="350" y="316" width="128" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="414.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусЗадачи</text>
+<rect x="580" y="316" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="670.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПараметрыГенерации</text>
+<rect x="857" y="316" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="926.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПараметрыШума</text>
+<rect x="103" y="380" width="110" height="44" fill="#fff" stroke="#000"/>
 <text x="158.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="158.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусПлатежа</text>
-<rect x="337" y="380" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТипШума</text>
+<rect x="369" y="380" width="90" height="44" fill="#fff" stroke="#000"/>
 <text x="414.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СуточныйСчётчик</text>
-<rect x="94" y="444" width="128" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЗаписьАудита</text>
+<text x="414.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Этап</text>
+<rect x="615" y="380" width="110" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="670.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВидЭтапа</text>
+<rect x="853" y="380" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="926.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КартаМатериала</text>
+<rect x="103" y="444" width="110" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="158.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВидКарты</text>
 <rect x="369" y="444" width="90" height="44" fill="#fff" stroke="#000"/>
 <text x="414.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Период</text>
-<rect x="42" y="508" width="232" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Пресет</text>
+<rect x="606" y="444" width="128" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="670.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВерсияМодели</text>
+<rect x="871" y="444" width="110" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="926.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Движок</text>
+<rect x="81" y="508" width="154" height="44" fill="#fff" stroke="#000"/>
 <text x="158.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТарифПользователяИзменён</text>
-<rect x="368" y="508" width="92" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЦепочкаЗапросов</text>
+<rect x="337" y="508" width="154" height="44" fill="#fff" stroke="#000"/>
 <text x="414.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Материал</text>
-<rect x="94" y="572" width="128" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="158.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусЗадачи</text>
-<rect x="324" y="572" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЗапросГенерации</text>
+<rect x="601" y="508" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
+<text x="670.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтатусЗапроса</text>
+<rect x="849" y="508" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="926.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СчётчикЗапросов</text>
+<rect x="98" y="572" width="120" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="158.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">НовыйЗапрос</text>
+<rect x="341" y="572" width="146" height="44" fill="#fff" stroke="#000"/>
 <text x="414.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПараметрыГенерации</text>
-<rect x="89" y="636" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ШагПредыстории</text>
+<rect x="593" y="572" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="670.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПубличнаяСсылка</text>
+<rect x="857" y="572" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
+<text x="926.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СнимокЦепочки</text>
+<rect x="106" y="636" width="104" height="44" fill="#fff" stroke="#000"/>
 <text x="158.0" y="653.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="671.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПараметрыШума</text>
-<rect x="359" y="636" width="110" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="653.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="414.0" y="671.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТипШума</text>
-<rect x="113" y="700" width="90" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="717.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="735.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Этап</text>
-<rect x="359" y="700" width="110" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="717.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="414.0" y="735.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВидЭтапа</text>
-<rect x="85" y="764" width="146" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="781.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="799.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КартаМатериала</text>
-<rect x="359" y="764" width="110" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="781.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="414.0" y="799.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВидКарты</text>
-<rect x="113" y="828" width="90" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="845.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="158.0" y="863.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Пресет</text>
-<rect x="350" y="828" width="128" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="845.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«entity»</text>
-<text x="414.0" y="863.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВерсияМодели</text>
-<rect x="103" y="892" width="110" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="909.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«enumeration»</text>
-<text x="158.0" y="927.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Движок</text>
-<rect x="678" y="60" width="104" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="730.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноВхода</text>
-<rect x="926" y="60" width="120" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ГлавноеОкно</text>
-<rect x="657" y="124" width="146" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="730.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноГенератора</text>
-<rect x="908" y="124" width="156" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноПросмотра3D</text>
-<rect x="666" y="188" width="128" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="730.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноЭкспорта</text>
-<rect x="926" y="188" width="120" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноИстории</text>
-<rect x="670" y="252" width="120" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="730.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноТарифов</text>
-<rect x="909" y="252" width="154" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" fill="#000">ПанельПерсонала</text>
-<rect x="632" y="316" width="196" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="730.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельАдминистратора</text>
-<rect x="909" y="316" width="154" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельАналитика</text>
-<rect x="653" y="380" width="154" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="730.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельВладельца</text>
-<rect x="934" y="380" width="104" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ШлюзПочты</text>
-<rect x="649" y="444" width="162" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«interface»</text>
-<text x="730.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПлатёжнаяСистема</text>
-<rect x="870" y="444" width="232" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТестоваяПлатёжнаяСистема</text>
-<rect x="640" y="508" width="180" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«interface»</text>
-<text x="730.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПровайдерПодсказок</text>
-<rect x="909" y="508" width="154" height="44" fill="#fff" stroke="#000"/>
-<text x="986.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="986.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЛокальнаяМодель</text>
-<rect x="637" y="572" width="186" height="44" fill="#fff" stroke="#000"/>
-<text x="730.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
-<text x="730.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПровайдерOpenRouter</text>
-<rect x="81" y="1036" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="671.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ШагСнимка</text>
+<rect x="1190" y="60" width="104" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноВхода</text>
+<rect x="1438" y="60" width="120" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="95.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ГлавноеОкно</text>
+<rect x="1169" y="124" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноГенератора</text>
+<rect x="1420" y="124" width="156" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="141.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноПросмотра3D</text>
+<rect x="1178" y="188" width="128" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноЭкспорта</text>
+<rect x="1438" y="188" width="120" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноИстории</text>
+<rect x="1169" y="252" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноПубликации</text>
+<rect x="1425" y="252" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="269.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="287.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СтраницаСнимка</text>
+<rect x="1182" y="316" width="120" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ОкноТарифов</text>
+<rect x="1421" y="316" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="333.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" fill="#000">ПанельПерсонала</text>
+<rect x="1144" y="380" width="196" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельАдминистратора</text>
+<rect x="1421" y="380" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="397.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="415.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельАналитика</text>
+<rect x="1165" y="444" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПанельВладельца</text>
+<rect x="1446" y="444" width="104" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="461.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="479.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ШлюзПочты</text>
+<rect x="1161" y="508" width="162" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«interface»</text>
+<text x="1242.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПлатёжнаяСистема</text>
+<rect x="1382" y="508" width="232" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="525.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="543.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ТестоваяПлатёжнаяСистема</text>
+<rect x="1152" y="572" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«interface»</text>
+<text x="1242.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПровайдерПодсказок</text>
+<rect x="1421" y="572" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="1498.0" y="589.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1498.0" y="607.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЛокальнаяМодель</text>
+<rect x="1149" y="636" width="186" height="44" fill="#fff" stroke="#000"/>
+<text x="1242.0" y="653.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«boundary»</text>
+<text x="1242.0" y="671.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПровайдерOpenRouter</text>
+<rect x="81" y="780" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="158.0" y="815.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПроверкаДоступа</text>
+<rect x="337" y="780" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="414.0" y="815.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерВхода</text>
+<rect x="580" y="780" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="670.0" y="815.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеСеансами</text>
+<rect x="836" y="780" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="926.0" y="815.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ХэшированиеПаролей</text>
+<rect x="1088" y="780" width="188" height="44" fill="#fff" stroke="#000"/>
+<text x="1182.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1182.0" y="815.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерГенерации</text>
+<rect x="1365" y="780" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="1438.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1438.0" y="815.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">РеестрЗапросов</text>
+<rect x="1603" y="780" width="182" height="44" fill="#fff" stroke="#000"/>
+<text x="1694.0" y="797.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1694.0" y="815.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПроверкаПравТарифа</text>
+<rect x="89" y="844" width="138" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="861.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="158.0" y="879.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КэшМатериалов</text>
+<rect x="341" y="844" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="861.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="414.0" y="879.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СборщикПромпта</text>
+<rect x="584" y="844" width="172" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="861.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="670.0" y="879.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">АссистентПромптов</text>
+<rect x="840" y="844" width="172" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="861.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="926.0" y="879.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонвейерГенерации</text>
+<rect x="1137" y="844" width="90" height="44" fill="#fff" stroke="#000"/>
+<text x="1182.0" y="861.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1182.0" y="879.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" fill="#000">Воркер</text>
+<rect x="1382" y="844" width="112" height="44" fill="#fff" stroke="#000"/>
+<text x="1438.0" y="861.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1438.0" y="879.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерШума</text>
+<rect x="1617" y="844" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="1694.0" y="861.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1694.0" y="879.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерГенерации</text>
+<rect x="85" y="908" width="146" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="925.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="158.0" y="943.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерАпскейла</text>
+<rect x="361" y="908" width="106" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="925.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="414.0" y="943.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерPBR</text>
+<rect x="576" y="908" width="188" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="925.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="670.0" y="943.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПросмотра</text>
+<rect x="836" y="908" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="925.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="926.0" y="943.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерЭкспорта</text>
+<rect x="1096" y="908" width="172" height="44" fill="#fff" stroke="#000"/>
+<text x="1182.0" y="925.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1182.0" y="943.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерИстории</text>
+<rect x="1340" y="908" width="196" height="44" fill="#fff" stroke="#000"/>
+<text x="1438.0" y="925.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1438.0" y="943.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПубликации</text>
+<rect x="1586" y="908" width="216" height="44" fill="#fff" stroke="#000"/>
+<text x="1694.0" y="925.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1694.0" y="943.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПересчётСроковХранения</text>
+<rect x="68" y="972" width="180" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="158.0" y="1007.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПодписки</text>
+<rect x="299" y="972" width="230" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="414.0" y="1007.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеПользователями</text>
+<rect x="576" y="972" width="188" height="44" fill="#fff" stroke="#000"/>
+<text x="670.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="670.0" y="1007.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеПресетами</text>
+<rect x="810" y="972" width="232" height="44" fill="#fff" stroke="#000"/>
+<text x="926.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="926.0" y="1007.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеВерсиямиМодели</text>
+<rect x="1127" y="972" width="110" height="44" fill="#fff" stroke="#000"/>
+<text x="1182.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1182.0" y="1007.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Мониторинг</text>
+<rect x="1374" y="972" width="128" height="44" fill="#fff" stroke="#000"/>
+<text x="1438.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1438.0" y="1007.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЖурналАудита</text>
+<rect x="1608" y="972" width="172" height="44" fill="#fff" stroke="#000"/>
+<text x="1694.0" y="989.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
+<text x="1694.0" y="1007.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">РасчётПоказателей</text>
+<rect x="68" y="1036" width="180" height="44" fill="#fff" stroke="#000"/>
 <text x="158.0" y="1053.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="158.0" y="1071.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПроверкаДоступа</text>
-<rect x="337" y="1036" width="154" height="44" fill="#fff" stroke="#000"/>
+<text x="158.0" y="1071.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеТарифами</text>
+<rect x="333" y="1036" width="162" height="44" fill="#fff" stroke="#000"/>
 <text x="414.0" y="1053.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="414.0" y="1071.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерВхода</text>
-<rect x="576" y="1036" width="188" height="44" fill="#fff" stroke="#000"/>
+<text x="414.0" y="1071.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеРолями</text>
+<rect x="572" y="1036" width="196" height="44" fill="#fff" stroke="#000"/>
 <text x="670.0" y="1053.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="670.0" y="1071.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерГенерации</text>
-<rect x="835" y="1036" width="182" height="44" fill="#fff" stroke="#000"/>
-<text x="926.0" y="1053.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="926.0" y="1071.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПроверкаПравТарифа</text>
-<rect x="89" y="1100" width="138" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="1117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="158.0" y="1135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КэшМатериалов</text>
-<rect x="341" y="1100" width="146" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="1117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="414.0" y="1135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">СборщикПромпта</text>
-<rect x="584" y="1100" width="172" height="44" fill="#fff" stroke="#000"/>
-<text x="670.0" y="1117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="670.0" y="1135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">АссистентПромптов</text>
-<rect x="840" y="1100" width="172" height="44" fill="#fff" stroke="#000"/>
-<text x="926.0" y="1117.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="926.0" y="1135.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонвейерГенерации</text>
-<rect x="113" y="1164" width="90" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="1181.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="158.0" y="1199.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="italic" fill="#000">Воркер</text>
-<rect x="358" y="1164" width="112" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="1181.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="414.0" y="1199.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерШума</text>
-<rect x="593" y="1164" width="154" height="44" fill="#fff" stroke="#000"/>
-<text x="670.0" y="1181.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="670.0" y="1199.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерГенерации</text>
-<rect x="853" y="1164" width="146" height="44" fill="#fff" stroke="#000"/>
-<text x="926.0" y="1181.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="926.0" y="1199.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерАпскейла</text>
-<rect x="105" y="1228" width="106" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="1245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="158.0" y="1263.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ВоркерPBR</text>
-<rect x="320" y="1228" width="188" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="1245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="414.0" y="1263.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПросмотра</text>
-<rect x="580" y="1228" width="180" height="44" fill="#fff" stroke="#000"/>
-<text x="670.0" y="1245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="670.0" y="1263.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерЭкспорта</text>
-<rect x="840" y="1228" width="172" height="44" fill="#fff" stroke="#000"/>
-<text x="926.0" y="1245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="926.0" y="1263.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерИстории</text>
-<rect x="50" y="1292" width="216" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="1309.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="158.0" y="1327.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ПересчётСроковХранения</text>
-<rect x="324" y="1292" width="180" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="1309.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="414.0" y="1327.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">КонтроллерПодписки</text>
-<rect x="555" y="1292" width="230" height="44" fill="#fff" stroke="#000"/>
-<text x="670.0" y="1309.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="670.0" y="1327.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеПользователями</text>
-<rect x="832" y="1292" width="188" height="44" fill="#fff" stroke="#000"/>
-<text x="926.0" y="1309.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="926.0" y="1327.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеПресетами</text>
-<rect x="42" y="1356" width="232" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="1373.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="158.0" y="1391.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеВерсиямиМодели</text>
-<rect x="359" y="1356" width="110" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="1373.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="414.0" y="1391.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">Мониторинг</text>
-<rect x="606" y="1356" width="128" height="44" fill="#fff" stroke="#000"/>
-<text x="670.0" y="1373.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="670.0" y="1391.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ЖурналАудита</text>
-<rect x="840" y="1356" width="172" height="44" fill="#fff" stroke="#000"/>
-<text x="926.0" y="1373.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="926.0" y="1391.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">РасчётПоказателей</text>
-<rect x="68" y="1420" width="180" height="44" fill="#fff" stroke="#000"/>
-<text x="158.0" y="1437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="158.0" y="1455.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеТарифами</text>
-<rect x="333" y="1420" width="162" height="44" fill="#fff" stroke="#000"/>
-<text x="414.0" y="1437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="414.0" y="1455.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">УправлениеРолями</text>
-<rect x="572" y="1420" width="196" height="44" fill="#fff" stroke="#000"/>
-<text x="670.0" y="1437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«control»</text>
-<text x="670.0" y="1455.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ФинансоваяОтчётность</text>
+<text x="670.0" y="1071.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="bold" font-style="normal" fill="#000">ФинансоваяОтчётность</text>
 </svg>

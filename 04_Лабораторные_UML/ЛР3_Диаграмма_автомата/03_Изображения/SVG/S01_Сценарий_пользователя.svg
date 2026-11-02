@@ -28,9 +28,9 @@
 <ellipse cx="703" cy="581" rx="3" ry="3" fill="none" stroke="#000"/><line x1="706" y1="581" x2="712" y2="581" stroke="#000"/><ellipse cx="715" cy="581" rx="3" ry="3" fill="none" stroke="#000"/>
 <circle cx="835.0" cy="573.0" r="8.0" fill="#000"/>
 <polygon points="246,655.0 260.0,644 274,655.0 260.0,666" fill="#fff" stroke="#000"/>
-<rect x="477" y="634" width="286" height="42" rx="10" ry="10" fill="#fff" stroke="#000"/>
-<text x="620.0" y="652.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">история: Работа с историей материалов</text>
-<ellipse cx="740" cy="663" rx="3" ry="3" fill="none" stroke="#000"/><line x1="743" y1="663" x2="749" y2="663" stroke="#000"/><ellipse cx="752" cy="663" rx="3" ry="3" fill="none" stroke="#000"/>
+<rect x="484" y="634" width="272" height="42" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="620.0" y="652.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">история: Работа с историей запросов</text>
+<ellipse cx="733" cy="663" rx="3" ry="3" fill="none" stroke="#000"/><line x1="736" y1="663" x2="742" y2="663" stroke="#000"/><ellipse cx="745" cy="663" rx="3" ry="3" fill="none" stroke="#000"/>
 <circle cx="835.0" cy="655.0" r="8.0" fill="#000"/>
 <polygon points="246,737.0 260.0,726 274,737.0 260.0,748" fill="#fff" stroke="#000"/>
 <rect x="499" y="716" width="242" height="42" rx="10" ry="10" fill="#fff" stroke="#000"/>
@@ -71,11 +71,11 @@
 <path d="M255.0,635.3 L260.0,644.0 L265.0,635.3" fill="none" stroke="#000"/>
 <path d="M726.0,573.0 L827.0,573.0" fill="none" stroke="#000"/>
 <path d="M818.3,578.0 L827.0,573.0 L818.3,568.0" fill="none" stroke="#000"/>
-<path d="M274.0,655.0 L477.0,655.0" fill="none" stroke="#000"/>
-<path d="M468.3,660.0 L477.0,655.0 L468.3,650.0" fill="none" stroke="#000"/>
+<path d="M274.0,655.0 L484.0,655.0" fill="none" stroke="#000"/>
+<path d="M475.3,660.0 L484.0,655.0 L475.3,650.0" fill="none" stroke="#000"/>
 <path d="M260.0,666.0 L260.0,726.0" fill="none" stroke="#000"/>
 <path d="M255.0,717.3 L260.0,726.0 L265.0,717.3" fill="none" stroke="#000"/>
-<path d="M763.0,655.0 L827.0,655.0" fill="none" stroke="#000"/>
+<path d="M756.0,655.0 L827.0,655.0" fill="none" stroke="#000"/>
 <path d="M818.3,660.0 L827.0,655.0 L818.3,650.0" fill="none" stroke="#000"/>
 <path d="M274.0,737.0 L499.0,737.0" fill="none" stroke="#000"/>
 <path d="M490.3,742.0 L499.0,737.0 L490.3,732.0" fill="none" stroke="#000"/>

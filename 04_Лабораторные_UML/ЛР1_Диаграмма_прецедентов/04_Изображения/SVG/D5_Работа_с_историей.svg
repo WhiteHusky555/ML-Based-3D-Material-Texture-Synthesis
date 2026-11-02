@@ -1,47 +1,65 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1095" height="494" viewBox="45 235 1095 494">
-<rect x="45" y="235" width="1095" height="494" fill="#fff"/>
-<ellipse cx="560.0" cy="300.0" rx="120.0" ry="35.0" fill="#fff" stroke="#000"/>
-<text x="560.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Работа с историей</text>
-<text x="560.0" y="312.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материалов</text>
-<line x1="440" y1="340" x2="680" y2="340" stroke="#000"/>
-<text x="445.0" y="357.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
-<ellipse cx="1010.0" cy="299.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
-<text x="1010.0" y="295.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Просмотр списка</text>
-<text x="1010.0" y="311.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материалов</text>
-<ellipse cx="180.0" cy="680.0" rx="110.0" ry="20.0" fill="#fff" stroke="#000"/>
-<text x="180.0" y="684.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Открытие материала</text>
-<ellipse cx="560.0" cy="680.0" rx="110.0" ry="20.0" fill="#fff" stroke="#000"/>
-<text x="560.0" y="684.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Удаление материала</text>
-<ellipse cx="940.0" cy="679.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
-<text x="940.0" y="675.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Создание варианта</text>
-<text x="940.0" y="691.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материала</text>
-<circle cx="110.0" cy="264.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
-<line x1="110.0" y1="273.6" x2="110.0" y2="301.2" stroke="#000" stroke-width="1.2" fill="none"/>
-<line x1="90.0" y1="281.6" x2="130.0" y2="281.6" stroke="#000" stroke-width="1.2" fill="none"/>
-<line x1="110.0" y1="301.2" x2="93.0" y2="325.0" stroke="#000" stroke-width="1.2" fill="none"/>
-<line x1="110.0" y1="301.2" x2="127.0" y2="325.0" stroke="#000" stroke-width="1.2" fill="none"/>
-<text x="110.0" y="341.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пользователь</text>
-<path d="M130.0,300.0 L440.0,300.0" fill="none" stroke="#000"/>
-<path d="M680.0,300.0 L900.0,300.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
-<path d="M889.4,305.6 L900.0,300.0 L889.4,294.4" fill="none" stroke="#000" stroke-width="1"/>
-<path d="M200.0,660.0 L494.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
-<path d="M490.5,377.5 L494.0,366.0 L482.5,369.5" fill="none" stroke="#000" stroke-width="1"/>
-<path d="M560.0,660.0 L560.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
-<path d="M565.6,376.6 L560.0,366.0 L554.4,376.6" fill="none" stroke="#000" stroke-width="1"/>
-<path d="M911.0,651.0 L626.0,366.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
-<path d="M637.5,369.5 L626.0,366.0 L629.5,377.5" fill="none" stroke="#000" stroke-width="1"/>
-<text x="790.0" y="274.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
-<text x="230.0" y="480.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
-<text x="230.0" y="496.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
-<text x="230.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран материал в</text>
-<text x="230.0" y="528.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">списке]</text>
-<text x="645.0" y="472.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
-<text x="645.0" y="488.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
-<text x="645.0" y="504.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Удалить»,</text>
-<text x="645.0" y="520.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">удаление</text>
-<text x="645.0" y="536.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">подтверждено]</text>
-<text x="930.0" y="460.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
-<text x="930.0" y="476.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
-<text x="930.0" y="492.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Изменить</text>
-<text x="930.0" y="508.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">параметры»]</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1095" height="749" viewBox="45 60 1095 749">
+<rect x="45" y="60" width="1095" height="749" fill="#fff"/>
+<ellipse cx="560.0" cy="380.0" rx="120.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="560.0" y="376.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Работа с историей</text>
+<text x="560.0" y="392.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">запросов</text>
+<line x1="440" y1="420" x2="680" y2="420" stroke="#000"/>
+<text x="445.0" y="437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
+<ellipse cx="1010.0" cy="379.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="1010.0" y="375.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Просмотр списка</text>
+<text x="1010.0" y="391.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">цепочек</text>
+<ellipse cx="380.0" cy="109.5" rx="115.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="380.0" y="105.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Публикация цепочки по</text>
+<text x="380.0" y="121.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">ссылке</text>
+<ellipse cx="760.0" cy="109.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="760.0" y="105.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Отзыв ссылки на</text>
+<text x="760.0" y="121.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">цепочку</text>
+<ellipse cx="180.0" cy="760.0" rx="110.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="180.0" y="764.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Открытие материала</text>
+<ellipse cx="560.0" cy="759.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="560.0" y="755.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Удаление цепочки или</text>
+<text x="560.0" y="771.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материала</text>
+<ellipse cx="940.0" cy="759.5" rx="110.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="940.0" y="755.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Создание варианта</text>
+<text x="940.0" y="771.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">материала</text>
+<circle cx="110.0" cy="344.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="110.0" y1="353.6" x2="110.0" y2="381.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="90.0" y1="361.6" x2="130.0" y2="361.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="381.2" x2="93.0" y2="405.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="381.2" x2="127.0" y2="405.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="110.0" y="421.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пользователь</text>
+<path d="M130.0,380.0 L440.0,380.0" fill="none" stroke="#000"/>
+<path d="M680.0,380.0 L900.0,380.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M889.4,385.6 L900.0,380.0 L889.4,374.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M399.0,139.0 L537.0,346.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M526.4,340.3 L537.0,346.0 L535.8,334.1" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M739.0,138.0 L585.0,346.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M586.8,334.1 L585.0,346.0 L595.8,340.8" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M200.0,740.0 L494.0,446.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M490.5,457.5 L494.0,446.0 L482.5,449.5" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M560.0,730.0 L560.0,446.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M565.6,456.6 L560.0,446.0 L554.4,456.6" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M911.0,731.0 L626.0,446.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M637.5,449.5 L626.0,446.0 L629.5,457.5" fill="none" stroke="#000" stroke-width="1"/>
+<text x="790.0" y="354.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«include»</text>
+<text x="300.0" y="228.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="300.0" y="244.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="300.0" y="260.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Поделиться»]</text>
+<text x="840.0" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="840.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="840.0" y="252.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Закрыть доступ»,</text>
+<text x="840.0" y="268.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">ссылка действует]</text>
+<text x="230.0" y="560.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="230.0" y="576.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="230.0" y="592.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[выбран запрос в</text>
+<text x="230.0" y="608.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">цепочке]</text>
+<text x="645.0" y="552.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="645.0" y="568.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="645.0" y="584.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Удалить»,</text>
+<text x="645.0" y="600.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">удаление</text>
+<text x="645.0" y="616.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">подтверждено]</text>
+<text x="930.0" y="540.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="930.0" y="556.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="930.0" y="572.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Изменить</text>
+<text x="930.0" y="588.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">параметры»]</text>
 </svg>

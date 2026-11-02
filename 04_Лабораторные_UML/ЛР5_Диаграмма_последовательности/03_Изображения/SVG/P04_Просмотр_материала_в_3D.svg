@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1195" height="938" viewBox="0 0 1195 938">
+<rect width="1195" height="938" fill="#fff"/>
+<line x1="225.0" y1="107.0" x2="225.0" y2="908.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="472.0" y1="81.0" x2="472.0" y2="908.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="803.0" y1="81.0" x2="803.0" y2="908.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="1075.0" y1="81.0" x2="1075.0" y2="908.0" stroke="#000" stroke-dasharray="3,3"/>
+<circle cx="225.0" cy="46.4" r="5.4" fill="#fff" stroke="#000"/><line x1="225.0" y1="51.9" x2="225.0" y2="64.4" stroke="#000"/><line x1="214.6" y1="55.7" x2="235.4" y2="55.7" stroke="#000"/><line x1="225.0" y1="64.4" x2="214.6" y2="79.0" stroke="#000"/><line x1="225.0" y1="64.4" x2="235.4" y2="79.0" stroke="#000"/>
+<text x="225.0" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Пользователь</text>
+<rect x="396.0" y="40.0" width="152.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="472.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="472.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноПросмотра3D</text>
+<rect x="713.0" y="40.0" width="180.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="803.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="803.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПросмотра</text>
+<rect x="985.0" y="40.0" width="180.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="1075.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="1075.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">карта: КартаМатериала</text>
+<rect x="465.0" y="145.0" width="14.0" height="238.0" fill="#fff" stroke="#000"/>
+<rect x="796.0" y="175.0" width="14.0" height="198.0" fill="#fff" stroke="#000"/>
+<rect x="1068.0" y="278.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="465.0" y="553.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="465.0" y="659.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="465.0" y="765.0" width="14.0" height="91.0" fill="#fff" stroke="#000"/>
+<rect x="796.0" y="795.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="577.0" y="191.0" width="526.0" height="150.0" fill="none" stroke="#000"/>
+<polygon points="577.0,191.0 577.0,217.0 622.6,217.0 635.6,204.0 635.6,191.0" fill="#fff" stroke="#000"/>
+<text x="582.0" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">loop</text>
+<text x="597.0" y="244.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[есть необработанная карта]</text>
+<rect x="20.0" y="393.0" width="835.0" height="483.0" fill="none" stroke="#000"/>
+<polygon points="20.0,393.0 20.0,419.0 65.6,419.0 78.6,406.0 78.6,393.0" fill="#fff" stroke="#000"/>
+<text x="25.0" y="411.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">loop</text>
+<text x="40.0" y="446.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[окно открыто]</text>
+<rect x="30.0" y="466.0" width="801.0" height="396.0" fill="none" stroke="#000"/>
+<polygon points="30.0,466.0 30.0,492.0 67.7,492.0 80.7,479.0 80.7,466.0" fill="#fff" stroke="#000"/>
+<text x="35.0" y="484.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="50.0" y="519.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[выбрана карта]</text>
+<line x1="30.0" y1="598.0" x2="830.0" y2="598.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="50.0" y="625.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[выбран объект]</text>
+<line x1="30.0" y1="704.0" x2="830.0" y2="704.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="50.0" y="731.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[загружена своя модель]</text>
+<path d="M226.0,145.0 L465.0,145.0" fill="none" stroke="#000"/>
+<polygon points="465.0,145.0 454.1,139.9 454.1,150.1" fill="#000" stroke="#000"/>
+<text x="334.0" y="138.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ПоказатьМатериал(карты)</text>
+<path d="M479.0,175.0 L796.0,175.0" fill="none" stroke="#000"/>
+<polygon points="796.0,175.0 785.1,169.9 785.1,180.1" fill="#000" stroke="#000"/>
+<text x="591.0" y="168.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ЗагрузитьКарты(материал)</text>
+<path d="M810.0,278.0 L1068.0,278.0" fill="none" stroke="#000"/>
+<polygon points="1068.0,278.0 1057.1,272.9 1057.1,283.1" fill="#000" stroke="#000"/>
+<text x="930.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : СоздатьВременнуюСсылку(15)</text>
+<path d="M1075.0,329.0 L810.0,329.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M820.6,334.6 L810.0,329.0 L820.6,323.4" fill="none" stroke="#000"/>
+<text x="1029.0" y="323.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ссылка</text>
+<path d="M803.0,373.0 L479.0,373.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M489.6,378.6 L479.0,373.0 L489.6,367.4" fill="none" stroke="#000"/>
+<text x="761.0" y="366.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : карты</text>
+<path d="M226.0,553.0 L465.0,553.0" fill="none" stroke="#000"/>
+<polygon points="465.0,553.0 454.1,547.9 454.1,558.1" fill="#000" stroke="#000"/>
+<text x="315.0" y="547.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ПоказатьКарту(вид)</text>
+<path d="M226.0,659.0 L465.0,659.0" fill="none" stroke="#000"/>
+<polygon points="465.0,659.0 454.1,653.9 454.1,664.1" fill="#000" stroke="#000"/>
+<text x="330.0" y="653.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : ЗаменитьОбъект(объект)</text>
+<path d="M226.0,765.0 L465.0,765.0" fill="none" stroke="#000"/>
+<polygon points="465.0,765.0 454.1,759.9 454.1,770.1" fill="#000" stroke="#000"/>
+<text x="323.0" y="758.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ПоказатьМодель(файл)</text>
+<path d="M479.0,795.0 L796.0,795.0" fill="none" stroke="#000"/>
+<polygon points="796.0,795.0 785.1,789.9 785.1,800.1" fill="#000" stroke="#000"/>
+<text x="629.0" y="789.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : ПроверитьМодель(файл, пользователь)</text>
+<path d="M803.0,846.0 L479.0,846.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M489.6,851.6 L479.0,846.0 L489.6,840.4" fill="none" stroke="#000"/>
+<text x="724.0" y="839.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">10 : допустима | нет</text>
+</svg>

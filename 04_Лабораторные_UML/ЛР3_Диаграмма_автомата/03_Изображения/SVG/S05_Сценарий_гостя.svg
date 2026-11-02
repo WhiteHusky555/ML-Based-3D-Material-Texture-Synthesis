@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="483" height="356" viewBox="100 52 483 356">
+<rect x="100" y="52" width="483" height="356" fill="#fff"/>
+<circle cx="280.0" cy="82.0" r="10.0" fill="#000"/>
+<rect x="120" y="132" width="320" height="42" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">просмотр: Просмотр опубликованной цепочки</text>
+<ellipse cx="417" cy="161" rx="3" ry="3" fill="none" stroke="#000"/><line x1="420" y1="161" x2="426" y2="161" stroke="#000"/><ellipse cx="429" cy="161" rx="3" ry="3" fill="none" stroke="#000"/>
+<polygon points="266,227.0 280.0,216 294,227.0 280.0,238" fill="#fff" stroke="#000"/>
+<rect x="159" y="280" width="242" height="42" rx="10" ry="10" fill="#fff" stroke="#000"/>
+<text x="280.0" y="298.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">генерация: Генерация материала</text>
+<ellipse cx="378" cy="309" rx="3" ry="3" fill="none" stroke="#000"/><line x1="381" y1="309" x2="387" y2="309" stroke="#000"/><ellipse cx="390" cy="309" rx="3" ry="3" fill="none" stroke="#000"/>
+<circle cx="550.0" cy="227.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="550.0" cy="227.0" r="8.0" fill="#000"/>
+<circle cx="280.0" cy="375.0" r="13.0" fill="#fff" stroke="#000"/>
+<circle cx="280.0" cy="375.0" r="8.0" fill="#000"/>
+<path d="M280.0,92.0 L280.0,132.0" fill="none" stroke="#000"/>
+<path d="M275.0,123.3 L280.0,132.0 L285.0,123.3" fill="none" stroke="#000"/>
+<path d="M280.0,174.0 L280.0,216.0" fill="none" stroke="#000"/>
+<path d="M275.0,207.3 L280.0,216.0 L285.0,207.3" fill="none" stroke="#000"/>
+<path d="M280.0,238.0 L280.0,280.0" fill="none" stroke="#000"/>
+<path d="M275.0,271.3 L280.0,280.0 L285.0,271.3" fill="none" stroke="#000"/>
+<path d="M294.0,227.0 L537.0,227.0" fill="none" stroke="#000"/>
+<path d="M528.3,232.0 L537.0,227.0 L528.3,222.0" fill="none" stroke="#000"/>
+<path d="M280.0,322.0 L280.0,362.0" fill="none" stroke="#000"/>
+<path d="M275.0,353.3 L280.0,362.0 L285.0,353.3" fill="none" stroke="#000"/>
+<rect x="285.5" y="243.0" width="181.0" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="376.0" y="255.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[цепочка продолжена у себя]</text>
+<rect x="301.8" y="207.0" width="40.4" height="16" fill="#fff" fill-opacity="0.85"/>
+<text x="322.0" y="219.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">[else]</text>
+</svg>

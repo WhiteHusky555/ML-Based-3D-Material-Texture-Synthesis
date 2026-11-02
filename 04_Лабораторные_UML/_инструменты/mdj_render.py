@@ -10,6 +10,7 @@
   python -I mdj_render.py --check <проект.mdj>                          — проверка раскладки
   --activity / --statechart — только диаграммы деятельности / автомата (рендер и проверка — act_render.py)
   --classes — только диаграммы классов (рендер и проверка — class_render.py)
+  --sequence — только диаграммы последовательности (рендер и проверка — seq_render.py)
 """
 import json
 import math
@@ -21,6 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from staruml_xpd import LINE_H, EXT_ITEM_H, label_pos, text_w, wrap  # noqa: E402
 import act_render  # noqa: E402
 import class_render  # noqa: E402
+import seq_render  # noqa: E402
 
 FONT = "Arial, Helvetica, sans-serif"
 FS = 13
@@ -55,7 +57,7 @@ def load(path):
             if "_id" in o:
                 ids[o["_id"]] = o
             if o.get("_type") in ("UMLUseCaseDiagram", "UMLActivityDiagram", "UMLStatechartDiagram",
-                                  "UMLClassDiagram"):
+                                  "UMLClassDiagram", "UMLSequenceDiagram"):
                 diagrams.append(o)
             for v in o.values():
                 index(v)
@@ -260,14 +262,17 @@ def _renderer(dg):
         return act_render
     if dg["_type"] == "UMLClassDiagram":
         return class_render
+    if dg["_type"] == "UMLSequenceDiagram":
+        return seq_render
     return None
 
 
 def main():
     only_act = ("UMLActivityDiagram" if "--activity" in sys.argv else
                 "UMLStatechartDiagram" if "--statechart" in sys.argv else
-                "UMLClassDiagram" if "--classes" in sys.argv else None)
-    sys.argv = [a for a in sys.argv if a not in ("--activity", "--statechart", "--classes")]
+                "UMLClassDiagram" if "--classes" in sys.argv else
+                "UMLSequenceDiagram" if "--sequence" in sys.argv else None)
+    sys.argv = [a for a in sys.argv if a not in ("--activity", "--statechart", "--classes", "--sequence")]
     if sys.argv[1] == "--check":
         project, ids, diagrams = load(sys.argv[2])
         total = 0
