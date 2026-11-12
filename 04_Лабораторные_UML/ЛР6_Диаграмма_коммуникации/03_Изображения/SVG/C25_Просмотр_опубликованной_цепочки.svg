@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1126" height="413" viewBox="0 0 1126 413">
+<rect width="1126" height="413" fill="#fff"/>
+<path d="M56.0,86.0 L56.0,169.0 L293.0,169.0" fill="none" stroke="#000"/>
+<path d="M310.0,189.0 L310.0,283.0 L709.0,283.0" fill="none" stroke="#000"/>
+<path d="M726.0,303.0 L726.0,363.0 L900.0,363.0" fill="none" stroke="#000"/>
+<path d="M395.0,149.0 L395.0,135.0 L423.0,135.0 L423.0,149.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="72.0" height="66.0" fill="#fff"/>
+<circle cx="56.0" cy="26.4" r="5.4" fill="#fff" stroke="#000"/><line x1="56.0" y1="31.9" x2="56.0" y2="44.4" stroke="#000"/><line x1="45.5" y1="35.7" x2="66.5" y2="35.7" stroke="#000"/><line x1="56.0" y1="44.4" x2="45.5" y2="59.0" stroke="#000"/><line x1="56.0" y1="44.4" x2="66.5" y2="59.0" stroke="#000"/>
+<text x="56.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Гость</text>
+<rect x="292.0" y="149.0" width="142.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="363.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="363.0" y="182.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: СтраницаСнимка</text>
+<rect x="708.0" y="263.0" width="188.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="802.0" y="279.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="802.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПубликации</text>
+<rect x="900.0" y="343.0" width="196.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="998.0" y="359.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="998.0" y="376.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">ссылка: ПубличнаяСсылка</text>
+<line x1="68.0" y1="140.0" x2="108.0" y2="140.0" stroke="#000"/>
+<polygon points="108.0,140.0 97.1,134.9 97.1,145.1" fill="#000" stroke="#000"/>
+<text x="197.3" y="145.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ВыбранноеДействие()</text>
+<line x1="68.0" y1="158.0" x2="108.0" y2="158.0" stroke="#000"/>
+<polygon points="108.0,158.0 97.1,152.9 97.1,163.1" fill="#000" stroke="#000"/>
+<text x="197.3" y="163.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ВыбранноеДействие()</text>
+<line x1="322.0" y1="220.0" x2="362.0" y2="220.0" stroke="#000"/>
+<polygon points="362.0,220.0 351.1,214.9 351.1,225.1" fill="#000" stroke="#000"/>
+<text x="455.1" y="225.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ОткрытьСнимок(токен)</text>
+<line x1="361.0" y1="238.0" x2="321.0" y2="238.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M331.6,243.6 L321.0,238.0 L331.6,232.4" fill="none" stroke="#000"/>
+<text x="423.8" y="243.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : снимок | None</text>
+<line x1="322.0" y1="254.0" x2="362.0" y2="254.0" stroke="#000"/>
+<polygon points="362.0,254.0 351.1,248.9 351.1,259.1" fill="#000" stroke="#000"/>
+<text x="532.4" y="259.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : ПродолжитьУСебя(токен, пользователь, ключ)</text>
+<line x1="362.0" y1="272.0" x2="322.0" y2="272.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M332.6,277.6 L322.0,272.0 L332.6,266.4" fill="none" stroke="#000"/>
+<text x="424.9" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">10 : копия | None</text>
+<line x1="738.0" y1="334.0" x2="778.0" y2="334.0" stroke="#000"/>
+<polygon points="778.0,334.0 767.1,328.9 767.1,339.1" fill="#000" stroke="#000"/>
+<text x="836.1" y="339.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Действует()</text>
+<line x1="778.0" y1="352.0" x2="738.0" y2="352.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M748.6,357.6 L738.0,352.0 L748.6,346.4" fill="none" stroke="#000"/>
+<text x="821.8" y="357.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : да | нет</text>
+<line x1="441.0" y1="117.0" x2="481.0" y2="117.0" stroke="#000"/>
+<polygon points="481.0,117.0 470.1,111.9 470.1,122.1" fill="#000" stroke="#000"/>
+<text x="581.7" y="122.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ПоказатьСнимок(снимок)</text>
+<line x1="441.0" y1="135.0" x2="481.0" y2="135.0" stroke="#000"/>
+<polygon points="481.0,135.0 470.1,129.9 470.1,140.1" fill="#000" stroke="#000"/>
+<text x="574.1" y="140.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : ПоказатьНедоступна()</text>
+</svg>

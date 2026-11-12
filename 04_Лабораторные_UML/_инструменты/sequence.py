@@ -15,7 +15,9 @@ StarUML 6 (metamodel.json, elements.js 6.3.3):
     высота сохраняется; левый край — у линии (left − 7) или на 7 правее родительской активации; концы стрелки —
     у краёв активаций (arrangeObject); showType = false — в подписи только имена параметров;
   - UMLCombinedFragmentView: operandCompartment (UMLInteractionOperandCompartmentView) с UMLInteractionOperandView,
-    высоты операндов сохраняются, условие — «[guard]» в 20 px от левого и 15 px от верхнего края операнда.
+    высоты операндов сохраняются, условие — «[guard]» в 20 px от левого и 15 px от верхнего края операнда;
+  - использование взаимодействия (фрагмент ref): UMLInteractionUse (refersTo — другое UMLInteraction) во fragments
+    и UMLInteractionUseView (подпись — имя взаимодействия после пятиугольника «ref»).
 StarUML 5.0 (UMLModels.pas, UMLViews.pas, UMLFacto.pas, Core.pas, Samples/*.uml):
   - UMLCollaborationInstanceSet во владельце-классификаторе (OwnedCollaborationInstanceSets) → UMLInteractionInstanceSet
     (ParticipatingStimuli, Fragments, OwnedDiagrams) и UMLObject (ParticipatingInstances; Classifier);
@@ -24,7 +26,9 @@ StarUML 5.0 (UMLModels.pas, UMLViews.pas, UMLFacto.pas, Core.pas, Samples/*.uml)
     ReceivingStimuli, Views;
   - UMLSequenceDiagram: UMLSeqObjectView (+ LifeLine — UMLLifeLineView; концы стрелок ссылаются на него),
     UMLSeqStimulusView (+ Activation), UMLCombinedFragmentView с вложенными (ContainedViews)
-    UMLInteractionOperandView.
+    UMLInteractionOperandView;
+  - фрагмент ref: UMLFrame (FrameKind = "ref", RepresentedElement — набор взаимодействия, на который ссылается;
+    у него обратная ссылка Frames) в OwnedFrames набора и UMLFrameView (NameLabel, FrameTypeLabel).
 """
 import math
 
@@ -42,6 +46,10 @@ ROW = 30                    # шаг сообщений по вертикали
 FRAME_HDR = 26              # шапка фрагмента: подпись оператора + отступы
 GUARD_DY, GUARD_DX = 15, 20  # INTERACTIONOPERAND_GUARD_VERT / HORZ_MARGIN
 LABEL_GAP = 10              # зазор подписи от краёв промежутка
+REF_H = 32                  # высота рамки ref
+REF_PAD = 33                # от центра первой покрытой линии жизни до левого края рамки ref: активация проходит
+                            # между «ref» (до left + 25) и именем (с left + 44, UMLInteractionUseView.arrangeObject)
+REF_NAME_X = 44             # отступ имени взаимодействия от левого края рамки ref
 SORT6 = {"call": "synchCall", "async": "asynchCall", "reply": "reply", "create": "createMessage"}
 OPERATOR5 = {"alt": "iokAlt", "opt": "iokOpt", "loop": "iokLoop", "par": "iokPar"}
 
@@ -104,6 +112,20 @@ class Operand:
         self.guard, self.doc = guard, doc
         self.top = self.bottom = 0
         self.msgs = []
+        self.refs = []
+
+
+class Ref:
+    """Использование взаимодействия (ref): рамка поперёк покрытых линий жизни, имя — имя взаимодействия target."""
+
+    def __init__(self, target, covers, doc=""):
+        self.target, self.covers, self.doc = target, list(covers), doc
+        self.name = ""                      # имя целевого взаимодействия — проставляет модель до раскладки
+        self.top = self.bottom = self.left = self.right = 0
+
+    def text_w(self):
+        """Ширина рамки под «ref» с пятиугольником и имя (UMLInteractionUseView.sizeObject)."""
+        return REF_NAME_X + tw(self.name) + 12
 
 
 class Fragment:
@@ -127,6 +149,7 @@ class Interaction:
         self.order = list(order)
         self.msgs = []
         self.frags = []
+        self.refs = []
         self.events = []                    # ("msg", m) / ("begin", f, op) / ("else", f, op) / ("end", f)
         self._stack = []                    # открытые фрагменты
         self._open = []                     # открытые активации (вложенные вызовы)
@@ -260,6 +283,16 @@ class Interaction:
     def par(self, guard="", doc="", guard_doc=""):
         return self.frag("par", guard, doc, guard_doc)
 
+    def ref(self, target, covers, doc=""):
+        """Фрагмент ref: в этом месте выполняется взаимодействие target (ключ); covers — покрытые линии жизни."""
+        r = Ref(target, covers, doc)
+        r.frag_op = self._stack[-1][1] if self._stack else None
+        if r.frag_op:
+            r.frag_op.refs.append(r)
+        self.refs.append(r)
+        self.events.append(("ref", r))
+        return r
+
     def else_(self, guard, guard_doc=""):
         f, _ = self._stack.pop()
         op = Operand(guard, guard_doc)
@@ -286,7 +319,7 @@ class Interaction:
         for m in self.msgs:
             if m.label_c:
                 right = max(right, m.label_c[0] + tw(m.label()) / 2 + 6)
-        for f in self.frags:
+        for f in list(self.frags) + self.refs:
             right = max(right, f.right)
         self.width = right + 30
         self.height = max(ll.line_bottom for ll in self.lls.values()) + 30
@@ -329,6 +362,12 @@ class Interaction:
                     m.act_bottom = max([m.act_bottom, y + 10] + [b + 5 for b in inner])
                     y = max(y, m.act_bottom - ROW + 12)
                 close_bottom = max(close_bottom, m.act_bottom)
+                leaf_bottom = 0
+            elif kind == "ref":
+                r = ev[1]
+                y = clear(y) + 14
+                r.top, r.bottom = y, y + REF_H
+                y = r.bottom - 6
                 leaf_bottom = 0
             elif kind == "begin":
                 f, op = ev[1], ev[2]
@@ -409,6 +448,15 @@ class Interaction:
             i0 = self._frag_min_idx(f)
             if i0 > 0:
                 gap[i0 - 1] = max(gap[i0 - 1], self._frag_pad(f) + ACT_W + 20)
+        for r in self.refs:                  # рамка ref не заходит на непокрытые линии жизни
+            idx = sorted(self.lls[k].idx for k in r.covers)
+            assert idx == list(range(idx[0], idx[-1] + 1)), f"{self.key}: ref «{r.name}» покрывает линии жизни не подряд"
+            i0, i1 = idx[0], idx[-1]
+            if i0 > 0:
+                gap[i0 - 1] = max(gap[i0 - 1], REF_PAD + ACT_W + 16)
+            span = sum(gap[g] for g in range(i0, i1)) + 2 * REF_PAD
+            if i1 < n - 1:
+                gap[i1] = max(gap[i1], REF_PAD + ACT_W + 16 + max(0, r.text_w() - span))
         slack = 2 * ACT_W + LABEL_GAP + 12       # края активаций, отступ от отправителя и запас
 
         def band(m):                             # вертикальная полоса подписи
@@ -511,6 +559,7 @@ class Interaction:
 
     def _frag_min_idx(self, f):
         idx = [self.lls[k].idx for op in f.operands for m in op.msgs for k in (m.a, m.b)]
+        idx += [self.lls[k].idx for op in f.operands for r in op.refs for k in r.covers]
         idx += [self._frag_min_idx(c) for c in f.children]
         return min(idx)
 
@@ -574,8 +623,13 @@ class Interaction:
             m.label_c = (cx, y - (LINE_H / 2 + 3))
 
     def _frames(self):
+        for r in self.refs:
+            cx = [self.lls[k].cx for k in r.covers]
+            r.left = int(min(cx) - REF_PAD)
+            r.right = int(max(max(cx) + REF_PAD, r.left + r.text_w()))
+
         def extent(f):
-            xs = []
+            xs = [r.right for op in f.operands for r in op.refs]
             for op in f.operands:
                 for m in op.msgs:
                     for k in (m.a, m.b):
@@ -594,12 +648,14 @@ class Interaction:
             f.left = int(x_min - self._frag_pad(f))
             for c in f.children:
                 f.left = min(f.left, c.left - 10)
+            for r in (r for op in f.operands for r in op.refs):
+                f.left = min(f.left, r.left - 10)
             gw = max((tw(f"[{op.guard}]") for op in f.operands if op.guard), default=0)
             f.right = int(max(max(xs) + 14, f.left + GUARD_DX + gw + 10))
         for f in self.frags:
             if f.parent is None:
                 extent(f)
-        shift = max(0, 20 - min((f.left for f in self.frags), default=20))
+        shift = max(0, 20 - min([f.left for f in self.frags] + [r.left for r in self.refs], default=20))
         if shift:
             for ll in self.lls.values():
                 ll.cx += shift
@@ -610,7 +666,7 @@ class Interaction:
                     m.act = (m.act[0] + shift, m.act[1], m.act[2])
                 if m.label_c:
                     m.label_c = (m.label_c[0] + shift, m.label_c[1])
-            for f in self.frags:
+            for f in list(self.frags) + self.refs:
                 f.left += shift
                 f.right += shift
 
@@ -624,7 +680,8 @@ class Interaction:
         return (f"Количественная характеристика диаграммы: линий жизни — {len(self.lls)} (акторов — "
                 f"{sum(1 for ll in self.lls.values() if ll.is_actor)}); сообщений — {len(self.msgs)}: синхронных "
                 f"вызовов — {k.count('call')}, асинхронных — {k.count('async')}, ответов — {k.count('reply')}, «create» — "
-                f"{k.count('create')}; комбинированных фрагментов — {len(self.frags)} ({frs}).")
+                f"{k.count('create')}; комбинированных фрагментов — {len(self.frags)} ({frs})"
+                + (f"; использований взаимодействий (ref) — {len(self.refs)}" if self.refs else "") + ".")
 
 
 # ==================================================================== StarUML 6 (.mdj)
@@ -672,6 +729,9 @@ def mdj_interaction(mod, owner, it, cls6, ops6, actors6):
             o["operands"].append(oo)
         f.obj6 = o
         frags.append(o)
+    for r in it.refs:                                   # refersTo проставляет mdj_resolve_refs после всех взаимодействий
+        r.obj6 = node("UMLInteractionUse", inter, name=r.name, documentation=r.doc)
+        frags.append(r.obj6)
     dg = node("UMLSequenceDiagram", inter, name=it.diagram,
               documentation=(it.diagram_doc + "\n\n" if it.diagram_doc else "") + it.quantitative(),
               showSequenceNumber=True, showSignature=True, showActivation=True, sequenceNumbering="auto")
@@ -691,6 +751,9 @@ def mdj_interaction(mod, owner, it, cls6, ops6, actors6):
         v["operandCompartment"] = ref(oc)
         v["subViews"] = [oc]
         views.append(v)
+    for r in it.refs:
+        views.append(node("UMLInteractionUseView", dg, model=ref(r.obj6), left=r.left, top=r.top,
+                          width=r.right - r.left, height=r.bottom - r.top))
     for k in it.order:
         ll = it.lls[k]
         hh = ll.head_h()
@@ -734,6 +797,8 @@ def mdj_interaction(mod, owner, it, cls6, ops6, actors6):
     inter["ownedElements"] = [dg]
     col["attributes"] = roles
     col["ownedElements"] = [inter]
+    it.mdj6 = (inter, lfs, dict(zip(it.order, roles)))     # для диаграммы коммуникации (communication.py)
+    it.inter6 = inter
     owner.setdefault("ownedElements", []).append(col)
     return col
 
@@ -759,9 +824,10 @@ def _label5(role, text, alpha, dist, model=None, host=None, visible=True, edge=T
     return role, lb
 
 
-def xpd_interaction(owner, it, cls5, ops5, actors5, back):
+def xpd_interaction(owner, it, cls5, ops5, actors5, back, comm=None):
     """UMLCollaborationInstanceSet взаимодействия it; owner — классификатор-владелец (Obj).
-    back — словарь обратных ссылок {id(Obj): {имя: [...]}}, проставляется вызывающим после всех взаимодействий."""
+    back — словарь обратных ссылок {id(Obj): {имя: [...]}}, проставляется вызывающим после всех взаимодействий.
+    comm — communication.Comm.xpd: добавляет в набор диаграмму кооперации и связи объектов."""
     def br(o, name, x):
         back.setdefault(id(o), {"obj": o}).setdefault(name, []).append(x)
 
@@ -841,11 +907,31 @@ def xpd_interaction(owner, it, cls5, ops5, actors5, back):
             act.attr("Height", ACT_MIN)
         stim_views[id(m)] += [v, labs[0][1], labs[1][1]]
         owned.append(v)
+    frames5 = []
+    for r in it.refs:
+        fr = Obj("UMLFrame")
+        v = Obj("UMLFrameView")
+        v.attr("Left", int(r.left)).attr("Top", int(r.top)).attr("Width", int(r.right - r.left))
+        v.attr("Height", int(r.bottom - r.top)).ref("Model", fr)
+        v.child("NameLabel", Obj("LabelView")).attr("Text", r.name)
+        v.child("FrameTypeLabel", Obj("LabelView")).attr("FontStyle", 1).attr("Text", "ref")
+        owned.append(v)
+        fr.attr("Name", r.name).attr("FrameKind", "ref")
+        if r.doc:
+            fr.attr("Documentation", r.doc)
+        fr.ref("InteractionInstanceSet", iis)
+        fr.refs("Views", [v])
+        r.obj5 = fr                                  # RepresentedElement — xpd_resolve_refs
+        frames5.append(fr)
     dv.ref("Diagram", dg).children("OwnedViews", owned)
     dg.attr("Name", it.diagram)
     dg.attr("Documentation", (it.diagram_doc + "\n\n" if it.diagram_doc else "") + it.quantitative())
     dg.ref("DiagramOwner", iis)
     dg.child("DiagramView", dv)
+    diagrams, links5, link_of, ends_of = [dg], [], {}, {}
+    if comm:
+        dg2, links5, link_of, ends_of = comm(cis, iis, objs, stims, obj_views, stim_views)
+        diagrams.append(dg2)
     # ---- модель
     for m in it.msgs:
         s = stims[id(m)]
@@ -856,6 +942,8 @@ def xpd_interaction(owner, it, cls5, ops5, actors5, back):
         if m.doc:
             s.attr("Documentation", m.doc)
         s.ref("Sender", objs[m.a]).ref("Receiver", objs[m.b])
+        if id(m) in link_of:
+            s.ref("CommunicationLink", link_of[id(m)])
         if m.kind in ("call", "async"):
             a = Obj("UMLCallAction")
             if m.kind == "async":
@@ -887,6 +975,7 @@ def xpd_interaction(owner, it, cls5, ops5, actors5, back):
         o.ref("Classifier", cl).ref("CollaborationInstanceSet", cis)
         br(cl, "Instances", o)
         o.refs("Views", obj_views[k])
+        o.refs("LinkEnds", ends_of.get(k, []))
         o.refs("SendingStimuli", [stims[id(m)] for m in it.msgs if m.a == k])
         o.refs("ReceivingStimuli", [stims[id(m)] for m in it.msgs if m.b == k])
     frs = []
@@ -908,9 +997,11 @@ def xpd_interaction(owner, it, cls5, ops5, actors5, back):
         fo.children("Operands", ops)
         frs.append(fo)
     iis.attr("Name", it.name).attr("Documentation", it.doc).ref("Context", cis)
-    iis.children("OwnedDiagrams", [dg])
+    iis.children("OwnedDiagrams", diagrams)
     iis.children("ParticipatingStimuli", [stims[id(m)] for m in it.msgs])
     iis.children("Fragments", frs)
+    iis.children("OwnedFrames", frames5)
+    it.iis5 = iis
     for f in it.frags:
         frag5[id(f)].refs("Views", back.get(id(frag5[id(f)]), {}).pop("Views", []))
         for op in f.operands:
@@ -919,6 +1010,7 @@ def xpd_interaction(owner, it, cls5, ops5, actors5, back):
     cis.ref("RepresentedClassifier", owner)
     cis.children("InteractionInstanceSets", [iis])
     cis.children("ParticipatingInstances", [objs[k] for k in it.order])
+    cis.children("ParticipatingLinks", links5)
     return cis
 
 
@@ -929,3 +1021,22 @@ def xpd_backrefs(back):
         for name in ("Instances", "CallActions", "CreateActions"):
             if rec.get(name):
                 o.refs(name, rec[name])
+
+
+def mdj_resolve_refs(interactions, ref):
+    """refersTo у UMLInteractionUse — после того как собраны все взаимодействия (ключ -> Interaction)."""
+    for it in interactions.values():
+        for r in it.refs:
+            r.obj6["refersTo"] = ref(interactions[r.target].inter6)
+
+
+def xpd_resolve_refs(interactions):
+    """RepresentedElement у UMLFrame и обратные ссылки Frames у целевых наборов взаимодействий."""
+    back = {}
+    for it in interactions.values():
+        for r in it.refs:
+            tgt = interactions[r.target].iis5
+            r.obj5.ref("RepresentedElement", tgt)
+            back.setdefault(id(tgt), (tgt, []))[1].append(r.obj5)
+    for tgt, frames in back.values():
+        tgt.refs("Frames", frames)

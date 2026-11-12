@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="835" height="322" viewBox="0 0 835 322">
+<rect width="835" height="322" fill="#fff"/>
+<path d="M56.0,86.0 L56.0,129.0 L255.0,129.0" fill="none" stroke="#000"/>
+<path d="M272.0,149.0 L272.0,209.0 L617.0,209.0" fill="none" stroke="#000"/>
+<path d="M272.0,149.0 L272.0,272.0 L539.0,272.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="72.0" height="66.0" fill="#fff"/>
+<circle cx="56.0" cy="26.4" r="5.4" fill="#fff" stroke="#000"/><line x1="56.0" y1="31.9" x2="56.0" y2="44.4" stroke="#000"/><line x1="45.5" y1="35.7" x2="66.5" y2="35.7" stroke="#000"/><line x1="56.0" y1="44.4" x2="45.5" y2="59.0" stroke="#000"/><line x1="56.0" y1="44.4" x2="66.5" y2="59.0" stroke="#000"/>
+<text x="56.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Гость</text>
+<rect x="254.0" y="109.0" width="142.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="325.0" y="125.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="325.0" y="142.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: СтраницаСнимка</text>
+<rect x="617.0" y="189.0" width="188.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="711.0" y="205.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="711.0" y="222.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПубликации</text>
+<rect x="538.0" y="252.0" width="152.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="614.0" y="268.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="614.0" y="285.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноПросмотра3D</text>
+<line x1="68.0" y1="118.0" x2="108.0" y2="118.0" stroke="#000"/>
+<polygon points="108.0,118.0 97.1,112.9 97.1,123.1" fill="#000" stroke="#000"/>
+<text x="178.3" y="123.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ВыбранныйШаг()</text>
+<line x1="284.0" y1="180.0" x2="324.0" y2="180.0" stroke="#000"/>
+<polygon points="324.0,180.0 313.1,174.9 313.1,185.1" fill="#000" stroke="#000"/>
+<text x="467.6" y="185.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ЗагрузитьКартыШага(токен, позиция)</text>
+<line x1="324.0" y1="198.0" x2="284.0" y2="198.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M294.6,203.6 L284.0,198.0 L294.6,192.4" fill="none" stroke="#000"/>
+<text x="361.8" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : карты</text>
+<line x1="284.0" y1="261.0" x2="324.0" y2="261.0" stroke="#000"/>
+<polygon points="324.0,261.0 313.1,255.9 313.1,266.1" fill="#000" stroke="#000"/>
+<text x="428.5" y="266.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ПоказатьМатериал(карты)</text>
+</svg>

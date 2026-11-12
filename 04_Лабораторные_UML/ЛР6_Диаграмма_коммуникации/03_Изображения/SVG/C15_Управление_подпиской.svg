@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1197" height="362" viewBox="0 0 1197 362">
+<rect width="1197" height="362" fill="#fff"/>
+<path d="M83.0,86.0 L83.0,152.0 L396.0,152.0" fill="none" stroke="#000"/>
+<path d="M414.0,172.0 L414.0,249.0 L749.0,249.0" fill="none" stroke="#000"/>
+<path d="M476.0,132.0 L476.0,118.0 L504.0,118.0 L504.0,132.0" fill="none" stroke="#000"/>
+<path d="M767.0,269.0 L767.0,312.0 L1011.0,312.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="126.0" height="66.0" fill="#fff"/>
+<circle cx="83.0" cy="26.4" r="5.4" fill="#fff" stroke="#000"/><line x1="83.0" y1="31.9" x2="83.0" y2="44.4" stroke="#000"/><line x1="72.5" y1="35.7" x2="93.5" y2="35.7" stroke="#000"/><line x1="83.0" y1="44.4" x2="72.5" y2="59.0" stroke="#000"/><line x1="83.0" y1="44.4" x2="93.5" y2="59.0" stroke="#000"/>
+<text x="83.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Пользователь</text>
+<rect x="396.0" y="132.0" width="120.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="456.0" y="148.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="456.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноТарифов</text>
+<rect x="749.0" y="229.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="836.0" y="245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="836.0" y="262.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПодписки</text>
+<rect x="1011.0" y="292.0" width="156.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="1089.0" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="1089.0" y="325.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">подписка: Подписка</text>
+<line x1="95.0" y1="123.0" x2="135.0" y2="123.0" stroke="#000"/>
+<polygon points="135.0,123.0 124.1,117.9 124.1,128.1" fill="#000" stroke="#000"/>
+<text x="262.6" y="128.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : Показать(тарифы, остатокКвоты)</text>
+<line x1="95.0" y1="141.0" x2="135.0" y2="141.0" stroke="#000"/>
+<polygon points="135.0,141.0 124.1,135.9 124.1,146.1" fill="#000" stroke="#000"/>
+<text x="224.3" y="146.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ВыбранноеДействие()</text>
+<line x1="425.0" y1="204.0" x2="465.0" y2="204.0" stroke="#000"/>
+<polygon points="465.0,204.0 454.1,198.9 454.1,209.1" fill="#000" stroke="#000"/>
+<text x="592.3" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ОформитьПремиум(пользователь)</text>
+<line x1="466.0" y1="220.0" x2="426.0" y2="220.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M436.6,225.6 L426.0,220.0 L436.6,214.4" fill="none" stroke="#000"/>
+<text x="528.6" y="225.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : адрес оплаты</text>
+<line x1="426.0" y1="238.0" x2="466.0" y2="238.0" stroke="#000"/>
+<polygon points="466.0,238.0 455.1,232.9 455.1,243.1" fill="#000" stroke="#000"/>
+<text x="604.7" y="243.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ОтключитьПродление(пользователь)</text>
+<line x1="522.0" y1="118.0" x2="562.0" y2="118.0" stroke="#000"/>
+<polygon points="562.0,118.0 551.1,112.9 551.1,123.1" fill="#000" stroke="#000"/>
+<text x="658.9" y="123.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : ОткрытьОплату(ссылка)</text>
+<line x1="779.0" y1="301.0" x2="819.0" y2="301.0" stroke="#000"/>
+<polygon points="819.0,301.0 808.1,295.9 808.1,306.1" fill="#000" stroke="#000"/>
+<text x="912.1" y="306.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : ОтключитьПродление()</text>
+</svg>

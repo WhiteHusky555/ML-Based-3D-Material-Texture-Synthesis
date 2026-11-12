@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="586" height="233" viewBox="0 0 586 233">
+<rect width="586" height="233" fill="#fff"/>
+<path d="M38.0,60.0 L38.0,103.0 L193.0,103.0" fill="none" stroke="#000"/>
+<path d="M38.0,60.0 L38.0,183.0 L398.0,183.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="107.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="107.0" y="53.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПодписки</text>
+<rect x="192.0" y="83.0" width="126.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="255.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="255.0" y="116.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">платёж: Платёж</text>
+<rect x="398.0" y="163.0" width="158.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="477.0" y="179.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«interface»</text>
+<text x="477.0" y="196.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПлатёжнаяСистема</text>
+<line x1="50.0" y1="92.0" x2="90.0" y2="92.0" stroke="#000"/>
+<path d="M79.4,86.4 L90.0,92.0 L79.4,97.6" fill="none" stroke="#000"/>
+<text x="108.8" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : </text>
+<text x="151.2" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«create»</text>
+<line x1="50.0" y1="154.0" x2="90.0" y2="154.0" stroke="#000"/>
+<polygon points="90.0,154.0 79.1,148.9 79.1,159.1" fill="#000" stroke="#000"/>
+<text x="241.1" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : СоздатьПлатёж(платёж, адресВозврата)</text>
+<line x1="90.0" y1="172.0" x2="50.0" y2="172.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M60.6,177.6 L50.0,172.0 L60.6,166.4" fill="none" stroke="#000"/>
+<text x="152.6" y="177.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : адрес оплаты</text>
+</svg>

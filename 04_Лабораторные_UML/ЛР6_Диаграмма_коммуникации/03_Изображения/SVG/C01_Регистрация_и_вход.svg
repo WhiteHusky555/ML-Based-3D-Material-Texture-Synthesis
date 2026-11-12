@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="351" viewBox="0 0 1000 351">
+<rect width="1000" height="351" fill="#fff"/>
+<path d="M83.0,86.0 L83.0,152.0 L320.0,152.0" fill="none" stroke="#000"/>
+<path d="M337.0,172.0 L337.0,238.0 L570.0,238.0" fill="none" stroke="#000"/>
+<path d="M704.0,218.0 L704.0,204.0 L732.0,204.0 L732.0,218.0" fill="none" stroke="#000"/>
+<path d="M587.0,258.0 L587.0,301.0 L742.0,301.0" fill="none" stroke="#000"/>
+<path d="M384.0,132.0 L384.0,118.0 L412.0,118.0 L412.0,132.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="126.0" height="66.0" fill="#fff"/>
+<circle cx="83.0" cy="26.4" r="5.4" fill="#fff" stroke="#000"/><line x1="83.0" y1="31.9" x2="83.0" y2="44.4" stroke="#000"/><line x1="72.5" y1="35.7" x2="93.5" y2="35.7" stroke="#000"/><line x1="83.0" y1="44.4" x2="72.5" y2="59.0" stroke="#000"/><line x1="83.0" y1="44.4" x2="93.5" y2="59.0" stroke="#000"/>
+<text x="83.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Пользователь</text>
+<rect x="319.0" y="132.0" width="104.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="371.0" y="148.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="371.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноВхода</text>
+<rect x="741.0" y="281.0" width="76.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="779.0" y="297.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="779.0" y="314.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Сеанс</text>
+<rect x="569.0" y="218.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="656.0" y="234.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="656.0" y="251.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: УправлениеСеансами</text>
+<line x1="95.0" y1="123.0" x2="135.0" y2="123.0" stroke="#000"/>
+<polygon points="135.0,123.0 124.1,117.9 124.1,128.1" fill="#000" stroke="#000"/>
+<text x="189.3" y="128.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : Показать()</text>
+<line x1="95.0" y1="141.0" x2="135.0" y2="141.0" stroke="#000"/>
+<polygon points="135.0,141.0 124.1,135.9 124.1,146.1" fill="#000" stroke="#000"/>
+<text x="224.3" y="146.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ВыбранноеДействие()</text>
+<line x1="349.0" y1="209.0" x2="389.0" y2="209.0" stroke="#000"/>
+<polygon points="389.0,209.0 378.1,203.9 378.1,214.1" fill="#000" stroke="#000"/>
+<text x="476.4" y="214.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Войти(email, пароль)</text>
+<line x1="389.0" y1="227.0" x2="349.0" y2="227.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M359.6,232.6 L349.0,227.0 L359.6,221.4" fill="none" stroke="#000"/>
+<text x="464.0" y="232.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : идСеанса | отказ</text>
+<line x1="750.0" y1="204.0" x2="790.0" y2="204.0" stroke="#000"/>
+<polygon points="790.0,204.0 779.1,198.9 779.1,209.1" fill="#000" stroke="#000"/>
+<text x="883.1" y="209.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : СоздатьСеанс(токены)</text>
+<line x1="599.0" y1="290.0" x2="639.0" y2="290.0" stroke="#000"/>
+<path d="M628.4,284.4 L639.0,290.0 L628.4,295.6" fill="none" stroke="#000"/>
+<text x="657.8" y="295.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : </text>
+<text x="700.2" y="295.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«create»</text>
+<line x1="430.0" y1="118.0" x2="470.0" y2="118.0" stroke="#000"/>
+<polygon points="470.0,118.0 459.1,112.9 459.1,123.1" fill="#000" stroke="#000"/>
+<text x="566.9" y="123.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : ПоказатьОшибку(текст)</text>
+</svg>

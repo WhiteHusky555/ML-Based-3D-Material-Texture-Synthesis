@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1197" height="574" viewBox="0 0 1197 574">
+<rect width="1197" height="574" fill="#fff"/>
+<line x1="221.0" y1="81.0" x2="221.0" y2="544.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="558.0" y1="81.0" x2="558.0" y2="544.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="896.0" y1="81.0" x2="896.0" y2="544.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="1103.0" y1="81.0" x2="1103.0" y2="544.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="127.0" y="40.0" width="188.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="221.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="221.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПанельАдминистратора</text>
+<rect x="449.0" y="40.0" width="218.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="558.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="558.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: УправлениеПользователями</text>
+<rect x="783.0" y="40.0" width="226.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="896.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="896.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">учётнаяЗапись: Пользователь</text>
+<rect x="1039.0" y="40.0" width="128.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="1103.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="1103.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ЖурналАудита</text>
+<rect x="551.0" y="119.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="214.0" y="220.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="551.0" y="354.0" width="14.0" height="152.0" fill="#fff" stroke="#000"/>
+<rect x="889.0" y="384.0" width="14.0" height="80.0" fill="#fff" stroke="#000"/>
+<rect x="896.0" y="434.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="1096.0" y="476.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="20.0" y="267.0" width="1111.0" height="245.0" fill="none" stroke="#000"/>
+<polygon points="20.0,267.0 20.0,293.0 57.7,293.0 70.7,280.0 70.7,267.0" fill="#fff" stroke="#000"/>
+<text x="25.0" y="285.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">opt</text>
+<text x="40.0" y="320.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[нажата «Заблокировать»]</text>
+<path d="M222.0,119.0 L551.0,119.0" fill="none" stroke="#000"/>
+<polygon points="551.0,119.0 540.1,113.9 540.1,124.1" fill="#000" stroke="#000"/>
+<text x="332.0" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : НайтиПользователя(email)</text>
+<path d="M558.0,170.0 L222.0,170.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M232.6,175.6 L222.0,170.0 L232.6,164.4" fill="none" stroke="#000"/>
+<text x="468.0" y="164.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : пользователь | None</text>
+<path d="M222.0,200.0 L252.0,200.0 L252.0,220.0 L228.0,220.0" fill="none" stroke="#000"/>
+<polygon points="228.0,220.0 238.9,225.1 238.9,214.9" fill="#000" stroke="#000"/>
+<text x="398.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ПоказатьПользователя(пользователь)</text>
+<path d="M222.0,354.0 L551.0,354.0" fill="none" stroke="#000"/>
+<polygon points="551.0,354.0 540.1,348.9 540.1,359.1" fill="#000" stroke="#000"/>
+<text x="375.0" y="348.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : Заблокировать(пользователь, причина)</text>
+<path d="M565.0,384.0 L889.0,384.0" fill="none" stroke="#000"/>
+<polygon points="889.0,384.0 878.1,378.9 878.1,389.1" fill="#000" stroke="#000"/>
+<text x="642.0" y="378.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : Заблокировать()</text>
+<path d="M903.0,414.0 L933.0,414.0 L933.0,434.0 L910.0,434.0" fill="none" stroke="#000"/>
+<polygon points="910.0,434.0 920.9,439.1 920.9,428.9" fill="#000" stroke="#000"/>
+<text x="807.0" y="429.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ОтозватьТокены()</text>
+<path d="M565.0,476.0 L1096.0,476.0" fill="none" stroke="#000"/>
+<polygon points="1096.0,476.0 1085.1,470.9 1085.1,481.1" fill="#000" stroke="#000"/>
+<text x="718.0" y="469.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : Записать(сотрудник, действие, данные)</text>
+</svg>

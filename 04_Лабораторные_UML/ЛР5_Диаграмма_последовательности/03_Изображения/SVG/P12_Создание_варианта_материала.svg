@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="624" height="284" viewBox="0 0 624 284">
+<rect width="624" height="284" fill="#fff"/>
+<line x1="100.0" y1="81.0" x2="100.0" y2="254.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="339.0" y1="81.0" x2="339.0" y2="254.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="523.0" y1="231.0" x2="523.0" y2="254.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="40.0" y="40.0" width="120.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="100.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="100.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноИстории</text>
+<rect x="256.0" y="40.0" width="166.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="339.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="339.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерИстории</text>
+<rect x="452.0" y="190.0" width="142.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="523.0" y="206.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="523.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноГенератора</text>
+<rect x="332.0" y="119.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<path d="M101.0,119.0 L332.0,119.0" fill="none" stroke="#000"/>
+<polygon points="332.0,119.0 321.1,113.9 321.1,124.1" fill="#000" stroke="#000"/>
+<text x="205.0" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : СоздатьВариант(запрос)</text>
+<path d="M339.0,170.0 L101.0,170.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M111.6,175.6 L101.0,170.0 L111.6,164.4" fill="none" stroke="#000"/>
+<text x="281.0" y="163.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : параметры</text>
+<path d="M101.0,210.0 L452.0,210.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M441.4,204.4 L452.0,210.0 L441.4,215.6" fill="none" stroke="#000"/>
+<text x="139.0" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : </text>
+<text x="139.0" y="188.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«create»</text>
+</svg>

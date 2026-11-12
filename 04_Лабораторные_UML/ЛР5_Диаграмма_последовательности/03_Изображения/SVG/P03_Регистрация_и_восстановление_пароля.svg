@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="612" height="554" viewBox="0 0 612 554">
+<rect width="612" height="554" fill="#fff"/>
+<line x1="210.0" y1="81.0" x2="210.0" y2="524.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="507.0" y1="81.0" x2="507.0" y2="524.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="158.0" y="40.0" width="104.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="210.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="210.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноВхода</text>
+<rect x="432.0" y="40.0" width="150.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="507.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="507.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерВхода</text>
+<rect x="500.0" y="192.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="203.0" y="293.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="500.0" y="399.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="203.0" y="449.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="20.0" y="105.0" width="515.0" height="387.0" fill="none" stroke="#000"/>
+<polygon points="20.0,105.0 20.0,131.0 57.7,131.0 70.7,118.0 70.7,105.0" fill="#fff" stroke="#000"/>
+<text x="25.0" y="123.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="40.0" y="158.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[«Зарегистрироваться»]</text>
+<line x1="20.0" y1="338.0" x2="534.0" y2="338.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="40.0" y="365.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[«Забыли пароль?»]</text>
+<path d="M211.0,192.0 L500.0,192.0" fill="none" stroke="#000"/>
+<polygon points="500.0,192.0 489.1,186.9 489.1,197.1" fill="#000" stroke="#000"/>
+<text x="344.0" y="185.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : Зарегистрировать(email, пароль)</text>
+<path d="M507.0,243.0 L211.0,243.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M221.6,248.6 L211.0,243.0 L221.6,237.4" fill="none" stroke="#000"/>
+<text x="432.0" y="236.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : учётная запись</text>
+<path d="M211.0,273.0 L241.0,273.0 L241.0,293.0 L217.0,293.0" fill="none" stroke="#000"/>
+<polygon points="217.0,293.0 227.9,298.1 227.9,287.9" fill="#000" stroke="#000"/>
+<text x="349.0" y="288.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ПоказатьСообщение(текст)</text>
+<path d="M211.0,399.0 L500.0,399.0" fill="none" stroke="#000"/>
+<polygon points="500.0,399.0 489.1,393.9 489.1,404.1" fill="#000" stroke="#000"/>
+<text x="344.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ЗапроситьВосстановление(email)</text>
+<path d="M211.0,429.0 L241.0,429.0 L241.0,449.0 L217.0,449.0" fill="none" stroke="#000"/>
+<polygon points="217.0,449.0 227.9,454.1 227.9,443.9" fill="#000" stroke="#000"/>
+<text x="349.0" y="444.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : ПоказатьСообщение(текст)</text>
+</svg>

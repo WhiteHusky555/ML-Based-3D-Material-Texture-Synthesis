@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="609" height="371" viewBox="0 0 609 371">
+<rect width="609" height="371" fill="#fff"/>
+<path d="M38.0,84.0 L38.0,144.0 L396.0,144.0" fill="none" stroke="#000"/>
+<path d="M38.0,84.0 L38.0,258.0 L342.0,258.0" fill="none" stroke="#000"/>
+<path d="M160.0,44.0 L160.0,30.0 L188.0,30.0 L188.0,44.0" fill="none" stroke="#000"/>
+<path d="M38.0,84.0 L38.0,321.0 L413.0,321.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="44.0" width="180.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="110.0" y="60.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="110.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерГенерации</text>
+<rect x="395.0" y="124.0" width="142.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="466.0" y="140.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="466.0" y="157.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: РеестрЗапросов</text>
+<rect x="341.0" y="238.0" width="136.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="409.0" y="254.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="409.0" y="271.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КэшМатериалов</text>
+<rect x="413.0" y="301.0" width="166.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="496.0" y="317.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="496.0" y="334.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонвейерГенерации</text>
+<line x1="50.0" y1="115.0" x2="90.0" y2="115.0" stroke="#000"/>
+<polygon points="90.0,115.0 79.1,109.9 79.1,120.1" fill="#000" stroke="#000"/>
+<text x="239.8" y="120.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : Сохранить(пользователь, запрос, ключ)</text>
+<line x1="90.0" y1="133.0" x2="50.0" y2="133.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M60.6,138.6 L50.0,133.0 L60.6,127.4" fill="none" stroke="#000"/>
+<text x="131.7" y="138.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : № и код</text>
+<line x1="50.0" y1="195.0" x2="90.0" y2="195.0" stroke="#000"/>
+<polygon points="90.0,195.0 79.1,189.9 79.1,200.1" fill="#000" stroke="#000"/>
+<text x="194.0" y="200.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Найти(хэш, пользователь)</text>
+<line x1="89.0" y1="213.0" x2="49.0" y2="213.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M59.6,218.6 L49.0,213.0 L59.6,207.4" fill="none" stroke="#000"/>
+<text x="159.4" y="218.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : материал | None</text>
+<line x1="50.0" y1="229.0" x2="90.0" y2="229.0" stroke="#000"/>
+<polygon points="90.0,229.0 79.1,223.9 79.1,234.1" fill="#000" stroke="#000"/>
+<text x="213.0" y="234.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : Выдать(образец, пользователь)</text>
+<line x1="90.0" y1="247.0" x2="50.0" y2="247.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M60.6,252.6 L50.0,247.0 L60.6,241.4" fill="none" stroke="#000"/>
+<text x="139.2" y="252.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : материал</text>
+<line x1="206.0" y1="30.0" x2="246.0" y2="30.0" stroke="#000"/>
+<polygon points="246.0,30.0 235.1,24.9 235.1,35.1" fill="#000" stroke="#000"/>
+<text x="392.5" y="35.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : ДобавитьРезультат(запрос, материал)</text>
+<line x1="50.0" y1="310.0" x2="90.0" y2="310.0" stroke="#000"/>
+<path d="M79.4,304.4 L90.0,310.0 L79.4,315.6" fill="none" stroke="#000"/>
+<text x="248.7" y="315.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ПоставитьВОчередь(материал, приоритет)</text>
+</svg>

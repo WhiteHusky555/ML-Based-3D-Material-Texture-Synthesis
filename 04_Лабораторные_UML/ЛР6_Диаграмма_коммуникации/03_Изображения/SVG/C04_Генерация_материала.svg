@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1382" height="430" viewBox="0 0 1382 430">
+<rect width="1382" height="430" fill="#fff"/>
+<path d="M83.0,86.0 L83.0,203.0 L320.0,203.0" fill="none" stroke="#000"/>
+<path d="M422.0,183.0 L422.0,169.0 L450.0,169.0 L450.0,183.0" fill="none" stroke="#000"/>
+<path d="M337.0,223.0 L337.0,283.0 L742.0,283.0" fill="none" stroke="#000"/>
+<path d="M759.0,303.0 L759.0,380.0 L1178.0,380.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="126.0" height="66.0" fill="#fff"/>
+<circle cx="83.0" cy="26.4" r="5.4" fill="#fff" stroke="#000"/><line x1="83.0" y1="31.9" x2="83.0" y2="44.4" stroke="#000"/><line x1="72.5" y1="35.7" x2="93.5" y2="35.7" stroke="#000"/><line x1="83.0" y1="44.4" x2="72.5" y2="59.0" stroke="#000"/><line x1="83.0" y1="44.4" x2="93.5" y2="59.0" stroke="#000"/>
+<text x="83.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Пользователь</text>
+<rect x="319.0" y="183.0" width="142.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="390.0" y="199.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="390.0" y="216.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноГенератора</text>
+<rect x="1178.0" y="360.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="1265.0" y="376.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="1265.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПроверкаПравТарифа</text>
+<rect x="741.0" y="263.0" width="180.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="831.0" y="279.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="831.0" y="296.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерГенерации</text>
+<line x1="95.0" y1="174.0" x2="135.0" y2="174.0" stroke="#000"/>
+<polygon points="135.0,174.0 124.1,168.9 124.1,179.1" fill="#000" stroke="#000"/>
+<text x="215.9" y="179.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : Показать(пресеты)</text>
+<line x1="95.0" y1="192.0" x2="135.0" y2="192.0" stroke="#000"/>
+<polygon points="135.0,192.0 124.1,186.9 124.1,197.1" fill="#000" stroke="#000"/>
+<text x="224.3" y="197.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ВыбранноеДействие()</text>
+<line x1="468.0" y1="118.0" x2="508.0" y2="118.0" stroke="#000"/>
+<polygon points="508.0,118.0 497.1,112.9 497.1,123.1" fill="#000" stroke="#000"/>
+<text x="620.1" y="123.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ВзятьПараметры(параметры)</text>
+<line x1="468.0" y1="135.0" x2="508.0" y2="135.0" stroke="#000"/>
+<polygon points="508.0,135.0 497.1,129.9 497.1,140.1" fill="#000" stroke="#000"/>
+<text x="582.1" y="140.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : СобратьЗапрос()</text>
+<line x1="468.0" y1="151.0" x2="508.0" y2="151.0" stroke="#000"/>
+<polygon points="508.0,151.0 497.1,145.9 497.1,156.1" fill="#000" stroke="#000"/>
+<text x="627.7" y="156.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">10 : ПоказатьОграничение(текст)</text>
+<line x1="468.0" y1="169.0" x2="508.0" y2="169.0" stroke="#000"/>
+<polygon points="508.0,169.0 497.1,163.9 497.1,174.1" fill="#000" stroke="#000"/>
+<text x="658.4" y="174.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">11 : ПоказатьЛенту(запросы, предыстория)</text>
+<line x1="349.0" y1="254.0" x2="389.0" y2="254.0" stroke="#000"/>
+<polygon points="389.0,254.0 378.1,248.9 378.1,259.1" fill="#000" stroke="#000"/>
+<text x="562.4" y="259.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : ОтправитьЗапрос(пользователь, запрос, ключ)</text>
+<line x1="389.0" y1="272.0" x2="349.0" y2="272.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M359.6,277.6 L349.0,272.0 L359.6,266.4" fill="none" stroke="#000"/>
+<text x="455.6" y="277.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : запрос | отказ</text>
+<line x1="770.0" y1="335.0" x2="810.0" y2="335.0" stroke="#000"/>
+<polygon points="810.0,335.0 799.1,329.9 799.1,340.1" fill="#000" stroke="#000"/>
+<text x="971.7" y="340.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : НайтиНарушения(пользователь, параметры)</text>
+<line x1="811.0" y1="351.0" x2="771.0" y2="351.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M781.6,356.6 L771.0,351.0 L781.6,345.4" fill="none" stroke="#000"/>
+<text x="864.0" y="356.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : нарушения</text>
+<line x1="771.0" y1="369.0" x2="811.0" y2="369.0" stroke="#000"/>
+<polygon points="811.0,369.0 800.1,363.9 800.1,374.1" fill="#000" stroke="#000"/>
+<text x="991.7" y="374.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ЗарезервироватьГенерацию(пользователь, ключ)</text>
+</svg>

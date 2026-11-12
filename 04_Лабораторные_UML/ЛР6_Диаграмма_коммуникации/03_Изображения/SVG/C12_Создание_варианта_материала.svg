@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="493" height="233" viewBox="0 0 493 233">
+<rect width="493" height="233" fill="#fff"/>
+<path d="M38.0,60.0 L38.0,120.0 L297.0,120.0" fill="none" stroke="#000"/>
+<path d="M38.0,60.0 L38.0,183.0 L193.0,183.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="120.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="80.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="80.0" y="53.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноИстории</text>
+<rect x="297.0" y="100.0" width="166.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="380.0" y="116.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="380.0" y="133.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерИстории</text>
+<rect x="192.0" y="163.0" width="142.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="263.0" y="179.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="263.0" y="196.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноГенератора</text>
+<line x1="50.0" y1="91.0" x2="90.0" y2="91.0" stroke="#000"/>
+<polygon points="90.0,91.0 79.1,85.9 79.1,96.1" fill="#000" stroke="#000"/>
+<text x="190.7" y="96.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : СоздатьВариант(запрос)</text>
+<line x1="90.0" y1="109.0" x2="50.0" y2="109.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M60.6,114.6 L50.0,109.0 L60.6,103.4" fill="none" stroke="#000"/>
+<text x="143.0" y="114.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : параметры</text>
+<line x1="50.0" y1="172.0" x2="90.0" y2="172.0" stroke="#000"/>
+<path d="M79.4,166.4 L90.0,172.0 L79.4,177.6" fill="none" stroke="#000"/>
+<text x="108.8" y="177.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : </text>
+<text x="151.2" y="177.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«create»</text>
+</svg>

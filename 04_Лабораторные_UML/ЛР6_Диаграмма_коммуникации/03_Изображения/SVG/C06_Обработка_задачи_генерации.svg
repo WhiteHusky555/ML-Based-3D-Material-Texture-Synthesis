@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="319" viewBox="0 0 1160 319">
+<rect width="1160" height="319" fill="#fff"/>
+<path d="M38.0,60.0 L38.0,103.0 L413.0,103.0" fill="none" stroke="#000"/>
+<path d="M431.0,123.0 L431.0,183.0 L660.0,183.0" fill="none" stroke="#000"/>
+<path d="M431.0,123.0 L431.0,269.0 L767.0,269.0" fill="none" stroke="#000"/>
+<path d="M839.0,249.0 L839.0,235.0 L867.0,235.0 L867.0,249.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="180.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="110.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="110.0" y="53.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерГенерации</text>
+<rect x="413.0" y="83.0" width="166.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="496.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="496.0" y="116.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонвейерГенерации</text>
+<rect x="660.0" y="163.0" width="156.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="738.0" y="179.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="738.0" y="196.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">материал: Материал</text>
+<rect x="766.0" y="249.0" width="112.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="822.0" y="265.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="822.0" y="282.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ВоркерШума</text>
+<line x1="50.0" y1="92.0" x2="90.0" y2="92.0" stroke="#000"/>
+<path d="M79.4,86.4 L90.0,92.0 L79.4,97.6" fill="none" stroke="#000"/>
+<text x="248.7" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ПоставитьВОчередь(материал, приоритет)</text>
+<line x1="443.0" y1="154.0" x2="483.0" y2="154.0" stroke="#000"/>
+<polygon points="483.0,154.0 472.1,148.9 472.1,159.1" fill="#000" stroke="#000"/>
+<text x="561.4" y="159.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : НачатьЭтап(«шум»)</text>
+<line x1="443.0" y1="172.0" x2="483.0" y2="172.0" stroke="#000"/>
+<polygon points="483.0,172.0 472.1,166.9 472.1,177.1" fill="#000" stroke="#000"/>
+<text x="568.5" y="177.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ДобавитьЭтап(этап)</text>
+<line x1="443.0" y1="240.0" x2="483.0" y2="240.0" stroke="#000"/>
+<path d="M472.4,234.4 L483.0,240.0 L472.4,245.6" fill="none" stroke="#000"/>
+<text x="595.1" y="245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ВыполнитьЗадачу(материал)</text>
+<line x1="483.0" y1="258.0" x2="443.0" y2="258.0" stroke="#000"/>
+<path d="M453.6,263.6 L443.0,258.0 L453.6,252.4" fill="none" stroke="#000"/>
+<text x="622.0" y="263.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : ОбработатьСобытие(материал, этап)</text>
+<line x1="885.0" y1="235.0" x2="925.0" y2="235.0" stroke="#000"/>
+<polygon points="925.0,235.0 914.1,229.9 914.1,240.1" fill="#000" stroke="#000"/>
+<text x="1030.3" y="240.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ПостроитьКартуШума(шум)</text>
+</svg>

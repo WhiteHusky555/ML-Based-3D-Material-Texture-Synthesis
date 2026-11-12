@@ -22,6 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from staruml_xpd import LINE_H, EXT_ITEM_H, label_pos, text_w, wrap  # noqa: E402
 import act_render  # noqa: E402
 import class_render  # noqa: E402
+import comm_render
 import seq_render  # noqa: E402
 
 FONT = "Arial, Helvetica, sans-serif"
@@ -57,7 +58,7 @@ def load(path):
             if "_id" in o:
                 ids[o["_id"]] = o
             if o.get("_type") in ("UMLUseCaseDiagram", "UMLActivityDiagram", "UMLStatechartDiagram",
-                                  "UMLClassDiagram", "UMLSequenceDiagram"):
+                                  "UMLClassDiagram", "UMLSequenceDiagram", "UMLCommunicationDiagram"):
                 diagrams.append(o)
             for v in o.values():
                 index(v)
@@ -247,6 +248,12 @@ def check(diagram, ids):
                 head = by_view.get(v.get("head", {}).get("$ref"), {}).get("label", "?")
                 tail = by_view.get(v.get("tail", {}).get("$ref"), {}).get("label", "?")
                 problems.append(f"линия {it['type'][3:-4]} [{tail} → {head}] проходит через {na}")
+    for sb in (it["box"] for it in items if it["type"] == "UMLUseCaseSubjectView"):   # прецеденты — внутри границы
+        for it in items:
+            bb = it.get("bbox", it.get("box"))
+            if it["type"] == "UMLUseCaseView" and _boxes_overlap(bb, sb) and not (
+                    sb[0] <= bb[0] and bb[2] <= sb[2] and sb[1] <= bb[1] and bb[3] <= sb[3]):
+                problems.append(f"прецедент {it.get('label', '')} выходит за границу системы")
     return problems
 
 
@@ -264,6 +271,8 @@ def _renderer(dg):
         return class_render
     if dg["_type"] == "UMLSequenceDiagram":
         return seq_render
+    if dg["_type"] == "UMLCommunicationDiagram":
+        return comm_render
     return None
 
 
@@ -271,8 +280,10 @@ def main():
     only_act = ("UMLActivityDiagram" if "--activity" in sys.argv else
                 "UMLStatechartDiagram" if "--statechart" in sys.argv else
                 "UMLClassDiagram" if "--classes" in sys.argv else
-                "UMLSequenceDiagram" if "--sequence" in sys.argv else None)
-    sys.argv = [a for a in sys.argv if a not in ("--activity", "--statechart", "--classes", "--sequence")]
+                "UMLSequenceDiagram" if "--sequence" in sys.argv else
+                "UMLCommunicationDiagram" if "--communication" in sys.argv else None)
+    sys.argv = [a for a in sys.argv if a not in ("--activity", "--statechart", "--classes", "--sequence",
+                                                    "--communication")]
     if sys.argv[1] == "--check":
         project, ids, diagrams = load(sys.argv[2])
         total = 0

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1055" height="589" viewBox="45 120 1055 589">
+<rect x="45" y="120" width="1055" height="589" fill="#fff"/>
+<ellipse cx="560.0" cy="330.0" rx="130.0" ry="35.0" fill="#fff" stroke="#000"/>
+<text x="560.0" y="326.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Работа со ссылкой на</text>
+<text x="560.0" y="342.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">цепочку</text>
+<line x1="430" y1="370" x2="690" y2="370" stroke="#000"/>
+<text x="435.0" y="387.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Выбор действия</text>
+<ellipse cx="330.0" cy="659.5" rx="120.0" ry="29.5" fill="#fff" stroke="#000"/>
+<text x="330.0" y="655.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Публикация цепочки по</text>
+<text x="330.0" y="671.5" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">ссылке</text>
+<ellipse cx="800.0" cy="660.0" rx="120.0" ry="20.0" fill="#fff" stroke="#000"/>
+<text x="800.0" y="664.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Отзыв ссылки на цепочку</text>
+<circle cx="110.0" cy="294.8" r="8.8" fill="#fff" stroke="#000" stroke-width="1.2"/>
+<line x1="110.0" y1="303.6" x2="110.0" y2="331.2" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="90.0" y1="311.6" x2="130.0" y2="311.6" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="331.2" x2="93.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<line x1="110.0" y1="331.2" x2="127.0" y2="355.0" stroke="#000" stroke-width="1.2" fill="none"/>
+<text x="110.0" y="371.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">Пользователь</text>
+<path d="M130.0,330.0 L430.0,330.0" fill="none" stroke="#000"/>
+<path d="M350.0,630.0 L514.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M512.5,407.9 L514.0,396.0 L503.3,401.4" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M786.0,640.0 L608.0,396.0" fill="none" stroke="#000" stroke-dasharray="6 4"/>
+<path d="M618.8,401.2 L608.0,396.0 L609.7,407.9" fill="none" stroke="#000" stroke-width="1"/>
+<path d="M877.0,200.0 L631.0,301.0" fill="none" stroke="#000" stroke-dasharray="2 3"/>
+<path d="M820,140 H1070 L1080,150 V200 H820 Z" fill="#fff" stroke="#000"/>
+<path d="M1070,140 V150 H1080" fill="none" stroke="#000"/>
+<text x="826.0" y="157.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">Ссылку пользователь передаёт сам;</text>
+<text x="826.0" y="173.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">гость открывает её в прецеденте</text>
+<text x="826.0" y="189.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" font-style="normal" fill="#000">«Просмотр опубликованной цепочки»</text>
+<text x="330.0" y="480.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="330.0" y="496.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="330.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Создать ссылку»,</text>
+<text x="330.0" y="528.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">публикация подтверждена]</text>
+<text x="800.0" y="480.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">«extend»</text>
+<text x="800.0" y="496.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">(Выбор действия)</text>
+<text x="800.0" y="512.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">[нажата «Закрыть доступ»,</text>
+<text x="800.0" y="528.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" font-style="normal" fill="#000">ссылка действует]</text>
+</svg>

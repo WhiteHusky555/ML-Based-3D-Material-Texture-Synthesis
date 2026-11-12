@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1006" height="269" viewBox="0 0 1006 269">
+<rect width="1006" height="269" fill="#fff"/>
+<line x1="115.0" y1="81.0" x2="115.0" y2="239.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="424.0" y1="81.0" x2="424.0" y2="239.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="763.0" y1="81.0" x2="763.0" y2="239.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="912.0" y1="81.0" x2="912.0" y2="239.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="40.0" y="40.0" width="150.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="115.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="115.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПанельВладельца</text>
+<rect x="337.0" y="40.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="424.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="424.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: УправлениеТарифами</text>
+<rect x="708.0" y="40.0" width="110.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="763.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="763.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">тариф: Тариф</text>
+<rect x="848.0" y="40.0" width="128.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="912.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="912.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ЖурналАудита</text>
+<rect x="417.0" y="119.0" width="14.0" height="90.0" fill="#fff" stroke="#000"/>
+<rect x="756.0" y="149.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="905.0" y="179.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<path d="M116.0,119.0 L417.0,119.0" fill="none" stroke="#000"/>
+<polygon points="417.0,119.0 406.1,113.9 406.1,124.1" fill="#000" stroke="#000"/>
+<text x="255.0" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ИзменитьТариф(тариф, цена, права)</text>
+<path d="M431.0,149.0 L756.0,149.0" fill="none" stroke="#000"/>
+<polygon points="756.0,149.0 745.1,143.9 745.1,154.1" fill="#000" stroke="#000"/>
+<text x="585.0" y="143.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ИзменитьУсловия(цена, права, изменил)</text>
+<path d="M431.0,179.0 L905.0,179.0" fill="none" stroke="#000"/>
+<polygon points="905.0,179.0 894.1,173.9 894.1,184.1" fill="#000" stroke="#000"/>
+<text x="584.0" y="173.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Записать(сотрудник, действие, данные)</text>
+</svg>

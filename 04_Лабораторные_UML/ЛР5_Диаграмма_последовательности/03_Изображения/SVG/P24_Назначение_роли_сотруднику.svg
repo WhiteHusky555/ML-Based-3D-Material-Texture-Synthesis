@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="998" height="331" viewBox="0 0 998 331">
+<rect width="998" height="331" fill="#fff"/>
+<line x1="115.0" y1="81.0" x2="115.0" y2="301.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="375.0" y1="81.0" x2="375.0" y2="301.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="713.0" y1="81.0" x2="713.0" y2="301.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="904.0" y1="81.0" x2="904.0" y2="301.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="40.0" y="40.0" width="150.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="115.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="115.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПанельВладельца</text>
+<rect x="296.0" y="40.0" width="158.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="375.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="375.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: УправлениеРолями</text>
+<rect x="616.0" y="40.0" width="194.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="713.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="713.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">сотрудник: Пользователь</text>
+<rect x="840.0" y="40.0" width="128.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="904.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="904.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ЖурналАудита</text>
+<rect x="368.0" y="119.0" width="14.0" height="152.0" fill="#fff" stroke="#000"/>
+<rect x="706.0" y="149.0" width="14.0" height="80.0" fill="#fff" stroke="#000"/>
+<rect x="713.0" y="199.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="897.0" y="241.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<path d="M116.0,119.0 L368.0,119.0" fill="none" stroke="#000"/>
+<polygon points="368.0,119.0 357.1,113.9 357.1,124.1" fill="#000" stroke="#000"/>
+<text x="231.0" y="112.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : НазначитьРоль(email, роль)</text>
+<path d="M382.0,149.0 L706.0,149.0" fill="none" stroke="#000"/>
+<polygon points="706.0,149.0 695.1,143.9 695.1,154.1" fill="#000" stroke="#000"/>
+<text x="475.0" y="142.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : НазначитьРоль(роль)</text>
+<path d="M720.0,179.0 L750.0,179.0 L750.0,199.0 L727.0,199.0" fill="none" stroke="#000"/>
+<polygon points="727.0,199.0 737.9,204.1 737.9,193.9" fill="#000" stroke="#000"/>
+<text x="624.0" y="194.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ОтозватьТокены()</text>
+<path d="M382.0,241.0 L897.0,241.0" fill="none" stroke="#000"/>
+<polygon points="897.0,241.0 886.1,235.9 886.1,246.1" fill="#000" stroke="#000"/>
+<text x="535.0" y="234.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : Записать(сотрудник, действие, данные)</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1069" height="765" viewBox="0 0 1069 765">
+<rect width="1069" height="765" fill="#fff"/>
+<line x1="127.0" y1="81.0" x2="127.0" y2="735.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="395.0" y1="81.0" x2="395.0" y2="735.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="587.0" y1="81.0" x2="587.0" y2="735.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="926.0" y1="81.0" x2="926.0" y2="735.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="40.0" y="40.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="127.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="127.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: УправлениеСеансами</text>
+<rect x="320.0" y="40.0" width="150.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="395.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="395.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерВхода</text>
+<rect x="500.0" y="40.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="587.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="587.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ХэшированиеПаролей</text>
+<rect x="813.0" y="40.0" width="226.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="926.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="926.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">учётнаяЗапись: Пользователь</text>
+<rect x="388.0" y="119.0" width="14.0" height="586.0" fill="#fff" stroke="#000"/>
+<rect x="919.0" y="149.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="919.0" y="230.0" width="14.0" height="111.0" fill="#fff" stroke="#000"/>
+<rect x="580.0" y="260.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="919.0" y="444.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="919.0" y="474.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="395.0" y="524.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="919.0" y="630.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="160.0" y="357.0" width="794.0" height="316.0" fill="none" stroke="#000"/>
+<polygon points="160.0,357.0 160.0,383.0 197.7,383.0 210.7,370.0 210.7,357.0" fill="#fff" stroke="#000"/>
+<text x="165.0" y="375.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="180.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[вход разрешён, пароль верен]</text>
+<line x1="160.0" y1="569.0" x2="953.0" y2="569.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="180.0" y="596.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[пароль неверен]</text>
+<path d="M128.0,119.0 L388.0,119.0" fill="none" stroke="#000"/>
+<polygon points="388.0,119.0 377.1,113.9 377.1,124.1" fill="#000" stroke="#000"/>
+<text x="219.0" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : Войти(email, пароль)</text>
+<path d="M402.0,149.0 L919.0,149.0" fill="none" stroke="#000"/>
+<polygon points="919.0,149.0 908.1,143.9 908.1,154.1" fill="#000" stroke="#000"/>
+<text x="499.0" y="142.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ВходРазрешён(сейчас)</text>
+<path d="M926.0,200.0 L402.0,200.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M412.6,205.6 L402.0,200.0 L412.6,194.4" fill="none" stroke="#000"/>
+<text x="878.0" y="194.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : да | нет</text>
+<path d="M402.0,230.0 L919.0,230.0" fill="none" stroke="#000"/>
+<polygon points="919.0,230.0 908.1,224.9 908.1,235.1" fill="#000" stroke="#000"/>
+<text x="556.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ПроверитьПароль(пароль, хэширование)</text>
+<path d="M919.0,260.0 L594.0,260.0" fill="none" stroke="#000"/>
+<polygon points="594.0,260.0 604.9,265.1 604.9,254.9" fill="#000" stroke="#000"/>
+<text x="764.0" y="253.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : Проверить(пароль, хэш, версияПеппера)</text>
+<path d="M588.0,311.0 L919.0,311.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M908.4,305.4 L919.0,311.0 L908.4,316.6" fill="none" stroke="#000"/>
+<text x="662.0" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : верен | неверен</text>
+<path d="M926.0,341.0 L402.0,341.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M412.6,346.6 L402.0,341.0 L412.6,335.4" fill="none" stroke="#000"/>
+<text x="851.0" y="335.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : верен | неверен</text>
+<path d="M402.0,444.0 L919.0,444.0" fill="none" stroke="#000"/>
+<polygon points="919.0,444.0 908.1,438.9 908.1,449.1" fill="#000" stroke="#000"/>
+<text x="515.0" y="437.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : СброситьСчётчикПопыток()</text>
+<path d="M402.0,474.0 L919.0,474.0" fill="none" stroke="#000"/>
+<polygon points="919.0,474.0 908.1,468.9 908.1,479.1" fill="#000" stroke="#000"/>
+<text x="541.0" y="467.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : ОбновитьХэш(пароль, хэширование)</text>
+<path d="M402.0,504.0 L432.0,504.0 L432.0,524.0 L409.0,524.0" fill="none" stroke="#000"/>
+<polygon points="409.0,524.0 419.9,529.1 419.9,518.9" fill="#000" stroke="#000"/>
+<text x="551.0" y="519.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">10 : ВыдатьТокены(пользователь)</text>
+<path d="M402.0,630.0 L919.0,630.0" fill="none" stroke="#000"/>
+<polygon points="919.0,630.0 908.1,624.9 908.1,635.1" fill="#000" stroke="#000"/>
+<text x="556.0" y="623.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">11 : ЗафиксироватьНеудачныйВход(сейчас)</text>
+<path d="M395.0,705.0 L128.0,705.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M138.6,710.6 L128.0,705.0 L138.6,699.4" fill="none" stroke="#000"/>
+<text x="320.0" y="698.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">12 : токены | отказ</text>
+</svg>

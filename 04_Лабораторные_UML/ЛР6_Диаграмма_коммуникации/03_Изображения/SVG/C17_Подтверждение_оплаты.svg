@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1004" height="364" viewBox="0 0 1004 364">
+<rect width="1004" height="364" fill="#fff"/>
+<path d="M38.0,60.0 L38.0,171.0 L397.0,171.0" fill="none" stroke="#000"/>
+<path d="M414.0,191.0 L414.0,251.0 L719.0,251.0" fill="none" stroke="#000"/>
+<path d="M414.0,191.0 L414.0,314.0 L626.0,314.0" fill="none" stroke="#000"/>
+<path d="M531.0,151.0 L531.0,137.0 L559.0,137.0 L559.0,151.0" fill="none" stroke="#000"/>
+<rect x="396.0" y="151.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="483.0" y="167.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="483.0" y="184.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПодписки</text>
+<rect x="20.0" y="20.0" width="158.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="99.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«interface»</text>
+<text x="99.0" y="53.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПлатёжнаяСистема</text>
+<rect x="718.0" y="231.0" width="126.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="781.0" y="247.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="781.0" y="264.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">платёж: Платёж</text>
+<rect x="626.0" y="294.0" width="156.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="704.0" y="310.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="704.0" y="327.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">подписка: Подписка</text>
+<line x1="50.0" y1="92.0" x2="90.0" y2="92.0" stroke="#000"/>
+<path d="M79.4,86.4 L90.0,92.0 L79.4,97.6" fill="none" stroke="#000"/>
+<text x="240.3" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ОбработатьУведомление(тело, подпись)</text>
+<line x1="90.0" y1="108.0" x2="50.0" y2="108.0" stroke="#000"/>
+<polygon points="50.0,108.0 60.9,113.1 60.9,102.9" fill="#000" stroke="#000"/>
+<text x="221.4" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ПроверитьПодпись(тело, подпись)</text>
+<line x1="49.0" y1="126.0" x2="89.0" y2="126.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M78.4,120.4 L89.0,126.0 L78.4,131.6" fill="none" stroke="#000"/>
+<text x="159.4" y="131.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : верна | неверна</text>
+<line x1="90.0" y1="142.0" x2="50.0" y2="142.0" stroke="#000"/>
+<polygon points="50.0,142.0 60.9,147.1 60.9,136.9" fill="#000" stroke="#000"/>
+<text x="222.7" y="147.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : ЗапроситьСтатус(идВПровайдере)</text>
+<line x1="50.0" y1="160.0" x2="90.0" y2="160.0" stroke="#000" stroke-dasharray="3,3"/>
+<path d="M79.4,154.4 L90.0,160.0 L79.4,165.6" fill="none" stroke="#000"/>
+<text x="135.5" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">10 : статус</text>
+<line x1="426.0" y1="222.0" x2="466.0" y2="222.0" stroke="#000"/>
+<polygon points="466.0,222.0 455.1,216.9 455.1,227.1" fill="#000" stroke="#000"/>
+<text x="562.9" y="227.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ОтметитьПроведённым()</text>
+<line x1="426.0" y1="240.0" x2="466.0" y2="240.0" stroke="#000"/>
+<polygon points="466.0,240.0 455.1,234.9 455.1,245.1" fill="#000" stroke="#000"/>
+<text x="589.5" y="245.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : ОтметитьОтклонённым(причина)</text>
+<line x1="426.0" y1="303.0" x2="466.0" y2="303.0" stroke="#000"/>
+<polygon points="466.0,303.0 455.1,297.9 455.1,308.1" fill="#000" stroke="#000"/>
+<text x="543.2" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : Активировать(30)</text>
+<line x1="577.0" y1="120.0" x2="617.0" y2="120.0" stroke="#000"/>
+<polygon points="617.0,120.0 606.1,114.9 606.1,125.1" fill="#000" stroke="#000"/>
+<text x="798.5" y="125.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ОпубликоватьСменуТарифа(пользователь, тариф)</text>
+<line x1="577.0" y1="137.0" x2="617.0" y2="137.0" stroke="#000"/>
+<polygon points="617.0,137.0 606.1,131.9 606.1,142.1" fill="#000" stroke="#000"/>
+<text x="721.5" y="142.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ЗапроситьСтатус(платёж)</text>
+</svg>

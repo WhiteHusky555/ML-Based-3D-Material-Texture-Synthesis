@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="899" height="279" viewBox="0 0 899 279">
+<rect width="899" height="279" fill="#fff"/>
+<path d="M38.0,60.0 L38.0,103.0 L367.0,103.0" fill="none" stroke="#000"/>
+<path d="M384.0,123.0 L384.0,166.0 L743.0,166.0" fill="none" stroke="#000"/>
+<path d="M384.0,123.0 L384.0,229.0 L742.0,229.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="20.0" width="150.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="95.0" y="36.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="95.0" y="53.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПанельВладельца</text>
+<rect x="366.0" y="83.0" width="174.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="453.0" y="99.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="453.0" y="116.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: УправлениеТарифами</text>
+<rect x="743.0" y="146.0" width="110.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="798.0" y="162.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="798.0" y="179.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">тариф: Тариф</text>
+<rect x="741.0" y="209.0" width="128.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="805.0" y="225.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="805.0" y="242.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ЖурналАудита</text>
+<line x1="50.0" y1="92.0" x2="90.0" y2="92.0" stroke="#000"/>
+<polygon points="90.0,92.0 79.1,86.9 79.1,97.1" fill="#000" stroke="#000"/>
+<text x="225.4" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ИзменитьТариф(тариф, цена, права)</text>
+<line x1="396.0" y1="155.0" x2="436.0" y2="155.0" stroke="#000"/>
+<polygon points="436.0,155.0 425.1,149.9 425.1,160.1" fill="#000" stroke="#000"/>
+<text x="586.6" y="160.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ИзменитьУсловия(цена, права, изменил)</text>
+<line x1="396.0" y1="218.0" x2="436.0" y2="218.0" stroke="#000"/>
+<polygon points="436.0,218.0 425.1,212.9 425.1,223.1" fill="#000" stroke="#000"/>
+<text x="585.8" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Записать(сотрудник, действие, данные)</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1183" height="451" viewBox="0 0 1183 451">
+<rect width="1183" height="451" fill="#fff"/>
+<line x1="130.0" y1="81.0" x2="130.0" y2="421.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="485.0" y1="81.0" x2="485.0" y2="421.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="748.0" y1="81.0" x2="748.0" y2="421.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="912.0" y1="81.0" x2="912.0" y2="421.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="40.0" y="40.0" width="180.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="130.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="130.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерГенерации</text>
+<rect x="402.0" y="40.0" width="166.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="485.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="485.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонвейерГенерации</text>
+<rect x="670.0" y="40.0" width="156.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="748.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«entity»</text>
+<text x="748.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">материал: Материал</text>
+<rect x="856.0" y="40.0" width="112.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="912.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="912.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ВоркерШума</text>
+<rect x="452.0" y="355.0" width="329.0" height="32.0" fill="#fff" stroke="#000"/>
+<polygon points="452.0,355.0 452.0,378.0 483.2,378.0 494.7,366.5 494.7,355.0" fill="#fff" stroke="#000"/>
+<text x="457.0" y="371.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">ref</text>
+<text x="496.0" y="372.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">Генерация и апскейл текстуры</text>
+<rect x="478.0" y="119.0" width="14.0" height="70.0" fill="#fff" stroke="#000"/>
+<rect x="741.0" y="149.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="905.0" y="179.0" width="14.0" height="111.0" fill="#fff" stroke="#000"/>
+<rect x="912.0" y="229.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="478.0" y="280.0" width="14.0" height="111.0" fill="#fff" stroke="#000"/>
+<rect x="741.0" y="310.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<path d="M131.0,119.0 L478.0,119.0" fill="none" stroke="#000"/>
+<path d="M467.4,113.4 L478.0,119.0 L467.4,124.6" fill="none" stroke="#000"/>
+<text x="293.0" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ПоставитьВОчередь(материал, приоритет)</text>
+<path d="M492.0,149.0 L741.0,149.0" fill="none" stroke="#000"/>
+<polygon points="741.0,149.0 730.1,143.9 730.1,154.1" fill="#000" stroke="#000"/>
+<text x="574.0" y="143.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : НачатьЭтап(«шум»)</text>
+<path d="M492.0,179.0 L905.0,179.0" fill="none" stroke="#000"/>
+<path d="M894.4,173.4 L905.0,179.0 L894.4,184.6" fill="none" stroke="#000"/>
+<text x="608.0" y="172.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ВыполнитьЗадачу(материал)</text>
+<path d="M919.0,209.0 L949.0,209.0 L949.0,229.0 L926.0,229.0" fill="none" stroke="#000"/>
+<polygon points="926.0,229.0 936.9,234.1 936.9,223.9" fill="#000" stroke="#000"/>
+<text x="1054.0" y="224.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ПостроитьКартуШума(шум)</text>
+<path d="M905.0,280.0 L492.0,280.0" fill="none" stroke="#000"/>
+<path d="M502.6,285.6 L492.0,280.0 L502.6,274.4" fill="none" stroke="#000"/>
+<text x="762.0" y="274.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">5 : ОбработатьСобытие(материал, этап)</text>
+<path d="M492.0,310.0 L741.0,310.0" fill="none" stroke="#000"/>
+<polygon points="741.0,310.0 730.1,304.9 730.1,315.1" fill="#000" stroke="#000"/>
+<text x="581.0" y="303.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ДобавитьЭтап(этап)</text>
+</svg>

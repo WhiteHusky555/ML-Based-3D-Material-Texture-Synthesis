@@ -102,6 +102,15 @@ def geometry(diagram, ids):
             kw = _tw(kind) * 1.12 + 4
             hdr = (box[0], box[1], box[0] + 5 + kw + 5 + 13, box[1] + 26)
             frags.append({"box": box, "kind": kind, "ops": ops, "hdr": hdr})
+        elif t == "UMLInteractionUseView":        # фрагмент ref: пятиугольник «ref» и имя взаимодействия
+            u = _ref(ids, v, "model")
+            box = (v["left"], v["top"], v["left"] + v["width"], v["top"] + v["height"])
+            tgt = _ref(ids, u, "refersTo")
+            name = tgt["name"] if tgt else u.get("name", "")
+            hdr = (box[0] + 4, box[1] + 3, box[0] + 23, box[1] + 19)     # «ref» полужирным Arial 13 — около 17 px
+            x0 = box[0] + 44                     # nameLabel.left = frameTypeLabel.right + h / 2 + 10
+            frags.append({"box": box, "kind": "ref", "ops": [], "hdr": hdr, "ref": True,
+                          "name": (name, (x0, box[1] + 5, x0 + _tw(name) + 4, box[1] + 5 + LINE_H))})
     return lls, msgs, frags
 
 
@@ -158,6 +167,16 @@ def render(diagram, ids):
                 out.append(_t(cx, y1 + 33, l["name"]))
             else:
                 out.append(_t(cx, y1 + 25, l["name"]))
+    for f in (f for f in frags if f.get("ref")):
+        x1, y1, x2, y2 = f["box"]
+        px = x1 + 5 + _tw("ref") + 5 + 11.5           # правый край пятиугольника (h / 2 = 11.5)
+        out.append(f'<rect x="{x1:.1f}" y="{y1:.1f}" width="{x2 - x1:.1f}" height="{y2 - y1:.1f}" fill="#fff" '
+                   f'stroke="#000"/>')
+        out.append(f'<polygon points="{x1:.1f},{y1:.1f} {x1:.1f},{y1 + 23:.1f} {px - 11.5:.1f},{y1 + 23:.1f} '
+                   f'{px:.1f},{y1 + 11.5:.1f} {px:.1f},{y1:.1f}" fill="#fff" stroke="#000"/>')
+        out.append(_t(x1 + 5, y1 + 16, "ref", anchor="start", weight="bold"))
+        txt, (nx, ny, _, _) = f["name"]
+        out.append(_t(nx, ny + 12, txt, anchor="start"))
     for m in msgs:
         if m["act"]:
             x1, y1, x2, y2 = m["act"]
@@ -165,6 +184,8 @@ def render(diagram, ids):
                        f'stroke="#000"/>')
     for f in frags:
         x1, y1, x2, y2 = f["box"]
+        if f.get("ref"):
+            continue
         hx2, hy2 = f["hdr"][2], f["hdr"][3]
         h = hy2 - y1
         out.append(f'<rect x="{x1:.1f}" y="{y1:.1f}" width="{x2 - x1:.1f}" height="{y2 - y1:.1f}" fill="none" '
@@ -197,6 +218,7 @@ def check(diagram, ids):
     texts = [(t, b, f"сообщение {m['no']}") for m in msgs for t, b in m["labels"]]
     texts += [(op["guard"][0], op["guard"][1], "условие") for f in frags for op in f["ops"] if op["guard"]]
     texts += [(f["kind"], f["hdr"], "оператор фрагмента") for f in frags]
+    texts += [(f["name"][0], f["name"][1], "имя взаимодействия") for f in frags if f.get("ref")]
     for i in range(len(texts)):
         for j in range(i + 1, len(texts)):
             if _overlap(texts[i][1], texts[j][1], 1):
@@ -232,6 +254,9 @@ def check(diagram, ids):
             for p, q in zip(pts, pts[1:]):
                 if _seg_box(p, q, l["head"], 2):
                     pr.append(f"сообщение {m['no']} проходит через шапку {l['name']}")
+        for f in frags:
+            if f.get("ref") and any(_seg_box(p, q, f["box"], 1) for p, q in zip(pts, pts[1:])):
+                pr.append(f"сообщение {m['no']} проходит через рамку ref")
         if len(pts) == 2 and abs(pts[1][0] - pts[0][0]) < 20:
             pr.append(f"сообщение {m['no']} слишком короткое")
     for f in frags:

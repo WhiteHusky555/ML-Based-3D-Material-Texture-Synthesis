@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="759" height="240" viewBox="0 0 759 240">
+<rect width="759" height="240" fill="#fff"/>
+<path d="M100.0,44.0 L100.0,30.0 L128.0,30.0 L128.0,44.0" fill="none" stroke="#000"/>
+<path d="M38.0,84.0 L38.0,127.0 L305.0,127.0" fill="none" stroke="#000"/>
+<path d="M322.0,147.0 L322.0,190.0 L542.0,190.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="44.0" width="120.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="80.0" y="60.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="80.0" y="77.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ОкноИстории</text>
+<rect x="304.0" y="107.0" width="166.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="387.0" y="123.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="387.0" y="140.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерИстории</text>
+<rect x="541.0" y="170.0" width="188.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="635.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="635.0" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: КонтроллерПубликации</text>
+<line x1="146.0" y1="30.0" x2="186.0" y2="30.0" stroke="#000"/>
+<polygon points="186.0,30.0 175.1,24.9 175.1,35.1" fill="#000" stroke="#000"/>
+<text x="313.3" y="35.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ПодтвердитьУдаление(название)</text>
+<line x1="50.0" y1="116.0" x2="90.0" y2="116.0" stroke="#000"/>
+<polygon points="90.0,116.0 79.1,110.9 79.1,121.1" fill="#000" stroke="#000"/>
+<text x="194.5" y="121.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : УдалитьЦепочку(цепочка)</text>
+<line x1="334.0" y1="179.0" x2="374.0" y2="179.0" stroke="#000"/>
+<polygon points="374.0,179.0 363.1,173.9 363.1,184.1" fill="#000" stroke="#000"/>
+<text x="454.9" y="184.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Отозвать(цепочка)</text>
+</svg>

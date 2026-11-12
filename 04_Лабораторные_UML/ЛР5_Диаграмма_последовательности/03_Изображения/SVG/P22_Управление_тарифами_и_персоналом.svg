@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="679" height="608" viewBox="0 0 679 608">
+<rect width="679" height="608" fill="#fff"/>
+<line x1="88.0" y1="81.0" x2="88.0" y2="578.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="289.0" y1="81.0" x2="289.0" y2="578.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="555.0" y1="81.0" x2="555.0" y2="578.0" stroke="#000" stroke-dasharray="3,3"/>
+<rect x="40.0" y="40.0" width="96.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="88.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«worker»</text>
+<text x="88.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Владелец</text>
+<rect x="214.0" y="40.0" width="150.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="289.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«boundary»</text>
+<text x="289.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ПанельВладельца</text>
+<rect x="461.0" y="40.0" width="188.0" height="40.0" fill="#fff" stroke="#000"/>
+<text x="555.0" y="56.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">«control»</text>
+<text x="555.0" y="73.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: ФинансоваяОтчётность</text>
+<rect x="256.0" y="206.0" width="175.0" height="32.0" fill="#fff" stroke="#000"/>
+<polygon points="256.0,206.0 256.0,229.0 287.2,229.0 298.7,217.5 298.7,206.0" fill="#fff" stroke="#000"/>
+<text x="261.0" y="222.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">ref</text>
+<text x="300.0" y="223.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">Изменение тарифа</text>
+<rect x="256.0" y="291.0" width="247.0" height="32.0" fill="#fff" stroke="#000"/>
+<polygon points="256.0,291.0 256.0,314.0 287.2,314.0 298.7,302.5 298.7,291.0" fill="#fff" stroke="#000"/>
+<text x="261.0" y="307.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">ref</text>
+<text x="300.0" y="308.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">Назначение роли сотруднику</text>
+<rect x="282.0" y="119.0" width="14.0" height="429.0" fill="#fff" stroke="#000"/>
+<rect x="548.0" y="392.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
+<rect x="289.0" y="493.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
+<rect x="174.0" y="135.0" width="409.0" height="401.0" fill="none" stroke="#000"/>
+<polygon points="174.0,135.0 174.0,161.0 211.7,161.0 224.7,148.0 224.7,135.0" fill="#fff" stroke="#000"/>
+<text x="179.0" y="153.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
+<text x="194.0" y="188.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[«Тарифы»]</text>
+<line x1="174.0" y1="246.0" x2="582.0" y2="246.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="194.0" y="273.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[«Персонал»]</text>
+<line x1="174.0" y1="331.0" x2="582.0" y2="331.0" stroke="#000" stroke-dasharray="10,3"/>
+<text x="194.0" y="358.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[«Финансы»]</text>
+<path d="M89.0,119.0 L282.0,119.0" fill="none" stroke="#000"/>
+<polygon points="282.0,119.0 271.1,113.9 271.1,124.1" fill="#000" stroke="#000"/>
+<text x="174.0" y="112.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ВыбранныйРаздел()</text>
+<path d="M296.0,392.0 L548.0,392.0" fill="none" stroke="#000"/>
+<polygon points="548.0,392.0 537.1,386.9 537.1,397.1" fill="#000" stroke="#000"/>
+<text x="392.0" y="386.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : Сформировать(период)</text>
+<path d="M555.0,443.0 L296.0,443.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
+<path d="M306.6,448.6 L296.0,443.0 L306.6,437.4" fill="none" stroke="#000"/>
+<text x="513.0" y="436.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : отчёт</text>
+<path d="M296.0,473.0 L326.0,473.0 L326.0,493.0 L303.0,493.0" fill="none" stroke="#000"/>
+<polygon points="303.0,493.0 313.9,498.1 313.9,487.9" fill="#000" stroke="#000"/>
+<text x="426.0" y="488.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : ПоказатьФинансы(отчёт)</text>
+</svg>
