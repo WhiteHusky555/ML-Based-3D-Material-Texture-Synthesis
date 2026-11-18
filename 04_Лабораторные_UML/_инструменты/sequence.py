@@ -357,7 +357,7 @@ class Interaction:
                 leaf_bottom = 0
             elif kind == "close":
                 m = ev[1]
-                inner = [q.act_bottom for q in m.inner if q.kind == "call" and q.a == m.b]
+                inner = [q.act_bottom for q in m.inner if q.kind in ("call", "async") and q.a == m.b]
                 if not getattr(m, "reply", None):
                     m.act_bottom = max([m.act_bottom, y + 10] + [b + 5 for b in inner])
                     y = max(y, m.act_bottom - ROW + 12)

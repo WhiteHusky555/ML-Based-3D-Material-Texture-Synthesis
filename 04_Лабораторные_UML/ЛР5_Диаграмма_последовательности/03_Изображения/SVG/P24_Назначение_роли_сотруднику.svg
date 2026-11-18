@@ -21,7 +21,7 @@
 <rect x="713.0" y="199.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
 <rect x="897.0" y="241.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
 <path d="M116.0,119.0 L368.0,119.0" fill="none" stroke="#000"/>
-<polygon points="368.0,119.0 357.1,113.9 357.1,124.1" fill="#000" stroke="#000"/>
+<path d="M357.4,113.4 L368.0,119.0 L357.4,124.6" fill="none" stroke="#000"/>
 <text x="231.0" y="112.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : НазначитьРоль(email, роль)</text>
 <path d="M382.0,149.0 L706.0,149.0" fill="none" stroke="#000"/>
 <polygon points="706.0,149.0 695.1,143.9 695.1,154.1" fill="#000" stroke="#000"/>
@@ -30,6 +30,6 @@
 <polygon points="727.0,199.0 737.9,204.1 737.9,193.9" fill="#000" stroke="#000"/>
 <text x="624.0" y="194.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : ОтозватьТокены()</text>
 <path d="M382.0,241.0 L897.0,241.0" fill="none" stroke="#000"/>
-<polygon points="897.0,241.0 886.1,235.9 886.1,246.1" fill="#000" stroke="#000"/>
+<path d="M886.4,235.4 L897.0,241.0 L886.4,246.6" fill="none" stroke="#000"/>
 <text x="535.0" y="234.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : Записать(сотрудник, действие, данные)</text>
 </svg>

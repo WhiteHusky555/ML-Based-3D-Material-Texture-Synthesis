@@ -24,7 +24,7 @@
 <path d="M60.6,137.6 L50.0,132.0 L60.6,126.4" fill="none" stroke="#000"/>
 <text x="175.6" y="137.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : пользователь | None</text>
 <line x1="50.0" y1="150.0" x2="90.0" y2="150.0" stroke="#000"/>
-<polygon points="90.0,150.0 79.1,144.9 79.1,155.1" fill="#000" stroke="#000"/>
+<path d="M79.4,144.4 L90.0,150.0 L79.4,155.6" fill="none" stroke="#000"/>
 <text x="239.5" y="155.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">4 : Заблокировать(пользователь, причина)</text>
 <line x1="214.0" y1="30.0" x2="254.0" y2="30.0" stroke="#000"/>
 <polygon points="254.0,30.0 243.1,24.9 243.1,35.1" fill="#000" stroke="#000"/>
@@ -36,6 +36,6 @@
 <polygon points="890.0,213.0 879.1,207.9 879.1,218.1" fill="#000" stroke="#000"/>
 <text x="967.9" y="218.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">6 : ОтозватьТокены()</text>
 <line x1="425.0" y1="299.0" x2="465.0" y2="299.0" stroke="#000"/>
-<polygon points="465.0,299.0 454.1,293.9 454.1,304.1" fill="#000" stroke="#000"/>
+<path d="M454.4,293.4 L465.0,299.0 L454.4,304.6" fill="none" stroke="#000"/>
 <text x="614.8" y="304.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">7 : Записать(сотрудник, действие, данные)</text>
 </svg>

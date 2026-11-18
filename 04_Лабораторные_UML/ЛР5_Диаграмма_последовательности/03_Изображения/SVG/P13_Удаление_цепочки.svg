@@ -23,7 +23,7 @@
 <polygon points="161.0,139.0 171.9,144.1 171.9,133.9" fill="#000" stroke="#000"/>
 <text x="312.0" y="134.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ПодтвердитьУдаление(название)</text>
 <path d="M155.0,273.0 L394.0,273.0" fill="none" stroke="#000"/>
-<polygon points="394.0,273.0 383.1,267.9 383.1,278.1" fill="#000" stroke="#000"/>
+<path d="M383.4,267.4 L394.0,273.0 L383.4,278.6" fill="none" stroke="#000"/>
 <text x="263.0" y="266.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : УдалитьЦепочку(цепочка)</text>
 <path d="M408.0,303.0 L601.0,303.0" fill="none" stroke="#000"/>
 <polygon points="601.0,303.0 590.1,297.9 590.1,308.1" fill="#000" stroke="#000"/>

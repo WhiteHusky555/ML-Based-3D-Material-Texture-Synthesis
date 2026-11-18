@@ -20,12 +20,12 @@
 <rect x="756.0" y="149.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
 <rect x="905.0" y="179.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
 <path d="M116.0,119.0 L417.0,119.0" fill="none" stroke="#000"/>
-<polygon points="417.0,119.0 406.1,113.9 406.1,124.1" fill="#000" stroke="#000"/>
+<path d="M406.4,113.4 L417.0,119.0 L406.4,124.6" fill="none" stroke="#000"/>
 <text x="255.0" y="113.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">1 : ИзменитьТариф(тариф, цена, права)</text>
 <path d="M431.0,149.0 L756.0,149.0" fill="none" stroke="#000"/>
 <polygon points="756.0,149.0 745.1,143.9 745.1,154.1" fill="#000" stroke="#000"/>
 <text x="585.0" y="143.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">2 : ИзменитьУсловия(цена, права, изменил)</text>
 <path d="M431.0,179.0 L905.0,179.0" fill="none" stroke="#000"/>
-<polygon points="905.0,179.0 894.1,173.9 894.1,184.1" fill="#000" stroke="#000"/>
+<path d="M894.4,173.4 L905.0,179.0 L894.4,184.6" fill="none" stroke="#000"/>
 <text x="584.0" y="173.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">3 : Записать(сотрудник, действие, данные)</text>
 </svg>

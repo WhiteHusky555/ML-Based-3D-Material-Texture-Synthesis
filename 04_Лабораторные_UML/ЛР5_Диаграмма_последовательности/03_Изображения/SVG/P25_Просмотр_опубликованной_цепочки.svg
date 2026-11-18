@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1243" height="950" viewBox="0 0 1243 950">
-<rect width="1243" height="950" fill="#fff"/>
-<line x1="298.0" y1="107.0" x2="298.0" y2="920.0" stroke="#000" stroke-dasharray="3,3"/>
-<line x1="515.0" y1="81.0" x2="515.0" y2="920.0" stroke="#000" stroke-dasharray="3,3"/>
-<line x1="893.0" y1="81.0" x2="893.0" y2="920.0" stroke="#000" stroke-dasharray="3,3"/>
-<line x1="1115.0" y1="81.0" x2="1115.0" y2="920.0" stroke="#000" stroke-dasharray="3,3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1243" height="925" viewBox="0 0 1243 925">
+<rect width="1243" height="925" fill="#fff"/>
+<line x1="298.0" y1="107.0" x2="298.0" y2="895.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="515.0" y1="81.0" x2="515.0" y2="895.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="893.0" y1="81.0" x2="893.0" y2="895.0" stroke="#000" stroke-dasharray="3,3"/>
+<line x1="1115.0" y1="81.0" x2="1115.0" y2="895.0" stroke="#000" stroke-dasharray="3,3"/>
 <circle cx="298.0" cy="46.4" r="5.4" fill="#fff" stroke="#000"/><line x1="298.0" y1="51.9" x2="298.0" y2="64.4" stroke="#000"/><line x1="287.6" y1="55.7" x2="308.4" y2="55.7" stroke="#000"/><line x1="298.0" y1="64.4" x2="287.6" y2="79.0" stroke="#000"/><line x1="298.0" y1="64.4" x2="308.4" y2="79.0" stroke="#000"/>
 <text x="298.0" y="97.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">: Гость</text>
 <rect x="444.0" y="40.0" width="142.0" height="40.0" fill="#fff" stroke="#000"/>
@@ -28,15 +28,15 @@
 <rect x="1108.0" y="205.0" width="14.0" height="51.0" fill="#fff" stroke="#000"/>
 <rect x="515.0" y="409.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
 <rect x="515.0" y="535.0" width="14.0" height="25.0" fill="#fff" stroke="#000"/>
-<rect x="508.0" y="772.0" width="14.0" height="110.0" fill="#fff" stroke="#000"/>
-<rect x="886.0" y="802.0" width="14.0" height="70.0" fill="#fff" stroke="#000"/>
+<rect x="508.0" y="772.0" width="14.0" height="85.0" fill="#fff" stroke="#000"/>
+<rect x="886.0" y="802.0" width="14.0" height="50.0" fill="#fff" stroke="#000"/>
 <rect x="346.0" y="302.0" width="415.0" height="276.0" fill="none" stroke="#000"/>
 <polygon points="346.0,302.0 346.0,328.0 383.7,328.0 396.7,315.0 396.7,302.0" fill="#fff" stroke="#000"/>
 <text x="351.0" y="320.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
 <text x="366.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[ссылка действует]</text>
 <line x1="346.0" y1="454.0" x2="760.0" y2="454.0" stroke="#000" stroke-dasharray="10,3"/>
 <text x="366.0" y="481.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[ссылка недоступна]</text>
-<rect x="20.0" y="600.0" width="1142.0" height="288.0" fill="none" stroke="#000"/>
+<rect x="20.0" y="600.0" width="1142.0" height="263.0" fill="none" stroke="#000"/>
 <polygon points="20.0,600.0 20.0,626.0 57.7,626.0 70.7,613.0 70.7,600.0" fill="#fff" stroke="#000"/>
 <text x="25.0" y="618.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="bold" fill="#000">alt</text>
 <text x="40.0" y="653.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="start" font-weight="normal" fill="#000">[выбран шаг]</text>
@@ -67,9 +67,6 @@
 <polygon points="508.0,772.0 497.1,766.9 497.1,777.1" fill="#000" stroke="#000"/>
 <text x="392.0" y="766.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">8 : ВыбранноеДействие()</text>
 <path d="M522.0,802.0 L886.0,802.0" fill="none" stroke="#000"/>
-<polygon points="886.0,802.0 875.1,796.9 875.1,807.1" fill="#000" stroke="#000"/>
+<path d="M875.4,796.4 L886.0,802.0 L875.4,807.6" fill="none" stroke="#000"/>
 <text x="696.0" y="796.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">9 : ПродолжитьУСебя(токен, пользователь, ключ)</text>
-<path d="M893.0,872.0 L522.0,872.0" fill="none" stroke="#000" stroke-dasharray="5,3"/>
-<path d="M532.6,877.6 L522.0,872.0 L532.6,866.4" fill="none" stroke="#000"/>
-<text x="826.0" y="866.0" font-family="Arial, Helvetica, sans-serif" font-size="13" text-anchor="middle" font-weight="normal" fill="#000">10 : копия | None</text>
 </svg>
