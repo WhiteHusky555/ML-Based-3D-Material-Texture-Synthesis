@@ -1,6 +1,7 @@
 import unittest
 import numpy as np
-from texgen.noise import generate, sample, _render
+from texgen.noise import generate, sample
+from texgen.noise.core import _render
 
 
 class NoiseTest(unittest.TestCase):

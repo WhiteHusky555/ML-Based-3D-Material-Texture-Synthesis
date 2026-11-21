@@ -1,10 +1,7 @@
-"""Периодический шум на единичном квадрате. При запуске модуль создаёт примеры карт на CPU."""
-import argparse
-from pathlib import Path
+"""Периодический шум на единичном квадрате."""
 
 import numpy as np
 from numba import njit, prange
-from PIL import Image
 
 
 def sample(kind, x, y, cells=8, seed=42):
@@ -120,15 +117,3 @@ def generate(kind, size=512, cells=8, seed=42):
         # Фиксированные коэффициенты сохраняют высоту в одной и той же точке при смене разрешения.
         field = 0.5 + 0.5*field
     return np.clip(field, 0, 1)
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=Path("examples/noise"))
-    args = parser.parse_args()
-    args.output.mkdir(parents=True, exist_ok=True)
-    for kind in ("perlin", "voronoi", "combined"):
-        field = generate(kind)
-        Image.fromarray(np.rint(field * 65535).astype("uint16")).save(args.output / f"{kind}.png")
-        preview = np.tile(np.rint(field * 255).astype("uint8"), (2, 2))
-        Image.fromarray(preview).save(args.output / f"{kind}_2x2.png")
