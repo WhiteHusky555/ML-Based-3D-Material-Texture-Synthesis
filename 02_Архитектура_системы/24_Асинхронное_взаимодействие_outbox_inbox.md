@@ -162,3 +162,7 @@
 - JetBrains Exposed. ForUpdateOption.kt — https://github.com/JetBrains/Exposed/blob/0.59.0/exposed-core/src/main/kotlin/org/jetbrains/exposed/sql/vendors/ForUpdateOption.kt ; issue #837 «select for update query» — https://github.com/JetBrains/Exposed/issues/837
 - Spring Modulith. Working with Application Events — https://docs.spring.io/spring-modulith/reference/events.html
 - Spring for Apache Kafka. Reference (`ReplyingKafkaTemplate`) — https://docs.spring.io/spring-kafka/docs/2.8.11/reference/html
+
+## Очереди сервисного стенда НИР
+
+В НИР потребители используют AMQP через Pika. Этап сохраняет карты по UUID, фиксирует завершение, публикует UUID в следующую очередь с publisher confirm и затем подтверждает входящее сообщение. При повторной доставке готовый этап пропускает вычисления. Запись состояния и публикация разделены: маркер отправки и повторная доставка восстанавливают переход. При отсутствии модели GPU-потребитель ожидает готовности. Целевая схема ВКР использует Celery, PostgreSQL Outbox/Inbox и события этапов.

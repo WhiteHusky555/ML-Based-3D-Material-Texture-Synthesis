@@ -1,0 +1,78 @@
+name: texgen-nir
+x-jobs: &jobs
+  build:
+    context: .
+    args:
+      SERVICE: jobs
+  restart: unless-stopped
+  environment:
+    AMQP_USER: ${AMQP_USER:?set AMQP_USER}
+    AMQP_PASSWORD: ${AMQP_PASSWORD:?set AMQP_PASSWORD}
+  volumes:
+    - jobs:/jobs
+  depends_on:
+    rabbitmq:
+      condition: service_healthy
+
+services:
+  rabbitmq:
+    image: rabbitmq:4.3
+    hostname: rabbitmq
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: ${AMQP_USER:?set AMQP_USER}
+      RABBITMQ_DEFAULT_PASS: ${AMQP_PASSWORD:?set AMQP_PASSWORD}
+    volumes:
+      - broker:/var/lib/rabbitmq
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  jobs:
+    <<: *jobs
+    command: ["uvicorn", "texgen.jobs.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "127.0.0.1:8010:8000"
+  noise-worker:
+    <<: *jobs
+    command: ["python", "-m", "texgen.jobs.worker", "noise"]
+  generation-worker:
+    <<: *jobs
+    command: ["python", "-m", "texgen.jobs.worker", "generation"]
+  pbr-worker:
+    <<: *jobs
+    command: ["python", "-m", "texgen.jobs.worker", "pbr"]
+
+  noise:
+    build:
+      context: .
+      args:
+        SERVICE: noise
+    command: ["uvicorn", "texgen.noise.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "127.0.0.1:8011:8000"
+
+  generation:
+    build:
+      context: .
+      args:
+        SERVICE: generation
+    volumes:
+      - ./models:/models:ro
+    command: ["uvicorn", "texgen.generation.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "127.0.0.1:8012:8000"
+
+  pbr:
+    build:
+      context: .
+      args:
+        SERVICE: pbr
+    command: ["uvicorn", "texgen.pbr.api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "127.0.0.1:8013:8000"
+
+volumes:
+  jobs:
+  broker:

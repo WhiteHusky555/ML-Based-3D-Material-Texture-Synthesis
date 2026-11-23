@@ -66,3 +66,7 @@
 - `outbox`, `inbox` — служебные таблицы, см. [24](24_Асинхронное_взаимодействие_outbox_inbox.md)
 - `request_chains`, `chain_history`, `generation_requests`, `request_materials`, `request_counters`, `shared_links` — запросы, цепочки и публикация, см. [19](19_Запросы_цепочки_и_публикация.md)
 - Миграции — Alembic.
+
+## Очереди сервисного стенда НИР
+
+API принимает задание, возвращает идентификатор и предоставляет статус. В стенде НИР это POST /jobs с Idempotency-Key и GET /jobs/{id}. В дипломной системе за фиксацию задания и постановку отвечает outbox API-сервиса.

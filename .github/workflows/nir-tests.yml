@@ -3,12 +3,16 @@ name: Тесты НИР
 on:
   push:
     paths:
+      - '06_НИР/compose*.yaml'
+      - '06_НИР/Dockerfile'
       - '06_НИР/src/**'
       - '06_НИР/tests/**'
       - '06_НИР/requirements.txt'
       - '.github/workflows/nir-tests.yml'
   pull_request:
     paths:
+      - '06_НИР/compose*.yaml'
+      - '06_НИР/Dockerfile'
       - '06_НИР/src/**'
       - '06_НИР/tests/**'
       - '06_НИР/requirements.txt'
@@ -37,3 +41,16 @@ jobs:
       - run: python -m unittest discover -s tests -v
         env:
           PYTHONPATH: src
+
+      - name: Проверка очередей RabbitMQ без GPU
+        shell: bash
+        run: |
+          export AMQP_USER=ci
+          export AMQP_PASSWORD="$(openssl rand -hex 32)"
+          trap 'docker compose down -v' EXIT
+          docker compose up --build -d --wait rabbitmq jobs noise noise-worker
+          for attempt in {1..30}; do
+            if curl -fsS http://127.0.0.1:8010/openapi.json >/dev/null; then break; fi
+            sleep 1
+          done
+          python tests/compose_smoke.py

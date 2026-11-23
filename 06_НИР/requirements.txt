@@ -1,1 +1,5 @@
 -r src/texgen/noise/requirements.txt
+-r src/texgen/pbr/requirements.txt
+-r src/texgen/generation/requirements.txt
+httpx==0.28.1
+-r src/texgen/jobs/requirements.txt

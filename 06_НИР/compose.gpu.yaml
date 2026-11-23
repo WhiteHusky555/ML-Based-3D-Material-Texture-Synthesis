@@ -1,0 +1,6 @@
+services:
+  generation:
+    build:
+      args:
+        GPU: "1"
+    gpus: all

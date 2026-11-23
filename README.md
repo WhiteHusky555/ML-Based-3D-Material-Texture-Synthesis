@@ -66,9 +66,11 @@ flowchart TB
     API -->|"WebSocket прогресса"| WB
     API -->|"события и постановка задач через outbox"| Q
     US & AD -->|"события через outbox"| Q
-    Q -->|"noise / gpu / cpu"| W["Воркеры<br/>шум → генерация и апскейл → PBR"]
-    W -->|"события этапов"| Q
-    W --> FS[("S3<br/>карты и архивы")]
+    Q -->|"noise"| NW["Шум · CPU"]
+    Q -->|"gpu"| GW["Генерация и апскейл · GPU"]
+    Q -->|"cpu"| PW["PBR · CPU"]
+    NW & GW & PW -->|"события этапов"| Q
+    NW & GW & PW --> FS[("S3<br/>карты и архивы")]
     API & US & AD --> DB[("PostgreSQL<br/>core · users · admin")]
 ```
 
