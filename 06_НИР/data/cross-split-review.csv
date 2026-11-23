@@ -1,0 +1,6 @@
+held_out_id,train_id,held_out_split,train_split,correlation,rotation_deg,shift_y_32,shift_x_32,review_note,excluded_train_id
+Wood026,Wood025,validation,train,0.9861,0,0,0,"Совпадают линии волокон, различается оттенок.",Wood025
+Leather010,Leather011,test,train,0.9608,90,8,24,"Совпадает рисунок стяжек после поворота, различается цвет.",Leather011
+Leather010,Leather009,test,train,0.9289,180,8,16,"Совпадает рисунок стяжек, различается тон.",Leather009
+Fabric009,Leather034C,test,train,0.9237,0,0,8,Сходна ромбическая сетка; детали и материал различаются. Происхождение не установлено.,Leather034C
+Marble011,Marble013,validation,train,0.9014,0,0,0,"Совпадает расположение прожилок, различается цвет.",Marble013
