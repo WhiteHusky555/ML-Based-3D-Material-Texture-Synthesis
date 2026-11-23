@@ -1,0 +1,57 @@
+{
+  "split": "validation",
+  "manifest_sha256": "8fac9bd943d6c045d8f504c888af438e33c56857ad24764eade15e8d26d188d8",
+  "samples": [
+    {
+      "material_id": "Asphalt010",
+      "group_id": "Asphalt010",
+      "category": "Asphalt",
+      "caption": "asphalt clean dark flat"
+    },
+    {
+      "material_id": "Wood008",
+      "group_id": "Wood008",
+      "category": "Wood",
+      "caption": "cherry clean dark flat red smooth wood wooden"
+    },
+    {
+      "material_id": "Fabric052",
+      "group_id": "Fabric052",
+      "category": "Fabric",
+      "caption": "fabric green pattern tartan"
+    },
+    {
+      "material_id": "Rock003",
+      "group_id": "Rock003",
+      "category": "Rock",
+      "caption": "beige cliff rock rough stone"
+    }
+  ],
+  "conditions": [
+    {
+      "kind": "voronoi",
+      "size": 512,
+      "cells": 8,
+      "seed": 12,
+      "file": "voronoi-12.png",
+      "sha256_rgb": "f790a17b063c5fac5df449d38d5d17d564e0a4852337a2b04980ddc9acb27a07"
+    },
+    {
+      "kind": "voronoi",
+      "size": 512,
+      "cells": 8,
+      "seed": 37,
+      "file": "voronoi-37.png",
+      "sha256_rgb": "8fde02c907bbfc2ba25ad6af55b7c8d7a47c431724563cef9b8472310a0b92d5"
+    }
+  ],
+  "diffusion_seeds": [
+    100,
+    101,
+    102
+  ],
+  "scheduler": "DDIM",
+  "inference_steps": 20,
+  "guidance_scale": 7.5,
+  "controlnet_conditioning_scale": 1.0
+}

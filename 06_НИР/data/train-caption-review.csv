@@ -1,0 +1,31 @@
+material_id,category,original_caption,proposed_caption,review_note
+Asphalt005,Asphalt,asphalt grey light rough street,light grey asphalt with fine speckles,
+Asphalt021,Asphalt,asphalt broken crack cracked cracks dark gray grey,dark grey asphalt with irregular cracks,
+Bricks053,Bricks,brick bricks wall yellow,pale yellow rectangular bricks in staggered rows,
+Bricks075B,Bricks,brick bricks dirt dirty moss mossy old,dark masonry blocks with green moss in the joints,
+Concrete035,Concrete,concrete dark grey old plaster rough,mottled grey concrete with brown patches,
+Concrete025,Concrete,concrete gray light,light grey concrete with exposed aggregate,
+Fabric032,Fabric,cloth fabric white wool,off-white fabric with a fine weave,Видна мелкая фактура; состав волокна wool требует подтверждения.
+Fabric051,Fabric,black fabric pattern tartan,"dark tartan fabric with blue, green, yellow and red stripes",
+Gravel003,Gravel,clean dirt dirty gravel small,fine grey and tan gravel,Теги clean и dirty противоречат друг другу.
+Gravel016,Gravel,gravel ground pebbles river rocks,dark gravel with scattered light pebbles,
+Ground029,Ground,beach dirt dirty ground mud sand,sandy tan ground with small stones,
+Ground039,Ground,dirt dirty gravel ground pebbles soil,reddish brown ground with scattered pebbles,
+Leather009,Leather,black couch leather sofa,black leather with a repeating tufted pattern,Рисунок виден; назначение couch/sofa из плитки не следует.
+Leather021,Leather,black brown dark leather smooth,dark brown leather with a fine grain,
+Marble026,Marble,beige marble reflective shiny yellow,beige marble with subtle mottling,Блеск требует данных о свойствах поверхности или рендера.
+Marble004,Marble,beige clean marble white,off-white marble with pale grey veins,
+Metal014,Metal,clean grey light metal reflection rough scratch steel,pale grey metal with irregular blue-grey patches,Отражение и состав сплава по Color не подтверждены.
+Metal041B,Metal,iron metal rust,grey metal with reddish brown rust streaks,
+PavingStones113,PavingStones,moss mossy old pavement paving stones,mossy rectangular paving stones,
+PavingStones053,PavingStones,parking pattern pavement paving stones shape,open lattice paving blocks with green patches,
+Planks007,Planks,planks smooth wood wooden,brown horizontal wooden planks,
+Planks016,Planks,bright light nailed nails planks rough wood wooden,light brown wooden planks with dark nail marks,
+Rock006,Rock,cliff mountain rock stone,dark mottled rock with green patches,
+Rock041,Rock,black rock smooth,grey-brown rock with faint vertical streaks,Видимый тон серо-коричневый; исходный тег black требует уточнения.
+Tiles076,Tiles,floor marble stone tiled tiles tiling,black and cream tiles with an angular geometric pattern,В исходной подписи пропущен выраженный двухцветный орнамент.
+Tiles030,Tiles,bathroom blue clean light smooth subway tiled tiles,blue rectangular tiles in staggered rows,
+Wood059,Wood,rough wood wooden,reddish brown wood with horizontal grain,
+Wood082B,Wood,old orange used wood wooden,golden brown wood with staggered plank joints,Видны стыки досок; возраст и эксплуатация не установлены.
+WoodFloor006,WoodFloor,clean floor flooring light parquet wood wooden,light wood flooring with long narrow boards,
+WoodFloor009,WoodFloor,clean contrast floor flooring parquet smooth wood wooden,wood flooring with short boards in contrasting brown tones,
