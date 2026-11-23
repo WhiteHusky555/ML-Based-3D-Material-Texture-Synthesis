@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
+import numpy as np
 from PIL import Image
 
 
@@ -35,16 +36,19 @@ def prepare(catalog, output, limit=400, seed=42):
             if not path.is_relative_to(root) or not path.is_file():
                 raise ValueError(f"Не найдена локальная карта Color для {mid}")
             with Image.open(path) as im:
-                if im.mode != "RGB" or im.width != im.height or im.width < 512:
-                    raise ValueError(f"{mid}: нужна квадратная RGB-карта от 512 пикселей")
-                digest = hashlib.sha256(im.tobytes()).hexdigest()
+                if im.mode not in ("RGB", "L") or im.width != im.height or im.width < 512:
+                    raise ValueError(f"{mid}: нужна квадратная карта RGB или L от 512 пикселей")
+                source_mode = im.mode
+                low, high = np.percentile(np.asarray(im.convert("L")), [1, 99])
+                digest = hashlib.sha256(im.convert("RGB").tobytes()).hexdigest()
             if digest in images:
                 raise ValueError(f"Совпадают карты {mid} и {images[digest]}")
             images[digest] = mid
             ids.add(mid.casefold())
             if groups.setdefault(group, cat) != cat:
                 raise ValueError(f"Группа {group} отнесена к разным категориям")
-            rows.append(dict(r, sha256_rgb=digest))
+            rows.append(dict(r, sha256_rgb=digest, source_mode=source_mode,
+                             nearly_uniform_luma=bool(low == high)))
     if len(rows) < limit:
         raise ValueError(f"Доступно {len(rows)} материалов CC0, запрошено {limit}")
 
@@ -81,7 +85,7 @@ def prepare(catalog, output, limit=400, seed=42):
                 dest = Path(splits[r["group_id"]]) / (r["material_id"] + ".png")
                 (stage / dest).parent.mkdir(exist_ok=True)
                 with Image.open(root / r["color"]) as im:
-                    im.resize((512, 512), Image.Resampling.LANCZOS).save(stage / dest)
+                    im.convert("RGB").resize((512, 512), Image.Resampling.LANCZOS).save(stage / dest)
                 print(json.dumps(dict(r, color=dest.as_posix(), split=dest.parts[0]),
                                  ensure_ascii=False), file=stream)
         stage.rename(output)
