@@ -59,6 +59,19 @@ def prepare(catalog, output, limit=400, seed=42):
     buckets = {}
     for r in sorted(rows, key=lambda r: order(r["material_id"])):
         buckets.setdefault(r["category"], []).append(r)
+    # Сначала по одной карте каждой поверхности, затем остальные варианты.
+    for category, materials in buckets.items():
+        seen_groups = set()
+        representatives, variants = [], []
+        for material in materials:
+            group = material["group_id"]
+            if group in seen_groups:
+                variants.append(material)
+            else:
+                representatives.append(material)
+                seen_groups.add(group)
+        buckets[category] = representatives + variants
+
     selected = []
     for index in range(max(map(len, buckets.values()))):
         for cat in sorted(buckets):

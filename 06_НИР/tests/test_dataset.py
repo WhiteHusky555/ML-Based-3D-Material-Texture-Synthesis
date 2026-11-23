@@ -50,6 +50,15 @@ class DatasetTest(unittest.TestCase):
             self.rows.reverse()
         self.assertEqual(*manifests)
 
+    def test_limit_preserves_independent_groups(self):
+        self.write_catalog()
+        output = self.root / "subset"
+        prepare(self.catalog, output, limit=3)
+        records = [json.loads(line) for line in
+                   (output / "manifest.jsonl").read_text(encoding="utf-8").splitlines()]
+        self.assertEqual({r["group_id"] for r in records}, {"A", "B", "C"})
+        self.assertEqual({r["split"] for r in records}, {"train", "validation", "test"})
+
     def test_grayscale_export_and_luma_flag(self):
         flat = Image.new("L", (512, 512), 28)
         flat.putpixel((0, 0), 29)
