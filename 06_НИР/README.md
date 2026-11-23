@@ -59,7 +59,12 @@ flowchart LR
     NQ --> N[Воркер шума]
     N --> GQ[(generation)]
     GQ --> G[Воркер генерации]
-    G --> PQ[(pbr)]
+    subgraph GENAPI["Сервис generation · POST /generate"]
+        SD["Генерация albedo"] -->|"upscale=true"| UP["Апскейл · Lanczos ×2"]
+    end
+    G --> SD
+    SD -->|"upscale=false"| PQ[(pbr)]
+    UP --> PQ
     PQ --> P[PBR-воркер]
     N & G & P --> V[(Том jobs: карты и состояние)]
     J --> V

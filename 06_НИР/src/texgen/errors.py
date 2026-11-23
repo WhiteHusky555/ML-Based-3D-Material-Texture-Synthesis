@@ -8,6 +8,9 @@ from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
 
 
+from .contracts import error
+
+
 class ServiceError(HTTPException):
     def __init__(self, status, code, message, *, retry_after=None):
         headers = {"Retry-After": str(retry_after)} if retry_after is not None else None
@@ -17,7 +20,7 @@ class ServiceError(HTTPException):
 
 
 def service_app(service, **options):
-    app = FastAPI(**options)
+    app = FastAPI(responses={500: error("internal_error")}, **options)
 
     def response(status, code, message, *, headers=None, fields=None, incident=None):
         error = dict(service=service, code=code, message=message)

@@ -2,6 +2,7 @@
 from typing import Literal
 
 import numpy as np
+from ..contracts import NoiseMap, error
 from ..errors import service_app
 from PIL import Image
 from pydantic import Field
@@ -19,7 +20,7 @@ class Parameters(Request):
     seed: int = Field(42, ge=0, le=2**32-1)
 
 
-@app.post("/noise")
+@app.post("/noise", summary="Построить карту шума", response_model=NoiseMap, responses={422: error("invalid_request")})
 def noise(params: Parameters):
     height = generate(**params.model_dump())
     return {"height": encode(Image.fromarray(np.rint(height * 65535).astype("uint16")))}

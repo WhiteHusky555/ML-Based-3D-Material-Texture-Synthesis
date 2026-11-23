@@ -24,7 +24,7 @@ class JobsTest(unittest.TestCase):
 
             def compute(client, stage, folder, params):
                 if stage == "generation":
-                    store.save(folder, "model.json", {"version": "test"})
+                    store.save(folder, "model.json", {"version": "test", "revision": 1, "sha256": "0" * 64})
 
             def offline(stage, job):
                 raise ConnectionError("broker down")

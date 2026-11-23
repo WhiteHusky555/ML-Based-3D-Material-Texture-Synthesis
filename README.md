@@ -67,10 +67,15 @@ flowchart TB
     API -->|"события и постановка задач через outbox"| Q
     US & AD -->|"события через outbox"| Q
     Q -->|"noise"| NW["Шум · CPU"]
-    Q -->|"gpu"| GW["Генерация и апскейл · GPU"]
+    subgraph GPU["Общий GPU-воркер · одна задача на видеокарту"]
+        GEN["Сервис генерации · SD 1.5 + ControlNet"]
+        UPS["Сервис апскейла · Real-ESRGAN"]
+    end
+    Q -->|"gpu · generate"| GEN
+    Q -->|"gpu · upscale"| UPS
     Q -->|"cpu"| PW["PBR · CPU"]
-    NW & GW & PW -->|"события этапов"| Q
-    NW & GW & PW --> FS[("S3<br/>карты и архивы")]
+    NW & GEN & UPS & PW -->|"события этапов"| Q
+    NW & GEN & UPS & PW --> FS[("S3<br/>карты и архивы")]
     API & US & AD --> DB[("PostgreSQL<br/>core · users · admin")]
 ```
 

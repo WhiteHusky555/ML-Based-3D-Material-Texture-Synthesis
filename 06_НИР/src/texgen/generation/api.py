@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
 from threading import Event, Thread
 
+from ..contracts import Generated, Ready, error
 from ..errors import ServiceError, service_app
 from PIL import Image
 from pydantic import Field
@@ -38,10 +39,11 @@ class Generation(Request):
     prompt: str = Field(min_length=1, max_length=2048)
     height: str = Field(min_length=1, max_length=12000000)
     seed: int = Field(ge=0, le=2**32-1)
-    upscale: bool = False
+    upscale: bool = Field(False, description="Апскейл стенда: Lanczos, 512 → 1024. В целевой архитектуре — этап Real-ESRGAN.")
 
 
-@app.get("/ready")
+@app.get("/ready", summary="Проверить активную версию модели", response_model=Ready,
+         responses={503: error("model_unavailable")})
 def readiness():
     with registry.lock:
         if registry.provider is None:
@@ -49,7 +51,9 @@ def readiness():
         return {"model": registry.current, "update_error": registry.error}
 
 
-@app.post("/generate")
+@app.post("/generate", summary="Сгенерировать карту albedo", response_model=Generated,
+          responses={422: error("invalid_request, invalid_base64, invalid_png, unsupported_map"),
+                     503: error("model_unavailable или model_busy (Retry-After в секундах)")})
 def generate(params: Generation):
     if not registry.lock.acquire(blocking=False):
         raise ServiceError(503, "model_busy", "Генератор занят.", retry_after=1)

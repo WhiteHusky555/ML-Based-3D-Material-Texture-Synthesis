@@ -1,5 +1,6 @@
 """Периодические производные высоты и приближённые карты материала."""
 import numpy as np
+from ..contracts import MaterialMaps, error
 from ..errors import service_app
 from PIL import Image
 from pydantic import Field
@@ -16,7 +17,8 @@ class Material(Request):
     roughness: float = Field(0.65, ge=0, le=1)
 
 
-@app.post("/pbr")
+@app.post("/pbr", summary="Рассчитать карты материала", response_model=MaterialMaps,
+          responses={422: error("invalid_request, invalid_base64, invalid_png, unsupported_map")})
 def render(params: Material):
     color = decode(params.albedo, {"RGB"})
     height = decode(params.height, {"I;16", "L"})

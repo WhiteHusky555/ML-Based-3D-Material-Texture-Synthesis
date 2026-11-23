@@ -5,13 +5,16 @@ from fastapi import Header
 from fastapi.responses import FileResponse
 from filelock import FileLock
 
+from ..contracts import Accepted, JobState, error
 from ..errors import ServiceError, service_app
 from . import broker, store
 
 app = service_app("jobs", title="Задания НИР")
 
 
-@app.post("/jobs", status_code=202)
+@app.post("/jobs", status_code=202, summary="Поставить задание в очередь", response_model=Accepted,
+          responses={409: error("idempotency_conflict"), 422: error("invalid_request"),
+                     503: error("queue_unavailable (Retry-After в секундах)")})
 def submit(params: store.Parameters, idempotency_key: Annotated[UUID, Header()]):
     folder = store.directory(idempotency_key)
     folder.mkdir(parents=True, exist_ok=True)
@@ -34,7 +37,8 @@ def submit(params: store.Parameters, idempotency_key: Annotated[UUID, Header()])
     return {"job_id": str(idempotency_key)}
 
 
-@app.get("/jobs/{job}")
+@app.get("/jobs/{job}", summary="Получить состояние задания", response_model=JobState,
+         response_model_exclude_unset=True, responses={404: error("job_not_found"), 422: error("invalid_request")})
 def status(job: UUID):
     folder = store.directory(job)
     if not (folder / "request.json").exists():
@@ -42,7 +46,9 @@ def status(job: UUID):
     return store.read(folder, "state.json")
 
 
-@app.get("/jobs/{job}/maps/{name}")
+@app.get("/jobs/{job}/maps/{name}", summary="Скачать карту PNG", response_class=FileResponse,
+         responses={200: {"content": {"image/png": {"schema": {"type": "string", "format": "binary"}}}},
+                    404: error("job_not_found"), 409: error("result_pending"), 422: error("invalid_request")})
 def artifact(job: UUID, name: Literal["albedo", "height", "normal", "roughness", "ao"]):
     if status(job)["status"] != "completed":
         raise ServiceError(409, "result_pending", "Результат недоступен.")
